@@ -2,7 +2,7 @@ import unittest
 
 from textnode import TextNode, TextType
 from leafnode import LeafNode
-from functions import text_node_to_html_node, split_nodes_delimiter, split_nodes_link
+from functions import text_node_to_html_node, split_nodes_delimiter, split_nodes_link, split_nodes_image, text_to_textnodes
 
 
 class TestTextNode(unittest.TestCase):
@@ -168,6 +168,85 @@ class TestTextNode(unittest.TestCase):
             ]
         )
 
+    def test_split_images(self):
+        node = TextNode(
+            "This is text with an ![image](https://i.imgur.com/zjjcJKZ.png) and another ![second image](https://i.imgur.com/3elNhQu.png)",
+            TextType.TEXT,
+        )
+        new_nodes = split_nodes_image([node])
+        self.assertListEqual(
+            new_nodes,
+            [
+                TextNode("This is text with an ", TextType.TEXT),
+                TextNode("image", TextType.IMAGE, "https://i.imgur.com/zjjcJKZ.png"),
+                TextNode(" and another ", TextType.TEXT),
+                TextNode(
+                    "second image", TextType.IMAGE, "https://i.imgur.com/3elNhQu.png"
+                ),
+            ]
+        )
+
+    def test_split_nodes_images_02(self):
+        node = TextNode("![Image at the beginning](https://i.imgur.com/zjjcJKZ.png) and then nothing.", TextType.TEXT)
+        new_nodes = split_nodes_image([node])
+        self.assertEqual(
+            new_nodes,
+            [
+                TextNode("Image at the beginning", TextType.IMAGE, "https://i.imgur.com/zjjcJKZ.png"),
+                TextNode(" and then nothing.", TextType.TEXT),
+            ]
+        )
+
+    def test_split_nodes_images_03(self):
+        node = TextNode("![Image at the beginning](https://i.imgur.com/zjjcJKZ.png)![and immediately after](https://i.imgur.com/zjjcJKZ.png)", TextType.TEXT)
+        new_nodes = split_nodes_image([node])
+        self.assertEqual(
+            new_nodes,
+            [
+                TextNode("Image at the beginning", TextType.IMAGE, "https://i.imgur.com/zjjcJKZ.png"),
+                TextNode("and immediately after", TextType.IMAGE, "https://i.imgur.com/zjjcJKZ.png"),
+            ]
+        )
+
+    def test_split_nodes_images_04(self):
+        node = TextNode("Text at the beginning and ![image only at the end](https://i.imgur.com/zjjcJKZ.png)", TextType.TEXT)
+        new_nodes = split_nodes_image([node])
+        self.assertEqual(
+            new_nodes,
+            [
+                TextNode("Text at the beginning and ", TextType.TEXT),
+                TextNode("image only at the end", TextType.IMAGE, "https://i.imgur.com/zjjcJKZ.png"),
+            ]
+        )
+
+    def test_split_nodes_images_05(self):
+        node = TextNode("No images", TextType.TEXT)
+        new_nodes = split_nodes_image([node])
+        self.assertEqual(
+            new_nodes,
+            [
+                TextNode("No images", TextType.TEXT)
+            ]
+        )
+
+    def test_text_to_textnodes_01(self):
+        text = "This is **text** with an _italic_ word and a `code block` and an ![obi wan image](https://i.imgur.com/fJRm4Vk.jpeg) and a [link](https://boot.dev)"
+        nodes = text_to_textnodes(text)
+        self.assertEqual(
+            nodes,
+            [
+                TextNode("This is ", TextType.TEXT),
+                TextNode("text", TextType.BOLD),
+                TextNode(" with an ", TextType.TEXT),
+                TextNode("italic", TextType.ITALIC),
+                TextNode(" word and a ", TextType.TEXT),
+                TextNode("code block", TextType.CODE),
+                TextNode(" and an ", TextType.TEXT),
+                TextNode("obi wan image", TextType.IMAGE, "https://i.imgur.com/fJRm4Vk.jpeg"),
+                TextNode(" and a ", TextType.TEXT),
+                TextNode("link", TextType.LINK, "https://boot.dev"),
+            ]
+        )
 
 if __name__ == "__main__":
     unittest.main()
