@@ -1,5 +1,6 @@
 from leafnode import LeafNode
 from textnode import TextNode, TextType
+from blocktype import BlockType
 import re
 
 
@@ -157,3 +158,20 @@ def markdown_to_blocks(markdown):
             cleaned_block = "\n".join(cleaned_lines)
             result.append(cleaned_block)
     return result
+
+
+def block_to_block_type(markdown):
+    lines = markdown.split("\n")
+    match markdown:
+        case markdown if re.search("^#{1,6}\s{1}.+$", markdown):
+            return BlockType.HEADING
+        case markdown if re.search("^`{3}.+`{3}$", markdown):
+            return BlockType.CODE
+        case markdown if all(re.search("^\>.+$", line) for line in lines):
+            return BlockType.QUOTE
+        case markdown if all(re.search("^\- .+$", line) for line in lines):
+            return BlockType.UNORDERED_LIST
+        case markdown if all(re.search("^\d\. .+$", line) for line in lines):
+            return BlockType.ORDERED_LIST
+        case _:
+            return BlockType.PARAGRAPH
