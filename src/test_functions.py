@@ -1,6 +1,6 @@
 import unittest
 from blocktype import BlockType
-from functions import extract_markdown_images, extract_markdown_links, markdown_to_blocks, block_to_block_type
+from functions import extract_markdown_images, extract_markdown_links, markdown_to_blocks, block_to_block_type, text_to_children, block_type_to_html_node, markdown_to_html_node
 
 
 class TestFunctions(unittest.TestCase):
@@ -40,7 +40,7 @@ class TestFunctions(unittest.TestCase):
     def test_block_to_block_type(self):
         blocks = [
             "## heading 2",
-            "```code block```",
+            "```code block\nanother code```",
             "> This is\n>a quote\n>for me",
             "- first\n- second\n- third",
             "1. first\n2. second\n3. third",
@@ -61,6 +61,41 @@ class TestFunctions(unittest.TestCase):
                 BlockType.PARAGRAPH
             ],
         )
+
+    def test_block_type_to_html_node(self):
+        text = """
+        ```This is
+        a code block```
+        """
+        return block_type_to_html_node(BlockType.CODE, text)
+
+    def test_paragraphs(self):
+        md = """
+        This is **bolded** paragraph text in a p tag here
+
+        This is another paragraph with _italic_ text and `code` here
+
+        """
+        node = markdown_to_html_node(md)
+        self.assertEqual(
+            node,
+            "<div><p>This is <b>bolded</b> paragraph text in a p tag here</p><p>This is another paragraph with <i>italic</i> text and <code>code</code> here</p></div>",
+        )
+
+    def test_codeblock(self):
+        md = """
+        ```
+        This is text that _should_ remain
+        the **same** even with inline stuff
+        ```
+        """
+        node = markdown_to_html_node(md)
+        self.assertEqual(
+            node,
+            "<div><pre><code>\nThis is text that _should_ remain\nthe **same** even with inline stuff\n</code></pre></div>",
+        )
+        
+
 
 if __name__ == "__main__":
     unittest.main()

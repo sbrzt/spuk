@@ -18,7 +18,7 @@ class HTMLNode():
                 self.props == other.props)
 
     def to_html(self):
-        raise NotImplementedError
+        pass
 
     def props_to_html(self):
         if self.props:

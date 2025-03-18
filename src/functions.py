@@ -1,7 +1,10 @@
+from htmlnode import HTMLNode
 from leafnode import LeafNode
+from parentnode import ParentNode
 from textnode import TextNode, TextType
 from blocktype import BlockType
 import re
+import os
 
 
 def text_node_to_html_node(text_node):
@@ -165,7 +168,7 @@ def block_to_block_type(markdown):
     match markdown:
         case markdown if re.search("^#{1,6}\s{1}.+$", markdown):
             return BlockType.HEADING
-        case markdown if re.search("^`{3}.+`{3}$", markdown):
+        case markdown if re.search("^`{3}", lines[0]) and re.search("`{3}$", lines[-1]):
             return BlockType.CODE
         case markdown if all(re.search("^\>.+$", line) for line in lines):
             return BlockType.QUOTE
@@ -175,3 +178,74 @@ def block_to_block_type(markdown):
             return BlockType.ORDERED_LIST
         case _:
             return BlockType.PARAGRAPH
+
+
+def block_type_to_html_node(block_type, markdown):
+    match block_type:
+        case BlockType.HEADING:
+            hashes = len(markdown) - len(markdown.lstrip("#"))
+            markdown = markdown[hashes:].strip()
+            return LeafNode(f"h{hashes}", markdown)
+        case BlockType.QUOTE:
+            lines = markdown.split("\n")
+            children = text_to_children(markdown)
+            return ParentNode("blockquote", children=children)
+        case BlockType.UNORDERED_LIST:
+            return lines_to_children(markdown, "ul")
+        case BlockType.ORDERED_LIST:
+            return lines_to_children(markdown, "ol")
+        case BlockType.CODE:
+            markdown = markdown[3:-3]
+            text_node = TextNode(markdown, TextType.TEXT)
+            html_node = text_node_to_html_node(text_node)
+            code = ParentNode("code", children=[html_node])
+            return ParentNode("pre", children=[code])
+        case _:
+            children = text_to_children(markdown)
+            return ParentNode("p", children)
+
+
+def lines_to_children(markdown, tag):
+    lines = markdown.split("\n")
+    lis = []
+    for line in lines:
+        line = re.sub(r"^\s*[-\d]+\.\s|\*\s|\-\s", "", line).strip()
+        children = text_to_children(line)
+        li = ParentNode("li", children=children)
+        lis.append(li)
+    return ParentNode(tag, children=lis)
+
+
+def text_to_children(text):
+    pattern = r"(\*\*.+?\*\*|_.+?_|`.+?`)"
+    tokens = re.split(pattern, text)
+    children = []
+    for token in tokens:
+        if re.match(r"^\*\*(.+?)\*\*$", token):
+            content = token[2:-2]
+            children.append(LeafNode("b", content))
+        elif re.match(r"^_(.+?)_$", token):
+            content = token[1:-1]
+            children.append(LeafNode("i", content))
+        elif re.match(r"^`(.+?)`$", token):
+            content = token[1:-1]
+            children.append(LeafNode("code", content))
+        elif token:
+            text_node = TextNode(token, TextType.TEXT)
+            html_node = text_node_to_html_node(text_node)
+            children.append(html_node)
+    return children
+
+
+def markdown_to_html_node(markdown):
+    blocks = markdown_to_blocks(markdown)
+    nodes = []
+    for block in blocks:
+        block_type = block_to_block_type(block)
+        node = block_type_to_html_node(block_type, block)
+        nodes.append(node)
+    return ParentNode("div", children=nodes).to_html()
+
+
+
+    
