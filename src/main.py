@@ -1,4 +1,5 @@
 from textnode import TextNode
+from functions import generate_page
 import os
 import shutil
 
@@ -21,4 +22,6 @@ def copy_static(source, destination):
         else:
             shutil.copy(source_path, destination_path)
 
+
 copy_static("static", "public")
+generate_page("content/index.md", "content/template.html", "public/index.html")

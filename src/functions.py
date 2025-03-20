@@ -46,7 +46,6 @@ def text_node_to_html_node(text_node):
             )
         case _:
             raise Exception("Wrong type")
-    
     return leaf_node
 
 
@@ -105,7 +104,7 @@ def split_nodes_link(old_nodes):
                 new_nodes.append(TextNode(link[0], TextType.LINK, link[1]))
                 current_text = text_parts[1]
             if current_text:
-                new_nodes.append(TextNode(current_text, TextType.TEXT))                         
+                new_nodes.append(TextNode(current_text, TextType.TEXT))
     return new_nodes
 
 
@@ -170,7 +169,7 @@ def block_to_block_type(markdown):
             return BlockType.HEADING
         case markdown if re.search("^`{3}", lines[0]) and re.search("`{3}$", lines[-1]):
             return BlockType.CODE
-        case markdown if all(re.search("^\>.+$", line) for line in lines):
+        case markdown if all(re.search("^\>", line) for line in lines):
             return BlockType.QUOTE
         case markdown if all(re.search("^\- .+$", line) for line in lines):
             return BlockType.UNORDERED_LIST
@@ -188,15 +187,31 @@ def block_type_to_html_node(block_type, markdown):
             return LeafNode(f"h{hashes}", markdown)
         case BlockType.QUOTE:
             lines = markdown.split("\n")
-            children = text_to_children(markdown)
+            quote = ""
+            for line in lines:
+                line = re.sub(r"^\>\s?", "", line.strip())
+                quote += line + "\n"
+            paragraphs = re.split(r"\n\s*\n", quote.strip())
+            children = []
+            for paragraph in paragraphs:
+                if paragraph.strip():
+                    p_node = ParentNode("p", text_to_children(paragraph.strip()))
+                    children.append(p_node)
             return ParentNode("blockquote", children=children)
         case BlockType.UNORDERED_LIST:
             return lines_to_children(markdown, "ul")
         case BlockType.ORDERED_LIST:
             return lines_to_children(markdown, "ol")
         case BlockType.CODE:
-            markdown = markdown[3:-3]
-            text_node = TextNode(markdown, TextType.TEXT)
+            markdown = re.sub(r"^`{3}|`{3}$", "", markdown)
+            lines = markdown.split("\n")
+            clean = ""
+            for i, line in enumerate(lines):
+                if i < len(lines) - 1:
+                    clean += line.strip() + "\n"
+                else:
+                    clean += line.strip()
+            text_node = TextNode(clean.strip(), TextType.TEXT)
             html_node = text_node_to_html_node(text_node)
             code = ParentNode("code", children=[html_node])
             return ParentNode("pre", children=[code])
@@ -217,23 +232,11 @@ def lines_to_children(markdown, tag):
 
 
 def text_to_children(text):
-    pattern = r"(\*\*.+?\*\*|_.+?_|`.+?`)"
-    tokens = re.split(pattern, text)
+    text_nodes = text_to_textnodes(text)
     children = []
-    for token in tokens:
-        if re.match(r"^\*\*(.+?)\*\*$", token):
-            content = token[2:-2]
-            children.append(LeafNode("b", content))
-        elif re.match(r"^_(.+?)_$", token):
-            content = token[1:-1]
-            children.append(LeafNode("i", content))
-        elif re.match(r"^`(.+?)`$", token):
-            content = token[1:-1]
-            children.append(LeafNode("code", content))
-        elif token:
-            text_node = TextNode(token, TextType.TEXT)
-            html_node = text_node_to_html_node(text_node)
-            children.append(html_node)
+    for text_node in text_nodes:
+        html_node = text_node_to_html_node(text_node)
+        children.append(html_node)
     return children
 
 
@@ -247,5 +250,27 @@ def markdown_to_html_node(markdown):
     return ParentNode("div", children=nodes).to_html()
 
 
+def extract_title(markdown):
+    lines = markdown.splitlines()
+    for line in lines:
+        if re.match(r'^#{1} .+', line):
+            line = line.replace('#', '').strip()
+            return line
+    raise Exception
 
-    
+
+def generate_page(from_path, template_path, dest_path):
+    print(f"Generating page from {from_path} to {dest_path} using {template_path}.")
+    with open(from_path, "r") as md:
+        md_content = md.read()
+        html_node = markdown_to_html_node(md_content)
+        title = extract_title(md_content)
+    with open(template_path, "r") as template:
+        template_content = template.read()
+        template_content = template_content.replace("{{ Title }}", title)
+        template_content = template_content.replace("{{ Content }}", html_node)
+    dest_dir = os.path.dirname(dest_path)
+    if not os.path.exists(dest_dir):
+        os.makedirs(dest_dir)
+    with open(dest_path, 'w') as file:
+        file.write(template_content)
