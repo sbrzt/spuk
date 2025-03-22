@@ -5,6 +5,7 @@ from textnode import TextNode, TextType
 from blocktype import BlockType
 import re
 import os
+import shutil
 
 
 def text_node_to_html_node(text_node):
@@ -259,7 +260,7 @@ def extract_title(markdown):
     raise Exception
 
 
-def generate_page(from_path, template_path, dest_path):
+def generate_page(basepath, from_path, template_path, dest_path):
     print(f"Generating page from {from_path} to {dest_path} using {template_path}.")
     with open(from_path, "r") as md:
         md_content = md.read()
@@ -269,8 +270,39 @@ def generate_page(from_path, template_path, dest_path):
         template_content = template.read()
         template_content = template_content.replace("{{ Title }}", title)
         template_content = template_content.replace("{{ Content }}", html_node)
+        template_content = template_content.replace("href=\"/", f"href=\"{basepath}")
+        template_content = template_content.replace("src=\"/", f"src=\"{basepath}")
     dest_dir = os.path.dirname(dest_path)
     if not os.path.exists(dest_dir):
         os.makedirs(dest_dir)
     with open(dest_path, 'w') as file:
         file.write(template_content)
+
+
+def generate_pages_recursive(basepath, dir_path_content, template_path, dest_dir_path):
+    for file in os.listdir(dir_path_content):
+        source_path = os.path.join(dir_path_content, file)
+        destination_path = os.path.join(dest_dir_path, file)
+        if not os.path.isfile(source_path):
+            if not os.path.exists(destination_path):
+                os.mkdir(destination_path)
+            generate_pages_recursive(basepath, source_path, template_path, destination_path)
+        else:
+            if file.endswith(".md"):
+                destination_path = os.path.join(dest_dir_path, file.replace(".md", ".html"))
+                generate_page(basepath, source_path, template_path, destination_path)
+
+
+def copy_static(source, destination):
+    if os.path.exists(destination):
+        shutil.rmtree(destination)
+        os.mkdir(destination)
+    for file in os.listdir(source):
+        source_path = os.path.join(source, file)
+        destination_path = os.path.join(destination, file)
+        if not os.path.isfile(source_path):
+            if not os.path.exists(destination_path):
+                os.mkdir(destination_path)
+            copy_static(source_path, destination_path)
+        else:
+            shutil.copy(source_path, destination_path)
