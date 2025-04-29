@@ -10,7 +10,7 @@ class HTMLPage:
     def render(self):
         """Generates the HTML for the individual subject."""
         # Start HTML structure
-        html = [f"<html><head><title>{escape_html(str(self.subject))}</title></head><body>"]
+        html = [f"<html><head><meta charset=\"utf-8\"><title>{escape_html(str(self.subject))}</title><link rel=\"stylesheet\" href=\"style.css\"></head><body>"]
         
         # Heading with subject URI
         html.append(f"<h1>{escape_html(str(self.subject))}</h1>")
@@ -46,7 +46,7 @@ class IndexPage:
 
     def render(self):
         """Generates the HTML for the index page."""
-        html = ["<html><head><title>Index</title></head><body>"]
+        html = ["<html><head><title>Index</title><link rel=\"stylesheet\" href=\"style.css\"></head><body>"]
         html.append("<h1>Individuals</h1>")
         html.append("<ul>")
         
