@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from rdflib.plugins.sparql.processor import SPARQLResult
-from app.api.schema import SPARQLQuery
-from app.rdf_graph import RDFGraph
+from src.api.schema import SPARQLQuery
+from src.rdf_graph import RDFGraph
 
 router = APIRouter()
 rdf = RDFGraph("data/data.ttl")  # Load RDF graph once

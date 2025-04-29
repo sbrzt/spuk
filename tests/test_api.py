@@ -1,6 +1,6 @@
 import unittest
 from fastapi.testclient import TestClient
-from api_main import app
+from api import app
 
 client = TestClient(app)
 

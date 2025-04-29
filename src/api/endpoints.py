@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from app.rdf_graph import RDFGraph
-from app.utils import uri_to_filename
+from src.rdf_graph import RDFGraph
+from src.utils import uri_to_filename
 
 router = APIRouter()
 rdf = RDFGraph("data/data.ttl")

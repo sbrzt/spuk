@@ -1,5 +1,5 @@
 import unittest
-from app.rdf_graph import RDFGraph
+from src.rdf_graph import RDFGraph
 from rdflib import URIRef
 
 class TestRDFGraph(unittest.TestCase):

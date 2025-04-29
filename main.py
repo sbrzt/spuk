@@ -1,5 +1,5 @@
-from app.rdf_graph import RDFGraph
-from app.html_page import HTMLPage, IndexPage
+from src.rdf_graph import RDFGraph
+from src.html_page import HTMLPage, IndexPage
 
 def main():
     rdf = RDFGraph("data/data.ttl")

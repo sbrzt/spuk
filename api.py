@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from app.api.endpoints import router as entities_router
-from app.api.sparql import router as sparql_router
+from src.api.endpoints import router as entities_router
+from src.api.sparql import router as sparql_router
 
 app = FastAPI(title="RDF Graph API")
 

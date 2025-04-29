@@ -1,4 +1,4 @@
-from app.utils import escape_html, uri_to_filename
+from src.utils import escape_html, uri_to_filename
 import os
 
 class HTMLPage:

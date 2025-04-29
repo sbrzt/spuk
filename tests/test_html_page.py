@@ -1,6 +1,6 @@
 import unittest
 import os
-from app.html_page import HTMLPage
+from src.html_page import HTMLPage
 from rdflib import URIRef
 
 class TestHTMLPage(unittest.TestCase):
