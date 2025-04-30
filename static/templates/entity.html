@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ subject }}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">{{ subject }}</h1>
+  <ul>
+    {% for triple in properties %}
+    <li><strong>{{ triple[0] }}</strong>: {{ triple[1] }}</li>
+    {% endfor %}
+  </ul>
+  <p><a href="index.html">← Back to index</a></p>
+</body>
+</html>

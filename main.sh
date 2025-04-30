@@ -3,6 +3,8 @@
 # Exit if any command fails
 set -e
 
+fuser -k 8001/tcp 2>/dev/null || true
+
 echo "🔄 Building the static site..."
 ./build.sh  # Run the site generator (build.sh)
 

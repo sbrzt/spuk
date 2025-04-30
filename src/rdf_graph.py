@@ -6,7 +6,7 @@ class RDFGraph:
         self.graph.parse(rdf_file)
         print(f"🔗 Loaded {len(self.graph)} triples from {rdf_file}")
 
-    def get_individuals(self):
+    def get_entities(self):
         """Return all unique subjects in the RDF graph."""
         return list(set(self.graph.subjects()))
 

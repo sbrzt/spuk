@@ -5,20 +5,20 @@ from api import app
 client = TestClient(app)
 
 class TestAPI(unittest.TestCase):
-    def test_list_individuals(self):
-        response = client.get("/individuals")
+    def test_list_entities(self):
+        response = client.get("/entities")
         self.assertEqual(response.status_code, 200)
-        self.assertIn("individuals", response.json())
+        self.assertIn("entities", response.json())
 
-    def test_get_individual(self):
-        # NOTE: Adjust "Alice" to match one of your test individuals
-        response = client.get("/individuals/Alice")
+    def test_get_entity(self):
+        # NOTE: Adjust "Alice" to match one of your test entities
+        response = client.get("/entities/Alice")
         self.assertEqual(response.status_code, 200)
         self.assertIn("subject", response.json())
         self.assertIn("properties", response.json())
 
-    def test_get_invalid_individual(self):
-        response = client.get("/individuals/NotARealID")
+    def test_get_invalid_entity(self):
+        response = client.get("/entities/NotARealID")
         self.assertEqual(response.status_code, 404)
 
     def test_sparql_query_select(self):

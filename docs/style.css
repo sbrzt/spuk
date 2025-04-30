@@ -1,19 +1,7 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
+
 body {
     font-family: sans-serif;
-    background: #f9f9f9;
     color: #333;
     margin: 2rem;
-}
-
-a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1, h2 {
-    color: #222;
 }
