@@ -1,5 +1,5 @@
 from jinja2 import Environment, FileSystemLoader
-from src.utils import escape_html, uri_to_filename
+from src.utils import escape_html, uri_to_filename, get_uri_label
 import os
 
 env = Environment(loader=FileSystemLoader("static/templates"))
@@ -13,7 +13,11 @@ class HTMLPage:
     def render(self):
         """Generates the HTML for the entity subject."""
         template = env.get_template("entity.html")
-        return template.render(subject=self.subject, properties=self.properties)
+        return template.render(
+            subject_uri = self.subject, 
+            subject_label = get_uri_label(self.subject),
+            properties = self.properties
+        )
 
     def save(self, output_dir="docs"):
         """Saves the HTML page to the output directory."""
@@ -36,7 +40,7 @@ class IndexPage:
         template = env.get_template("index.html")
         items = [
             {
-                "label": str(entity),
+                "label": get_uri_label(str(entity)),
                 "filename": uri_to_filename(str(entity))
             }
             for entity in self.entities

@@ -3,16 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ subject }}</title>
+  <title>{{ subject_label }}</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="title">{{ subject }}</h1>
-  <ul>
-    {% for triple in properties %}
-    <li><strong>{{ triple[0] }}</strong>: {{ triple[1] }}</li>
-    {% endfor %}
-  </ul>
+  <h1 class="title">{{ subject_label }}</h1>
+
+  <table class="table is-hoverable">
+    <thead>
+      <tr>
+        <th>Predicate</th>
+        <th>Object</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for triple in properties %}
+      <tr>
+        <td>
+          <a href="{{ triple.predicate_uri }}">{{ triple.predicate }}</a>
+        </td>
+        <td>
+          {% if triple.object_uri %}
+            <a href="{{ triple.object_uri }}">{{ triple.object }}</a>
+          {% else %}
+            {{ triple.object }}
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
   <p><a href="index.html">← Back to index</a></p>
 </body>
 </html>

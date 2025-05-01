@@ -4,7 +4,7 @@ from src.api.schema import SPARQLQuery
 from src.rdf_graph import RDFGraph
 
 router = APIRouter()
-rdf = RDFGraph("data/data.ttl")  # Load RDF graph once
+rdf = RDFGraph("data/data.ttl")
 
 @router.post("/sparql")
 def sparql_query(query: SPARQLQuery):
