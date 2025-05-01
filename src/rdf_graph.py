@@ -32,3 +32,9 @@ class RDFGraph:
                     "object_uri": str(o) if isinstance(o, URIRef) else None
                 })
         return results
+
+    def get_summary(self):
+        return {
+            "num_triples": len(self.graph),
+            "num_entities": len(self.entities),
+        }

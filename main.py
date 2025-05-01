@@ -4,13 +4,14 @@ from src.html_page import HTMLPage, IndexPage
 def main():
     rdf = RDFGraph("data/data.ttl")
     entities = rdf.get_entities()
+    summary = rdf.get_summary()
 
     for entity in entities:
         properties = rdf.get_properties(entity)
         page = HTMLPage(entity, properties)
         page.save()
 
-    index_page = IndexPage(entities)
+    index_page = IndexPage(entities, summary)
     index_page.save()
 
     print("🎉 All pages generated successfully!")

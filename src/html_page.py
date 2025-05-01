@@ -31,9 +31,10 @@ class HTMLPage:
 
 
 class IndexPage:
-    def __init__(self, entities):
+    def __init__(self, entities, summary):
         """Initializes the IndexPage with the list of entities."""
         self.entities = entities
+        self.summary = summary
 
     def render(self):
         """Generates the HTML for the index page."""
@@ -45,7 +46,7 @@ class IndexPage:
             }
             for entity in self.entities
         ]
-        return template.render(entities=items)
+        return template.render(entities=items, summary=self.summary)
 
     def save(self, output_dir="docs"):
         """Saves the index HTML page."""

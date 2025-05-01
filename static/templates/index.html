@@ -7,11 +7,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="title">Entities</h1>
-  <ul>
-    {% for entity in entities %}
-    <li><a href="{{ entity.filename }}">{{ entity.label }}</a></li>
-    {% endfor %}
-  </ul>
+  <h1 class="title">SPUK</h1>
+
+  <div class="block">
+    <h2 class="title">Entities</h2>
+    <ul>
+      {% for entity in entities %}
+      <li><a href="{{ entity.filename }}">{{ entity.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2 class="title">Summary</h2>
+    <ul>
+      <li>Total triples: {{ summary.num_triples }}</li>
+      <li>Total entities: {{ summary.num_entities }}</li>
+    </ul>
+  </div>
+
 </body>
 </html>
