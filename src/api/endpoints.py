@@ -22,5 +22,5 @@ def get_entity(id: str):
     props = rdf.get_properties(subject_uri)
     return {
         "subject": str(subject_uri),
-        "properties": [{"predicate": str(p), "object": str(o)} for p, o in props]
+        "properties": [{"predicate": str(p["predicate_uri"]), "object": str(p["object"])} for p in props]
     }
