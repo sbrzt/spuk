@@ -1,5 +1,5 @@
 from rdflib import Graph, URIRef
-from src.utils import get_uri_label, uri_to_filename
+from src.utils import get_uri_label, uri_to_filename, get_namespace
 
 
 class RDFGraph:
@@ -34,7 +34,22 @@ class RDFGraph:
         return results
 
     def get_summary(self):
+
+        used_namespaces = set()
+        for s, p, o in self.graph:
+            if isinstance(s, URIRef):
+                used_namespaces.add(get_namespace(s))
+            used_namespaces.add(get_namespace(p))
+            if isinstance(o, URIRef):
+                used_namespaces.add(get_namespace(o))
+
+        prefix_map = {str(ns): prefix for prefix, ns in self.graph.namespaces()}
+        models_used = [
+            (prefix_map[ns], ns) for ns in sorted(used_namespaces) if ns in prefix_map
+        ]
+
         return {
             "num_triples": len(self.graph),
             "num_entities": len(self.entities),
+            "models_used": models_used
         }

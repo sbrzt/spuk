@@ -7,22 +7,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="title">SPUK</h1>
+
+  {% include "navbar.html" %}
 
   <div class="block">
-    <h2 class="title">Entities</h2>
+    <h2 class="title" id="summary">Summary</h2>
     <ul>
-      {% for entity in entities %}
-      <li><a href="{{ entity.filename }}">{{ entity.label }}</a></li>
-      {% endfor %}
+      <li>
+        Models used: 
+          {% for model in summary.models_used %} 
+            <a class="tag is-link is-light is-medium is-rounded" href="{{model[1]}}">{{model[0]}}</a>
+          {% endfor %}
+      </li>
+      <li>Number of triples: {{ summary.num_triples }}</li>
+      <li>Number of entities: {{ summary.num_entities }}</li>
+      <li>Number of classes used</li>
+      <li>Class instace counts (How many instances per class)</li>
+      <li>Predicate usage frequency (Popularity of relationships)</li>
+      <li>Average node degree (Count of links per node (in+out))</li>
+      <li>Average properties per entity< (Number of relationships per entity)/li>
     </ul>
   </div>
 
   <div class="block">
-    <h2 class="title">Summary</h2>
+    <h2 class="title" id="entities">Entities</h2>
     <ul>
-      <li>Total triples: {{ summary.num_triples }}</li>
-      <li>Total entities: {{ summary.num_entities }}</li>
+      {% for entity in entities %}
+      <li><a href="{{ entity.filename }}">{{ entity.label }}</a></li>
+      {% endfor %}
     </ul>
   </div>
 

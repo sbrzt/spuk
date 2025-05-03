@@ -16,4 +16,8 @@ def uri_to_filename(uri: str) -> str:
     """Convert a URI into a valid HTML filename (strip protocol and fragments)."""
     return uri.strip().split('/')[-1].replace('#', '_') + ".html"
 
-
+def get_namespace(uri: str) -> str:
+    if "#" in uri:
+        return uri.rsplit("#", 1)[0] + "#"
+    else:
+        return uri.rsplit("/", 1)[0] + "/"
