@@ -15,7 +15,7 @@ class HTMLPage:
         template = env.get_template("entity.html")
         return template.render(
             subject_uri = self.subject, 
-            subject_label = get_uri_label(self.subject),
+            subject_label = self.subject,
             properties = self.properties
         )
 
@@ -41,7 +41,7 @@ class IndexPage:
         template = env.get_template("index.html")
         items = [
             {
-                "label": get_uri_label(str(entity)),
+                "label": str(entity),
                 "filename": uri_to_filename(str(entity))
             }
             for entity in self.entities

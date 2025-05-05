@@ -55,11 +55,13 @@
     </div>
   </div>
 
-  <h2 class="title is-2" id="entities">Entities</h2>
-  <div class="block">
+  <div class="box">
+    <h2 class="title is-2" id="entities">Entities</h2>
     <ul>
       {% for entity in entities %}
-      <li><a href="{{ entity.filename }}">{{ entity.label }}</a></li>
+      <li>
+        <a class="tag is-link is-light is-medium" href="{{ entity.filename }}">{{ entity.label }}</a>
+      </li>
       {% endfor %}
     </ul>
   </div>

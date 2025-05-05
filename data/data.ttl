@@ -1,4 +1,4 @@
-@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix aat: <http://vocab.getty.edu/aat/> .
 @prefix ex: <https://w3id.org/dharc/ontology/chad-ap/object/data/06/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .

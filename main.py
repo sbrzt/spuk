@@ -2,7 +2,7 @@ from src.rdf_graph import RDFGraph
 from src.html_page import HTMLPage, IndexPage
 
 def main():
-    rdf = RDFGraph("data/data.ttl")
+    rdf = RDFGraph("https://ddceramics.duckdns.org/ceramics/sparql", is_sparql_endpoint=True)
     entities = rdf.get_entities()
     summary = rdf.get_summary()
 

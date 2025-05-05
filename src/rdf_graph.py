@@ -1,16 +1,20 @@
 from rdflib import Graph, URIRef, RDF
 from src.utils import get_uri_label, uri_to_filename, get_namespace
 from collections import defaultdict
-import pygal
+from SPARQLWrapper import SPARQLWrapper, GET, TURTLE
+import pygal, logging, requests
 
 
 class RDFGraph:
-    def __init__(self, rdf_file: str):
+    def __init__(self, source: str, is_sparql_endpoint=False):
         self.graph = Graph()
-        self.graph.parse(rdf_file)
+        if is_sparql_endpoint:
+            self.load_from_sparql(source)
+        else:
+            self.graph.parse(source)
         self.entities = list(set(self.graph.subjects()))
         self.classes = self.get_classes()
-        print(f"🔗 Loaded {len(self.graph)} triples from {rdf_file}")
+        print(f"🔗 Loaded {len(self.graph)} triples from {source}")
 
     def get_entities(self):
         """Return all unique subjects in the RDF graph."""
@@ -93,7 +97,7 @@ class RDFGraph:
         bar_chart.y_labels = list(range(0, max_value + 1))
         return bar_chart.render(
             legend_at_bottom=True,
-            legend_box_size=10,
+            legend_box_size=5,
             legend_at_bottom_columns=3,
             print_values=True,
             print_values_position="top",
@@ -122,3 +126,16 @@ class RDFGraph:
             "property_usage_chart": self.generate_bar("Property frequency", self.get_property_usage()),
 
         }
+
+    def load_from_sparql(self, endpoint_url: str):
+        query = """
+        CONSTRUCT { ?s ?p ?o }
+        WHERE { ?s ?p ?o }
+        """
+        sparql = SPARQLWrapper(endpoint_url, agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11")
+        sparql.setQuery(query)
+        sparql.setMethod(GET)
+        sparql.setReturnFormat(TURTLE)
+        response = sparql.query().convert()
+        self.graph.parse(data=response.decode("utf-8"), format="turtle")
+        print("✅ Data loaded using SPARQLWrapper.")
