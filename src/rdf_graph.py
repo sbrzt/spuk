@@ -1,5 +1,7 @@
-from rdflib import Graph, URIRef
+from rdflib import Graph, URIRef, RDF
 from src.utils import get_uri_label, uri_to_filename, get_namespace
+from collections import defaultdict
+import pygal
 
 
 class RDFGraph:
@@ -7,6 +9,7 @@ class RDFGraph:
         self.graph = Graph()
         self.graph.parse(rdf_file)
         self.entities = list(set(self.graph.subjects()))
+        self.classes = self.get_classes()
         print(f"🔗 Loaded {len(self.graph)} triples from {rdf_file}")
 
     def get_entities(self):
@@ -33,8 +36,70 @@ class RDFGraph:
                 })
         return results
 
-    def get_summary(self):
+    def get_classes(self):
+        classes = set()
+        for s, p, o in self.graph:
+            if p == RDF.type and isinstance(o, URIRef):
+                classes.add(str(o))
+        return classes
 
+    def get_class_entities(self):
+        class_entities = {}
+        for s, p, o in self.graph:
+            if p == RDF.type and isinstance(o, URIRef):
+                class_uri = str(o)
+                if class_uri not in class_entities:
+                    class_entities[class_uri] = {
+                        "uri": class_uri,
+                        "label": get_uri_label(class_uri),
+                        "entities": [],
+                        "frequency": 0
+                    }
+                class_entities[class_uri]["entities"].append(str(s))
+                class_entities[class_uri]["frequency"] += 1
+        return sorted(class_entities.values(), key=lambda x: x["frequency"], reverse=True)
+
+    def get_property_usage(self):
+        property_usage = defaultdict(int)
+        for s, p, o in self.graph:
+            if isinstance(p, URIRef):
+                property_usage[str(p)] += 1
+        prop_usage = []
+        for uri, freq in property_usage.items():
+            prop_label = get_uri_label(uri)
+            prop_usage.append({
+                "uri": uri,
+                "label": prop_label,
+                "frequency": freq
+            })
+        prop_usage = sorted(prop_usage, key=lambda x: x["frequency"], reverse=True)
+        return prop_usage
+
+    def generate_bar(self, title, data):
+        bar_chart = pygal.HorizontalBar(
+            style=pygal.style.Style(
+                background="white",
+                plot_background="white",
+                opacity=".6",
+                opacity_hover=".8",
+                value_colors=("black",)
+            ))
+        bar_chart.title = title
+        max_value = 0
+        for d in data:
+            bar_chart.add(d["label"], d["frequency"])
+            if d["frequency"] > max_value:
+                max_value = d["frequency"]
+        bar_chart.y_labels = list(range(0, max_value + 1))
+        return bar_chart.render(
+            legend_at_bottom=True,
+            legend_box_size=10,
+            legend_at_bottom_columns=3,
+            print_values=True,
+            print_values_position="top",
+            ).decode("utf-8")
+
+    def get_summary(self):
         used_namespaces = set()
         for s, p, o in self.graph:
             if isinstance(s, URIRef):
@@ -51,5 +116,9 @@ class RDFGraph:
         return {
             "num_triples": len(self.graph),
             "num_entities": len(self.entities),
-            "models_used": models_used
+            "num_classes": len(self.classes),
+            "models_used": models_used,
+            "class_entities_counts_chart": self.generate_bar("Entity frequency", self.get_class_entities()),
+            "property_usage_chart": self.generate_bar("Property frequency", self.get_property_usage()),
+
         }

@@ -21,3 +21,4 @@ def get_namespace(uri: str) -> str:
         return uri.rsplit("#", 1)[0] + "#"
     else:
         return uri.rsplit("/", 1)[0] + "/"
+

@@ -5,32 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Index</title>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://kozea.github.com/pygal.js/latest/pygal-tooltips.min.js"></script>
 </head>
 <body>
 
   {% include "navbar.html" %}
 
+  <h2 class="title is-2" id="summary">Summary</h2>
+  
   <div class="block">
-    <h2 class="title" id="summary">Summary</h2>
-    <ul>
-      <li>
-        Models used: 
-          {% for model in summary.models_used %} 
-            <a class="tag is-link is-light is-medium is-rounded" href="{{model[1]}}">{{model[0]}}</a>
-          {% endfor %}
-      </li>
-      <li>Number of triples: {{ summary.num_triples }}</li>
-      <li>Number of entities: {{ summary.num_entities }}</li>
-      <li>Number of classes used</li>
-      <li>Class instace counts (How many instances per class)</li>
-      <li>Predicate usage frequency (Popularity of relationships)</li>
-      <li>Average node degree (Count of links per node (in+out))</li>
-      <li>Average properties per entity< (Number of relationships per entity)/li>
-    </ul>
+    <h3 class="title is-3">Models used</h3>
+    {% for model in summary.models_used %} 
+      <a class="tag is-link is-light is-medium" href="{{model[1]}}">{{model[0]}}</a>
+    {% endfor %}
   </div>
 
+  <h3 class="title is-3">Statistics</h3>
+  <div class="grid">
+    <div class="block cell">
+      <div class="box has-text-centered">
+          <div class="content is-large">
+            {{ summary.num_triples }} triples
+          </div>
+      </div>
+    </div>
+    <div class="block cell">
+      <div class="box has-text-centered">
+          <div class="content is-large">
+            {{ summary.num_entities }} entities
+          </div>
+      </div>
+    </div>
+    <div class="block cell">
+      <div class="box has-text-centered">
+          <div class="content is-large">
+            {{ summary.num_classes }} classes
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="box cell">
+      <figure>
+        {{ summary.class_entities_counts_chart }}
+      </figure>
+    </div>
+    <div class="box cell">
+      {{ summary.property_usage_chart }}
+    </div>
+  </div>
+
+  <h2 class="title is-2" id="entities">Entities</h2>
   <div class="block">
-    <h2 class="title" id="entities">Entities</h2>
     <ul>
       {% for entity in entities %}
       <li><a href="{{ entity.filename }}">{{ entity.label }}</a></li>
