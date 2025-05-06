@@ -38,22 +38,16 @@ class RDFGraph:
         def format_object(o):
             if isinstance(o, URIRef) and o in self.entities:
                 return {
-                    "is_data_property": False,
-                    "is_internal": True,
                     "object_label": get_uri_label(str(o)),
                     "object_uri": uri_to_filename(str(o))
                 }
             elif isinstance(o, URIRef) and o not in self.entities:
                 return {
-                    "is_data_property": False,
-                    "is_internal": False,
                     "object_label": get_uri_label(str(o)),
                     "object_uri": str(o)
                 }
             else:
                 return {
-                    "is_data_property": True,
-                    "is_internal": False,
                     "object_label": str(o),
                     "object_uri": None
                 }
