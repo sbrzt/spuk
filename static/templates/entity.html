@@ -6,15 +6,15 @@
   <table class="table is-hoverable">
     <thead>
       <tr>
-        <th>Predicate</th>
+        <th>Property</th>
         <th>Object</th>
       </tr>
     </thead>
     <tbody>
-      {% for triple in properties %}
+      {% for triple in property_object_pairs %}
       <tr>
         <td>
-          <a href="{{ triple.predicate_uri }}">{{ triple.predicate_label }}</a>
+          <a href="{{ triple.property_uri }}">{{ triple.property_label }}</a>
         </td>
         <td>
           {% if triple.object_uri %}

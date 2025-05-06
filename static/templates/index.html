@@ -16,18 +16,27 @@
           </div>
       </div>
       <div class="box cell has-text-centered">
+        <h3 class="title is-3">Properties</h3>
+          <div class="content is-large">
+            {{ summary.num_properties }}
+          </div>
+      </div>
+      <div class="box cell has-text-centered">
         <h3 class="title is-3">Classes</h3>
           <div class="content is-large">
             {{ summary.num_classes }}
           </div>
       </div>
-      <div class="box cell has-text-centered">
-        <h3 class="title is-3">Models</h3>
-        <div class="content is-large">
-          {% for model in summary.models_used %} 
-            <a class="tag is-link is-light" href="{{model[1]}}">{{model[0]}}</a>
-          {% endfor %}
-        </div>
+  </div>
+  
+  <div class="grid">
+    <div class="box cell has-text-centered">
+      <h3 class="title is-3">Models</h3>
+      <div class="content is-large">
+        {% for model in summary.models_used %} 
+          <a class="tag is-link is-light" href="{{model[1]}}">{{model[0]}}</a>
+        {% endfor %}
+      </div>
     </div>
   </div>
   

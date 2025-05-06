@@ -5,18 +5,18 @@ import os
 env = Environment(loader=FileSystemLoader("static/templates"))
 
 class HTMLPage:
-    def __init__(self, subject, properties):
+    def __init__(self, subject, property_object_pairs):
         """Initializes the HTMLPage with subject and its properties."""
         self.subject = subject
-        self.properties = properties
+        self.property_object_pairs = property_object_pairs
 
     def render(self):
         """Generates the HTML for the entity subject."""
         template = env.get_template("entity.html")
         return template.render(
-            subject_uri = self.subject, 
+            subject_uri = self.subject,
             subject_label = self.subject,
-            properties = self.properties
+            property_object_pairs = self.property_object_pairs
         )
 
     def save(self, output_dir="docs"):
