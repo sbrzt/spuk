@@ -16,29 +16,57 @@ class RDFGraph:
         self.classes = self.get_classes()
         print(f"🔗 Loaded {len(self.graph)} triples from {source}")
 
+    def load_from_sparql(self, endpoint_url: str):
+        query = """
+        CONSTRUCT { ?s ?p ?o }
+        WHERE { ?s ?p ?o }
+        """
+        sparql = SPARQLWrapper(endpoint_url, agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11")
+        sparql.setQuery(query)
+        sparql.setMethod(GET)
+        sparql.setReturnFormat(TURTLE)
+        response = sparql.query().convert()
+        self.graph.parse(data=response.decode("utf-8"), format="turtle")
+        print(f"✅ Data loaded from {endpoint_url}.")
+
     def get_entities(self):
-        """Return all unique subjects in the RDF graph."""
+        """Return all entities in the RDF graph."""
         return self.entities
 
     def get_properties(self, subject):
         """Return all (predicate, object) pairs for a given subject."""
-        results = []
-        for p, o in self.graph.predicate_objects(subject):
+        def format_object(o):
             if isinstance(o, URIRef) and o in self.entities:
-                results.append({
-                    "predicate": get_uri_label(str(p)),
-                    "predicate_uri": str(p),
-                    "object": get_uri_label(str(o)),
+                return {
+                    "is_data_property": False,
+                    "is_internal": True,
+                    "object_label": get_uri_label(str(o)),
                     "object_uri": uri_to_filename(str(o))
-                })
+                }
+            elif isinstance(o, URIRef) and o not in self.entities:
+                return {
+                    "is_data_property": False,
+                    "is_internal": False,
+                    "object_label": get_uri_label(str(o)),
+                    "object_uri": str(o)
+                }
             else:
-                results.append({
-                    "predicate": get_uri_label(str(p)),
-                    "predicate_uri": str(p),
-                    "object": get_uri_label(str(o)) if isinstance(o, URIRef) else str(o),
-                    "object_uri": str(o) if isinstance(o, URIRef) else None
-                })
-        return results
+                return {
+                    "is_data_property": True,
+                    "is_internal": False,
+                    "object_label": str(o),
+                    "object_uri": None
+                }
+        return [
+            {
+                "predicate_label": get_uri_label(str(p)),
+                "predicate_uri": str(p),
+                **format_object(o)
+            }
+            for p, o in self.graph.predicate_objects(subject)
+        ]
+
+    
 
     def get_classes(self):
         classes = set()
