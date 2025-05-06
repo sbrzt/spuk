@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ subject_label }}</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+{% extends "base.html" %}
 
+  {% block content %}
   <h1 class="title">{{ subject_label }}</h1>
 
   <table class="table is-hoverable">
@@ -36,5 +29,4 @@
   </table>
 
   <p><a href="index.html">← Back to index</a></p>
-</body>
-</html>
+  {% endblock %}

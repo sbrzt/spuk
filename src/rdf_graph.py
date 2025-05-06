@@ -89,18 +89,15 @@ class RDFGraph:
                 value_colors=("black",)
             ))
         bar_chart.title = title
-        max_value = 0
         for d in data:
             bar_chart.add(d["label"], d["frequency"])
-            if d["frequency"] > max_value:
-                max_value = d["frequency"]
-        bar_chart.y_labels = list(range(0, max_value + 1))
         return bar_chart.render(
             legend_at_bottom=True,
             legend_box_size=5,
             legend_at_bottom_columns=3,
             print_values=True,
             print_values_position="top",
+            order_min=1,
             ).decode("utf-8")
 
     def get_summary(self):
