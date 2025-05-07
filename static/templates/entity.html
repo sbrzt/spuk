@@ -14,11 +14,11 @@
       {% for triple in property_object_pairs %}
       <tr>
         <td>
-          <a href="{{ triple.property_uri }}">{{ triple.property_label }}</a>
+          <a href="{{ triple.property_uri }}" target="_blank">{{ triple.property_label }}</a>
         </td>
         <td>
           {% if triple.object_uri %}
-            <a href="{{ triple.object_uri }}">{{ triple.object_uri }}</a>
+            <a href="{{ triple.object_uri }}" target="_blank">{{ triple.object_uri }}</a>
           {% else %}
             {{ triple.object_label }}
           {% endif %}

@@ -34,9 +34,14 @@
       <h3 class="title is-3">Models</h3>
       <div class="content is-large">
         {% for model in summary.models_used %} 
-          <a class="tag is-link is-light" href="{{model[1]}}">{{model[0]}}</a>
+          <a class="tag is-link is-light" href="{{model.uri}}">{{model.label}}: {{model.frequency}}</a>
         {% endfor %}
       </div>
+    </div>
+    <div class="box cell">
+        <figure>
+          {{ summary.models_usage }}
+        </figure>
     </div>
   </div>
   

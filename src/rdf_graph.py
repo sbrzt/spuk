@@ -24,6 +24,11 @@ class RDFGraph:
             "frequency": 0
         })
         self.property_object_data = defaultdict(list)
+        self.model_data = defaultdict(lambda: {
+            "uri": None,
+            "label": None,
+            "frequency": 0
+        })
         self.analyze_graph()
         print(f"🔗 Loaded {len(self.graph)} triples from {source}")
 
@@ -40,7 +45,6 @@ class RDFGraph:
         response = sparql.query().convert()
         self.graph.parse(data=response.decode("utf-8"), format="turtle")
         print(f"✅ Data loaded from {endpoint_url}.")
-
 
     def get_entity_data(self):
         return self.entity_data
@@ -62,16 +66,32 @@ class RDFGraph:
     def get_property_object_data(self):
         return dict(self.property_object_data)
 
+    def get_model_data(self):
+        return sorted(
+            self.model_data.values(),
+            key=lambda x: x["frequency"],
+            reverse=True
+        )
+
     def analyze_graph(self):
         for s, p, o in self.graph:
             s_str = str(s)
 
             if isinstance(s, URIRef):
                 self.entity_data.add(s_str)
-
+                for prefix, ns in self.graph.namespaces():
+                    if get_namespace(s) == str(ns):
+                        model_uri = get_namespace(s)
+                        self.model_data[model_uri]["uri"] = model_uri
+                        self.model_data[model_uri]["label"] = prefix
+                        self.model_data[model_uri]["frequency"] += 1
+                
             if isinstance(p, URIRef):
                 property_uri = str(p)
                 property_label = get_uri_label(property_uri)
+
+                
+
                 object_label, object_uri = self.format_object(o)
                 self.property_object_data[s_str].append({
                     "property_label": property_label,
@@ -82,18 +102,31 @@ class RDFGraph:
                 self.property_data[property_uri]["label"] = property_label
                 self.property_data[property_uri]["uri"] = property_uri
                 self.property_data[property_uri]["frequency"] += 1
+                for prefix, ns in self.graph.namespaces():
+                    if get_namespace(p) == str(ns):
+                        model_uri = get_namespace(p)
+                        self.model_data[model_uri]["uri"] = model_uri
+                        self.model_data[model_uri]["label"] = prefix
+                        self.model_data[model_uri]["frequency"] += 1
             
-            if p == RDF.type and isinstance(o, URIRef):
-                class_uri = str(o)
-                self.class_data[class_uri]["label"] = get_uri_label(class_uri)
-                self.class_data[class_uri]["uri"] = class_uri
-                self.class_data[class_uri]["entities"].append(s_str)
-        
+            if isinstance(o, URIRef):
+                if p == RDF.type:
+                    class_uri = str(o)
+                    self.class_data[class_uri]["label"] = get_uri_label(class_uri)
+                    self.class_data[class_uri]["uri"] = class_uri
+                    self.class_data[class_uri]["entities"].append(s_str)
+                for prefix, ns in self.graph.namespaces():
+                    if get_namespace(o) == str(ns):
+                        model_uri = get_namespace(o)
+                        self.model_data[model_uri]["uri"] = model_uri
+                        self.model_data[model_uri]["label"] = prefix
+                        self.model_data[model_uri]["frequency"] += 1
+
         self.entity_data = list(self.entity_data)
 
         for data in self.class_data.values():
             data["frequency"] = len(data["entities"])
-        
+
     def format_object(self, o):
         if isinstance(o, URIRef):
             o_str = str(o)
@@ -111,7 +144,8 @@ class RDFGraph:
                 opacity=".6",
                 opacity_hover=".8",
                 value_colors=("black",)
-            ))
+            )
+        )
         bar_chart.title = title
         for d in data:
             bar_chart.add(d["label"], d["frequency"])
@@ -124,28 +158,14 @@ class RDFGraph:
             order_min=1,
             ).decode("utf-8")
 
-
     def get_summary(self):
-        used_namespaces = set()
-        for s, p, o in self.graph:
-            if isinstance(s, URIRef):
-                used_namespaces.add(get_namespace(s))
-            used_namespaces.add(get_namespace(p))
-            if isinstance(o, URIRef):
-                used_namespaces.add(get_namespace(o))
-
-        prefix_map = {str(ns): prefix for prefix, ns in self.graph.namespaces()}
-        models_used = [
-            (prefix_map[ns], ns) for ns in sorted(used_namespaces) if ns in prefix_map
-        ]
-
         return {
             "num_triples": len(self.graph),
             "num_entities": len(self.get_entity_data()),
             "num_properties": len(self.get_property_data()),
             "num_classes": len(self.get_class_data()),
-            "models_used": models_used,
+            "models_used": self.get_model_data(),
             "class_entities_counts_chart": self.generate_bar("Entity frequency", self.get_class_data()),
             "property_usage_chart": self.generate_bar("Property frequency", self.get_property_data()),
-
+            "models_usage": self.generate_bar("Model usage", self.get_model_data())
         }

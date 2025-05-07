@@ -27,7 +27,7 @@ class HTMLPage:
         os.makedirs(output_dir, exist_ok=True)
         with open(output_path, "w") as f:
             f.write(html)
-        print(f"✅ Saved HTML for {self.subject} to {output_path}")
+        #print(f"✅ Saved HTML for {self.subject} to {output_path}")
 
 
 class IndexPage:
