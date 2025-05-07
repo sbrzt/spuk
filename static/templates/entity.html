@@ -1,7 +1,22 @@
 {% extends "base.html" %}
+{% set type_triples = property_object_pairs | selectattr('is_type') | list %}
+{% set other_triples = property_object_pairs | rejectattr('is_type') | list %}
 
   {% block content %}
   <h1 class="title">{{ subject_label }}</h1>
+
+  {% if type_triples %}
+    <div class="block">
+      <strong>Type:</strong>
+      {% for triple in type_triples %}
+        {% if triple.object_uri %}
+          <a href="{{ triple.object_uri }}" target="_blank">{{ triple.object_label }}</a>{% if not loop.last %}, {% endif %}
+        {% else %}
+          {{ triple.object_label }}{% if not loop.last %}, {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
 
   <table class="table is-hoverable">
     <thead>
@@ -11,7 +26,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for triple in property_object_pairs %}
+      {% for triple in other_triples %}
       <tr>
         <td>
           <a href="{{ triple.property_uri }}" target="_blank">{{ triple.property_label }}</a>

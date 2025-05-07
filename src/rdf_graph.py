@@ -74,11 +74,10 @@ class RDFGraph:
         )
 
     def analyze_graph(self):
+        self.entity_data.update([str(s) for s in self.graph.subjects()])
         for s, p, o in self.graph:
             s_str = str(s)
-
             if isinstance(s, URIRef):
-                self.entity_data.add(s_str)
                 for prefix, ns in self.graph.namespaces():
                     if get_namespace(s) == str(ns):
                         model_uri = get_namespace(s)
@@ -89,15 +88,13 @@ class RDFGraph:
             if isinstance(p, URIRef):
                 property_uri = str(p)
                 property_label = get_uri_label(property_uri)
-
-                
-
                 object_label, object_uri = self.format_object(o)
                 self.property_object_data[s_str].append({
                     "property_label": property_label,
                     "property_uri": property_uri,
                     "object_label": object_label,
-                    "object_uri": object_uri
+                    "object_uri": object_uri,
+                    "is_type": True if p == RDF.type else False
                 })
                 self.property_data[property_uri]["label"] = property_label
                 self.property_data[property_uri]["uri"] = property_uri
