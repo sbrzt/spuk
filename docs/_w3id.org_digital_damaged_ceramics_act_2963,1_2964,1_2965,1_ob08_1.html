@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html 
+lang="en"
+class="has-navbar-fixed-top">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +11,13 @@
     </head>
     <body>
         <div class="block">
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
+  <nav 
+  class="navbar is-fixed-top is-spaced has-shadow" 
+  role="navigation" 
+  aria-label="main navigation">
+    <div class="navbar-brand is-large">
       <a class="navbar-item" href="#">
-        <img src="/static/img/logo.png" width="100"/>
+        <img src="img/logo.png"/>
         SPUK
       </a>
   
@@ -37,11 +42,15 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-primary">
-              <strong>Download</strong>
-            </a>
-            <a class="button is-primary" href="https://github.com/sbrzt/spuk">
-              <strong>GitHub</strong>
+            <a 
+            class="button" 
+            href="https://github.com/sbrzt/spuk" 
+            target="_blank">
+              <span class="icon">
+                <ion-icon 
+                name="logo-github"
+                size="large"></ion-icon>
+             </span>
             </a>
           </div>
         </div>
@@ -74,33 +83,22 @@
       
       <tr>
         <td>
-          <a href="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of" target="_blank">P12_occurred_in_the_presence_of</a>
-        </td>
-        <td>
-          
-            <a href="_w3id.org_digital_damaged_ceramics_col_louvre_museum_donation_1.html" target="_blank">_w3id.org_digital_damaged_ceramics_col_louvre_museum_donation_1.html</a>
-          
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          <a href="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object" target="_blank">P16_used_specific_object</a>
-        </td>
-        <td>
-          
-            <a href="_w3id.org_digital_damaged_ceramics_itm_2963,1_2964,1_2965,1_ob00_1.html" target="_blank">_w3id.org_digital_damaged_ceramics_itm_2963,1_2964,1_2965,1_ob00_1.html</a>
-          
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
           <a href="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by" target="_blank">P14_carried_out_by</a>
         </td>
         <td>
           
             <a href="_w3id.org_digital_damaged_ceramics_acr_mic_museo_internazionale_della_ceramica_in_faenza_1.html" target="_blank">_w3id.org_digital_damaged_ceramics_acr_mic_museo_internazionale_della_ceramica_in_faenza_1.html</a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <a href="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of" target="_blank">P12_occurred_in_the_presence_of</a>
+        </td>
+        <td>
+          
+            <a href="_w3id.org_digital_damaged_ceramics_col_louvre_museum_donation_1.html" target="_blank">_w3id.org_digital_damaged_ceramics_col_louvre_museum_donation_1.html</a>
           
         </td>
       </tr>
@@ -116,10 +114,24 @@
         </td>
       </tr>
       
+      <tr>
+        <td>
+          <a href="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object" target="_blank">P16_used_specific_object</a>
+        </td>
+        <td>
+          
+            <a href="_w3id.org_digital_damaged_ceramics_itm_2963,1_2964,1_2965,1_ob00_1.html" target="_blank">_w3id.org_digital_damaged_ceramics_itm_2963,1_2964,1_2965,1_ob00_1.html</a>
+          
+        </td>
+      </tr>
+      
     </tbody>
   </table>
 
   <p><a href="index.html">← Back to index</a></p>
   
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
