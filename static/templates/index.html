@@ -1,47 +1,52 @@
 {% extends "base.html" %}
   
   {% block content %}
-
-  <div class="grid">
-      <div class="box cell has-text-centered">
-        <h3 class="title is-3">Triples</h3>
-          <div class="content is-large">
-            {{ summary.num_triples }}
-          </div>
-      </div>
-      <div class="box cell has-text-centered">
-        <h3 class="title is-3">Entities</h3>
-          <div class="content is-large">
-            {{ summary.num_entities }}
-          </div>
-      </div>
-      <div class="box cell has-text-centered">
-        <h3 class="title is-3">Properties</h3>
-          <div class="content is-large">
-            {{ summary.num_properties }}
-          </div>
-      </div>
-      <div class="box cell has-text-centered">
-        <h3 class="title is-3">Classes</h3>
-          <div class="content is-large">
-            {{ summary.num_classes }}
-          </div>
-      </div>
-  </div>
+  
+  <section class="hero">
+    <div class="hero-body">
+      <p class="title">SPUK output</p>
+      <p class="subtitle">Dataset information, statistics, and list of entities</p>
+    </div>
+  </section>
   
   <div class="grid">
-    <div class="box cell has-text-centered">
-      <h3 class="title is-3">Models</h3>
-      <div class="content is-large">
-        {% for model in summary.models_used %} 
-          <a class="tag is-link is-light" href="{{model.uri}}">{{model.label}}: {{model.frequency}}</a>
-        {% endfor %}
-      </div>
+    <div class="box cell content is-large">
+      <p>The knowledge graph is located at the following source: <a href="{{ summary.source }}">{{ summary.source }}</a>.</p>
+      <p>It is composed by a total of 
+        <div class="tags has-addons">
+          <span class="tag">{{ summary.num_triples }}</span>
+          <span class="tag is-primary">triples</span>
+        </div> 
+        about a total of 
+        <div class="tags has-addons">
+          <span class="tag">{{ summary.num_entities }}</span>
+          <span class="tag is-primary">entities</span>
+        </div>  
+        .
+      </p>
+      <p>It draws 
+        <div class="tags has-addons">
+          <span class="tag">{{ summary.num_classes }}</span>
+          <span class="tag is-primary">classes</span>
+        </div>  
+        and 
+        <div class="tags has-addons">
+          <span class="tag">{{ summary.num_properties }}</span>
+          <span class="tag is-primary">properties</span>
+        </div>
+        from the following models: 
+        <div class="tags">
+          {% for model in summary.models_used %}
+            <a class="tag is-link is-light" href="{{model.uri}}">
+          {{model.label}}</a>{% endfor %}
+        </div>
+        .
+      </p>
     </div>
     <div class="box cell">
-        <figure>
-          {{ summary.models_usage }}
-        </figure>
+      <figure>
+        {{ summary.models_usage }}
+      </figure>
     </div>
   </div>
   
@@ -58,12 +63,11 @@
 
   <div class="box">
     <h2 class="title is-2" id="entities">List of entities</h2>
-    <ul>
+    <div class="grid is-col-min-24">
       {% for entity in entities %}
-      <li>
-        <a class="tag is-link is-light is-medium" href="{{ entity.filename }}">{{ entity.label }}</a>
-      </li>
+        <a class="cell tag is-link is-light" href="{{ entity.filename }}">{{ entity.filename }}: {{ entity.type }}</a>
       {% endfor %}
-    </ul>
+    </div>
   </div>
+
   {% endblock %}

@@ -41,10 +41,16 @@ class IndexPage:
         template = env.get_template("index.html")
         items = [
             {
-                "label": str(entity),
-                "filename": uri_to_filename(str(entity))
+                "label": entity_uri,
+                "filename": uri_to_filename(entity_uri),
+                "type": next(
+                    (prop["object_label"] for prop in props if prop["is_type"]), None
+                ),
+                "type_uri": next(
+                    (prop["object_uri"] for prop in props if prop["is_type"]), None
+                )
             }
-            for entity in self.entities
+            for entity_uri, props in self.entities.items()
         ]
         return template.render(entities=items, summary=self.summary)
 

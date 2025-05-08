@@ -8,6 +8,7 @@ import pygal, logging, requests
 class RDFGraph:
     def __init__(self, source: str, is_sparql_endpoint=False):
         self.graph = Graph()
+        self.source = source
         if is_sparql_endpoint:
             self.load_from_sparql(source)
         else:
@@ -157,6 +158,7 @@ class RDFGraph:
 
     def get_summary(self):
         return {
+            "source": self.source,
             "num_triples": len(self.graph),
             "num_entities": len(self.get_entity_data()),
             "num_properties": len(self.get_property_data()),

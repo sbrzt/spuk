@@ -10,7 +10,7 @@ def main():
         page = HTMLPage(entity, property_object_pairs)
         page.save()
 
-    index_page = IndexPage(entities.keys(), summary)
+    index_page = IndexPage(entities, summary)
     index_page.save()
 
     print("🎉 All pages generated successfully!")
