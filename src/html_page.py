@@ -23,7 +23,7 @@ class HTMLPage:
         """Saves the HTML page to the output directory."""
         html = self.render()
         filename = uri_to_filename(self.subject)
-        output_path = f"{output_dir}/{filename}"
+        output_path = f"{output_dir}/{filename}.html"
         os.makedirs(output_dir, exist_ok=True)
         with open(output_path, "w") as f:
             f.write(html)
@@ -52,6 +52,7 @@ class IndexPage:
             }
             for entity_uri, props in self.entities.items()
         ]
+        print(items)
         return template.render(entities=items, summary=self.summary)
 
     def save(self, output_dir="docs"):

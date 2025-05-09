@@ -86,7 +86,7 @@ lang="en">
         </td>
         <td>
           
-            <a href="digital_damaged_ceramics_wrk_8283_ob00_1.html" target="_blank">digital_damaged_ceramics_wrk_8283_ob00_1.html</a>
+            <a href="digital_damaged_ceramics_wrk_8283_ob00_1.html" target="_blank">digital_damaged_ceramics_wrk_8283_ob00_1</a>
           
         </td>
       </tr>
@@ -97,7 +97,7 @@ lang="en">
         </td>
         <td>
           
-            <a href="digital_damaged_ceramics_exp_8283_parent_ob00_1.html" target="_blank">digital_damaged_ceramics_exp_8283_parent_ob00_1.html</a>
+            <a href="digital_damaged_ceramics_exp_8283_parent_ob00_1.html" target="_blank">digital_damaged_ceramics_exp_8283_parent_ob00_1</a>
           
         </td>
       </tr>
@@ -110,5 +110,13 @@ lang="en">
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            document.getElementById('entitySearch').addEventListener('input', function () {
+              const query = this.value.toLowerCase();
+              document.querySelectorAll('.cell').forEach(el => {
+                el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none';
+              });
+            });
+        </script>
     </body>
 </html>

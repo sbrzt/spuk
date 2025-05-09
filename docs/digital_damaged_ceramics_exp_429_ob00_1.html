@@ -82,33 +82,33 @@ lang="en">
       
       <tr>
         <td>
-          <a href="http://www.cidoc-crm.org/cidoc-crm/P129_is_about" target="_blank">P129_is_about</a>
-        </td>
-        <td>
-          
-            <a href="digital_damaged_ceramics_sub_monk_1.html" target="_blank">digital_damaged_ceramics_sub_monk_1.html</a>
-          
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          <a href="http://www.cidoc-crm.org/cidoc-crm/P129_is_about" target="_blank">P129_is_about</a>
-        </td>
-        <td>
-          
-            <a href="digital_damaged_ceramics_sub_bowl_1.html" target="_blank">digital_damaged_ceramics_sub_bowl_1.html</a>
-          
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
           <a href="http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in" target="_blank">R4i_is_embodied_in</a>
         </td>
         <td>
           
-            <a href="digital_damaged_ceramics_mnf_429_ob00_1.html" target="_blank">digital_damaged_ceramics_mnf_429_ob00_1.html</a>
+            <a href="digital_damaged_ceramics_mnf_429_ob00_1.html" target="_blank">digital_damaged_ceramics_mnf_429_ob00_1</a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <a href="http://www.cidoc-crm.org/cidoc-crm/P129_is_about" target="_blank">P129_is_about</a>
+        </td>
+        <td>
+          
+            <a href="digital_damaged_ceramics_sub_monk_1.html" target="_blank">digital_damaged_ceramics_sub_monk_1</a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <a href="http://www.cidoc-crm.org/cidoc-crm/P129_is_about" target="_blank">P129_is_about</a>
+        </td>
+        <td>
+          
+            <a href="digital_damaged_ceramics_sub_bowl_1.html" target="_blank">digital_damaged_ceramics_sub_bowl_1</a>
           
         </td>
       </tr>
@@ -121,5 +121,13 @@ lang="en">
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            document.getElementById('entitySearch').addEventListener('input', function () {
+              const query = this.value.toLowerCase();
+              document.querySelectorAll('.cell').forEach(el => {
+                el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none';
+              });
+            });
+        </script>
     </body>
 </html>

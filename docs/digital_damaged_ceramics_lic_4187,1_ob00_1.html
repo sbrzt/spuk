@@ -82,11 +82,22 @@ lang="en">
       
       <tr>
         <td>
+          <a href="http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in" target="_blank">P70i_is_documented_in</a>
+        </td>
+        <td>
+          
+            <a href="http://rightsstatements.org/vocab/InC/1.0/.html" target="_blank">http://rightsstatements.org/vocab/InC/1.0/</a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
           <a href="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to" target="_blank">P67_refers_to</a>
         </td>
         <td>
           
-            <a href="digital_damaged_ceramics_mnf_4187,1_ob00_1.html" target="_blank">digital_damaged_ceramics_mnf_4187,1_ob00_1.html</a>
+            <a href="digital_damaged_ceramics_mnf_4187,1_ob00_1.html" target="_blank">digital_damaged_ceramics_mnf_4187,1_ob00_1</a>
           
         </td>
       </tr>
@@ -97,18 +108,7 @@ lang="en">
         </td>
         <td>
           
-            <a href="http://vocab.getty.edu/page/aat/300435434" target="_blank">http://vocab.getty.edu/page/aat/300435434</a>
-          
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          <a href="http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in" target="_blank">P70i_is_documented_in</a>
-        </td>
-        <td>
-          
-            <a href="http://rightsstatements.org/vocab/InC/1.0/" target="_blank">http://rightsstatements.org/vocab/InC/1.0/</a>
+            <a href="http://vocab.getty.edu/page/aat/300435434.html" target="_blank">http://vocab.getty.edu/page/aat/300435434</a>
           
         </td>
       </tr>
@@ -121,5 +121,13 @@ lang="en">
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            document.getElementById('entitySearch').addEventListener('input', function () {
+              const query = this.value.toLowerCase();
+              document.querySelectorAll('.cell').forEach(el => {
+                el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none';
+              });
+            });
+        </script>
     </body>
 </html>

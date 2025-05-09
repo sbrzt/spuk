@@ -15,7 +15,7 @@ def escape_html(text: str) -> str:
 def uri_to_filename(uri: str) -> str:
     """Convert a URI into a valid HTML filename."""
     parsed_uri = urlparse(uri)
-    return parsed_uri.path.lstrip("/").replace("/", "_") + ".html"
+    return parsed_uri.path.lstrip("/").replace("/", "_")
 
 def get_namespace(uri: str) -> str:
     if "#" in uri:

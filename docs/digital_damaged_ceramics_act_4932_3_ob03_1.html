@@ -86,7 +86,7 @@ lang="en">
         </td>
         <td>
           
-            <a href="http://vocab.getty.edu/page/aat/300053225" target="_blank">http://vocab.getty.edu/page/aat/300053225</a>
+            <a href="http://vocab.getty.edu/page/aat/300053225.html" target="_blank">http://vocab.getty.edu/page/aat/300053225</a>
           
         </td>
       </tr>
@@ -99,5 +99,13 @@ lang="en">
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            document.getElementById('entitySearch').addEventListener('input', function () {
+              const query = this.value.toLowerCase();
+              document.querySelectorAll('.cell').forEach(el => {
+                el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none';
+              });
+            });
+        </script>
     </body>
 </html>

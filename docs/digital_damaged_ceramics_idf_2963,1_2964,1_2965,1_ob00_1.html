@@ -82,6 +82,17 @@ lang="en">
       
       <tr>
         <td>
+          <a href="http://www.cidoc-crm.org/cidoc-crm/P2_has_type" target="_blank">P2_has_type</a>
+        </td>
+        <td>
+          
+            <a href="http://vocab.getty.edu/page/aat/300312355.html" target="_blank">http://vocab.getty.edu/page/aat/300312355</a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
           <a href="http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content" target="_blank">P190_has_symbolic_content</a>
         </td>
         <td>
@@ -89,17 +100,6 @@ lang="en">
             2963,1
 2964,1
 2965,1
-          
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          <a href="http://www.cidoc-crm.org/cidoc-crm/P2_has_type" target="_blank">P2_has_type</a>
-        </td>
-        <td>
-          
-            <a href="http://vocab.getty.edu/page/aat/300312355" target="_blank">http://vocab.getty.edu/page/aat/300312355</a>
           
         </td>
       </tr>
@@ -112,5 +112,13 @@ lang="en">
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            document.getElementById('entitySearch').addEventListener('input', function () {
+              const query = this.value.toLowerCase();
+              document.querySelectorAll('.cell').forEach(el => {
+                el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none';
+              });
+            });
+        </script>
     </body>
 </html>
