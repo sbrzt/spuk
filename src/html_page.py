@@ -52,7 +52,6 @@ class IndexPage:
             }
             for entity_uri, props in self.entities.items()
         ]
-        print(items)
         return template.render(entities=items, summary=self.summary)
 
     def save(self, output_dir="docs"):

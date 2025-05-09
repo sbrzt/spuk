@@ -11,17 +11,17 @@
   
   <div class="grid">
     <div class="box cell content is-large">
-      <p>The knowledge graph is located at the following source: <a href="{{ summary.source }}">{{ summary.source }}</a>.</p>
-      <p>It is composed by a total of <span class="tag is-primary">{{ summary.num_triples }} triples</span>, describing a total of 
-        <span class="tag is-primary">{{ summary.num_entities }} entities</span>.</p>
-      <p>It uses <span class="tag">{{ summary.num_classes }} classes</span> and 
-        <span class="tag">{{ summary.num_properties }} properties</span> from the following models: 
-        <div class="tags">
+      <p>Source: <a href="{{ summary.source }}">{{ summary.source }}</a></p>
+      <p>Triples: {{ summary.num_triples }}</p>
+      <p>Entities: {{ summary.num_entities }}</p>
+      <p>Classes: {{ summary.num_classes }}</p> 
+      <p>Properties: {{ summary.num_properties }}</p>
+      <p>Models: 
           {% for model in summary.models_used %}
-            <a class="tag is-link is-light" href="{{model.uri}}">
-          {{model.label}}</a>{% endfor %}
-        </div>
+            <a class="tag is-link is-light" href="{{model.uri}}">{{model.label}}</a>
+          {% endfor %}
       </p>
+      <p>Average node degree: {{ summary.avg_degree }}</p>
     </div>
     <div class="box cell">
       <figure>
@@ -67,7 +67,7 @@
       <h3 class="title is-4" id="type-{{ entity.type | replace(' ', '_') }}">{{ entity.type }}</h3>
       <div class="grid is-col-min-24">
         {% for e in entities if e.type == entity.type %}
-          <a class="cell" href="{{ e.filename }}.html">
+          <a class="cell entity" href="{{ e.filename }}.html">
             {{ e.filename }}
           </a>
         {% endfor %}

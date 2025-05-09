@@ -30,6 +30,8 @@ class RDFGraph:
             "label": None,
             "frequency": 0
         })
+        self.in_degree = defaultdict(int)
+        self.out_degree = defaultdict(int)
         self.analyze_graph()
         print(f"🔗 Loaded {len(self.graph)} triples from {source}")
 
@@ -78,6 +80,7 @@ class RDFGraph:
         self.entity_data.update([str(s) for s in self.graph.subjects()])
         for s, p, o in self.graph:
             s_str = str(s)
+            self.out_degree[str(s)] += 1
             if isinstance(s, URIRef):
                 for prefix, ns in self.graph.namespaces():
                     if get_namespace(s) == str(ns):
@@ -108,6 +111,7 @@ class RDFGraph:
                         self.model_data[model_uri]["frequency"] += 1
             
             if isinstance(o, URIRef):
+                self.in_degree[str(o)] += 1
                 if p == RDF.type:
                     class_uri = str(o)
                     self.class_data[class_uri]["label"] = get_uri_label(class_uri)
@@ -163,6 +167,7 @@ class RDFGraph:
             "num_entities": len(self.get_entity_data()),
             "num_properties": len(self.get_property_data()),
             "num_classes": len(self.get_class_data()),
+            "avg_degree": round(sum({e: self.in_degree[e] + self.out_degree[e] for e in self.get_entity_data()}.values()) / len(self.get_entity_data()), 2),
             "models_used": self.get_model_data(),
             "class_entities_counts_chart": self.generate_bar("Entity frequency", self.get_class_data()),
             "property_usage_chart": self.generate_bar("Property frequency", self.get_property_data()),

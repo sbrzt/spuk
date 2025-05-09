@@ -82,28 +82,6 @@ lang="en">
       
       <tr>
         <td>
-          <a href="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in" target="_blank">R3_is_realised_in</a>
-        </td>
-        <td>
-          
-            <a href="digital_damaged_ceramics_exp_1185,2_ob00_1.html" target="_blank">digital_damaged_ceramics_exp_1185,2_ob00_1</a>
-          
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          <a href="http://www.cidoc-crm.org/cidoc-crm/P102_has_title" target="_blank">P102_has_title</a>
-        </td>
-        <td>
-          
-            <a href="digital_damaged_ceramics_ttl_1185,2_ob02_1.html" target="_blank">digital_damaged_ceramics_ttl_1185,2_ob02_1</a>
-          
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
           <a href="http://www.cidoc-crm.org/cidoc-crm/P102_has_title" target="_blank">P102_has_title</a>
         </td>
         <td>
@@ -124,18 +102,48 @@ lang="en">
         </td>
       </tr>
       
+      <tr>
+        <td>
+          <a href="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in" target="_blank">R3_is_realised_in</a>
+        </td>
+        <td>
+          
+            <a href="digital_damaged_ceramics_exp_1185,2_ob00_1.html" target="_blank">digital_damaged_ceramics_exp_1185,2_ob00_1</a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <a href="http://www.cidoc-crm.org/cidoc-crm/P102_has_title" target="_blank">P102_has_title</a>
+        </td>
+        <td>
+          
+            <a href="digital_damaged_ceramics_ttl_1185,2_ob02_1.html" target="_blank">digital_damaged_ceramics_ttl_1185,2_ob02_1</a>
+          
+        </td>
+      </tr>
+      
     </tbody>
   </table>
 
   <p><a href="index.html">← Back to index</a></p>
   
-
+        <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>SPUK</strong> by <a href="https://jgthms.com">Sebastian Barzaghi</a>.
+        The source code is licensed
+        <a href="https://opensource.org/license/mit">MIT</a>.
+      </p>
+    </div>
+</footer>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script>
             document.getElementById('entitySearch').addEventListener('input', function () {
               const query = this.value.toLowerCase();
-              document.querySelectorAll('.cell').forEach(el => {
+              document.querySelectorAll('.cell.entity').forEach(el => {
                 el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none';
               });
             });

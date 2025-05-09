@@ -82,17 +82,6 @@ lang="en">
       
       <tr>
         <td>
-          <a href="http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content" target="_blank">P190_has_symbolic_content</a>
-        </td>
-        <td>
-          
-            Chinese applique figurine
-          
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
           <a href="http://www.cidoc-crm.org/cidoc-crm/P2_has_type" target="_blank">P2_has_type</a>
         </td>
         <td>
@@ -102,18 +91,37 @@ lang="en">
         </td>
       </tr>
       
+      <tr>
+        <td>
+          <a href="http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content" target="_blank">P190_has_symbolic_content</a>
+        </td>
+        <td>
+          
+            Chinese applique figurine
+          
+        </td>
+      </tr>
+      
     </tbody>
   </table>
 
   <p><a href="index.html">← Back to index</a></p>
   
-
+        <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>SPUK</strong> by <a href="https://jgthms.com">Sebastian Barzaghi</a>.
+        The source code is licensed
+        <a href="https://opensource.org/license/mit">MIT</a>.
+      </p>
+    </div>
+</footer>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script>
             document.getElementById('entitySearch').addEventListener('input', function () {
               const query = this.value.toLowerCase();
-              document.querySelectorAll('.cell').forEach(el => {
+              document.querySelectorAll('.cell.entity').forEach(el => {
                 el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none';
               });
             });
