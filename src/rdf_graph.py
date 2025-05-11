@@ -1,4 +1,4 @@
-from rdflib import Graph, URIRef, RDF
+from rdflib import Graph, URIRef, RDF, Literal
 from src.utils import get_uri_label, uri_to_filename, get_namespace
 from collections import defaultdict
 from SPARQLWrapper import SPARQLWrapper, GET, TURTLE
@@ -22,6 +22,7 @@ class RDFGraph:
         self.property_data = defaultdict(lambda: {
             "uri": None,
             "label": None,
+            "type": None,
             "frequency": 0
         })
         self.property_object_data = defaultdict(list)
@@ -112,17 +113,20 @@ class RDFGraph:
             
             if isinstance(o, URIRef):
                 self.in_degree[str(o)] += 1
+                self.property_data[property_uri]["type"] = "object"
                 if p == RDF.type:
                     class_uri = str(o)
                     self.class_data[class_uri]["label"] = get_uri_label(class_uri)
                     self.class_data[class_uri]["uri"] = class_uri
                     self.class_data[class_uri]["entities"].append(s_str)
-                for prefix, ns in self.graph.namespaces():
-                    if get_namespace(o) == str(ns):
-                        model_uri = get_namespace(o)
-                        self.model_data[model_uri]["uri"] = model_uri
-                        self.model_data[model_uri]["label"] = prefix
-                        self.model_data[model_uri]["frequency"] += 1
+            elif isinstance(o, Literal):
+                self.property_data[property_uri]["type"] = "data"
+            for prefix, ns in self.graph.namespaces():
+                if get_namespace(o) == str(ns):
+                    model_uri = get_namespace(o)
+                    self.model_data[model_uri]["uri"] = model_uri
+                    self.model_data[model_uri]["label"] = prefix
+                    self.model_data[model_uri]["frequency"] += 1
 
         self.entity_data = list(self.entity_data)
 
@@ -136,6 +140,20 @@ class RDFGraph:
                 return get_uri_label(o_str), uri_to_filename(o_str)
             return get_uri_label(o_str), o_str
         return str(o), None
+
+    def get_property_ratio(self):
+        object_property_total = sum(
+            prop["frequency"] for prop in self.property_data.values() if prop["type"] == "object"
+        )
+        data_property_total = sum(
+            prop["frequency"] for prop in self.property_data.values() if prop["type"] == "data"
+        )
+
+        if data_property_total > 0:
+            ratio = object_property_total / data_property_total
+        else:
+            ratio = float('inf')
+        return round(ratio, 2)
 
 
     def generate_bar(self, title, data):
@@ -168,6 +186,7 @@ class RDFGraph:
             "num_properties": len(self.get_property_data()),
             "num_classes": len(self.get_class_data()),
             "avg_degree": round(sum({e: self.in_degree[e] + self.out_degree[e] for e in self.get_entity_data()}.values()) / len(self.get_entity_data()), 2),
+            "property_ratio": self.get_property_ratio(),
             "models_used": self.get_model_data(),
             "class_entities_counts_chart": self.generate_bar("Entity frequency", self.get_class_data()),
             "property_usage_chart": self.generate_bar("Property frequency", self.get_property_data()),
