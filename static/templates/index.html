@@ -22,7 +22,8 @@
           {% endfor %}
       </p>
       <p>Average node degree: {{ summary.avg_degree }}</p>
-      <p>Object-data properties ratio: {{ summary.property_ratio }}</p>
+      <p>Object/data properties ratio: {{ summary.property_ratio }}</p>
+      <p>Most connected: <a href="{{ summary.most_connected }}.html">{{ summary.most_connected }}</a></p>
     </div>
     <div class="box cell">
       <figure>

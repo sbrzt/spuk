@@ -155,6 +155,16 @@ class RDFGraph:
             ratio = float('inf')
         return round(ratio, 2)
 
+    def get_most_connected(self):
+        most_connected = None
+        max_length = 0
+        for key, value in self.get_property_object_data().items():
+            if isinstance(value, list):
+                if len(value) > max_length:
+                    most_connected = key
+                    max_length = len(value)
+        return uri_to_filename(most_connected)
+
 
     def generate_bar(self, title, data):
         bar_chart = pygal.HorizontalBar(
@@ -187,6 +197,7 @@ class RDFGraph:
             "num_classes": len(self.get_class_data()),
             "avg_degree": round(sum({e: self.in_degree[e] + self.out_degree[e] for e in self.get_entity_data()}.values()) / len(self.get_entity_data()), 2),
             "property_ratio": self.get_property_ratio(),
+            "most_connected": self.get_most_connected(),
             "models_used": self.get_model_data(),
             "class_entities_counts_chart": self.generate_bar("Entity frequency", self.get_class_data()),
             "property_usage_chart": self.generate_bar("Property frequency", self.get_property_data()),
