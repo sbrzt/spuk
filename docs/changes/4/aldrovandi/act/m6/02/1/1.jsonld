@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/m6/02/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D10_Software_Execution"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/cnr_ispc/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/maria_felicia_rega/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300391447"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/m6/02/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L10_had_input": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/m6/01/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L11_had_output": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/m6/02/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/blender/1"
+      }
+    ]
+  }
+]

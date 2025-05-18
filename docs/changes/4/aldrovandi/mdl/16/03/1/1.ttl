@@ -1,0 +1,6 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/mdl/16/03/1> a crmdig:D9_Data_Object ;
+    crm:P130_shows_features_of <https://sketchfab.com/3d-models/cuban-macaw-nhmw-zoo-vs-50796-52348a29605a4136a0e807942d3c12a7> .
+

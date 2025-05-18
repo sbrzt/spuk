@@ -1,0 +1,4 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/tsp/vetrina_7_alto_n_2/ob00/1> a crm:E52_Time-Span .
+

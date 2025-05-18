@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/archivio_di_stato_di_bologna/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  }
+]

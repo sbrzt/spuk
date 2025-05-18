@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:lrmoo="http://iflastandards.info/ns/lrm/lrmoo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/wrk/10_parent/ob00/1">
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+    <lrmoo:R10_has_member rdf:resource="https://w3id.org/changes/4/aldrovandi/wrk/10/ob00/1"/>
+    <lrmoo:R3_is_realised_in rdf:resource="https://w3id.org/changes/4/aldrovandi/exp/10_parent/ob00/1"/>
+  </rdf:Description>
+</rdf:RDF>

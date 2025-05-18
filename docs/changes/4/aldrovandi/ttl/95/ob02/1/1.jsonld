@@ -1,0 +1,19 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/ttl/95/ob02/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E35_Title"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@language": "en",
+        "@value": "Amputated Arm Belonging To The First Director Of The Museum Of Comparate Anatomy, Professor Antonio Alessandrini. The Arm Had To Be Amputed Following An Accident During A Dissection."
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300417207"
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_n_11/04/1> a crmdig:D10_Software_Execution ;
+    crm:P11_had_participant <https://w3id.org/changes/4/aldrovandi/acr/cnr_ispc/1> ;
+    crm:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/maria_felicia_rega/1> ;
+    crm:P2_has_type aat:300417260 ;
+    crm:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/vetrina_4_alto_n_11/04/1> ;
+    crmdig:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_alto_n_11/03/1> ;
+    crmdig:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_alto_n_11/04/1> ;
+    crmdig:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/blender/1> .
+

@@ -1,0 +1,6 @@
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+
+<https://w3id.org/changes/4/aldrovandi/wrk/vetrina_1_alto_s_1_parent/ob00/1> a lrmoo:F1_Work ;
+    lrmoo:R10_has_member <https://w3id.org/changes/4/aldrovandi/wrk/vetrina_1_alto_s_1/ob00/1> ;
+    lrmoo:R3_is_realised_in <https://w3id.org/changes/4/aldrovandi/exp/vetrina_1_alto_s_1_parent/ob00/1> .
+

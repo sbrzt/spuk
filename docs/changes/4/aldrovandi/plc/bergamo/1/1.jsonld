@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/bergamo/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/accademia_carrara/1"
+      }
+    ]
+  }
+]

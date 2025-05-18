@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/112/ob07/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_capellini/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/john_jeremiah_bigsby/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300404386"
+      }
+    ]
+  }
+]

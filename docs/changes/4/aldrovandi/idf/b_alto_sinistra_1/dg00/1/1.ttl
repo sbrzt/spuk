@@ -1,0 +1,6 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/changes/4/aldrovandi/idf/b_alto_sinistra_1/dg00/1> a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "<https://aton.ispc.cnr.it/s/aldrovandi/20250319-i6kvqz7ro>"^^rdfs:Literal .
+

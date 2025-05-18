@@ -1,0 +1,20 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/tsp/11/02/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-06-28T00:00:00+00:00"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-06-28T23:59:59+00:00"
+      }
+    ]
+  }
+]

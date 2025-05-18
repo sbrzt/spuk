@@ -1,0 +1,67 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_rossi_eredi/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giuseppe_longhi/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/marco_antonio_bernia/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_battista_ferroni/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/bub/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/dipartimento_di_scienze_biomediche_e_neuromotorie_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_di_palazzo_poggi/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/biblioteca_del_dipartimento_di_scienze_biologiche/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/geologiche_e_ambientali/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/orto_botanico_ed_erbario_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_civico_medievale_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/biblioteca_di_matematica/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/fisica_e_informatica_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/archivio_di_stato_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_civico_archeologico_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/lelio_dalla_volpe/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/nicolo_tebaldini/1"
+      }
+    ]
+  }
+]

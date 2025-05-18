@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_basso_t2/ob03/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300053225"
+      }
+    ]
+  }
+]

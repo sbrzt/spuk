@@ -1,0 +1,12 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/changes/4/aldrovandi/itm/92/ob00/1> a lrmoo:F5_Item ;
+    crm:P130i_features_are_also_found_on <https://w3id.org/changes/4/aldrovandi/mdl/92/00/1> ;
+    crm:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/idf/92/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/idf/92/ob01/1>,
+        <https://w3id.org/changes/4/aldrovandi/idf/92/ob02/1> ;
+    crm:P3_has_note "Modello In Cera Di Fasi Della Vaccinazione Contro Il Vaiolo Wax Model Of The Different Stages Of The Smallpox Vaccination Giuseppe Astorri, 1822, Bologna, Collezione Delle Cere Anatomiche \"luigi Cattaneo\", Sistema Museale Di Ateneo"^^rdfs:Literal ;
+    crm:P53_has_former_or_current_location <https://w3id.org/changes/4/aldrovandi/plc/6/1> .
+

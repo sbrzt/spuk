@@ -1,0 +1,5 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/tarsizio_riviera/1> a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://viaf.org/viaf/263904234> .
+

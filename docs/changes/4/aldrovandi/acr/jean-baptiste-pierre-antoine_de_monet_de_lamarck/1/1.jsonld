@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/jean-baptiste-pierre-antoine_de_monet_de_lamarck/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in": [
+      {
+        "@id": "http://viaf.org/viaf/41849820"
+      }
+    ]
+  }
+]

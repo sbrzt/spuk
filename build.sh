@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e  # stop on error
+set -e 
 
 echo "🔄 Cleaning previous build..."
 rm -rf docs

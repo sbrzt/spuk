@@ -1,0 +1,7 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/ttl/vetrina_1_alto_s_1/ob01/1> a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Statuetta Ushabti In Faïence"@it ;
+    crm:P2_has_type aat:300417207 .
+

@@ -1,0 +1,8 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/33/ob07/1> a crm:E7_Activity ;
+    crm:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/christiaan_hendrik_persoon/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/johann_friedrich_gmelin/1> ;
+    crm:P2_has_type aat:300404386 .
+

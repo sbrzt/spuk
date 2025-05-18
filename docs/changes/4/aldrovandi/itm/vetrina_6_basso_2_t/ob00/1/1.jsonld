@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_6_basso_2_t/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F5_Item"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_6_basso_2_t/00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_6_basso_2_t/ob02/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_6_basso_2_t/ob01/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_6_basso_2_t/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P3_has_note": [
+      {
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "@value": "Tavoletta Con Delfino"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/5/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P62_depicts": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_6_basso_-_2/ob00/1"
+      }
+    ]
+  }
+]

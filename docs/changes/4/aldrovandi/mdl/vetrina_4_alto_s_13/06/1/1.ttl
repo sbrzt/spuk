@@ -1,0 +1,6 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_alto_s_13/06/1> a crmdig:D9_Data_Object ;
+    crm:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_alto_s_13/dg00/1> .
+

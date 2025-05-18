@@ -1,0 +1,13 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/100/00/1> a crmdig:D2_Digitization_Process ;
+    crm:P11_had_participant <https://w3id.org/changes/4/aldrovandi/acr/unibo_da/1> ;
+    crm:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/mattia_sullini/1> ;
+    crm:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/sony_alpha_7_i/1> ;
+    crm:P32_used_general_technique aat:300266792 ;
+    crm:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/100/00/1> ;
+    crmdig:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/100/00/1> ;
+    crmdig:L1_digitized <https://w3id.org/changes/4/aldrovandi/itm/100/ob00/1> .
+

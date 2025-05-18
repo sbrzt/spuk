@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/35/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/35/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/mostro/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/basilisco/1"
+      }
+    ]
+  }
+]

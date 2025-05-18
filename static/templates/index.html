@@ -18,17 +18,14 @@
       <p>Properties: {{ summary.num_properties }}</p>
       <p>Models: 
           {% for model in summary.models_used %}
-            <a class="tag is-link is-light" href="{{model.uri}}">{{model.label}}</a>
+            <a class="tag is-link is-light content is-large" href="{{model.uri}}">{{model.label}}</a>
           {% endfor %}
       </p>
-      <p>Average node degree: {{ summary.avg_degree }}</p>
+      <p>Average properties per entity: {{ summary.avg_degree }}</p>
       <p>Object/data properties ratio: {{ summary.property_ratio }}</p>
-      <p>Most connected: <a href="{{ summary.most_connected }}.html">{{ summary.most_connected }}</a></p>
-    </div>
-    <div class="box cell">
-      <figure>
-        {{ summary.models_usage }}
-      </figure>
+      <!--
+      <p>Entity with highest number of properties: <a href="{{ summary.most_connected }}.html">{{ summary.most_connected }}</a></p>
+    -->
     </div>
   </div>
   
@@ -38,6 +35,14 @@
         {{ summary.class_entities_counts_chart }}
       </figure>
     </div>
+    <div class="box cell">
+      <figure>
+        {{ summary.models_usage }}
+      </figure>
+    </div>
+  </div>
+  
+  <div class="grid">
     <div class="box cell">
       {{ summary.property_usage_chart }}
     </div>
@@ -53,29 +58,22 @@
       </div>
     </div>    
 
-    {% set seen_types = [] %}
-    <div class="buttons are-small is-flex-wrap-wrap">
-      {% for entity in entities %}
-        {% if entity.type not in seen_types %}
-          {% set _ = seen_types.append(entity.type) %}
-          <a class="button is-light is-info" href="#type-{{ entity.type | replace(' ', '_') }}">{{ entity.type }}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {% set seen_types = [] %}
-  {% for entity in entities %}
-    {% if entity.type not in seen_types %}
-      {% set _ = seen_types.append(entity.type) %}
-      <h3 class="title is-4" id="type-{{ entity.type | replace(' ', '_') }}">{{ entity.type }}</h3>
       <div class="grid is-col-min-24">
-        {% for e in entities if e.type == entity.type %}
-          <a class="cell entity" href="{{ e.filename }}.html">
-            {{ e.filename }}
+        {% for e in entities %}
+          <a class="cell entity" href="{{ e.path }}.html">
+            {{ e.uri }}
           </a>
         {% endfor %}
       </div>
-    {% endif %}
-  {% endfor %}
 </div>
+
+<script>
+  document.getElementById('entitySearch').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll('.cell.entity').forEach(el => {
+      el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none';
+    });
+  });
+</script>
 
   {% endblock %}

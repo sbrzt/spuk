@@ -1,0 +1,18 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_1_alto_n_-_2/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F5_Item"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_1_alto_n_-_2/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P62i_is_depicted_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_1_alto_n_-_2/ob00/1"
+      }
+    ]
+  }
+]

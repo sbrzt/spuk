@@ -1,0 +1,6 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/col/collezione_di_ostetricia/1> a crm:E24_Physical_Human-Made_Thing ;
+    crm:P2_has_type aat:300025976 .
+

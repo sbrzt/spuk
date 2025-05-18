@@ -1,0 +1,4 @@
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+
+<https://w3id.org/changes/4/aldrovandi/itm/vetrina_2_alto_s_1_parent/ob00/1> a lrmoo:F5_Item .
+

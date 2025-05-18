@@ -1,0 +1,7 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+
+<https://w3id.org/changes/4/aldrovandi/mnf/20/ob00/1> a lrmoo:F3_Manifestation ;
+    lrmoo:R7i_is_exemplified_by <https://w3id.org/changes/4/aldrovandi/itm/20/ob00/1> ;
+    crm:P130i_features_are_also_found_on <https://author.pure3d.eu/viewer/0.46.1/read/66decb983467fc1e67434a03/update> .
+

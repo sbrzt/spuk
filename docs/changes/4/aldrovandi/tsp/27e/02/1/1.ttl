@@ -1,0 +1,7 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/changes/4/aldrovandi/tsp/27e/02/1> a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "2023-08-23T00:00:00+00:00"^^xsd:dateTime ;
+    crm:P82b_end_of_the_end "2023-08-23T23:59:59+00:00"^^xsd:dateTime .
+

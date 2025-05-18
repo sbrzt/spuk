@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_s_5/ob04/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300054686"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/ttl/95/ob01/1> a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Braccio Amputato A Seguito Di Un Incidente In Fase Di Dissezione Anatomica Del Primo Direttore Del Museo Di Anatomia Comparata, Professor Antonio Alessandrini"@it ;
+    crm:P2_has_type aat:300417207 .
+

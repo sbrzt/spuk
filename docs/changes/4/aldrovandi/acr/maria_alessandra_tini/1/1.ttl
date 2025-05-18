@@ -1,0 +1,4 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/maria_alessandra_tini/1> a crm:E21_Person .
+

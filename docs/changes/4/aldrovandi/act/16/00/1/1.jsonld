@@ -1,0 +1,18 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/16/00/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D2_Digitization_Process"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/16/00/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L1_digitized": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/16/ob00/1"
+      }
+    ]
+  }
+]

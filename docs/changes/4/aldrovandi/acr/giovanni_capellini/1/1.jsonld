@@ -1,0 +1,16 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_capellini/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in": [
+      {
+        "@id": "http://viaf.org/viaf/69232941"
+      },
+      {
+        "@id": "http://viaf.org/viaf/40160164"
+      }
+    ]
+  }
+]

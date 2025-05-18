@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mnf/63_parent/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/63_parent/ob00/1"
+      }
+    ]
+  }
+]

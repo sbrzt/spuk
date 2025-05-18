@@ -1,0 +1,19 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_3_alto_s_3/ob00/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "@value": "vetrina_3_alto_s_3"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300312355"
+      }
+    ]
+  }
+]

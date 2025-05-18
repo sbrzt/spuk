@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/16/03/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of": [
+      {
+        "@id": "https://sketchfab.com/3d-models/cuban-macaw-nhmw-zoo-vs-50796-52348a29605a4136a0e807942d3c12a7"
+      }
+    ]
+  }
+]

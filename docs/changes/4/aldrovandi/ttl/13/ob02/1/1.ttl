@@ -1,0 +1,7 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/ttl/13/ob02/1> a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Resplendent Quetzal (de La Llave, 1832)"@en ;
+    crm:P2_has_type aat:300417207 .
+

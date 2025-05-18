@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/2/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F5_Item"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/2/00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/2/ob02/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/2/ob01/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/2/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P3_has_note": [
+      {
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "@value": "Panthera Leo (linnaeus, 1758) Diorama Con Tre Leoni Tassidermizzati Diorama With Three Taxidermized Lions Manifattura Rowland Ward - Londra, Inizio Sec. Xx  Early 20th Century Bologna, Collezione Di Zoologia, Sistema Museale Di Ateneo"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/1/1"
+      }
+    ]
+  }
+]

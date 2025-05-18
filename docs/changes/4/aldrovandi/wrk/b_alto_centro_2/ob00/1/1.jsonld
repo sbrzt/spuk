@@ -1,0 +1,24 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/b_alto_centro_2/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/b_alto_centro_2/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P102_has_title": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/b_alto_centro_2/ob02/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/b_alto_centro_2/ob01/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/b_alto_centro_2/ob00/1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/27e/ob08/1> a crm:E7_Activity ;
+    crm:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/orto_botanico_ed_erbario_di_bologna/1> ;
+    crm:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/itm/27e/ob00/1> ;
+    crm:P2_has_type aat:300054277 .
+

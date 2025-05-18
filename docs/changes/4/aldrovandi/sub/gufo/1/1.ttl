@@ -1,0 +1,6 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/sub/gufo/1> a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+

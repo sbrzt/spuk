@@ -1,0 +1,18 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_6/05/1> a crmdig:D10_Software_Execution ;
+    crm:P11_had_participant <https://w3id.org/changes/4/aldrovandi/acr/unibo_dbc/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/unibo_ficlit/1> ;
+    crm:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/arcangelo_massari/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/arianna_moretti/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/sebastian_barzaghi/1> ;
+    crm:P2_has_type aat:300417260 ;
+    crm:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_alto_s_6/05/1> ;
+    crmdig:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_s_6/04/1> ;
+    crmdig:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_s_6/05/1> ;
+    crmdig:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/chad-ap/1>,
+        <https://w3id.org/changes/4/aldrovandi/sfw/heritrace/1>,
+        <https://w3id.org/changes/4/aldrovandi/sfw/morph-kgc/1> .
+

@@ -1,0 +1,19 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/ttl/95/ob01/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E35_Title"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@language": "it",
+        "@value": "Braccio Amputato A Seguito Di Un Incidente In Fase Di Dissezione Anatomica Del Primo Direttore Del Museo Di Anatomia Comparata, Professor Antonio Alessandrini"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300417207"
+      }
+    ]
+  }
+]

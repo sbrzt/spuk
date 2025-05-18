@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_6_basso_1/ob00/1"
+      }
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R19_created_a_realisation_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/wrk/vetrina_6_basso_1/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/vetrina_6_basso_1/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/ob07/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/ob06/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/ob05/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/ob04/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/ob03/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/ob02/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/ob01/1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/mdl/20/02/1> a crmdig:D9_Data_Object ;
+    crm:P130_shows_features_of <https://bub.unibo.it/it/bub-digitale/il-codice-cospi/bub_ms4093_cospi?view=imageview&manifest=https%3a%2f%2fbub.unibo.it%2fiiif%2f2%2fmanifest%2fbub%2fmanoscritti%2fbub_ms4093_cospi.json&canvas=https%3a%2f%2fbub.unibo.it%2fiiif%2f2%2fcanvas%2fbub%40manoscritti%40bub_ms4093_cospi%4049ed0574103095c4af1add7e9513620fb22744eb-bub_ms4093_000001-recto_piatto_anteriore.jp2.json> .
+

@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/20_parent/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/20_parent/ob00/1"
+      }
+    ]
+  }
+]

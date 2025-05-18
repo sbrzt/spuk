@@ -1,0 +1,12 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/changes/4/aldrovandi/itm/vetrina_4_basso/ob00/1> a lrmoo:F5_Item ;
+    crm:P130i_features_are_also_found_on <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_basso/00/1> ;
+    crm:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_basso/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_basso/ob01/1>,
+        <https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_basso/ob02/1> ;
+    crm:P3_has_note "Campioni Di Rocce Levigate Polished Rock Samples"^^rdfs:Literal ;
+    crm:P53_has_former_or_current_location <https://w3id.org/changes/4/aldrovandi/plc/5/1> .
+

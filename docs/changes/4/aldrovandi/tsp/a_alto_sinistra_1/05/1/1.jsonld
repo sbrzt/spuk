@@ -1,0 +1,14 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/tsp/a_alto_sinistra_1/05/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-03-24T00:00:00+00:00"
+      }
+    ]
+  }
+]

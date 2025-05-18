@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/vetrina_3_alto_n_4/ob00/1">
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
+    <crm:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_3_alto_n_4/00/1"/>
+    <crm:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/vetrina_3_alto_n_4/ob02/1"/>
+    <crm:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/vetrina_3_alto_n_4/ob01/1"/>
+    <crm:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/vetrina_3_alto_n_4/ob00/1"/>
+    <crm:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Apice Vegetativo Di Palma Palm Tree Leaf</crm:P3_has_note>
+    <crm:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/5/1"/>
+  </rdf:Description>
+</rdf:RDF>

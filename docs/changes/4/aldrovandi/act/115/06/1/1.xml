@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:crmdig="http://www.ics.forth.gr/isl/CRMdig/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/115/06/1">
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D10_Software_Execution"/>
+    <crm:P11_had_participant rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/cnr_ispc/1"/>
+    <crm:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/maria_felicia_rega/1"/>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300417260"/>
+    <crm:P4_has_time-span rdf:resource="https://w3id.org/changes/4/aldrovandi/tsp/115/06/1"/>
+    <crmdig:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/115/05/1"/>
+    <crmdig:L11_had_output rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/115/06/1"/>
+    <crmdig:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/nextcloud/1"/>
+    <crmdig:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/aton/1"/>
+  </rdf:Description>
+</rdf:RDF>

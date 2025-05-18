@@ -1,0 +1,7 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/v2_1/ob01/1> a crm:E7_Activity ;
+    crm:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/giovanni_domenico_tiepolo/1> ;
+    crm:P2_has_type aat:300404387 .
+

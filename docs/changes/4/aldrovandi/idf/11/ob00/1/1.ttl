@@ -1,0 +1,8 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/changes/4/aldrovandi/idf/11/ob00/1> a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "11"^^rdfs:Literal ;
+    crm:P2_has_type aat:300312355 .
+

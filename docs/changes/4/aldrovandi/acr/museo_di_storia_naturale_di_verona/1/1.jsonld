@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_di_storia_naturale_di_verona/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/verona/1"
+      }
+    ]
+  }
+]

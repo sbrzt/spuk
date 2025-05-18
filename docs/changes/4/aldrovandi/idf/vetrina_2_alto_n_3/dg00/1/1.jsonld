@@ -1,0 +1,14 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_2_alto_n_3/dg00/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "@value": "<Https://aton.ispc.cnr.it/s/aldrovandi/20240229-j2sxn6f5w>"
+      }
+    ]
+  }
+]

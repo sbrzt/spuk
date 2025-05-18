@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikon_d5200/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300266792"
+      }
+    ]
+  }
+]

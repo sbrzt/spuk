@@ -1,0 +1,27 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_3/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/v2_3/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/europa/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/asia/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/africa/1"
+      }
+    ]
+  }
+]

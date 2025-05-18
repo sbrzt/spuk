@@ -2,9 +2,11 @@
 
 # SPUK (Static PUblisher of Knowledge)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15389756.svg)](https://doi.org/10.5281/zenodo.15389756)
+
 ## Description
 
-SPUK is a Static Site Generator (SSG) designed for RDF Knowledge Graphs. It transforms RDF data into a browsable, static HTML website and also provides an API for programmatic access to the graph’s entities.
+SPUK is a Static Site Generator (SSG) designed for RDF Knowledge Graphs. It transforms RDF data into a browsable, static HTML website.
 
 ## Installation
 
@@ -36,7 +38,7 @@ SPUK is a Static Site Generator (SSG) designed for RDF Knowledge Graphs. It tran
 
 ## Usage
 
-SPUK generates static HTML pages from an RDF Knowledge Graph (KG), allowing users to explore the data through a web browser. Additionally, it exposes an API for querying entities programmatically.
+SPUK generates static HTML pages from an RDF Knowledge Graph (KG), allowing users to explore the data through a web browser.
 
 ### Start the site and the API
 
@@ -49,8 +51,6 @@ Start the static site generator and API server:
     ./main.sh
 
 The website will be available at: http://127.0.0.1:8001.
-
-The API documentation will be available at: http://127.0.0.1:8000/docs.
 
 ### Examples
 
@@ -78,4 +78,21 @@ Barzaghi, Sebastian (https://orcid.org/0000-0002-0799-1527).
 
 ## Citation
 
-...
+```
+@software{barzaghi_spuk_2025,
+  author       = {Sebastian B.},
+  title        = {SPUK: v0.1.0},
+  month        = may,
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {v0.1.0},
+  doi          = {10.5281/zenodo.15389756},
+  url          = {https://doi.org/10.5281/zenodo.15389756},
+  swhid        = {swh:1:dir:13091e52df66e92690aa1f7d9beac02b0d5acaa4
+                   ;origin=https://doi.org/10.5281/zenodo.15389755;vi
+                   sit=swh:1:snp:26950210a2176283cdda0ea18c9fda2e0318
+                   d697;anchor=swh:1:rel:3303c580deefd97c6b78c48c438e
+                   ead829256a51;path=sbrzt-spuk-a7d3250
+                  },
+}
+```

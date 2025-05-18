@@ -1,0 +1,9 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+
+<https://w3id.org/changes/4/aldrovandi/wrk/74b/ob00/1> a lrmoo:F1_Work ;
+    lrmoo:R3_is_realised_in <https://w3id.org/changes/4/aldrovandi/exp/74b/ob00/1> ;
+    crm:P102_has_title <https://w3id.org/changes/4/aldrovandi/ttl/74b/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/ttl/74b/ob01/1>,
+        <https://w3id.org/changes/4/aldrovandi/ttl/74b/ob02/1> .
+

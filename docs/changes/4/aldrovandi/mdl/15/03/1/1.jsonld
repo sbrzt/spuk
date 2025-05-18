@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/15/03/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of": [
+      {
+        "@id": "https://sketchfab.com/3d-models/green-iguana-217da036aae14762904ef4630023978b"
+      }
+    ]
+  }
+]

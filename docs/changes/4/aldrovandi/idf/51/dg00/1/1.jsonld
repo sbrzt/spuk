@@ -1,0 +1,14 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/idf/51/dg00/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "@value": "<https://aton.ispc.cnr.it/s/aldrovandi/20241206-3fu0nt1zx>"
+      }
+    ]
+  }
+]

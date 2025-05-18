@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_6_basso_1/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F5_Item"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_6_basso_1/00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_6_basso_1/ob02/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_6_basso_1/ob01/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_6_basso_1/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P3_has_note": [
+      {
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "@value": "Preparati Zoologici, Scapola Di Balena Zoological Samples, Whale Shoulder Blade"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/5/1"
+      }
+    ]
+  }
+]

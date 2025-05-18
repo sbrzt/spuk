@@ -1,0 +1,8 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/88/00/1> a crmdig:D2_Digitization_Process ;
+    crm:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/88/00/1> ;
+    crmdig:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/88/00/1> ;
+    crmdig:L1_digitized <https://w3id.org/changes/4/aldrovandi/itm/88/ob00/1> .
+

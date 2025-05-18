@@ -1,0 +1,15 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/plc/3/1> a crm:E53_Place ;
+    crm:P53i_is_former_or_current_location_of <https://w3id.org/changes/4/aldrovandi/itm/43/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/44/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/45/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/46/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/47/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/48/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/ptb/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/ptb_1/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/ptb_2/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/ptb_3/ob00/1>,
+        <https://w3id.org/changes/4/aldrovandi/itm/ptb_4/ob00/1> .
+

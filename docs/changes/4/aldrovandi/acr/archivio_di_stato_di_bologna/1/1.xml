@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/acr/archivio_di_stato_di_bologna/1">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <crm:P74_has_current_or_former_residence rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/bologna/1"/>
+  </rdf:Description>
+</rdf:RDF>

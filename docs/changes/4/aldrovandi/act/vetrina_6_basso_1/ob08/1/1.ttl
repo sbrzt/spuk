@@ -1,0 +1,7 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/ob08/1> a crm:E7_Activity ;
+    crm:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/itm/vetrina_6_basso_1/ob00/1> ;
+    crm:P2_has_type aat:300054277 .
+

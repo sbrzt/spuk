@@ -1,0 +1,6 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> a crmdig:D9_Data_Object ;
+    crm:P130_shows_features_of <https://sketchfab.com/3d-models/mountain-lion-r-996-7fa93e512aad4344ab2d90484e454d56> .
+

@@ -1,0 +1,6 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/plc/amsterdam/1> a crm:E53_Place ;
+    crm:P74i_is_current_or_former_residence_of <https://w3id.org/changes/4/aldrovandi/acr/officina_janssonio-waesbergiana/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/rijksmuseum/1> .
+

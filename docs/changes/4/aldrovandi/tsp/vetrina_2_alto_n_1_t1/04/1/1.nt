@@ -1,0 +1,3 @@
+<https://w3id.org/changes/4/aldrovandi/tsp/vetrina_2_alto_n_1_t1/04/1> <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "2023-06-19T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/changes/4/aldrovandi/tsp/vetrina_2_alto_n_1_t1/04/1> <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "2023-06-19T23:59:59+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/changes/4/aldrovandi/tsp/vetrina_2_alto_n_1_t1/04/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> .

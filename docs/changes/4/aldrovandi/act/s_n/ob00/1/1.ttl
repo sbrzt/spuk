@@ -1,0 +1,17 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/s_n/ob00/1> a lrmoo:F28_Expression_Creation ;
+    lrmoo:R17_created <https://w3id.org/changes/4/aldrovandi/exp/s_n/ob00/1> ;
+    lrmoo:R19_created_a_realisation_of <https://w3id.org/changes/4/aldrovandi/wrk/s_n/ob00/1> ;
+    crm:P32_used_general_technique aat:300264383 ;
+    crm:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/s_n/ob00/1> ;
+    crm:P9_consists_of <https://w3id.org/changes/4/aldrovandi/act/s_n/ob01/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/s_n/ob02/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/s_n/ob03/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/s_n/ob04/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/s_n/ob05/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/s_n/ob06/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/s_n/ob07/1> .
+

@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/sfw/chad-ap/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D14_Software"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300426696"
+      }
+    ]
+  }
+]

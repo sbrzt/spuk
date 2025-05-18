@@ -1,0 +1,6 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/plc/parigi/1> a crm:E53_Place ;
+    crm:P74i_is_current_or_former_residence_of <https://w3id.org/changes/4/aldrovandi/acr/benoit_prevost/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/gilles_corrozet/1> .
+

@@ -1,0 +1,7 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/ttl/v2_9/ob00/1> a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Allegoria Dellamerica"@it ;
+    crm:P2_has_type aat:300417204 .
+

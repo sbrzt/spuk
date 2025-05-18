@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/vetrina_6_basso_2_t/ob00/1">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300435434"/>
+    <crm:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mnf/vetrina_6_basso_2_t/ob00/1"/>
+    <crm:P70i_is_documented_in rdf:resource="http://rightsstatements.org/vocab/InC/1.0/"/>
+  </rdf:Description>
+</rdf:RDF>

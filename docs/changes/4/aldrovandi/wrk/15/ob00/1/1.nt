@@ -1,0 +1,5 @@
+<https://w3id.org/changes/4/aldrovandi/wrk/15/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://w3id.org/changes/4/aldrovandi/ttl/15/ob00/1> .
+<https://w3id.org/changes/4/aldrovandi/wrk/15/ob00/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iflastandards.info/ns/lrm/lrmoo/F1_Work> .
+<https://w3id.org/changes/4/aldrovandi/wrk/15/ob00/1> <http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in> <https://w3id.org/changes/4/aldrovandi/exp/15/ob00/1> .
+<https://w3id.org/changes/4/aldrovandi/wrk/15/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://w3id.org/changes/4/aldrovandi/ttl/15/ob01/1> .
+<https://w3id.org/changes/4/aldrovandi/wrk/15/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://w3id.org/changes/4/aldrovandi/ttl/15/ob02/1> .

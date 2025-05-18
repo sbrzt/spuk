@@ -1,0 +1,4 @@
+@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/mdl/29/04/1> a crmdig:D9_Data_Object .
+

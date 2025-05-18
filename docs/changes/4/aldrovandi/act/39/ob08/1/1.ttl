@@ -1,0 +1,9 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/39/ob08/1> a crm:E7_Activity ;
+    crm:P12_occurred_in_the_presence_of <https://w3id.org/changes/4/aldrovandi/col/collezione_di_anatomia_patologica_e_teratologia_veterinaria_alessandrini_-_ercolani/1> ;
+    crm:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1> ;
+    crm:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/itm/39/ob00/1> ;
+    crm:P2_has_type aat:300054277 .
+

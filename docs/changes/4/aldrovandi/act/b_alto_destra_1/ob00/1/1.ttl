@@ -1,0 +1,15 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_1/ob00/1> a lrmoo:F28_Expression_Creation ;
+    lrmoo:R17_created <https://w3id.org/changes/4/aldrovandi/exp/b_alto_destra_1/ob00/1> ;
+    lrmoo:R19_created_a_realisation_of <https://w3id.org/changes/4/aldrovandi/wrk/b_alto_destra_1/ob00/1> ;
+    crm:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/b_alto_destra_1/ob00/1> ;
+    crm:P9_consists_of <https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_1/ob01/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_1/ob02/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_1/ob03/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_1/ob04/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_1/ob05/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_1/ob06/1>,
+        <https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_1/ob07/1> .
+

@@ -1,0 +1,8 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/lic/vetrina_8_alto_s_3_t/ob00/1> a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300435434 ;
+    crm:P67_refers_to <https://w3id.org/changes/4/aldrovandi/mnf/vetrina_8_alto_s_3_t/ob00/1> ;
+    crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
+

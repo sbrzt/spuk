@@ -1,0 +1,8 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+
+<https://w3id.org/changes/4/aldrovandi/mnf/30/ob00/1> a lrmoo:F3_Manifestation ;
+    lrmoo:R7i_is_exemplified_by <https://w3id.org/changes/4/aldrovandi/itm/30/ob00/1> ;
+    crm:P2_has_type aat:300047753 .
+

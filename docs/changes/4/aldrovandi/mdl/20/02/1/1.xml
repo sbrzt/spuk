@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mdl/20/02/1">
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
+    <crm:P130_shows_features_of rdf:resource="https://bub.unibo.it/it/bub-digitale/il-codice-cospi/bub_ms4093_cospi?view=imageview&amp;manifest=https%3a%2f%2fbub.unibo.it%2fiiif%2f2%2fmanifest%2fbub%2fmanoscritti%2fbub_ms4093_cospi.json&amp;canvas=https%3a%2f%2fbub.unibo.it%2fiiif%2f2%2fcanvas%2fbub%40manoscritti%40bub_ms4093_cospi%4049ed0574103095c4af1add7e9513620fb22744eb-bub_ms4093_000001-recto_piatto_anteriore.jp2.json"/>
+  </rdf:Description>
+</rdf:RDF>

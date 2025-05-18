@@ -1,0 +1,4 @@
+<https://w3id.org/changes/4/aldrovandi/lic/52/01/1> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/page/aat/300435434> .
+<https://w3id.org/changes/4/aldrovandi/lic/52/01/1> <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/changes/4/aldrovandi/lic/52/01/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+<https://w3id.org/changes/4/aldrovandi/lic/52/01/1> <http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <https://w3id.org/changes/4/aldrovandi/mdl/52/01/1> .

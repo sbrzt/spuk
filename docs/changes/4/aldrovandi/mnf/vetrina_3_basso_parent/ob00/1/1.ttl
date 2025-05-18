@@ -1,0 +1,5 @@
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+
+<https://w3id.org/changes/4/aldrovandi/mnf/vetrina_3_basso_parent/ob00/1> a lrmoo:F3_Manifestation ;
+    lrmoo:R7i_is_exemplified_by <https://w3id.org/changes/4/aldrovandi/itm/vetrina_3_basso_parent/ob00/1> .
+

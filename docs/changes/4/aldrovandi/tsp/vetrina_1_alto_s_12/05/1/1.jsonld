@@ -1,0 +1,20 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_alto_s_12/05/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-03-24T00:00:00+00:00"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-03-25T23:59:59+00:00"
+      }
+    ]
+  }
+]

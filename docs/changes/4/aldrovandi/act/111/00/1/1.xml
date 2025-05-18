@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:crmdig="http://www.ics.forth.gr/isl/CRMdig/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/111/00/1">
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D2_Digitization_Process"/>
+    <crm:P11_had_participant rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/unibo_da/1"/>
+    <crm:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/filippo_fantini/1"/>
+    <crm:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d5200/1"/>
+    <crm:P32_used_general_technique rdf:resource="http://vocab.getty.edu/page/aat/300266792"/>
+    <crm:P4_has_time-span rdf:resource="https://w3id.org/changes/4/aldrovandi/tsp/111/00/1"/>
+    <crmdig:L11_had_output rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/111/00/1"/>
+    <crmdig:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/111/ob00/1"/>
+  </rdf:Description>
+</rdf:RDF>

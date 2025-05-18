@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/16/02/1">
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D10_Software_Execution"/>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300391447"/>
+    <crm:P4_has_time-span rdf:resource="https://w3id.org/changes/4/aldrovandi/tsp/16/02/1"/>
+  </rdf:Description>
+</rdf:RDF>

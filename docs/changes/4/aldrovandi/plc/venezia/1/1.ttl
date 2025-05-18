@@ -1,0 +1,11 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/plc/venezia/1> a crm:E53_Place ;
+    crm:P74i_is_current_or_former_residence_of <https://w3id.org/changes/4/aldrovandi/acr/bernardo_basa/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/federico_torresano/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/gaspare_bindoni/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/giorgio_rusconi/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/giovanni_tacuino/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/girolamo_porro/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/giuseppe_picotti/1> .
+

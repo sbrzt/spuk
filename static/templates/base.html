@@ -5,7 +5,7 @@ lang="en">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Index</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style.css">
         <script type="text/javascript" src="http://kozea.github.com/pygal.js/latest/pygal-tooltips.min.js"></script>
     </head>
     <body>
@@ -15,13 +15,5 @@ lang="en">
         {% include "footer.html" %}
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script>
-            document.getElementById('entitySearch').addEventListener('input', function () {
-              const query = this.value.toLowerCase();
-              document.querySelectorAll('.cell.entity').forEach(el => {
-                el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none';
-              });
-            });
-        </script>
     </body>
 </html>

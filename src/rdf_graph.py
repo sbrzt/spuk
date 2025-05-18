@@ -1,5 +1,5 @@
 from rdflib import Graph, URIRef, RDF, Literal
-from src.utils import get_uri_label, uri_to_filename, get_namespace
+from src.utils import get_uri_label, uri_to_filename, get_namespace, generate_path, remove_root
 from collections import defaultdict
 from SPARQLWrapper import SPARQLWrapper, GET, TURTLE
 import pygal, logging, requests
@@ -50,6 +50,7 @@ class RDFGraph:
         self.graph.parse(data=response.decode("utf-8"), format="turtle")
         print(f"✅ Data loaded from {endpoint_url}.")
 
+
     def get_entity_data(self):
         return self.entity_data
 
@@ -76,6 +77,31 @@ class RDFGraph:
             key=lambda x: x["frequency"],
             reverse=True
         )
+
+    def get_property_ratio(self):
+        object_property_total = sum(
+            prop["frequency"] for prop in self.property_data.values() if prop["type"] == "object"
+        )
+        data_property_total = sum(
+            prop["frequency"] for prop in self.property_data.values() if prop["type"] == "data"
+        )
+
+        if data_property_total > 0:
+            ratio = object_property_total / data_property_total
+        else:
+            ratio = float('inf')
+        return round(ratio, 2)
+
+    def get_most_connected(self):
+        most_connected = None
+        max_length = 0
+        for key, value in self.get_property_object_data().items():
+            if isinstance(value, list):
+                if len(value) > max_length:
+                    most_connected = key
+                    max_length = len(value)
+        return generate_path(most_connected)
+
 
     def analyze_graph(self):
         self.entity_data.update([str(s) for s in self.graph.subjects()])
@@ -137,33 +163,9 @@ class RDFGraph:
         if isinstance(o, URIRef):
             o_str = str(o)
             if o_str in self.entity_data:
-                return get_uri_label(o_str), uri_to_filename(o_str)
-            return get_uri_label(o_str), o_str
+                return o_str, f"{remove_root(generate_path(o_str))}/{uri_to_filename(o_str)}"
+            return o_str, o_str
         return str(o), None
-
-    def get_property_ratio(self):
-        object_property_total = sum(
-            prop["frequency"] for prop in self.property_data.values() if prop["type"] == "object"
-        )
-        data_property_total = sum(
-            prop["frequency"] for prop in self.property_data.values() if prop["type"] == "data"
-        )
-
-        if data_property_total > 0:
-            ratio = object_property_total / data_property_total
-        else:
-            ratio = float('inf')
-        return round(ratio, 2)
-
-    def get_most_connected(self):
-        most_connected = None
-        max_length = 0
-        for key, value in self.get_property_object_data().items():
-            if isinstance(value, list):
-                if len(value) > max_length:
-                    most_connected = key
-                    max_length = len(value)
-        return uri_to_filename(most_connected)
 
 
     def generate_bar(self, title, data):
@@ -183,8 +185,8 @@ class RDFGraph:
             legend_at_bottom=True,
             legend_box_size=5,
             legend_at_bottom_columns=3,
-            print_values=True,
-            print_values_position="top",
+            #print_values=True,
+            #print_values_position="top",
             order_min=1,
             ).decode("utf-8")
 

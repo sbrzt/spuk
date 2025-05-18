@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/34/ob08/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_ulisse_aldrovandi/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_di_palazzo_poggi/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/34/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300054277"
+      }
+    ]
+  }
+]

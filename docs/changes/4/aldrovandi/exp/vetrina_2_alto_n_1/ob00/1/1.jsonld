@@ -1,0 +1,18 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_2_alto_n_1/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/vetrina_2_alto_n_1/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/calcoli_renali/1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+  {% block content %}
+  <!-- SPARQL Interface Section -->
+  <div id="sparql-interface" class="box">
+      <h2 class="title is-2">SPARQL Query Interface</h2>
+
+      <!-- Example Questions Dropdown -->
+      <div class="form">
+        <div class="field">
+          <label for="exampleSelect" class="label">Select a Question:</label>
+          <div class="control">
+            <div class="select">
+              <select id="exampleSelect">
+                <option value="">-- Choose an example --</option>
+                <!-- Titolo museale -->
+                <option value="PREFIX aat: <http://vocab.getty.edu/page/aat/> PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item ?content WHERE { ?item a lrmoo:F5_Item . ?manifestation lrmoo:R7i_is_exemplified_by ?item . ?expression lrmoo:R4i_is_embodied_in ?manifestation . ?work lrmoo:R3_is_realised_in ?expression ; crm:P102_has_title ?title . ?title crm:P2_has_type aat:300417207 ; crm:P190_has_symbolic_content ?content . FILTER(lang(?content) = 'it') }">Titles given by the museum</option>
+                <!-- Tipologia -->
+                <option value="PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item ?type WHERE { ?item a lrmoo:F5_Item . ?manifestation lrmoo:R7i_is_exemplified_by ?item ; crm:P2_has_type ?type . }">Types</option>
+                <!-- Didascalia -->
+                <option value="PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item ?description WHERE { ?item a lrmoo:F5_Item ; crm:P3_has_note ?description . }">Descriptions</option>
+                <!-- Tecnica -->
+                <option value="PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item ?technique WHERE { ?item a lrmoo:F5_Item . ?manifestation lrmoo:R7i_is_exemplified_by ?item . ?expression lrmoo:R4i_is_embodied_in ?manifestation . ?creation a lrmoo:F28_Expression_Creation ; lrmoo:R17_created ?expression ; crm:P32_used_general_technique ?technique . }">Techniques</option>
+                <!-- Data -->
+                <option value="PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item (IF(STR(YEAR(?begin)) = STR(YEAR(?end)), STR(YEAR(?begin)), CONCAT(STR(YEAR(?begin)), '-', STR(YEAR(?end)))) AS ?date) WHERE { ?item a lrmoo:F5_Item . ?manifestation lrmoo:R7i_is_exemplified_by ?item . ?expression lrmoo:R4i_is_embodied_in ?manifestation . ?creation a lrmoo:F28_Expression_Creation ; lrmoo:R17_created ?expression ; crm:P4_has_time-span ?timespan . ?timespan crm:P82a_begin_of_the_begin ?begin ; crm:P82b_end_of_the_end ?end . }">Dates</option>
+                <!-- Ente di conservazione -->
+                <option value="PREFIX aat: <http://vocab.getty.edu/page/aat/> PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item (REPLACE(REPLACE(STR(?conservation_org), '.*/([^/]+)/[^/]+$', '$1'), '_', ' ') AS ?conservation_org_label) WHERE { ?item a lrmoo:F5_Item . ?activity crm:P16_used_specific_object ?item ; crm:P2_has_type aat:300054277 ; crm:P14_carried_out_by ?conservation_org . }">Keepers</option>
+                <!-- Luogo di conservazione -->
+                <option value="PREFIX aat: <http://vocab.getty.edu/page/aat/> PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item (REPLACE(REPLACE(STR(?conservation_place), '.*/([^/]+)/[^/]+$', '$1'), '_', ' ') AS ?conservation_place_label) WHERE { ?item a lrmoo:F5_Item . ?activity crm:P16_used_specific_object ?item ; crm:P2_has_type aat:300054277 ; crm:P14_carried_out_by ?conservation_org . ?conservation_org crm:P74_has_current_or_former_residence ?conservation_place . }">Conservation places</option>
+                <!-- Riproduzione digitale -->
+                <option value="PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item ?digital_repr WHERE { ?item a lrmoo:F5_Item . ?manifestation lrmoo:R7i_is_exemplified_by ?item ; crm:P130i_features_are_also_found_on ?digital_repr . }">Digital replicas</option>
+                <!-- Modello digitale esistente -->
+                <option value="PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item ?existing_model WHERE { ?item a lrmoo:F5_Item ; crm:P130i_features_are_also_found_on ?3d_model . ?3d_model crm:P130_shows_features_of ?existing_model . }">Existing digital models</option>
+                <!-- Soggetti -->
+                <option value="PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item (GROUP_CONCAT(REPLACE(REPLACE(STR(?subject), '.*/([^/]+)/[^/]+', '$1'), '_', ' ') ; SEPARATOR='; ') AS ?subjects) WHERE { ?item a lrmoo:F5_Item . ?manifestation lrmoo:R7i_is_exemplified_by ?item . ?expression lrmoo:R4i_is_embodied_in ?manifestation ; crm:P129_is_about ?subject . } GROUP BY ?item">Subjects</option>
+                <!-- Persone o enti -->
+                <option value='PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/> PREFIX lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> SELECT ?item (GROUP_CONCAT(CONCAT(?clean_name, " (", STR(?activity_type), ")"); SEPARATOR="; ") AS ?agents) WHERE { ?item a lrmoo:F5_Item . ?manifestation lrmoo:R7i_is_exemplified_by ?item . ?expression lrmoo:R4i_is_embodied_in ?manifestation . ?creation a lrmoo:F28_Expression_Creation ; lrmoo:R17_created ?expression ; crm:P9_consists_of ?activity . ?activity crm:P2_has_type ?activity_type ; crm:P14_carried_out_by ?agent . BIND(STR(?agent) AS ?agent_uri) BIND(STRAFTER(?agent_uri, "acr/") AS ?after_acr) BIND(STRBEFORE(?after_acr, "/1") AS ?agent_name_raw) BIND(REPLACE(?agent_name_raw, "_", " ") AS ?clean_name) } GROUP BY ?item'>People or organisations</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      <!-- Endpoint URL -->
+      <div class="field">
+        <label for="endpoint" class="label">Endpoint URL:</label>
+        <div class="control">
+          <input id="endpoint" type="text" class="input" value="{{ source }}" />
+        </div>
+      </div>
+
+      <!-- Query Textarea -->
+      <div class="field">
+        <label for="query" class="label">SPARQL Query:</label>
+        <div class="control">
+          <textarea id="query" class="textarea" value="SELECT ?s ?p ?o WHERE { ?s ?p ?o } LIMIT 10"></textarea>
+        </div>
+      </div>
+
+      <!-- Run Button -->
+      <div class="field">
+        <p class="control">
+          <button id="run" class="button">Run Query</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="title is-3">Response</h3>
+      <div id="results" style="overflow-x:auto;">
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('exampleSelect').addEventListener('change', function() {
+              if (this.value) document.getElementById('query').value = this.value;
+            });
+
+            document.getElementById('run').addEventListener('click', async () => {
+              const ep = document.getElementById('endpoint').value;
+              const q  = document.getElementById('query').value;
+              const url = ep + '?query=' + encodeURIComponent(q);
+              const headers = { 'Accept': 'application/sparql-results+json' };
+              const resultsDiv = document.getElementById('results');
+              try {
+                const res = await fetch(url, { headers });
+                if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
+                const json = await res.json();
+                const vars = json.head.vars;
+                let html = '<table class="table"><thead><tr>';
+                vars.forEach(v => { html += `<th>${v}</th>`; });
+                html += '</tr></thead><tbody>';
+                json.results.bindings.forEach(row => {
+                  html += '<tr>';
+                  vars.forEach(v => { html += `<td>${row[v]?.value || ''}</td>`; });
+                  html += '</tr>';
+                });
+                html += '</tbody></table>';
+                resultsDiv.innerHTML = html;
+              } catch (err) {
+                resultsDiv.innerHTML = `<div class="alert alert-danger">Error: ${err.message}</div>`;
+              }
+            });
+    </script>
+  {% endblock %}

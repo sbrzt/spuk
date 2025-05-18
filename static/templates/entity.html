@@ -2,15 +2,28 @@
 {% set type_triples = property_object_pairs | selectattr('is_type') | list %}
 {% set other_triples = property_object_pairs | rejectattr('is_type') | list %}
 
-  {% block content %}
-  <h1 class="title">{{ subject_label }}</h1>
+{% block content %}
+  <a class="button block" href="/index.html">
+    <span class="icon">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+   </span>
+    <span>Back to index</span>
+  </a>
+
+  <h1 class="title is-1">
+    {{ subject_label }}
+  </h1>
 
   {% if type_triples %}
     <div class="block">
       <strong>Type:</strong>
       {% for triple in type_triples %}
         {% if triple.object_uri %}
-          <a href="{{ triple.object_uri }}" target="_blank">{{ triple.object_label }}</a>{% if not loop.last %}, {% endif %}
+          <a href="{{ triple.object_uri }}" target="_blank">
+            {{ triple.object_label }}
+            <ion-icon name="open-outline"></ion-icon>
+          </a>
+          {% if not loop.last %}, {% endif %}
         {% else %}
           {{ triple.object_label }}{% if not loop.last %}, {% endif %}
         {% endif %}
@@ -29,11 +42,17 @@
       {% for triple in other_triples %}
       <tr>
         <td>
-          <a href="{{ triple.property_uri }}" target="_blank">{{ triple.property_label }}</a>
+          <a href="{{ triple.property_uri }}" target="_blank">
+            {{ triple.property_label }}
+            <ion-icon name="open-outline"></ion-icon>
+          </a>
         </td>
         <td>
           {% if triple.object_uri %}
-            <a href="{{ triple.object_uri }}.html" target="_blank">{{ triple.object_uri }}</a>
+            <a href="{{ triple.object_uri }}.html" target="_blank">
+              {{ triple.object_uri }}
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
           {% else %}
             {{ triple.object_label }}
           {% endif %}
@@ -43,5 +62,48 @@
     </tbody>
   </table>
 
-  <p><a href="index.html">← Back to index</a></p>
-  {% endblock %}
+  <h2 class="title is-2">Downloads</h2>
+    <div class="field is-grouped is-grouped-multiline block">
+      <div class="control">
+        <a class="tags has-addons is-hoverable" href="{{ path }}.ttl">
+          <span class="tag is-dark">
+            Format
+          </span>
+          <span class="tag is-primary">
+            Turtle
+          </span>
+        </a>
+      </div>
+      <div class="control">
+        <a class="tags has-addons is-hoverable" href="{{ path }}.nt">
+          <span class="tag is-dark">
+            Format
+          </span>
+          <span class="tag is-primary">
+            N-Triples
+          </span>
+        </a>
+      </div>
+      <div class="control">
+        <a class="tags has-addons is-hoverable" href="{{ path }}.jsonld">
+          <span class="tag is-dark">
+            Format
+          </span>
+          <span class="tag is-primary">
+            JSON-LD
+          </span>
+        </a>
+      </div>
+      <div class="control">
+        <a class="tags has-addons is-hoverable" href="{{ path }}.xml">
+          <span class="tag is-dark">
+            Format
+          </span>
+          <span class="tag is-primary">
+            RDF/XML
+          </span>
+        </a>
+      </div>
+    </div>
+
+{% endblock %}

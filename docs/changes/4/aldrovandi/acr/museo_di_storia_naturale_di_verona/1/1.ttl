@@ -1,0 +1,5 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/museo_di_storia_naturale_di_verona/1> a crm:E39_Actor ;
+    crm:P74_has_current_or_former_residence <https://w3id.org/changes/4/aldrovandi/plc/verona/1> .
+

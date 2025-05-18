@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <section class="section">
+        <h1 class="title">Cultural Heritage Acquisition and Digitisation Knowledge Graph (CHAD-KG)</h1>
+        <p class="subtitle">
+            The CHAD-KG is a knowledge graph containing descriptive metadata and digitisation paradata for a series of cultural heritage objects. These objects were initially displayed in a temporary museum exhibition dedicated to Ulisse Aldrovandi, an influential Italian Renaissance naturalist and botanist.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="title is-4">CHAD-AP Ontology</h2>
+        <p>
+            The structure of CHAD-KG is built upon the Cultural Heritage Acquisition and Digitisation Application Profile (CHAD-AP), an OWL ontology designed for describing cultural heritage objects, as well as the processes of acquisition and digitisation. The ontology enables structured and machine-actionable data, providing a framework for representing cultural heritage information.
+        </p>
+        <p>
+            Documentation for CHAD-AP can be found here: <a href="https://w3id.org/dharc/ontology/chad-ap" target="_blank">CHAD-AP Documentation</a>.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="title is-4">Construction of the Knowledge Graph</h2>
+        <p>
+            CHAD-KG was constructed using the Morph-KGC extension, which utilizes YARRRML mapping files, a configuration file, and a set of user-defined functions. This setup generates RDF triples that are aligned with the CHAD-AP ontology from tabular data. 
+        </p>
+        <p>
+            The software documentation for Morph-KGC can be accessed here: <a href="https://github.com/dharc-org/morph-kgc-changes-metadata" target="_blank">Morph-KGC Documentation</a>.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="title is-4">Additional information</h2>
+        <p>
+            DOI: <a href="https://doi.org/10.5281/zenodo.15102846" target="_blank">10.5281/zenodo.15102846</a>
+        </p>
+        <p>
+            License: <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a>
+        </p>
+        <p>
+            Endpoint: <a href="{{ source }}">{{ source }}</a>
+        </p>
+    </section>
+</div>
+
+{% endblock %}

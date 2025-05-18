@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/venezia/1">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <crm:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/giuseppe_picotti/1"/>
+    <crm:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/girolamo_porro/1"/>
+    <crm:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/giovanni_tacuino/1"/>
+    <crm:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/giorgio_rusconi/1"/>
+    <crm:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/gaspare_bindoni/1"/>
+    <crm:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/federico_torresano/1"/>
+    <crm:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/bernardo_basa/1"/>
+  </rdf:Description>
+</rdf:RDF>
