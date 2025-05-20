@@ -1,0 +1,2 @@
+<https://w3id.org/changes/4/aldrovandi/idf/vetrina_8_alto_s_2_t/dg00/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "<Https://aton.ispc.cnr.it/s/aldrovandi/20240708-mr00aodgg>"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/changes/4/aldrovandi/idf/vetrina_8_alto_s_2_t/dg00/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .

@@ -36,7 +36,7 @@ def remove_root(path):
 def generate_path(uri):
     root = "docs"
     path = urlparse(uri).path
-    parts = path.strip("/").split("/")
+    parts = path.strip("/").split("/")[:-1]
     full_path = os.path.join(root, *parts)
     return full_path
 

@@ -202,6 +202,6 @@ class RDFGraph:
             "most_connected": self.get_most_connected(),
             "models_used": self.get_model_data(),
             "class_entities_counts_chart": self.generate_bar("Entity frequency", self.get_class_data()),
-            "property_usage_chart": self.generate_bar("Property frequency", self.get_property_data()),
+            "property_usage_chart": self.generate_bar("Property frequency", self.get_property_data()[:10]),
             "models_usage": self.generate_bar("Model usage", self.get_model_data())
         }

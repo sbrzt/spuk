@@ -25,7 +25,7 @@ class EntityObject:
         return full_path
 
     def generate_folders(self):
-        os.makedirs(self.get_path())
+        os.makedirs(self.get_path(), exist_ok=True)
 
     def generate_rdf(self):
         source = self.source.graph
@@ -35,7 +35,7 @@ class EntityObject:
         for s, p, o in source.triples((URIRef(self.get_uri()), None, None)):
             g.add((s, p, o))
             if p == RDF.type:
-                self.type = str(p)
+                self.type = str(o)
         return g
 
 
@@ -79,8 +79,8 @@ class EntityObject:
     def render(self):
         template = env.get_template("entity.html")
         return template.render(
-            subject_uri = self.get_uri(),
-            subject_label = self.get_uri(),
+            entity_uri = self.get_uri(),
+            entity_type = self.get_type(),
             property_object_pairs = self.get_property_object_pairs(),
             base_path = self.get_base_path(),
             path = f"{remove_root(self.get_path())}/{uri_to_filename(self.get_uri())}"

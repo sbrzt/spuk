@@ -1,0 +1,5 @@
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_1/04/1> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/page/aat/300417260> .
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_1/04/1> <http://www.ics.forth.gr/isl/CRMdig/L10_had_input> <https://w3id.org/changes/4/aldrovandi/mdl/a_alto_sinistra_1/03/1> .
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_1/04/1> <http://www.ics.forth.gr/isl/CRMdig/L11_had_output> <https://w3id.org/changes/4/aldrovandi/mdl/a_alto_sinistra_1/04/1> .
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_1/04/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ics.forth.gr/isl/CRMdig/D10_Software_Execution> .
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_1/04/1> <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://w3id.org/changes/4/aldrovandi/tsp/a_alto_sinistra_1/04/1> .
