@@ -27,10 +27,9 @@ class IndexObject:
         template = env.get_template("index.html")
         items = [
             {
-                "uri": entity.uri,
-                "path": f"{remove_root(entity.get_path())}/{uri_to_filename(entity.uri)}",
+                "uri": entity.get_uri(),
+                "path": f"{remove_root(entity.get_path())}/{uri_to_filename(entity.get_uri())}",
                 "type": entity.get_type(),
-                "type_uri": entity.get_type()
             }
             for entity in self.get_entities()
         ]

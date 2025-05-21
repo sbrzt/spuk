@@ -60,9 +60,19 @@
 
       <div class="grid is-col-min-24">
         {% for e in entities %}
-          <a class="cell entity" href="{{ e.path }}.html">
-            {{ e.uri }}
-          </a>
+          <div class="card cell entity">
+            <header class="card-header">
+              <p class="card-header-title">{{ e.uri }}</p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Type: {{ e.type }}
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="{{ e.path }}.html" class="card-footer-item">Go to entity page</a>
+            </footer>
+          </div>
         {% endfor %}
       </div>
 </div>

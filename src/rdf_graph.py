@@ -129,23 +129,22 @@ class RDFGraph:
                         "property_uri": property_uri,
                         "object_label": object_label,
                         "object_uri": object_uri,
-                        #"is_type": True if p == RDF.type else False
                     })
                     self.property_data[property_uri]["label"] = property_label
                     self.property_data[property_uri]["uri"] = property_uri
                     self.property_data[property_uri]["frequency"] += 1
                     self.add_model_data(p)
             
-            if isinstance(o, URIRef):
-                self.in_degree[str(o)] += 1
-                self.property_data[property_uri]["type"] = "object"
-                if p == RDF.type:
-                    class_uri = str(o)
-                    self.class_data[class_uri]["label"] = get_uri_label(class_uri)
-                    self.class_data[class_uri]["uri"] = class_uri
-                    self.class_data[class_uri]["entities"].append(s_str)
-            elif isinstance(o, Literal):
-                self.property_data[property_uri]["type"] = "data"
+                if isinstance(o, URIRef):
+                    self.in_degree[str(o)] += 1
+                    self.property_data[property_uri]["type"] = "object"
+                    if p == RDF.type:
+                        class_uri = str(o)
+                        self.class_data[class_uri]["label"] = get_uri_label(class_uri)
+                        self.class_data[class_uri]["uri"] = class_uri
+                        self.class_data[class_uri]["entities"].append(s_str)
+                elif isinstance(o, Literal):
+                    self.property_data[property_uri]["type"] = "data"
             self.add_model_data(o)
 
         self.entity_data = list(self.entity_data)
@@ -154,12 +153,12 @@ class RDFGraph:
             data["frequency"] = len(data["entities"])
 
     def format_object(self, o):
+        o_str = str(o)
         if isinstance(o, URIRef):
-            o_str = str(o)
             if o_str in self.entity_data:
                 return o_str, f"{remove_root(generate_path(o_str))}/{uri_to_filename(o_str)}"
             return o_str, o_str
-        return str(o), None
+        return o_str, None
 
 
     def generate_bar(self, title, data):

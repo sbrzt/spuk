@@ -15,7 +15,6 @@ class EntityObject:
         self.path = generate_path(self.uri)
         self.rdf = self.generate_rdf()
         self.base_path = generate_base_path(self.get_path())
-
     
     def generate_path(self):
         root = "docs"

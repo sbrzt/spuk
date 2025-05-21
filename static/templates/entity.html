@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% set type_triples = property_object_pairs | selectattr('is_type') | list %}
-{% set other_triples = property_object_pairs | rejectattr('is_type') | list %}
 
 {% block content %}
   <a class="button block" href="/index.html">
