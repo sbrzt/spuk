@@ -102,6 +102,14 @@ class RDFGraph:
                     max_length = len(value)
         return generate_path(most_connected)
 
+    def add_model_data(self, el):
+        for prefix, ns in self.graph.namespaces():
+            if get_namespace(el) == str(ns):
+                model_uri = get_namespace(el)
+                self.model_data[model_uri]["uri"] = model_uri
+                self.model_data[model_uri]["label"] = prefix
+                self.model_data[model_uri]["frequency"] += 1
+
 
     def analyze_graph(self):
         self.entity_data.update([str(s) for s in self.graph.subjects()])
@@ -109,33 +117,24 @@ class RDFGraph:
             s_str = str(s)
             self.out_degree[str(s)] += 1
             if isinstance(s, URIRef):
-                for prefix, ns in self.graph.namespaces():
-                    if get_namespace(s) == str(ns):
-                        model_uri = get_namespace(s)
-                        self.model_data[model_uri]["uri"] = model_uri
-                        self.model_data[model_uri]["label"] = prefix
-                        self.model_data[model_uri]["frequency"] += 1
+                self.add_model_data(s)
                 
             if isinstance(p, URIRef):
-                property_uri = str(p)
-                property_label = get_uri_label(property_uri)
-                object_label, object_uri = self.format_object(o)
-                self.property_object_data[s_str].append({
-                    "property_label": property_label,
-                    "property_uri": property_uri,
-                    "object_label": object_label,
-                    "object_uri": object_uri,
-                    "is_type": True if p == RDF.type else False
-                })
-                self.property_data[property_uri]["label"] = property_label
-                self.property_data[property_uri]["uri"] = property_uri
-                self.property_data[property_uri]["frequency"] += 1
-                for prefix, ns in self.graph.namespaces():
-                    if get_namespace(p) == str(ns):
-                        model_uri = get_namespace(p)
-                        self.model_data[model_uri]["uri"] = model_uri
-                        self.model_data[model_uri]["label"] = prefix
-                        self.model_data[model_uri]["frequency"] += 1
+                if p != RDF.type:
+                    property_uri = str(p)
+                    property_label = get_uri_label(property_uri)
+                    object_label, object_uri = self.format_object(o)
+                    self.property_object_data[s_str].append({
+                        "property_label": property_label,
+                        "property_uri": property_uri,
+                        "object_label": object_label,
+                        "object_uri": object_uri,
+                        #"is_type": True if p == RDF.type else False
+                    })
+                    self.property_data[property_uri]["label"] = property_label
+                    self.property_data[property_uri]["uri"] = property_uri
+                    self.property_data[property_uri]["frequency"] += 1
+                    self.add_model_data(p)
             
             if isinstance(o, URIRef):
                 self.in_degree[str(o)] += 1
@@ -147,12 +146,7 @@ class RDFGraph:
                     self.class_data[class_uri]["entities"].append(s_str)
             elif isinstance(o, Literal):
                 self.property_data[property_uri]["type"] = "data"
-            for prefix, ns in self.graph.namespaces():
-                if get_namespace(o) == str(ns):
-                    model_uri = get_namespace(o)
-                    self.model_data[model_uri]["uri"] = model_uri
-                    self.model_data[model_uri]["label"] = prefix
-                    self.model_data[model_uri]["frequency"] += 1
+            self.add_model_data(o)
 
         self.entity_data = list(self.entity_data)
 
@@ -185,8 +179,6 @@ class RDFGraph:
             legend_at_bottom=True,
             legend_box_size=5,
             legend_at_bottom_columns=3,
-            #print_values=True,
-            #print_values_position="top",
             order_min=1,
             ).decode("utf-8")
 
@@ -202,6 +194,6 @@ class RDFGraph:
             "most_connected": self.get_most_connected(),
             "models_used": self.get_model_data(),
             "class_entities_counts_chart": self.generate_bar("Entity frequency", self.get_class_data()),
-            "property_usage_chart": self.generate_bar("Property frequency", self.get_property_data()[:10]),
+            "property_usage_chart": self.generate_bar("Top 10 property frequency", self.get_property_data()[:10]),
             "models_usage": self.generate_bar("Model usage", self.get_model_data())
         }

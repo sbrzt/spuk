@@ -70,7 +70,16 @@ Run the test suite with:
 
 ## Roadmap
 
-...
+- Entity
+    - [ ] graph visualization
+    - [ ] directed properties
+    - [ ] triples in which the entity is the object
+- Index
+    - [ ] entity cards
+    - [ ] datatype distribution
+- General
+    - [ ] configuration file
+    - [ ] footer
 
 ## Author
 
