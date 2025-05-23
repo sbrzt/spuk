@@ -86,7 +86,6 @@ class EntityObject:
         )
 
     def save(self):
-        """Saves the HTML page to the output directory."""
         html = self.render()
         output_path = os.path.join(self.get_path(), f"{uri_to_filename(self.get_uri())}.html")
         with open(output_path, "w") as f:

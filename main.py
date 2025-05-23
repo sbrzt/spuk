@@ -1,11 +1,11 @@
-from src.rdf_graph import RDFGraph
+from src.knowledge_graph import KnowledgeGraph
 from src.entity_object import EntityObject
 from src.index_object import IndexObject
 from src.documentation_object import DocumentationObject
 
 def main():
     source = "https://chad-kg.duckdns.org/chadkg/sparql"
-    rdf = RDFGraph(source, is_sparql_endpoint=True)
+    rdf = KnowledgeGraph(source, is_sparql_endpoint=True)
     entities = rdf.get_property_object_data()
     summary = rdf.get_summary()
 

@@ -5,8 +5,13 @@ from SPARQLWrapper import SPARQLWrapper, GET, TURTLE
 import pygal, logging, requests
 
 
-class RDFGraph:
-    def __init__(self, source: str, is_sparql_endpoint=False):
+class KnowledgeGraph:
+    def __init__(
+        self, 
+        source: str, 
+        is_sparql_endpoint=False
+        ) -> None:
+
         self.graph = Graph()
         self.source = source
         if is_sparql_endpoint:
@@ -33,7 +38,15 @@ class RDFGraph:
         })
         self.in_degree = defaultdict(int)
         self.out_degree = defaultdict(int)
+
+        #self.s = [e for e in self.graph.subjects(unique=True)]
+        #self.i = [i for i in self.graph.objects(unique=True) if i not in self.s]
+        #self.e = self.s + self.i
+        #self.p = [p for p in self.graph.predicates(unique=True)]
+        # forse ha senso generare gli entity object qui? 
+
         self.analyze_graph()
+
         print(f"🔗 Loaded {len(self.graph)} triples from {source}")
 
 
