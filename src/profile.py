@@ -1,78 +1,102 @@
-from rdflib import Graph, URIRef, RDF, Literal, Namespace
-from src.utils import get_uri_label, uri_to_filename, get_namespace, generate_path, remove_root
-from collections import defaultdict
-from SPARQLWrapper import SPARQLWrapper, GET, TURTLE
-import pygal, logging, requests
+from src.knowledge_graph import KnowledgeGraph
+from src.models import EntityData, PropertyValuePair
+from src.utils import get_uri_label
+from typing import List, Dict, Optional
+from rdflib import URIRef, RDF, Literal
 
 
-class KnowledgeGraph:
-    """
-    A wrapper around rdflib.Graph for data source abstraction.
-    It handles loading RDF data from either a file or a SPARQL 
-    endpoint, and stores basic metadata like namespaces.
-    """
+class Profile:
+
     def __init__(
-        self, 
-        source: str, 
-        is_sparql_endpoint: bool = False
+        self,
+        knowledge_graph: KnowledgeGraph
         ) -> None:
 
-        self.source: str = source
-        self._is_sparql_endpoint: bool = is_sparql_endpoint
-        self._graph: Graph = self.load()
-        self._namespaces: dict = dict(self._graph.namespace_manager.namespaces())
+        self._kg = knowledge_graph
+        self.graph = self._kg.get_graph()
+        self.entities: Dict[str, EntityData] = {}
         
-    
-    def load(
-        self,
-        ) -> Graph:
+        self.object_properties: set[str] = set()
+        self.data_properties: set[str] = set()
 
-        g = Graph()
-        if self._is_sparql_endpoint:
-            query = """
-                CONSTRUCT { ?s ?p ?o }
-                WHERE { ?s ?p ?o }
-            """
-            sparql = SPARQLWrapper(self.source)
-            sparql.setQuery(query)
-            sparql.setMethod(GET)
-            sparql.setReturnFormat(TURTLE)
-            response = sparql.query().convert()
-            g.parse(
-                data = response.decode("utf-8"), 
-                format = "turtle"
-            )
-        else:
-            g.parse(self.source)
-        print(f"✅ Data loaded from {self.source}.")
-        return g
+        self._analyze()
 
 
-    def get_graph(
+    def _analyze(
         self
-        ) -> Graph:
+        ) -> None:
 
-        return self._graph
+        for s, p, o in self.graph:
+            s_str = str(s)
+            if s_str not in self.entities:
+                self.entities[s_str] = EntityData(
+                    uri = s_str,
+                    types = [],
+                    properties = []
+                )
+            p_str = str(p)
+            o_str = str(o)
 
+            if isinstance(p, URIRef):
+                p_label = get_uri_label(p_str)
+                is_literal = isinstance(o, Literal)
 
-    def get_namespaces(
+                if p == RDF.type:
+                    class_uri = str(o)
+                    self.entities[s_str].types.append(class_uri)
+                    # CLASS COUNTS HERE
+                    continue
+                else:
+                    if is_literal:
+                        self.data_properties.add(p_str)
+                    else:
+                        self.object_properties.add(p_str)
+
+                self.entities[s_str].properties.append(
+                    PropertyValuePair(
+                        property_label = p_label,
+                        property_uri = p_str,
+                        value = o_str,
+                        is_literal = is_literal
+                    )
+                )
+
+    @property
+    def num_triples(
+        self
+        ) -> int:
+        return len(self.graph)
+
+    @property
+    def num_entities(
+        self
+        ) -> int:
+        return len(self.entities)
+
+    @property
+    def num_object_properties(
+        self
+        ) -> int:
+        return len(self.object_properties)
+    
+    @property
+    def num_data_properties(
+        self
+        ) -> int:
+        return len(self.data_properties)
+    
+    
+    def get_summary(
         self
         ) -> dict:
+        return {
+            "num_triples": self.num_triples,
+            "num_entities": self.num_entities,
+            "num_object_properties": self.num_object_properties,
+            "num_data_properties": self.num_data_properties
+        }
 
-        return self._namespaces
-
-    
-    def get_namespace(
-        self,
-        prefix: str
-        ) -> URIRef:
-
-        return self._namespaces.get(prefix)
-
-
-        '''
-        
-        self.entity_data = set()
+    '''
         self.class_data = defaultdict(lambda: {
             "uri": None,
             "label": None,
@@ -207,27 +231,6 @@ class KnowledgeGraph:
             return o_str, o_str
         return o_str, None
 
-
-    def generate_bar(self, title, data):
-        bar_chart = pygal.HorizontalBar(
-            style=pygal.style.Style(
-                background="white",
-                plot_background="white",
-                opacity=".6",
-                opacity_hover=".8",
-                value_colors=("black",)
-            )
-        )
-        bar_chart.title = title
-        for d in data:
-            bar_chart.add(d["label"], d["frequency"])
-        return bar_chart.render(
-            legend_at_bottom=True,
-            legend_box_size=5,
-            legend_at_bottom_columns=3,
-            order_min=1,
-            ).decode("utf-8")
-
     def get_summary(self):
         return {
             "source": self.source,
@@ -239,8 +242,5 @@ class KnowledgeGraph:
             "property_ratio": self.get_property_ratio(),
             "most_connected": self.get_most_connected(),
             "models_used": self.get_model_data(),
-            "class_entities_counts_chart": self.generate_bar("Entity frequency", self.get_class_data()),
-            "property_usage_chart": self.generate_bar("Top 10 property frequency", self.get_property_data()[:10]),
-            "models_usage": self.generate_bar("Model usage", self.get_model_data())
         }
-        '''
+    '''

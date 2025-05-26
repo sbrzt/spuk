@@ -6,6 +6,63 @@ import os
 
 env = Environment(loader=FileSystemLoader("static/templates"))
 
+class EntityObj:
+    def __init__(
+        self,
+        uri
+        ):
+        self.uri = uri
+        self.type = None
+        self.triples = ()
+        self.path = generate_path(self.get_uri())
+
+    def get_uri(self):
+        return self.uri
+
+    def get_path(self):
+        return self.path
+
+    def generate_folders(self):
+        os.makedirs(
+            self.get_path(), 
+            exist_ok=True
+            )
+    
+    def serialize(self):
+        FORMATS = {
+            "turtle": "ttl",
+            "nt": "nt",
+            "xml": "xml",
+            "json-ld": "jsonld"
+        }
+        for frmt, ext in FORMATS.items():
+            rdf = self.get_rdf()
+            filename = uri_to_filename(self.get_uri())
+            full_path = os.path.join(self.get_path(), f"{filename}.{ext}")
+            rdf.serialize(
+                destination=full_path, 
+                format=frmt,
+                encoding="utf-8"
+            )
+    
+    def render(self):
+        template = env.get_template("entity.html")
+        return template.render(
+            entity_uri = self.get_uri(),
+            entity_type = self.get_type(),
+            triples = self.get_triples(),
+            base_path = self.get_base_path(),
+            path = f"{remove_root(self.get_path())}/{uri_to_filename(self.get_uri())}"
+        )
+
+    def save(self):
+        html = self.render()
+        output_path = os.path.join(self.get_path(), f"{uri_to_filename(self.get_uri())}.html")
+        with open(output_path, "w") as f:
+            f.write(html)
+
+
+
 class EntityObject:
     def __init__(self, uri, property_object_pairs, source):
         self.uri = uri
@@ -16,12 +73,6 @@ class EntityObject:
         self.rdf = self.generate_rdf()
         self.base_path = generate_base_path(self.get_path())
     
-    def generate_path(self):
-        root = "docs"
-        path = urlparse(self.get_uri()).path
-        parts = path.strip("/").split("/")
-        full_path = os.path.join(root, *parts)
-        return full_path
 
     def generate_folders(self):
         os.makedirs(self.get_path(), exist_ok=True)
