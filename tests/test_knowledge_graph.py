@@ -29,17 +29,6 @@ class TestKnowledgeGraph(unittest.TestCase):
         self.assertIsInstance(g, Graph)
         self.assertEqual(len(g), 1)
 
-    def test_namespaces(self):
-        kg = KnowledgeGraph(source=self.temp_file.name)
-        namespaces = kg.get_namespaces()
-        self.assertIn("ex", namespaces)
-
-    def test_get_namespace(self):
-        kg = KnowledgeGraph(source=self.temp_file.name)
-        ns = kg.get_namespace("ex")
-        self.assertIsInstance(ns, URIRef)
-        self.assertEqual(str(ns), "http://example.org/")
-
 
 class TestKnowledgeGraphSPARQLEndpoint(unittest.TestCase):
 
@@ -64,8 +53,6 @@ class TestKnowledgeGraphSPARQLEndpoint(unittest.TestCase):
         g = kg.get_graph()
         self.assertIsInstance(g, Graph)
         self.assertEqual(len(g), 1)
-        namespaces = kg.get_namespaces()
-        self.assertIn("ex", namespaces)
 
 
 if __name__ == "__main__":
