@@ -2,7 +2,6 @@ import unittest
 from rdflib import Graph, URIRef, Literal, RDF, Namespace
 from src.profile import Profile
 from src.knowledge_graph import KnowledgeGraph
-from src.models import EntityData, PropertyValuePair
 
 EX = Namespace("http://example.org/")
 
@@ -73,6 +72,14 @@ class TestProfile(unittest.TestCase):
         ]
         result = self.profile.most_frequent_models
         self.assertEqual(result, expected)
+
+    def test_snippet_contents(self):
+        alice_snippet =  self.profile.entities["http://example.org/alice"].snippet
+        self.assertEqual(len(alice_snippet), 4)
+        self.assertIn((EX.alice, RDF.type, EX.Person), alice_snippet)
+        self.assertIn((EX.alice, EX.age, Literal(30)), alice_snippet)
+        self.assertIn((EX.alice, EX.knows, EX.bob), alice_snippet)
+        self.assertNotIn((EX.bob, RDF.type, EX.Person), alice_snippet)
 
     def test_get_summary(self):
         summary = self.profile.get_summary()

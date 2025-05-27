@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from typing import List, Optional
+from rdflib import Graph
 
 @dataclass
 class PropertyValuePair:
@@ -13,3 +14,4 @@ class EntityData:
     uri: str
     types: List[str]
     properties: List[PropertyValuePair]
+    snippet: Graph

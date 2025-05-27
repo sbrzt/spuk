@@ -78,6 +78,7 @@ Run the test suite with:
     - [ ] entity cards
     - [ ] datatype distribution
 - General
+    - [ ] codebase reengineering
     - [ ] configuration file
     - [ ] footer
 

@@ -2,7 +2,7 @@ from src.knowledge_graph import KnowledgeGraph
 from src.models import EntityData, PropertyValuePair
 from src.utils import get_uri_label, get_namespace
 from typing import List, Dict, Optional, Tuple
-from rdflib import URIRef, RDF, Literal
+from rdflib import URIRef, RDF, Literal, Graph
 from collections import defaultdict
 
 
@@ -65,8 +65,12 @@ class Profile:
                 self.entities[s_str] = EntityData(
                     uri = s_str,
                     types = [],
-                    properties = []
+                    properties = [],
+                    snippet = Graph()
                 )
+                
+            self.entities[s_str].snippet.add((s, p, o))
+            
             p_str = str(p)
             o_str = str(o)
 

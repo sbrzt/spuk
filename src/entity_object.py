@@ -20,21 +20,10 @@ class EntityObject:
         self.path = generate_path(self.uri)
         self.base_path = generate_base_path(self.path)
         self.source_graph = graph_wrapper.get_graph()
-        self.snippet = self._extract_snippet()
+        self.snippet = entity_data.snippet
 
     def __repr__(self):
         return f"<EntityObject(uri={self.uri})>"
-
-    def _extract_snippet(
-        self
-        ) -> Graph:
-        g = Graph()
-        for prefix, namespace in self.source_graph.namespaces():
-            g.bind(prefix, namespace)
-        entity = URIRef(self.uri)
-        for s, p, o in self.source_graph.triples((entity, None, None)):
-            g.add((s, p, o))
-        return g
 
 
     def generate_folders(
