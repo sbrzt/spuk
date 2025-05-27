@@ -1,46 +1,33 @@
 import unittest
-from rdflib import Graph, URIRef, Literal, RDF
+from rdflib import Graph, URIRef, Literal, RDF, Namespace
 from src.profile import Profile
 from src.knowledge_graph import KnowledgeGraph
 from src.models import EntityData, PropertyValuePair
 
+EX = Namespace("http://example.org/")
+
 
 class ProxyKnowledgeGraph(KnowledgeGraph):
-    def __init__(
-        self,
-        graph: Graph
-        ):
+    def __init__(self, graph: Graph):
         self._graph = graph
     
     def get_graph(self):
         return self._graph
-    
+
 
 class TestProfile(unittest.TestCase):
-    def setUp(
-        self
-        ):
+    
+    def setUp(self):
         self.graph = Graph()
-
-        ex = "http://example.org/"
-        alice = URIRef(ex + "Alice")
-        bob = URIRef(ex + "Bob")
-        john = URIRef(ex + "John")
-        person = URIRef(ex + "Person")
-        dog = URIRef(ex + "Dog")
-        knows = URIRef(ex + "knows")
-        age = URIRef(ex + "age")
-
-        self.graph.bind("ex", ex)
-
-        self.graph.add((alice, RDF.type, person))
-        self.graph.add((bob, RDF.type, person))
-        self.graph.add((john, RDF.type, dog))
-        self.graph.add((alice, knows, bob))
-        self.graph.add((alice, knows, john))
-        self.graph.add((alice, age, Literal(30)))
-
+        self.graph.bind("ex", EX)
+        self.graph.add((EX.alice, RDF.type, EX.Person))
+        self.graph.add((EX.bob, RDF.type, EX.Person))
+        self.graph.add((EX.john, RDF.type, EX.Dog))
+        self.graph.add((EX.alice, EX.knows, EX.bob))
+        self.graph.add((EX.alice, EX.knows, EX.john))
+        self.graph.add((EX.alice, EX.age, Literal(30)))
         self.kg = ProxyKnowledgeGraph(self.graph)
+        
         self.profile = Profile(self.kg)
 
     def test_num_triples(self):

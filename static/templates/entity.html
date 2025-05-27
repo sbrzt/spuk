@@ -15,9 +15,11 @@
   <div class="block">
     <ion-icon name="cube-outline"></ion-icon>
     <strong>Is a:</strong>
-      <a href="{{ entity_type }}" target="_blank">
-        {{ entity_type }}
+      {% for type in entity_types %}
+      <a href="{{ type }}" target="_blank">
+        {{ type }}
       </a>
+      {% endfor %}
   </div>
 
   <table class="table is-hoverable">
@@ -28,22 +30,22 @@
       </tr>
     </thead>
     <tbody>
-      {% for triple in property_object_pairs %}
+      {% for pair in property_object_pairs %}
       <tr>
         <td>
-          <a href="{{ triple.property_uri }}" target="_blank">
-            {{ triple.property_label }}
+          <a href="{{ pair.property_uri }}" target="_blank">
+            {{ pair.property_label }}
             <ion-icon name="open-outline"></ion-icon>
           </a>
         </td>
         <td>
-          {% if triple.object_uri %}
-            <a href="{{ triple.object_uri }}.html" target="_blank">
-              {{ triple.object_uri }}
+          {% if pair.is_literal %}
+            {{ pair.value }}
+          {% else %}
+            <a href="{{ pair.value }}.html" target="_blank">
+              {{ pair.value }}
               <ion-icon name="open-outline"></ion-icon>
             </a>
-          {% else %}
-            {{ triple.object_label }}
           {% endif %}
         </td>
       </tr>

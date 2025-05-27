@@ -7,12 +7,30 @@ from collections import defaultdict
 
 
 class Profile:
+    """
+    An analytical profile of a knowledge graph, providing descriptive statistics
+    and structural summaries such as entity counts, property usage, class distribution,
+    and ontology/model frequencies.
+
+    Attributes:
+        entities (Dict[str, EntityData]): Map of entity URIs to their associated data.
+        object_properties (set[str]): Set of URIs used as object properties.
+        data_properties (set[str]): Set of URIs used as data (literal) properties.
+        property_frequencies (dict[str, int]): Frequency count of each property URI.
+        class_frequencies (dict[str, int]): Frequency count of each class URI.
+        model_frequencies (dict[Tuple[str, str], int]): Frequency of each namespace (prefix, URI) used in the graph.
+    """
 
     def __init__(
         self,
         knowledge_graph: KnowledgeGraph
         ) -> None:
+        """
+        Initializes the Profile with a given KnowledgeGraph instance.
 
+        Args:
+            knowledge_graph (KnowledgeGraph): The RDF graph wrapper to be analyzed.
+        """
         self._kg = knowledge_graph
         self.graph = self._kg.get_graph()
         self.entities: Dict[str, EntityData] = {}
@@ -21,14 +39,16 @@ class Profile:
         self.property_frequencies: dict[str, int] = defaultdict(int)
         self.class_frequencies: dict[str, int] = defaultdict(int)
         self.model_frequencies: dict[Tuple[str, str], int] = defaultdict(int)
-
         self._analyze()
 
 
     def _analyze(
         self
         ) -> None:
-
+        """
+        Performs the core analysis of the RDF graph.
+        Extracts and counts entities, classes, properties, and models used.
+        """
         namespaces = dict(self.graph.namespaces())
 
         def get_model_key(
@@ -83,42 +103,63 @@ class Profile:
     def num_triples(
         self
         ) -> int:
+        """
+        Returns the total number of RDF triples in the graph.
+        """
         return len(self.graph)
 
     @property
     def num_entities(
         self
         ) -> int:
+        """
+        Returns the number of unique entities (subjects) in the graph.
+        """
         return len(self.entities)
 
     @property
     def num_properties(
         self
         ) -> int:
+        """
+        Returns the total number of property usages (predicate occurrences).
+        """
         return sum(self.property_frequencies.values())
 
     @property
     def num_object_properties(
         self
         ) -> int:
+        """
+        Returns the number of distinct object properties used in the graph.
+        """
         return len(self.object_properties)
     
     @property
     def num_data_properties(
         self
         ) -> int:
+        """
+        Returns the number of distinct data (literal) properties used in the graph.
+        """
         return len(self.data_properties)
 
     @property
     def num_classes(
         self
         ) -> int:
+        """
+        Returns the number of distinct RDF classes used in rdf:type statements.
+        """
         return len(self.class_frequencies)
 
     @property
     def num_models(
         self
         ) -> int:
+        """
+        Returns the number of distinct models (namespaces) used in the graph.
+        """
         return len(self.model_frequencies)
 
     @property
@@ -126,6 +167,15 @@ class Profile:
         self,
         n: int = 10
         ) -> List[Tuple[str, int]]:
+        """
+        Returns the top `n` most frequently used properties.
+
+        Args:
+            n (int): The number of top properties to return. Default is 10.
+
+        Returns:
+            List[Tuple[str, int]]: A list of (property URI, frequency) tuples.
+        """
         return sorted(
             self.property_frequencies.items(),
             key = lambda x: x[1],
@@ -137,6 +187,15 @@ class Profile:
         self,
         n: int = 10
         ) -> List[Tuple[str, int]]:
+        """
+        Returns the top `n` most frequently assigned classes.
+
+        Args:
+            n (int): The number of top classes to return. Default is 10.
+
+        Returns:
+            List[Tuple[str, int]]: A list of (class URI, frequency) tuples.
+        """
         return sorted(
             self.class_frequencies.items(),
             key = lambda x: x[1],
@@ -148,6 +207,15 @@ class Profile:
         self,
         n: int = 10
         ) -> List[Tuple[str, str, int]]:
+        """
+        Returns the top `n` most frequently used models (namespaces).
+
+        Args:
+            n (int): The number of top models to return. Default is 10.
+
+        Returns:
+            List[Tuple[str, str, int]]: A list of (prefix, namespace URI, frequency) tuples.
+        """
         return [
             (prefix, ns, count)
             for (prefix, ns), count in sorted(
@@ -161,6 +229,19 @@ class Profile:
     def get_summary(
         self
         ) -> dict:
+        """
+        Returns a dictionary summarizing the basic statistics of the graph.
+
+        Returns:
+            dict: A dictionary containing key graph statistics:
+                  - number of triples
+                  - number of entities
+                  - number of properties
+                  - number of unique object properties
+                  - number of unique data properties
+                  - number of classes
+                  - number of models (ontologies and controlled vocabularies declared)
+        """
         return {
             "num_triples": self.num_triples,
             "num_entities": self.num_entities,
@@ -170,33 +251,3 @@ class Profile:
             "num_classes": self.num_classes,
             "num_models": self.num_models
         }
-
-    '''
-    def get_property_ratio(self):
-        object_property_total = sum(
-            prop["frequency"] for prop in self.property_data.values() if prop["type"] == "object"
-        )
-        data_property_total = sum(
-            prop["frequency"] for prop in self.property_data.values() if prop["type"] == "data"
-        )
-
-        if data_property_total > 0:
-            ratio = object_property_total / data_property_total
-        else:
-            ratio = float('inf')
-        return round(ratio, 2)
-
-    def get_most_connected(self):
-        most_connected = None
-        max_length = 0
-        for key, value in self.get_property_object_data().items():
-            if isinstance(value, list):
-                if len(value) > max_length:
-                    most_connected = key
-                    max_length = len(value)
-        return generate_path(most_connected)
-
-    "avg_degree": round(sum({e: self.in_degree[e] + self.out_degree[e] for e in self.get_entity_data()}.values()) / len(self.get_entity_data()), 2),
-    "property_ratio": self.get_property_ratio(),
-    "most_connected": self.get_most_connected(),
-    '''

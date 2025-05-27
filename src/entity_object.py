@@ -2,142 +2,83 @@ from jinja2 import Environment, FileSystemLoader
 from src.utils import escape_html, uri_to_filename, get_uri_label, remove_root, generate_base_path, generate_path
 from rdflib import Graph, URIRef, Literal, RDF
 from urllib.parse import urlparse
+from src.models import EntityData
+from src.knowledge_graph import KnowledgeGraph
 import os
 
 env = Environment(loader=FileSystemLoader("static/templates"))
 
-class EntityObj:
+class EntityObject:
     def __init__(
         self,
-        uri
+        entity_data: EntityData,
+        graph_wrapper: KnowledgeGraph
         ):
-        self.uri = uri
-        self.type = None
-        self.triples = ()
-        self.path = generate_path(self.get_uri())
+        self.uri = entity_data.uri
+        self.properties = entity_data.properties
+        self.types = entity_data.types
+        self.path = generate_path(self.uri)
+        self.base_path = generate_base_path(self.path)
+        self.source_graph = graph_wrapper.get_graph()
+        self.snippet = self._extract_snippet()
 
-    def get_uri(self):
-        return self.uri
+    def __repr__(self):
+        return f"<EntityObject(uri={self.uri})>"
 
-    def get_path(self):
-        return self.path
+    def _extract_snippet(
+        self
+        ) -> Graph:
+        g = Graph()
+        for prefix, namespace in self.source_graph.namespaces():
+            g.bind(prefix, namespace)
+        entity = URIRef(self.uri)
+        for s, p, o in self.source_graph.triples((entity, None, None)):
+            g.add((s, p, o))
+        return g
 
-    def generate_folders(self):
+
+    def generate_folders(
+        self
+        ) -> None:
         os.makedirs(
-            self.get_path(), 
+            self.path, 
             exist_ok=True
             )
     
-    def serialize(self):
+    def serialize(
+        self
+        ) -> None:
         FORMATS = {
             "turtle": "ttl",
             "nt": "nt",
             "xml": "xml",
             "json-ld": "jsonld"
         }
+        filename = uri_to_filename(self.uri)
         for frmt, ext in FORMATS.items():
-            rdf = self.get_rdf()
-            filename = uri_to_filename(self.get_uri())
-            full_path = os.path.join(self.get_path(), f"{filename}.{ext}")
-            rdf.serialize(
-                destination=full_path, 
-                format=frmt,
-                encoding="utf-8"
+            full_path = os.path.join(self.path, f"{filename}.{ext}")
+            self.snippet.serialize(
+                destination = full_path,
+                format = frmt,
+                encoding = "utf-8"
             )
     
-    def render(self):
+    def render(
+        self
+        ) -> str:
         template = env.get_template("entity.html")
         return template.render(
-            entity_uri = self.get_uri(),
-            entity_type = self.get_type(),
-            triples = self.get_triples(),
-            base_path = self.get_base_path(),
-            path = f"{remove_root(self.get_path())}/{uri_to_filename(self.get_uri())}"
+            entity_uri = self.uri,
+            entity_types = self.types,
+            property_object_pairs = self.properties,
+            base_path = self.base_path,
+            path = f"{remove_root(self.path)}/{uri_to_filename(self.uri)}"
         )
 
-    def save(self):
+    def save(
+        self
+        ) -> None:
         html = self.render()
-        output_path = os.path.join(self.get_path(), f"{uri_to_filename(self.get_uri())}.html")
-        with open(output_path, "w") as f:
-            f.write(html)
-
-
-
-class EntityObject:
-    def __init__(self, uri, property_object_pairs, source):
-        self.uri = uri
-        self.type = None
-        self.property_object_pairs = property_object_pairs
-        self.source = source
-        self.path = generate_path(self.uri)
-        self.rdf = self.generate_rdf()
-        self.base_path = generate_base_path(self.get_path())
-    
-
-    def generate_folders(self):
-        os.makedirs(self.get_path(), exist_ok=True)
-
-    def generate_rdf(self):
-        source = self.source.graph
-        g = Graph()
-        for prefix, namespace in source.namespaces():
-            g.bind(prefix, namespace)
-        for s, p, o in source.triples((URIRef(self.get_uri()), None, None)):
-            g.add((s, p, o))
-            if p == RDF.type:
-                self.type = str(o)
-        return g
-
-
-    def get_uri(self):
-        return self.uri
-
-    def get_path(self):
-        return self.path
-
-    def get_property_object_pairs(self):
-        return self.property_object_pairs
-
-    def get_rdf(self):
-        return self.rdf
-    
-    def get_type(self):
-        return self.type
-
-    def get_base_path(self):
-        return self.base_path
-
-    
-    def serialize(self):
-        formats = {
-            "turtle": "ttl",
-            "nt": "nt",
-            "xml": "xml",
-            "json-ld": "jsonld"
-        }
-        for frmt, ext in formats.items():
-            rdf = self.get_rdf()
-            filename = uri_to_filename(self.get_uri())
-            full_path = os.path.join(self.get_path(), f"{filename}.{ext}")
-            rdf.serialize(
-                destination=full_path, 
-                format=frmt,
-                encoding="utf-8"
-            )
-
-
-    def render(self):
-        template = env.get_template("entity.html")
-        return template.render(
-            entity_uri = self.get_uri(),
-            entity_type = self.get_type(),
-            property_object_pairs = self.get_property_object_pairs(),
-            base_path = self.get_base_path(),
-            path = f"{remove_root(self.get_path())}/{uri_to_filename(self.get_uri())}"
-        )
-
-    def save(self):
-        html = self.render()
-        output_path = os.path.join(self.get_path(), f"{uri_to_filename(self.get_uri())}.html")
-        with open(output_path, "w") as f:
+        output_path = os.path.join(self.path, f"{uri_to_filename(self.uri)}.html")
+        with open(output_path, "w", encoding="utf-8") as f:
             f.write(html)
