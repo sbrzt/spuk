@@ -11,42 +11,44 @@
   
   <div class="grid">
     <div class="box cell content is-large">
-      <p>Source: <a href="{{ summary.source }}">{{ summary.source }}</a></p>
+      <p>Source: <a href="{{ source }}">{{ source }}</a></p>
+      <hr>
       <p>Triples: {{ summary.num_triples }}</p>
       <p>Entities: {{ summary.num_entities }}</p>
-      <p>Classes: {{ summary.num_classes }}</p> 
       <p>Properties: {{ summary.num_properties }}</p>
-      <p>Models: 
+      <hr>
+      <p>Classes: {{ summary.num_classes }}</p> 
+      <p>Object Properties: {{ summary.num_object_properties }}</p>
+      <p>Data Properties: {{ summary.num_data_properties }}</p>
+      <p>Models: {{ summary.num_models }}</p>
+      <!--<p>Models: 
           {% for model in summary.models_used %}
             <a class="tag is-link is-light content is-large" href="{{model.uri}}">{{model.label}}</a>
           {% endfor %}
-      </p>
-      <p>Average properties per entity: {{ summary.avg_degree }}</p>
-      <p>Object/data properties ratio: {{ summary.property_ratio }}</p>
-      <!--
-      <p>Entity with highest number of properties: <a href="{{ summary.most_connected }}.html">{{ summary.most_connected }}</a></p>
-    -->
+      </p>-->
     </div>
   </div>
   
+
   <div class="grid">
     <div class="box cell">
       <figure>
-        {{ summary.class_entities_counts_chart }}
+        {{ chart_classes }}
       </figure>
     </div>
     <div class="box cell">
       <figure>
-        {{ summary.models_usage }}
+        {{ chart_properties }}
       </figure>
     </div>
   </div>
   
   <div class="grid">
     <div class="box cell">
-      {{ summary.property_usage_chart }}
+      {{ chart_models }}
     </div>
   </div>
+
 
   <div class="box">
     <h2 class="title is-2" id="entities">List of entities</h2>
@@ -59,18 +61,18 @@
     </div>    
 
       <div class="grid is-col-min-24">
-        {% for e in entities %}
+        {% for entity in entities %}
           <div class="card cell entity">
             <header class="card-header">
-              <p class="card-header-title">{{ e.uri }}</p>
+              <p class="card-header-title">{{ entity.uri }}</p>
             </header>
             <div class="card-content">
               <div class="content">
-                Type: {{ e.type }}
+                Types: {{ entity.types }}
               </div>
             </div>
             <footer class="card-footer">
-              <a href="{{ e.path }}.html" class="card-footer-item">Go to entity page</a>
+              <a href="{{ entity.render_path }}.html" class="card-footer-item">Go to entity page</a>
             </footer>
           </div>
         {% endfor %}

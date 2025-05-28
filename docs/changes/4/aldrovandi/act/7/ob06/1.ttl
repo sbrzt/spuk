@@ -1,7 +1,6 @@
-@prefix aat: <http://vocab.getty.edu/page/aat/> .
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://w3id.org/changes/4/aldrovandi/act/7/ob06/1> a crm:E7_Activity ;
-    crm:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/alfonso_ii_d'este/1> ;
-    crm:P2_has_type aat:300417639 .
+<https://w3id.org/changes/4/aldrovandi/act/7/ob06/1> a ns1:E7_Activity ;
+    ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/alfonso_ii_d'este/1> ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300417639> .
 

@@ -9,6 +9,7 @@ EX = Namespace("http://example.org/")
 class ProxyKnowledgeGraph(KnowledgeGraph):
     def __init__(self, graph: Graph):
         self._graph = graph
+        self.source = EX
     
     def get_graph(self):
         return self._graph

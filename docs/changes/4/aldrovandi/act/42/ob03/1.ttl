@@ -1,6 +1,5 @@
-@prefix aat: <http://vocab.getty.edu/page/aat/> .
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://w3id.org/changes/4/aldrovandi/act/42/ob03/1> a crm:E7_Activity ;
-    crm:P2_has_type aat:300053225 .
+<https://w3id.org/changes/4/aldrovandi/act/42/ob03/1> a ns1:E7_Activity ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300053225> .
 

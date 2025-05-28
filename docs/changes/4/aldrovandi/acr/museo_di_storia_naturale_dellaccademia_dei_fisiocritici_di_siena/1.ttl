@@ -1,5 +1,5 @@
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://w3id.org/changes/4/aldrovandi/acr/museo_di_storia_naturale_dellaccademia_dei_fisiocritici_di_siena/1> a crm:E39_Actor ;
-    crm:P74_has_current_or_former_residence <https://w3id.org/changes/4/aldrovandi/plc/siena/1> .
+<https://w3id.org/changes/4/aldrovandi/acr/museo_di_storia_naturale_dellaccademia_dei_fisiocritici_di_siena/1> a ns1:E39_Actor ;
+    ns1:P74_has_current_or_former_residence <https://w3id.org/changes/4/aldrovandi/plc/siena/1> .
 

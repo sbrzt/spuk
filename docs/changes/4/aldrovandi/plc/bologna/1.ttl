@@ -1,7 +1,7 @@
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://w3id.org/changes/4/aldrovandi/plc/bologna/1> a crm:E53_Place ;
-    crm:P74i_is_current_or_former_residence_of <https://w3id.org/changes/4/aldrovandi/acr/archivio_di_stato_di_bologna/1>,
+<https://w3id.org/changes/4/aldrovandi/plc/bologna/1> a ns1:E53_Place ;
+    ns1:P74i_is_current_or_former_residence_of <https://w3id.org/changes/4/aldrovandi/acr/archivio_di_stato_di_bologna/1>,
         <https://w3id.org/changes/4/aldrovandi/acr/biblioteca_del_dipartimento_di_scienze_biologiche/1>,
         <https://w3id.org/changes/4/aldrovandi/acr/biblioteca_di_matematica/1>,
         <https://w3id.org/changes/4/aldrovandi/acr/bologna/1>,

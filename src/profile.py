@@ -32,6 +32,7 @@ class Profile:
             knowledge_graph (KnowledgeGraph): The RDF graph wrapper to be analyzed.
         """
         self._kg = knowledge_graph
+        self.source = self._kg.source
         self.graph = self._kg.get_graph()
         self.entities: Dict[str, EntityData] = {}
         self.object_properties: set[str] = set()

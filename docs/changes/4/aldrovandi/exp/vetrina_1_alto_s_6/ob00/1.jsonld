@@ -11,10 +11,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/trono/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/serapide/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/serapide/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/trono/1"
       }
     ]
   }

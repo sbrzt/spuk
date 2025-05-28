@@ -7,7 +7,7 @@ from src.entity_object import EntityObject
 from src.models import EntityData, PropertyValuePair
 from src.knowledge_graph import KnowledgeGraph
 
-EX = Namespace("http://example.org/")
+EX = Namespace("http://example.org/kg/")
 
 
 class ProxyKnowledgeGraph(KnowledgeGraph):
@@ -51,7 +51,7 @@ class TestEntityObject(unittest.TestCase):
             snippet = snippet
         )
 
-        self.entity = EntityObject(self.entity_data, self.kg)
+        self.entity = EntityObject(self.entity_data)
         self.entity.path = os.path.join(self.tmp_dir, "alice")
         self.entity.base_path = self.tmp_dir
     
@@ -78,7 +78,7 @@ class TestEntityObject(unittest.TestCase):
 
     def test_render(self):
         html = self.entity.render()
-        self.assertIn("http://example.org/alice", html)
+        self.assertIn("http://example.org/kg/alice", html)
         self.assertIn("age", html)
         self.assertIn("knows", html)
         self.assertIn("bob", html)
@@ -90,7 +90,7 @@ class TestEntityObject(unittest.TestCase):
         self.assertTrue(os.path.exists(html_path))
         with open(html_path, "r", encoding="utf-8") as f:
             contents = f.read()
-        self.assertIn("http://example.org/alice", contents)
+        self.assertIn("http://example.org/kg/alice", contents)
 
 
 if __name__ == '__main__':

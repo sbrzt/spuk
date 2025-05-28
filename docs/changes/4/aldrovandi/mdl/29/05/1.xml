@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mdl/29/05/1">
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
+  </rdf:Description>
+</rdf:RDF>

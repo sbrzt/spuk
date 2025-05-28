@@ -29,6 +29,9 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_6/ob07/1"
       },
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_6/ob02/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_6/ob06/1"
       },
       {
@@ -38,13 +41,10 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_6/ob04/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_6/ob03/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_6/ob02/1"
-      },
-      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_6/ob01/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_6/ob03/1"
       }
     ]
   }

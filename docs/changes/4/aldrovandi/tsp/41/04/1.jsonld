@@ -7,11 +7,11 @@
     "http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-05-10T00:00:00+00:00"
+        "@value": "2023-10-19T00:00:00+00:00"
       },
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-10-19T00:00:00+00:00"
+        "@value": "2024-05-10T00:00:00+00:00"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end": [

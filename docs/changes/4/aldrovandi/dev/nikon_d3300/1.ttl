@@ -1,7 +1,5 @@
-@prefix aat: <http://vocab.getty.edu/page/aat/> .
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1> a crmdig:D8_Digital_Device ;
-    crm:P2_has_type aat:300266792 .
+<https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1> a <http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device> ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300266792> .
 

@@ -16,10 +16,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/dev/lente_24-70_f2_8_l/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/canon_eos_6d/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/dev/canon_eos_6d/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/lente_24-70_f2_8_l/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P32_used_general_technique": [

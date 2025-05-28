@@ -6,10 +6,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in": [
       {
-        "@id": "http://viaf.org/viaf/69232941"
+        "@id": "http://viaf.org/viaf/40160164"
       },
       {
-        "@id": "http://viaf.org/viaf/40160164"
+        "@id": "http://viaf.org/viaf/69232941"
       }
     ]
   }

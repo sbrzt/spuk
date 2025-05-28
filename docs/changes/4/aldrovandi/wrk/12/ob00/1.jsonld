@@ -11,10 +11,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P102_has_title": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/12/ob02/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/12/ob01/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/12/ob01/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/12/ob02/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/ttl/12/ob00/1"

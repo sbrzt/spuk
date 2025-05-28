@@ -1,27 +1,37 @@
 from src.knowledge_graph import KnowledgeGraph
+from src.profile import Profile
+from src.visualizer import Visualizer
 from src.entity_object import EntityObject
 from src.index_object import IndexObject
 from src.documentation_object import DocumentationObject
 
 def main():
     source = "https://chad-kg.duckdns.org/chadkg/sparql"
-    rdf = KnowledgeGraph(source, is_sparql_endpoint=True)
-    entities = rdf.get_property_object_data()
-    summary = rdf.get_summary()
+    kg = KnowledgeGraph(
+        source = source, 
+        is_sparql_endpoint = True
+    )
+    profile = Profile(
+        knowledge_graph = kg
+    )
+    visualizer = Visualizer(
+        profile = profile
+    )
 
-    pages = []
-    for entity, property_object_pairs in entities.items():
+    entities = profile.entities
+
+    for data in entities.values():
         page = EntityObject(
-            entity, 
-            property_object_pairs,
-            rdf
+            entity_data = data
         )
         page.generate_folders()
         page.serialize()
         page.save()
-        pages.append(page)
 
-    index_page = IndexObject(pages, summary)
+    index_page = IndexObject(
+        profile = profile,
+        visualizer = visualizer
+        )
     index_page.save()
 
     sparql_page = DocumentationObject(source, "sparql")

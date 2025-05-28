@@ -1,6 +1,5 @@
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://w3id.org/changes/4/aldrovandi/itm/vetrina_6_alto_s_-_2/ob00/1> a lrmoo:F5_Item ;
-    crm:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/idf/vetrina_6_alto_s_-_2/ob00/1> .
+<https://w3id.org/changes/4/aldrovandi/itm/vetrina_6_alto_s_-_2/ob00/1> a <http://iflastandards.info/ns/lrm/lrmoo/F5_Item> ;
+    ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/idf/vetrina_6_alto_s_-_2/ob00/1> .
 
