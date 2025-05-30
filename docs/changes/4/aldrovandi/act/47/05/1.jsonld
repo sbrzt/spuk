@@ -6,10 +6,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_ficlit/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_dbc/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_dbc/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_ficlit/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
@@ -48,10 +48,10 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/morph-kgc/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/chad-ap/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/heritrace/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/heritrace/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/chad-ap/1"
       }
     ]
   }

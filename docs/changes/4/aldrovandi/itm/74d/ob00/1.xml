@@ -5,11 +5,11 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/74d/ob00/1">
     <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Daphne Mezereum L. Modello Di Fior Di Stecco, Manifattura Brendel, Berlino Model Of Spurge Laurel, Brendel Company, Berlin Fine Sec. Xix Late 19th Century. Bologna, Orto Botanico Ed Erbario, Sistema Museale Di Ateneo</ns1:P3_has_note>
+    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/6/1"/>
+    <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/74d/00/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/74d/ob00/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/74d/ob02/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/74d/ob01/1"/>
-    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/6/1"/>
-    <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/74d/00/1"/>
     <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
   </rdf:Description>
 </rdf:RDF>

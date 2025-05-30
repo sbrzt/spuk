@@ -5,12 +5,12 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/vetrina_5_alto_n/ob00/1">
     <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Botroidi, Concrezioni Arenacee La Cui Forma Richiama Oggetti, Animali, O Vegetali The Botroids Are Sandstone Concrections, Their Shape Reminds Of Objects, Animals And Vegetables. Rio Delle Meraviglie (bologna)</ns1:P3_has_note>
+    <ns1:P62i_is_depicted_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/vetrina_5_alto_n/ob00/1"/>
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/vetrina_5_alto_n/ob02/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/vetrina_5_alto_n/ob01/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/vetrina_5_alto_n/ob00/1"/>
-    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
-    <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_5_alto_n/00/1"/>
     <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/5/1"/>
-    <ns1:P62i_is_depicted_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/vetrina_5_alto_n/ob00/1"/>
+    <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_5_alto_n/00/1"/>
   </rdf:Description>
 </rdf:RDF>

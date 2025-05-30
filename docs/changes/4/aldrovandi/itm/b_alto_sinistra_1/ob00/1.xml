@@ -9,7 +9,7 @@
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/b_alto_sinistra_1/ob01/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/b_alto_sinistra_1/ob02/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/b_alto_sinistra_1/ob00/1"/>
-    <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Palaeoniscum Freieslebeni (de Blainville, 1818), Carbonifero, Sassonia, Carbonifereous, Saxony</ns1:P3_has_note>
     <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/5/1"/>
+    <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Palaeoniscum Freieslebeni (de Blainville, 1818), Carbonifero, Sassonia, Carbonifereous, Saxony</ns1:P3_has_note>
   </rdf:Description>
 </rdf:RDF>

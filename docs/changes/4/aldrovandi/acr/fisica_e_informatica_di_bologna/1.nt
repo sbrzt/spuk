@@ -1,2 +1,2 @@
-<https://w3id.org/changes/4/aldrovandi/acr/fisica_e_informatica_di_bologna/1> <http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence> <https://w3id.org/changes/4/aldrovandi/plc/bologna/1> .
 <https://w3id.org/changes/4/aldrovandi/acr/fisica_e_informatica_di_bologna/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<https://w3id.org/changes/4/aldrovandi/acr/fisica_e_informatica_di_bologna/1> <http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence> <https://w3id.org/changes/4/aldrovandi/plc/bologna/1> .

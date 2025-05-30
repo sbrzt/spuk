@@ -26,13 +26,13 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of": [
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/14/ob06/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/14/ob07/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/14/ob03/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/14/ob06/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/14/ob04/1"

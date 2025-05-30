@@ -36,13 +36,13 @@
     ],
     "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/metashape/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gimp/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/instant_meshes/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gimp/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/metashape/1"
       }
     ]
   }

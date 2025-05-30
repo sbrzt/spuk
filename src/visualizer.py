@@ -72,3 +72,15 @@ class Visualizer:
             for prefix, ns, freq in self.profile.most_frequent_models
         ]
         return self._generate_bar(f"{data[0]['label']} is the most used model", data)
+
+    def most_frequent_entities_chart(
+        self
+        ) -> str:
+        data = [
+            {
+                "label": uri,
+                "frequency": freq
+            }
+            for uri, freq in self.profile.most_frequent_entities
+        ]
+        return self._generate_bar(f"{data[0]['label']} is the most used entity", data)

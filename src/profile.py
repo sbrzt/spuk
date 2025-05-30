@@ -1,6 +1,6 @@
 from src.knowledge_graph import KnowledgeGraph
 from src.models import EntityData, PropertyValuePair
-from src.utils import get_uri_label, get_namespace
+from src.utils import get_uri_label, get_namespace, generate_path, uri_to_filename, remove_root
 from typing import List, Dict, Optional, Tuple
 from rdflib import URIRef, RDF, Literal, Graph
 from collections import defaultdict
@@ -51,6 +51,7 @@ class Profile:
         Extracts and counts entities, classes, properties, and models used.
         """
         namespaces = dict(self.graph.namespaces())
+        all_subjects = set(str(s) for s in self.graph.subjects())
 
         def get_model_key(
             uri: str
@@ -95,14 +96,25 @@ class Profile:
                     else:
                         self.object_properties.add(p_str)
 
-                self.entities[s_str].properties.append(
-                    PropertyValuePair(
-                        property_label = p_label,
-                        property_uri = p_str,
-                        value = o_str,
-                        is_literal = is_literal
-                    )
+            if o_str in all_subjects:
+                is_internal = True
+                path = generate_path(o_str)
+                filename = uri_to_filename(o_str)
+                internal_value = f"{remove_root(path)}/{filename}"
+            else:
+                is_internal = False
+                internal_value = None
+
+            self.entities[s_str].properties.append(
+                PropertyValuePair(
+                    property_label = p_label,
+                    property_uri = p_str,
+                    value = o_str,
+                    internal_value = internal_value,
+                    is_literal = is_literal,
+                    is_internal = is_internal
                 )
+            )
 
     @property
     def num_triples(
@@ -229,6 +241,30 @@ class Profile:
                 reverse = True
             )[:n]
         ]
+
+    @property
+    def most_frequent_entities(
+        self,
+        n: int = 10
+        ) -> List[Tuple[str, int]]:
+        """
+        Returns the top `n` entities with the highest number of properties.
+
+        Args:
+            n (int): The number of top entities to return. Default is 10.
+
+        Returns:
+            List[Tuple[str, int]]: A list of (entity URI, property count) tuples.
+        """
+        entity_property_counts = [
+            (entity_uri, len(entity_data.properties))
+            for entity_uri, entity_data in self.entities.items()
+        ]
+        return sorted(
+            entity_property_counts,
+            key = lambda x: x[1],
+            reverse = True
+        )[:n]
     
     
     def get_summary(

@@ -2,8 +2,8 @@ import html, os
 from urllib.parse import urlparse
 
 
-#GITHUB_DEPLOY = True
-GITHUB_DEPLOY = False
+GITHUB_DEPLOY = True
+#GITHUB_DEPLOY = False
 REPO_NAME = "spuk"
 
 

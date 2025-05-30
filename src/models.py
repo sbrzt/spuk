@@ -7,7 +7,9 @@ class PropertyValuePair:
     property_label: str
     property_uri: str
     value: str
+    internal_value: None
     is_literal: bool = False
+    is_internal: bool = False
 
 @dataclass
 class EntityData:

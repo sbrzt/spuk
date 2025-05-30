@@ -11,10 +11,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_alto_s_12/ob02/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_alto_s_12/ob00/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_alto_s_12/ob00/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_alto_s_12/ob02/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_alto_s_12/ob01/1"

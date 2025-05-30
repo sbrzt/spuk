@@ -42,10 +42,17 @@
           {% if pair.is_literal %}
             {{ pair.value }}
           {% else %}
-            <a href="{{ pair.value }}.html" target="_blank">
+            {% if pair.is_internal %}
+            <a href="{{ pair.internal_value }}.html">
               {{ pair.value }}
               <ion-icon name="open-outline"></ion-icon>
             </a>
+            {% else %}
+              <a href="{{ pair.value }}.html" target="_blank">
+                {{ pair.value }}
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+            {% endif %}
           {% endif %}
         </td>
       </tr>

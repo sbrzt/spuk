@@ -11,13 +11,13 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/anna_forte/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/anna_forte/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [

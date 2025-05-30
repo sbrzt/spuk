@@ -1,5 +1,4 @@
 from jinja2 import Environment, FileSystemLoader
-from src.utils import escape_html, uri_to_filename, get_uri_label, remove_root, generate_base_path, generate_path
 from rdflib import Graph, URIRef, Literal, RDF
 from urllib.parse import urlparse
 from typing import List
@@ -13,15 +12,17 @@ env = Environment(loader=FileSystemLoader("static/templates"))
 class IndexObject:
     def __init__(
         self, 
+        entity_objects: List[EntityObject],
         profile: Profile,
         visualizer: Visualizer
         ):
         self.source = profile.source
-        self.entities = profile.entities
+        self.entities = entity_objects
         self.summary = profile.get_summary()
         self.chart_properties = visualizer.most_frequent_properties_chart()
         self.chart_classes = visualizer.most_frequent_classes_chart()
         self.chart_models = visualizer.most_frequent_models_chart()
+        self.chart_entities = visualizer.most_frequent_entities_chart()
 
     def render(
         self
@@ -33,7 +34,8 @@ class IndexObject:
             summary = self.summary,
             chart_classes = self.chart_classes,
             chart_properties = self.chart_properties,
-            chart_models = self.chart_models
+            chart_models = self.chart_models,
+            chart_entities = self.chart_entities
         )
 
     def save(

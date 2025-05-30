@@ -1,5 +1,5 @@
 from jinja2 import Environment, FileSystemLoader
-from src.utils import escape_html, uri_to_filename, get_uri_label, remove_root, generate_base_path, generate_path
+from src.utils import uri_to_filename, remove_root, generate_base_path, generate_path
 from rdflib import Graph, URIRef, Literal, RDF
 from urllib.parse import urlparse
 from src.models import EntityData
@@ -35,7 +35,7 @@ class EntityObject:
         ) -> None:
         os.makedirs(
             self.path, 
-            exist_ok=True
+            exist_ok = True
             )
     
     def serialize(

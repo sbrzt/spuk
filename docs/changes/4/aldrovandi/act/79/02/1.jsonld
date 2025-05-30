@@ -36,13 +36,13 @@
     ],
     "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/zbrush/1"
-      },
-      {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/modo/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/zbrush/1"
       }
     ]
   }

@@ -8,7 +8,7 @@
     <ns1:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/85/00/1"/>
     <ns2:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300054636"/>
     <ns1:L11_had_output rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/85/01/1"/>
-    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D10_Software_Execution"/>
     <ns2:P4_has_time-span rdf:resource="https://w3id.org/changes/4/aldrovandi/tsp/85/01/1"/>
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D10_Software_Execution"/>
   </rdf:Description>
 </rdf:RDF>

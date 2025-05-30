@@ -20,6 +20,7 @@ def main():
 
     entities = profile.entities
 
+    pages = []
     for data in entities.values():
         page = EntityObject(
             entity_data = data
@@ -27,8 +28,10 @@ def main():
         page.generate_folders()
         page.serialize()
         page.save()
+        pages.append(page)
 
     index_page = IndexObject(
+        entity_objects = pages,
         profile = profile,
         visualizer = visualizer
         )

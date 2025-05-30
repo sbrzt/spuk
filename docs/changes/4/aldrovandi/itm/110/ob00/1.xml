@@ -5,11 +5,11 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/110/ob00/1">
     <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Arietites Sp. Ammonite, Località Indeterminata Ammonite, Undetermined Locality Giurassico Inferiore  Lower Jurassic (190 Ma) Bologna, Collezione Di Geologia "museo Giovanni Capellini", Sistema Museale Di Ateneo</ns1:P3_has_note>
-    <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/110/00/1"/>
+    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/6/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/110/ob01/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/110/ob00/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/110/ob02/1"/>
+    <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/110/00/1"/>
     <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
-    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/6/1"/>
   </rdf:Description>
 </rdf:RDF>
