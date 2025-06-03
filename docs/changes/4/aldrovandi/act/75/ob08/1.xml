@@ -6,10 +6,10 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/75/ob08/1">
     <ns1:P12_occurred_in_the_presence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/col/fondo_storico_bertoloni/1"/>
     <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300054277"/>
-    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/biblioteca_del_dipartimento_di_scienze_biologiche/1"/>
-    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/geologiche_e_ambientali/1"/>
-    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/bologna/1"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/biblioteca_del_dipartimento_di_scienze_biologiche/1"/>
+    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/bologna/1"/>
+    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/geologiche_e_ambientali/1"/>
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/75/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

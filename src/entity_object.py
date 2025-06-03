@@ -19,11 +19,6 @@ class EntityObject:
         self.path = generate_path(self.uri)
         self.filename = uri_to_filename(self.uri)
         self.render_path = f"{remove_root(self.path)}/{self.filename}"
-
-        #print(f"self.path: {self.path}")
-        #print(f"self.filename: {self.filename}")
-        #print(f"render_path: {self.render_path}")
-
         self.snippet = entity_data.snippet
 
     def __repr__(self):

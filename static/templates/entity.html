@@ -26,6 +26,7 @@
     <thead>
       <tr>
         <th>Property</th>
+        <th></th>
         <th>Object</th>
       </tr>
     </thead>
@@ -39,14 +40,17 @@
           </a>
         </td>
         <td>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </td>
+        <td>
           {% if pair.is_literal %}
             {{ pair.value }}
           {% else %}
             {% if pair.is_internal %}
-            <a href="{{ pair.internal_value }}.html">
-              {{ pair.value }}
-              <ion-icon name="open-outline"></ion-icon>
-            </a>
+              <a href="{{ pair.internal_value }}.html">
+                {{ pair.value }}
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+              </a>
             {% else %}
               <a href="{{ pair.value }}.html" target="_blank">
                 {{ pair.value }}

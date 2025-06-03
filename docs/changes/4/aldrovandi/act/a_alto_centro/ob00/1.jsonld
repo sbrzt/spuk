@@ -26,25 +26,25 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob01/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob06/1"
-      },
-      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob02/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob04/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob05/1"
-      },
-      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob03/1"
       },
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob01/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob05/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob07/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob06/1"
       }
     ]
   }

@@ -11,10 +11,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/idf/30/ob01/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/30/ob00/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/idf/30/ob00/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/30/ob01/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/idf/30/ob02/1"

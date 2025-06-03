@@ -14,18 +14,18 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/mattia_sullini/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/alice_bordignon/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/alice_bordignon/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/mattia_sullini/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/dev/sony_alpha_7_i/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/panasonic_dmc-lx100/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/dev/panasonic_dmc-lx100/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/sony_alpha_7_i/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P32_used_general_technique": [

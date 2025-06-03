@@ -6,10 +6,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
       }
     ]
   }

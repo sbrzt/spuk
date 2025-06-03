@@ -4,8 +4,8 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/ttl/76/ob00/1">
-    <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300417204"/>
     <ns1:P190_has_symbolic_content xml:lang="it">Assitra, Overo Arbore Di S. Tomaso</ns1:P190_has_symbolic_content>
+    <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300417204"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
   </rdf:Description>
 </rdf:RDF>

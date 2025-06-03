@@ -11,10 +11,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/stefano_sorrentino/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/daniele_spedicati/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/daniele_spedicati/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/stefano_sorrentino/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [

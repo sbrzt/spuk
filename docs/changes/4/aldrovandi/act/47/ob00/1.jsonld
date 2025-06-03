@@ -32,9 +32,6 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/act/47/ob04/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/47/ob07/1"
-      },
-      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/47/ob02/1"
       },
       {
@@ -45,6 +42,9 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/47/ob06/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/47/ob07/1"
       }
     ]
   }

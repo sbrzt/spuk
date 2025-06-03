@@ -1,0 +1,25 @@
+[[GENERAL]]
+
+    [GENERAL.utils]
+    github_deploy = False
+    repo_name = "spuk"
+    root_dir = "docs"
+
+[[CLASSES]]
+
+    [CLASSES.knowledgeGraph]
+    source = "https://chad-kg.duckdns.org/chadkg/sparql"
+    is_sparql_endpoint = True
+    query = "CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o }"
+
+    [CLASSES.profile]
+    default_frequency = 10
+
+    [CLASSES.entityObject]
+    formats = {
+        "turtle": "ttl",
+        "nt": "nt",
+        "xml": "xml",
+        "json-ld": "jsonld"
+    }
+    

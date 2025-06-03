@@ -6,7 +6,7 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/16/00/1">
     <ns1:P4_has_time-span rdf:resource="https://w3id.org/changes/4/aldrovandi/tsp/16/00/1"/>
-    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D2_Digitization_Process"/>
     <ns2:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/16/ob00/1"/>
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D2_Digitization_Process"/>
   </rdf:Description>
 </rdf:RDF>

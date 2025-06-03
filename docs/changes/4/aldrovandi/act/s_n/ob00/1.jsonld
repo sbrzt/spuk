@@ -29,22 +29,22 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/act/s_n/ob01/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/s_n/ob03/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/s_n/ob04/1"
-      },
-      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/s_n/ob02/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/s_n/ob06/1"
       },
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/s_n/ob04/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/s_n/ob07/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/s_n/ob05/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/s_n/ob03/1"
       }
     ]
   }

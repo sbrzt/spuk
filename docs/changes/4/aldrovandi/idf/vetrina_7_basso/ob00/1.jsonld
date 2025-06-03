@@ -7,11 +7,11 @@
     "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
       {
         "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
-        "@value": "vetrina_7_basso"
+        "@value": "Vetrina 7 Basso"
       },
       {
         "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
-        "@value": "Vetrina 7 Basso"
+        "@value": "vetrina_7_basso"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
