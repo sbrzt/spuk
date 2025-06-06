@@ -1,10 +1,12 @@
-import html, os
+import html, os, tomllib
 from urllib.parse import urlparse
 
+with open("config.toml", "rb") as f:
+    configuration = tomllib.load(f)
 
-#GITHUB_DEPLOY = True
-GITHUB_DEPLOY = False
-REPO_NAME = "spuk"
+GITHUB_DEPLOY = configuration["general"]["github_deploy"]
+REPO_NAME = configuration["general"]["repo_name"]
+ROOT_DIR = configuration["general"]["root_dir"]
 
 
 def get_uri_label(uri: str) -> str:
@@ -27,21 +29,20 @@ def get_namespace(uri: str) -> str:
     return uri.rsplit("/", 1)[0] + "/"
 
 def remove_root(path):
-    if GITHUB_DEPLOY:
+    if configuration["general"]["github_deploy"]:
         return f"/{REPO_NAME}/" + "/".join(path.split("/")[1:])
     else:
         return "/" + "/".join(path.split("/")[1:])
 
 def generate_path(uri):
-    root = "docs"
     path = urlparse(uri).path
     parts = path.strip("/").split("/")[:-1]
-    full_path = os.path.join(root, *parts)
+    full_path = os.path.join(ROOT_DIR, *parts)
     return full_path
 
 def generate_base_path(path):
     folder = os.path.dirname(path) or "."
-    relative = os.path.relpath(folder, "docs")
+    relative = os.path.relpath(folder, ROOT_DIR)
     if relative == ".":
         return ""
     parts = relative.split(os.sep)

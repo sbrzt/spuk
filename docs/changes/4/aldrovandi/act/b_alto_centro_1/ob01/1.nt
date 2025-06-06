@@ -1,2 +1,2 @@
-<https://w3id.org/changes/4/aldrovandi/act/b_alto_centro_1/ob01/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
 <https://w3id.org/changes/4/aldrovandi/act/b_alto_centro_1/ob01/1> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/page/aat/300404387> .
+<https://w3id.org/changes/4/aldrovandi/act/b_alto_centro_1/ob01/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .

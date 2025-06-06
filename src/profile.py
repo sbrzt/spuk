@@ -4,6 +4,12 @@ from src.utils import get_uri_label, get_namespace, generate_path, uri_to_filena
 from typing import List, Dict, Optional, Tuple
 from rdflib import URIRef, RDF, Literal, Graph
 from collections import defaultdict
+import tomllib
+
+with open("config.toml", "rb") as f:
+    configuration = tomllib.load(f)
+
+DEFAULT_FREQ = configuration["profile"]["default_frequency"]
 
 
 class Profile:
@@ -182,7 +188,7 @@ class Profile:
     @property
     def most_frequent_properties(
         self,
-        n: int = 10
+        n: int = DEFAULT_FREQ
         ) -> List[Tuple[str, int]]:
         """
         Returns the top `n` most frequently used properties.
@@ -202,7 +208,7 @@ class Profile:
     @property
     def most_frequent_classes(
         self,
-        n: int = 10
+        n: int = DEFAULT_FREQ
         ) -> List[Tuple[str, int]]:
         """
         Returns the top `n` most frequently assigned classes.
@@ -222,7 +228,7 @@ class Profile:
     @property
     def most_frequent_models(
         self,
-        n: int = 10
+        n: int = DEFAULT_FREQ
         ) -> List[Tuple[str, str, int]]:
         """
         Returns the top `n` most frequently used models (namespaces).
@@ -245,7 +251,7 @@ class Profile:
     @property
     def most_frequent_entities(
         self,
-        n: int = 10
+        n: int = DEFAULT_FREQ
         ) -> List[Tuple[str, int]]:
         """
         Returns the top `n` entities with the highest number of properties.

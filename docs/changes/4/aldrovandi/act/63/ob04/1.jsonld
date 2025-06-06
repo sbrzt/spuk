@@ -6,10 +6,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/benoit_prevost/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/gilles_corrozet/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/gilles_corrozet/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/benoit_prevost/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [

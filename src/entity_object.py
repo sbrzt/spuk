@@ -4,9 +4,14 @@ from rdflib import Graph, URIRef, Literal, RDF
 from urllib.parse import urlparse
 from src.models import EntityData
 from src.knowledge_graph import KnowledgeGraph
-import os
+import os, tomllib
 
 env = Environment(loader=FileSystemLoader("static/templates"))
+with open("config.toml", "rb") as f:
+    configuration = tomllib.load(f)
+
+FORMATS = configuration["entity_object"]["formats"]
+
 
 class EntityObject:
     def __init__(
@@ -36,17 +41,11 @@ class EntityObject:
     def serialize(
         self
         ) -> None:
-        FORMATS = {
-            "turtle": "ttl",
-            "nt": "nt",
-            "xml": "xml",
-            "json-ld": "jsonld"
-        }
-        for frmt, ext in FORMATS.items():
-            full_path = os.path.join(self.path, f"{self.filename}.{ext}")
+        for itm in FORMATS:
+            full_path = os.path.join(self.path, f"{self.filename}.{itm['ext']}")
             self.snippet.serialize(
                 destination = full_path,
-                format = frmt,
+                format = itm["format"],
                 encoding = "utf-8"
             )
     

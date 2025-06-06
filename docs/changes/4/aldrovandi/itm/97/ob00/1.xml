@@ -7,9 +7,9 @@
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/97/ob02/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/97/ob00/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/97/ob01/1"/>
-    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
     <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/97/00/1"/>
-    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/6/1"/>
     <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sezione Anatomica Di Busto Umano Anatomical Section Of Human Torso In Leopoldo Marco Antonio Caldani, Icones Anatomicae Venezia, Giuseppe Picotti, 1801-1814 Bub, A.v.ii.bancone E.i.7</ns1:P3_has_note>
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
+    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/6/1"/>
   </rdf:Description>
 </rdf:RDF>

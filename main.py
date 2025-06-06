@@ -4,12 +4,18 @@ from src.visualizer import Visualizer
 from src.entity_object import EntityObject
 from src.index_object import IndexObject
 from src.documentation_object import DocumentationObject
+import tomllib
+
+with open("config.toml", "rb") as f:
+    configuration = tomllib.load(f)
+SOURCE = configuration["knowledge_graph"]["source"]
+IS_SPARQL_ENDPOINT = configuration["knowledge_graph"]["is_sparql_endpoint"]
+
 
 def main():
-    source = "https://chad-kg.duckdns.org/chadkg/sparql"
     kg = KnowledgeGraph(
-        source = source, 
-        is_sparql_endpoint = True
+        source = SOURCE, 
+        is_sparql_endpoint = IS_SPARQL_ENDPOINT
     )
     profile = Profile(
         knowledge_graph = kg
@@ -37,10 +43,10 @@ def main():
         )
     index_page.save()
 
-    sparql_page = DocumentationObject(source, "sparql")
+    sparql_page = DocumentationObject(SOURCE, "sparql")
     sparql_page.save()
 
-    documentation_page = DocumentationObject(source, "documentation")
+    documentation_page = DocumentationObject(SOURCE, "documentation")
     documentation_page.save()
 
     print("🎉 All pages generated successfully!")

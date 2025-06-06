@@ -5,7 +5,7 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_15/ob08/1">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
-    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/vetrina_1_alto_s_15/ob00/1"/>
     <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300054277"/>
+    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/vetrina_1_alto_s_15/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

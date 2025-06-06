@@ -11,13 +11,13 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/geologiche_e_ambientali/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/biblioteca_del_dipartimento_di_scienze_biologiche/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/geologiche_e_ambientali/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [

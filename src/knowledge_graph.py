@@ -1,5 +1,11 @@
+import tomllib
 from rdflib import Graph
 from SPARQLWrapper import SPARQLWrapper, GET, TURTLE
+
+with open("config.toml", "rb") as f:
+    configuration = tomllib.load(f)
+
+QUERY = configuration["knowledge_graph"]["query"]
 
 
 class KnowledgeGraph:
@@ -25,12 +31,8 @@ class KnowledgeGraph:
 
         g = Graph()
         if self._is_sparql_endpoint:
-            query = """
-                CONSTRUCT { ?s ?p ?o }
-                WHERE { ?s ?p ?o }
-            """
             sparql = SPARQLWrapper(self.source)
-            sparql.setQuery(query)
+            sparql.setQuery(QUERY)
             sparql.setMethod(GET)
             sparql.setReturnFormat(TURTLE)
             response = sparql.query().convert()

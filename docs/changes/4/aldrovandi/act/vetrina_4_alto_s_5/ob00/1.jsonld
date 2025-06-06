@@ -24,6 +24,9 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_s_5/ob02/1"
       },
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_s_5/ob03/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_s_5/ob07/1"
       },
       {
@@ -33,13 +36,10 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_s_5/ob05/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_s_5/ob01/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_s_5/ob03/1"
-      },
-      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_s_5/ob04/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_s_5/ob01/1"
       }
     ]
   }

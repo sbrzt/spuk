@@ -5,9 +5,13 @@ from typing import List
 from src.entity_object import EntityObject
 from src.profile import Profile
 from src.visualizer import Visualizer
-import os
+import os, tomllib
 
 env = Environment(loader=FileSystemLoader("static/templates"))
+with open("config.toml", "rb") as f:
+    configuration = tomllib.load(f)
+
+ROOT_DIR = configuration["general"]["root_dir"]
 
 class IndexObject:
     def __init__(
@@ -18,6 +22,7 @@ class IndexObject:
         ):
         self.source = profile.source
         self.entities = entity_objects
+        self.num_entities = profile.num_entities
         self.summary = profile.get_summary()
         self.chart_properties = visualizer.most_frequent_properties_chart()
         self.chart_classes = visualizer.most_frequent_classes_chart()
@@ -30,7 +35,8 @@ class IndexObject:
         template = env.get_template("index.html")
         return template.render(
             source = self.source,
-            entities = self.entities, 
+            entities = self.entities,
+            num_entities = self.num_entities,
             summary = self.summary,
             chart_classes = self.chart_classes,
             chart_properties = self.chart_properties,
@@ -39,13 +45,12 @@ class IndexObject:
         )
 
     def save(
-        self, 
-        output_dir = "docs"
+        self
         ) -> None:
         os.makedirs(
-            output_dir, 
+            ROOT_DIR, 
             exist_ok = True
             )
-        with open(os.path.join(output_dir, "index.html"), "w") as f:
+        with open(os.path.join(ROOT_DIR, "index.html"), "w") as f:
             f.write(self.render())
-        print(f"✅ Saved index page to {output_dir}/index.html")
+        print(f"✅ Saved index page to {ROOT_DIR}/index.html")

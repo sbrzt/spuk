@@ -7,11 +7,11 @@
     "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
       {
         "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
-        "@value": "<Https://aton.ispc.cnr.it/s/aldrovandi/20231019-py5qm8ft9>"
+        "@value": "<https://aton.ispc.cnr.it/s/aldrovandi/20250127-k3gaowzel>"
       },
       {
         "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
-        "@value": "<https://aton.ispc.cnr.it/s/aldrovandi/20250127-k3gaowzel>"
+        "@value": "<Https://aton.ispc.cnr.it/s/aldrovandi/20231019-py5qm8ft9>"
       }
     ]
   }

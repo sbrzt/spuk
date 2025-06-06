@@ -16,10 +16,10 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikkor_50mm/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikon_d7200/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikon_d7200/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikkor_50mm/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P32_used_general_technique": [

@@ -6,9 +6,9 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/exp/37/ob00/1">
     <ns1:R4i_is_embodied_in rdf:resource="https://w3id.org/changes/4/aldrovandi/mnf/37/ob00/1"/>
-    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <ns2:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/monocolo/1"/>
     <ns2:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/neonato/1"/>
     <ns2:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/mostro/1"/>
-    <ns2:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/monocolo/1"/>
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
   </rdf:Description>
 </rdf:RDF>

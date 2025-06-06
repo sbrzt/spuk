@@ -5,8 +5,8 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/17/00/1">
-    <ns1:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/17/ob00/1"/>
-    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D2_Digitization_Process"/>
     <ns2:P4_has_time-span rdf:resource="https://w3id.org/changes/4/aldrovandi/tsp/17/00/1"/>
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D2_Digitization_Process"/>
+    <ns1:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/17/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

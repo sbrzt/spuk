@@ -6,9 +6,9 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/wrk/112/ob00/1">
     <ns1:P102_has_title rdf:resource="https://w3id.org/changes/4/aldrovandi/ttl/112/ob02/1"/>
-    <ns1:P102_has_title rdf:resource="https://w3id.org/changes/4/aldrovandi/ttl/112/ob00/1"/>
     <ns1:P102_has_title rdf:resource="https://w3id.org/changes/4/aldrovandi/ttl/112/ob01/1"/>
-    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+    <ns1:P102_has_title rdf:resource="https://w3id.org/changes/4/aldrovandi/ttl/112/ob00/1"/>
     <ns2:R3_is_realised_in rdf:resource="https://w3id.org/changes/4/aldrovandi/exp/112/ob00/1"/>
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
   </rdf:Description>
 </rdf:RDF>
