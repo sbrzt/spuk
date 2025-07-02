@@ -4,7 +4,7 @@
   
   <section class="hero">
     <div class="hero-body">
-      <p class="title">SPUK output</p>
+      <p class="title">Title goes HERE!</p>
       <p class="subtitle">Dataset information, statistics, and list of entities</p>
     </div>
   </section>
@@ -83,6 +83,8 @@
           </div>
         {% endfor %}
       </div>
+      <div id="pagination-container">
+      </div>
 </div>
 
 <script>
@@ -93,5 +95,73 @@
     });
   });
 </script>
+
+<!--
+<script>
+  const itemsPerPage = 9;
+  const entities = document.querySelectorAll('.entity');
+  const totalItems = entities.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  function showPage(page) {
+    // Hide all entities first
+    entities.forEach((el, idx) => {
+      el.style.display = 'none';
+      if (idx >= (page - 1) * itemsPerPage && idx < page * itemsPerPage) {
+        el.style.display = '';
+      }
+    });
+  }
+
+  function generatePagination(currentPage) {
+    const paginationContainer = document.getElementById('pagination-container');
+    const pageWindow = 1;
+    let paginationHTML = `<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+      <a class="pagination-previous" href="#" onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>Previous</a>
+      <a class="pagination-next" href="#" onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next</a>
+      <ul class="pagination-list">`;
+    
+    if (currentPage > pageWindow + 2) {
+      paginationHTML += `<li><a class="pagination-link" href="#" onclick="goToPage(1)">1</a></li>`;
+      paginationHTML += `<li><span class="pagination-ellipsis">&hellip;</span></li>`;
+    } else {
+      for (let page = 1; page < currentPage - pageWindow; page++) {
+        paginationHTML += `<li><a class="pagination-link" href="#" onclick="goToPage(${page})">${page}</a></li>`;
+      }
+    }
+
+    for (let page = Math.max(1, currentPage - pageWindow); page <= Math.min(totalPages, currentPage + pageWindow); page++) {
+      paginationHTML += `
+        <li>
+          <a class="pagination-link ${page === currentPage ? 'is-current' : ''}" href="#" onclick="goToPage(${page})">${page}</a>
+        </li>`;
+    }
+
+    if (currentPage < totalPages - (pageWindow + 1)) {
+      paginationHTML += `<li><span class="pagination-ellipsis">&hellip;</span></li>`;
+      paginationHTML += `<li><a class="pagination-link" href="#" onclick="goToPage(${totalPages})">${totalPages}</a></li>`;
+    } else {
+      for (let page = currentPage + pageWindow + 1; page <= totalPages; page++) {
+        paginationHTML += `<li><a class="pagination-link" href="#" onclick="goToPage(${page})">${page}</a></li>`;
+      }
+    }    
+
+    paginationHTML += `</ul></nav>`;
+    paginationContainer.innerHTML = paginationHTML;
+    showPage(currentPage);
+  }
+
+  function goToPage(page) {
+    if (page < 1 || page > totalPages) return;
+    generatePagination(page);
+  }
+
+  // Initialize
+  document.addEventListener('DOMContentLoaded', () => {
+    generatePagination(1);
+  });
+</script>
+-->
+
 
   {% endblock %}

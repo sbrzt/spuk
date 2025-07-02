@@ -177,5 +177,23 @@ lang="en">
 </footer>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+        if (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
+            let lastReloadTime = null;
+            
+            setInterval(function() {
+                fetch('.reload')
+                    .then(response => response.text())
+                    .then(time => {
+                        if (lastReloadTime && time !== lastReloadTime) {
+                            console.log('🔄 Reloading page...');
+                            window.location.reload();
+                        }
+                        lastReloadTime = time;
+                    })
+                    .catch(() => {}); // Ignore 404s in production
+            }, 1000);
+        }
+        </script>
     </body>
 </html>

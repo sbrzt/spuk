@@ -29,7 +29,7 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob01/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob05/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob02/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob03/1"
@@ -38,13 +38,13 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob04/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob07/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob02/1"
-      },
-      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob06/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob05/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/31/ob07/1"
       }
     ]
   }

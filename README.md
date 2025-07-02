@@ -40,13 +40,13 @@ SPUK is a Static Site Generator (SSG) designed for RDF Knowledge Graphs. It tran
 
 SPUK generates static HTML pages from an RDF Knowledge Graph (KG), allowing users to explore the data through a web browser.
 
-### Start the site and the API
+### Start the site
 
 If you are launching the code for the first time, before running the main script, make it executable:
 
     chmod +x main.sh
 
-Start the static site generator and API server:
+Start the static site generator:
 
     ./main.sh
 
@@ -70,17 +70,32 @@ Run the test suite with:
 
 ## Roadmap
 
-- Entity
-    - [ ] graph visualization
-    - [ ] directed properties
-    - [ ] triples in which the entity is the object
-- Index
-    - [ ] entity cards
-    - [ ] datatype distribution
-- General
-    - [ ] codebase reengineering
-    - [ ] configuration file
-    - [ ] footer
+- **Entity**
+    - [ ] add graph visualization
+    - [ ] add directed properties
+    - [ ] add triples in which the entity is the object
+- **Index**
+    - [ ] add functioning pagination
+    - [ ] add better way to list entities
+    - [ ] add better data visualization
+        - [ ] add info not requiring the hover
+        - [ ] add download
+        - [ ] define personalized data graphs from a defined set through config file
+    - [ ] add list properties as well?
+- **Documentation**
+    - [ ] handle documentation pages
+- **Query**
+    - [ ] handle query page
+    - [ ] manage sparql queries through config file
+- **General**
+    - [X] codebase reengineering
+    - [X] add config file
+    - [ ] add smarter dev environment
+        - [X] add dev server with file watching and caching
+        - [ ] add auto-reload at change
+        - [ ] add configuration parameters for dev
+    - [ ] design better footer
+    - [ ] add API for handling more complex scenarios?
 
 ## Author
 

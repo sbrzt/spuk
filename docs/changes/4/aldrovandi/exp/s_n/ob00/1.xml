@@ -6,7 +6,7 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/exp/s_n/ob00/1">
     <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
-    <ns2:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/ulisse_aldrovandi/1"/>
     <ns1:R4i_is_embodied_in rdf:resource="https://w3id.org/changes/4/aldrovandi/mnf/s_n/ob00/1"/>
+    <ns2:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/ulisse_aldrovandi/1"/>
   </rdf:Description>
 </rdf:RDF>

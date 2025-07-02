@@ -6,10 +6,10 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/exp/v2_3/ob00/1">
     <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
-    <ns1:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/asia/1"/>
-    <ns1:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/europa/1"/>
     <ns1:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/africa/1"/>
     <ns1:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/america/1"/>
+    <ns1:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/europa/1"/>
+    <ns1:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/asia/1"/>
     <ns2:R4i_is_embodied_in rdf:resource="https://w3id.org/changes/4/aldrovandi/mnf/v2_3/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

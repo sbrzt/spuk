@@ -5,17 +5,17 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob00/1">
-    <ns1:P9_consists_of rdf:resource="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob03/1"/>
     <ns1:P9_consists_of rdf:resource="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob07/1"/>
     <ns1:P9_consists_of rdf:resource="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob04/1"/>
     <ns1:P9_consists_of rdf:resource="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob05/1"/>
-    <ns1:P9_consists_of rdf:resource="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob06/1"/>
     <ns1:P9_consists_of rdf:resource="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob02/1"/>
+    <ns1:P9_consists_of rdf:resource="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob03/1"/>
+    <ns1:P9_consists_of rdf:resource="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob06/1"/>
     <ns1:P9_consists_of rdf:resource="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_12/ob01/1"/>
-    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
     <ns1:P4_has_time-span rdf:resource="https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_alto_s_12/ob00/1"/>
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+    <ns2:R17_created rdf:resource="https://w3id.org/changes/4/aldrovandi/exp/vetrina_1_alto_s_12/ob00/1"/>
     <ns1:P32_used_general_technique rdf:resource="http://vocab.getty.edu/page/aat/300053852"/>
     <ns2:R19_created_a_realisation_of rdf:resource="https://w3id.org/changes/4/aldrovandi/wrk/vetrina_1_alto_s_12/ob00/1"/>
-    <ns2:R17_created rdf:resource="https://w3id.org/changes/4/aldrovandi/exp/vetrina_1_alto_s_12/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

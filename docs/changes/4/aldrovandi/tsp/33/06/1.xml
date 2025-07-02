@@ -5,7 +5,7 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/tsp/33/06/1">
     <ns1:P82b_end_of_the_end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-25T23:59:59+00:00</ns1:P82b_end_of_the_end>
-    <ns1:P82a_begin_of_the_begin rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-25T00:00:00+00:00</ns1:P82a_begin_of_the_begin>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+    <ns1:P82a_begin_of_the_begin rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-25T00:00:00+00:00</ns1:P82a_begin_of_the_begin>
   </rdf:Description>
 </rdf:RDF>

@@ -12,19 +12,15 @@ query = "CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o }"
 default_frequency = 10
 
 [entity_object]
-
     [[entity_object.formats]]
         format = "turtle"
         ext = "ttl"
-    
     [[entity_object.formats]]
         format = "nt"
         ext = "nt"
-
     [[entity_object.formats]]
         format = "xml"
         ext = "xml"
-
     [[entity_object.formats]]
         format = "json-ld"
         ext = "jsonld"

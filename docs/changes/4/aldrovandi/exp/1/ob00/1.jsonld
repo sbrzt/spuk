@@ -11,6 +11,9 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/mar_mediterraneo/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/asia/1"
       },
       {
@@ -18,9 +21,6 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/africa/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/mar_mediterraneo/1"
       }
     ]
   }

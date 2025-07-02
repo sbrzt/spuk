@@ -4,6 +4,7 @@ from src.visualizer import Visualizer
 from src.entity_object import EntityObject
 from src.index_object import IndexObject
 from src.documentation_object import DocumentationObject
+from src.cache import SimpleEntityCache
 import tomllib
 
 with open("config.toml", "rb") as f:
@@ -25,15 +26,25 @@ def main():
     )
 
     entities = profile.entities
+    cache = SimpleEntityCache()
 
     pages = []
+    rebuilt_count = 0
+
     for data in entities.values():
-        page = EntityObject(
-            entity_data = data
-        )
-        page.generate_folders()
-        page.serialize()
-        page.save()
+        if cache.should_rebuild_entity(data):
+            page = EntityObject(
+                entity_data = data
+            )
+            page.generate_folders()
+            page.serialize()
+            page.save()
+            cache.mark_entity_built(data)
+            rebuilt_count += 1
+        else:
+            page = EntityObject(
+                entity_data = data
+            )
         pages.append(page)
 
     index_page = IndexObject(
@@ -49,7 +60,7 @@ def main():
     documentation_page = DocumentationObject(SOURCE, "documentation")
     documentation_page.save()
 
-    print("🎉 All pages generated successfully!")
+    print(f"🎉 Generated {rebuilt_count}/{len(entities)} pages!")
 
 if __name__ == "__main__":
     main()

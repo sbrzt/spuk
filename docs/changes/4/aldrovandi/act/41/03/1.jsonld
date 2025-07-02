@@ -6,18 +6,18 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_da/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_ficlit/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_ficlit/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_da/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/mattia_sullini/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/alice_bordignon/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/alice_bordignon/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/mattia_sullini/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
@@ -42,16 +42,16 @@
     ],
     "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/3df_zephyr/1"
-      },
-      {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/modo/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/instant_meshes/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/3df_zephyr/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gimp/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/instant_meshes/1"
       }
     ]
   }
