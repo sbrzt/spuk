@@ -26,6 +26,9 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of": [
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/39/ob02/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/39/ob06/1"
       },
       {
@@ -36,9 +39,6 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/39/ob01/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/39/ob02/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/39/ob04/1"

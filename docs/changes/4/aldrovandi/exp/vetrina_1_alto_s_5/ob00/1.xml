@@ -6,7 +6,7 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/exp/vetrina_1_alto_s_5/ob00/1">
     <ns2:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/maschera/1"/>
-    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
     <ns1:R4i_is_embodied_in rdf:resource="https://w3id.org/changes/4/aldrovandi/mnf/vetrina_1_alto_s_5/ob00/1"/>
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
   </rdf:Description>
 </rdf:RDF>

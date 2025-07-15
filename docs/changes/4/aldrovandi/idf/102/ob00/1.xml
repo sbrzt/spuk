@@ -5,7 +5,7 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/idf/102/ob00/1">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
-    <ns1:P190_has_symbolic_content rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">102</ns1:P190_has_symbolic_content>
     <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300312355"/>
+    <ns1:P190_has_symbolic_content rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">102</ns1:P190_has_symbolic_content>
   </rdf:Description>
 </rdf:RDF>

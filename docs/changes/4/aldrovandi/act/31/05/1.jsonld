@@ -17,10 +17,10 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/arianna_moretti/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/arcangelo_massari/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sebastian_barzaghi/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sebastian_barzaghi/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/arcangelo_massari/1"
       }
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
@@ -45,13 +45,13 @@
     ],
     "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/heritrace/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/chad-ap/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/morph-kgc/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/heritrace/1"
       }
     ]
   }

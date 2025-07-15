@@ -8,7 +8,7 @@
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/v2_1/ob02/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/v2_1/ob00/1"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/v2_1/ob01/1"/>
-    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
     <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/1/1"/>
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
   </rdf:Description>
 </rdf:RDF>

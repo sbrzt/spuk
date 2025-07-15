@@ -1,2 +1,2 @@
-<https://w3id.org/changes/4/aldrovandi/plc/caserta/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
 <https://w3id.org/changes/4/aldrovandi/plc/caserta/1> <http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of> <https://w3id.org/changes/4/aldrovandi/acr/reggia_di_caserta/1> .
+<https://w3id.org/changes/4/aldrovandi/plc/caserta/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .

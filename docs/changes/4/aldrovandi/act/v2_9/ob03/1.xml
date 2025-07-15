@@ -5,7 +5,7 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/v2_9/ob03/1">
     <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/jan_caspar_philips/1"/>
-    <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300053225"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300053225"/>
   </rdf:Description>
 </rdf:RDF>

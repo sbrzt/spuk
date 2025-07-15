@@ -4,8 +4,8 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/ttl/vetrina_2_alto_n_3/ob01/1">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
-    <ns1:P190_has_symbolic_content xml:lang="it">Sezioni Di Denti Di Elefante</ns1:P190_has_symbolic_content>
     <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300417207"/>
+    <ns1:P190_has_symbolic_content xml:lang="it">Sezioni Di Denti Di Elefante</ns1:P190_has_symbolic_content>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
   </rdf:Description>
 </rdf:RDF>

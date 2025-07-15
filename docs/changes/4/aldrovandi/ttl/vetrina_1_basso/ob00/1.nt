@@ -1,2 +1,2 @@
-<https://w3id.org/changes/4/aldrovandi/ttl/vetrina_1_basso/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/page/aat/300417204> .
 <https://w3id.org/changes/4/aldrovandi/ttl/vetrina_1_basso/ob00/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E35_Title> .
+<https://w3id.org/changes/4/aldrovandi/ttl/vetrina_1_basso/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/page/aat/300417204> .

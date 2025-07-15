@@ -1,4 +1,5 @@
 import tomllib
+import ssl
 from rdflib import Graph
 from SPARQLWrapper import SPARQLWrapper, GET, TURTLE
 
@@ -6,6 +7,8 @@ with open("config.toml", "rb") as f:
     configuration = tomllib.load(f)
 
 QUERY = configuration["knowledge_graph"]["query"]
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 
 class KnowledgeGraph:

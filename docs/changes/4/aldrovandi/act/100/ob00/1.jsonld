@@ -21,10 +21,13 @@
     ],
     "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of": [
       {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob02/1"
+      },
+      {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob03/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob04/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob07/1"
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob06/1"
@@ -36,10 +39,7 @@
         "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob01/1"
       },
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob02/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob07/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob04/1"
       }
     ]
   }

@@ -5,7 +5,7 @@
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/ttl/117/ob02/1">
     <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300417207"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
     <ns1:P190_has_symbolic_content xml:lang="en">Photographic Equipment Of Prof. Fabio Frassetto</ns1:P190_has_symbolic_content>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
   </rdf:Description>
 </rdf:RDF>

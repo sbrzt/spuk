@@ -5,6 +5,7 @@ from src.entity_object import EntityObject
 from src.index_object import IndexObject
 from src.documentation_object import DocumentationObject
 from src.cache import SimpleEntityCache
+from tqdm import tqdm
 import tomllib
 
 with open("config.toml", "rb") as f:
@@ -31,7 +32,7 @@ def main():
     pages = []
     rebuilt_count = 0
 
-    for data in entities.values():
+    for data in tqdm(entities.values()):
         if cache.should_rebuild_entity(data):
             page = EntityObject(
                 entity_data = data

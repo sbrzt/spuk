@@ -1,2 +1,2 @@
-<https://w3id.org/changes/4/aldrovandi/idf/vetrina_1_alto_s_16/dg00/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "<Https://aton.ispc.cnr.it/s/aldrovandi/20231122-7zf985ydw>"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/changes/4/aldrovandi/idf/vetrina_1_alto_s_16/dg00/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<https://w3id.org/changes/4/aldrovandi/idf/vetrina_1_alto_s_16/dg00/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "<Https://aton.ispc.cnr.it/s/aldrovandi/20231122-7zf985ydw>"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
