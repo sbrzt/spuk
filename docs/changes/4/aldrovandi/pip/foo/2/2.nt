@@ -1,6 +1,6 @@
-<https://w3id.org/changes/4/aldrovandi/pip/foo/2> <http://www.w3.org/2000/01/rdf-schema#label> "Entity foo 2" .
-<https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/changes/4/aldrovandi/pip/foo/2> .
 <https://w3id.org/changes/4/aldrovandi/pip/foo/1> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/changes/4/aldrovandi/pip/foo/2> .
 <https://w3id.org/changes/4/aldrovandi/pip/foo/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Entity> .
+<https://w3id.org/changes/4/aldrovandi/pip/foo/2> <http://www.w3.org/2000/01/rdf-schema#label> "Entity foo 2" .
 <https://w3id.org/changes/4/aldrovandi/pip/foo/2> <http://w3id.org/sche/ma/status> "inactive" .
+<https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/changes/4/aldrovandi/pip/foo/2> .
 <https://w3id.org/changes/4/aldrovandi/pip/foo/2> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/changes/4/aldrovandi/pip/1> .
