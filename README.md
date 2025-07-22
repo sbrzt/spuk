@@ -52,37 +52,52 @@ TODO
 
 TODO
 
-## Roadmap
+Here's a **cleaner, more structured rewrite** of your roadmap that improves clarity, consistency, and focus. The wording is more actionable, and the hierarchy is easier to scan.
 
-- **Entity**
-    - [X] add graph visualization
-    - [X] add directed properties
-    - [X] add subject-properties triples
-- **Indexes**
-    - [ ] add functioning pagination
-    - [ ] add better way to list entities
-    - [ ] add better data visualization
-        - [ ] add info not requiring the hover
-        - [ ] add download
-        - [X] TEST: define personalized data graphs from a defined set through config file
-    - [ ] add list properties as well?
-- **Documentation**
-    - [ ] handle documentation pages
-- **Query**
-    - [ ] handle query page
-    - [ ] manage sparql queries through config file
-- **General**
-    - [X] codebase reengineering
-    - [X] add config file
-    - [ ] add documentation
-        - [ ] add doc strings
-        - [ ] add readmes
-    - [ ] add smarter dev environment
-        - [ ] add dev server with file watching and caching
-        - [ ] add auto-reload at change
-        - [ ] add configuration parameters for dev
-    - [ ] design better footer
-    - [ ] add API for handling more complex scenarios?
+---
+
+## 🚧 Roadmap
+
+### 🧠 Entity Pages
+
+* [x] Integrate graph visualization
+* [x] Show directed property relationships
+* [x] Display subject–property triples
+
+### 📂 Indexes & Listings
+
+* [ ] Implement pagination
+* [ ] Implement search functionality
+* [ ] Improve entity listing layout
+* [ ] Enhance data visualizations:
+  * [ ] Show info without requiring hover
+  * [ ] Add download option
+  * [x] **Test**: Define personalized data stats via config file
+  * [ ] **Test**: Define personalized data charts via config file
+* [ ] Consider listing entity properties
+
+### 📚 Documentation
+
+* [ ] Add documentation site/pages
+* [ ] Improve internal documentation:
+  * [ ] Add docstrings
+  * [ ] Add README files
+
+### 🔍 Query Interface
+
+* [ ] Create query page
+* [ ] Allow SPARQL query presets via config file
+
+### ⚙️ General Improvements
+
+* [x] Reengineer codebase structure
+* [x] Introduce centralized config file
+* [ ] Improve developer experience:
+  * [ ] Add dev server with file watching & caching
+  * [ ] Enable auto-reload on changes
+  * [ ] Add dev-specific config parameters
+* [ ] Redesign footer
+* [ ] Consider adding API support for advanced use cases
 
 ## Author
 
