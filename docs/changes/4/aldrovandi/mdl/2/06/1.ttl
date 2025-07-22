@@ -1,5 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/mdl/2/06/1> a <http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object> ;
-    ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/idf/2/dg00/1> .
-

@@ -1,5 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/sfw/nextcloud/1> a <http://www.ics.forth.gr/isl/CRMdig/D14_Software> ;
-    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300426696> .
-

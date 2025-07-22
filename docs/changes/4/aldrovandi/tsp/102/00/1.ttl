@@ -1,7 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://w3id.org/changes/4/aldrovandi/tsp/102/00/1> a ns1:E52_Time-Span ;
-    ns1:P82a_begin_of_the_begin "2023-05-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:P82b_end_of_the_end "2023-05-22T23:59:59+00:00"^^xsd:dateTime .
-

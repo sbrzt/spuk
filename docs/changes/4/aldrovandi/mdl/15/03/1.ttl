@@ -1,5 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/mdl/15/03/1> a <http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object> ;
-    ns1:P130_shows_features_of <https://sketchfab.com/3d-models/green-iguana-217da036aae14762904ef4630023978b> .
-

@@ -1,7 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns2: <http://iflastandards.info/ns/lrm/lrmoo/> .
-
-<https://w3id.org/changes/4/aldrovandi/mnf/vetrina_7_alto_s_1_t/ob00/1> a ns2:F3_Manifestation ;
-    ns2:R7i_is_exemplified_by <https://w3id.org/changes/4/aldrovandi/itm/vetrina_7_alto_s_1_t/ob00/1> ;
-    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300117127> .
-

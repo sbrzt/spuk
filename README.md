@@ -71,16 +71,16 @@ Run the test suite with:
 ## Roadmap
 
 - **Entity**
-    - [ ] add graph visualization
-    - [ ] add directed properties
-    - [ ] add triples in which the entity is the object
-- **Index**
+    - [X] add graph visualization
+    - [X] add directed properties
+    - [X] add subject-properties triples
+- **Indexes**
     - [ ] add functioning pagination
     - [ ] add better way to list entities
     - [ ] add better data visualization
         - [ ] add info not requiring the hover
         - [ ] add download
-        - [ ] define personalized data graphs from a defined set through config file
+        - [X] TEST: define personalized data graphs from a defined set through config file
     - [ ] add list properties as well?
 - **Documentation**
     - [ ] handle documentation pages
@@ -90,8 +90,11 @@ Run the test suite with:
 - **General**
     - [X] codebase reengineering
     - [X] add config file
+    - [ ] add documentation
+        - [ ] add doc strings
+        - [ ] add readmes
     - [ ] add smarter dev environment
-        - [X] add dev server with file watching and caching
+        - [ ] add dev server with file watching and caching
         - [ ] add auto-reload at change
         - [ ] add configuration parameters for dev
     - [ ] design better footer

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+  
+  {% block content %}
+  
+  <section class="hero is-large is-info">
+    <div class="hero-body">
+      <p class="title">Overview</p>
+      <p class="subtitle">Dataset information and statistics</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      <div class="box cell content is-large">
+        <p>Triples: {{ stats.total_triples }}</p>
+      </div>
+      <div class="box cell content is-large">
+        <p>Entities: {{ stats.unique_entities|length }}</p>
+      </div>
+      <div class="box cell content is-large">
+        <p>Properties: {{ stats.unique_properties|length }}</p>
+      </div>
+      <div class="box cell content is-large">
+        <p>Classes: {{ stats.unique_classes|length }}</p> 
+      </div>
+      <div class="box cell content is-large">
+        <p>Models: {{ stats.unique_models|length }}</p>
+      </div>
+    </div>
+    
+    <div class="fixed-grid">
+      <div class="grid has-2-cols">
+        <div class="box cell content is-large">
+          <canvas id="topEntitiesChart" width="400" height="200"></canvas>
+        </div>
+        <div class="box cell content is-large">
+          <canvas id="topPropertiesChart" width="400" height="200"></canvas>
+        </div>
+        <div class="box cell content is-large">
+          <canvas id="topClassesChart" width="400" height="200"></canvas>
+        </div>
+        <div class="box cell content is-large">
+          <canvas id="topModelsChart" width="400" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+
+    {% if custom_stats %}
+      <h2>Custom Stats</h2>
+      {% for name, stat in custom_stats.items() %}
+        <h3>{{ stat.label }}</h3>
+        <ul>
+          {% for key, value in stat.data.items() %}
+              <li>{{ key }}: {{ value }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    {% endif %}
+  </section>
+
+  <script>
+    window.topEntitiesData = {{ stats.top_entities | tojson }};
+    window.topPropertiesData = {{ stats.top_properties | tojson }};
+    window.topClassesData = {{ stats.top_classes | tojson }};
+    window.topModelsData = {{ stats.top_models | tojson }};
+  </script>
+
+  {% endblock %}

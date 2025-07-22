@@ -1,5 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/acr/giovanni_tacuino/1> a ns1:E39_Actor ;
-    ns1:P70i_is_documented_in <http://viaf.org/viaf/100177277> .
-

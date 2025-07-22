@@ -1,0 +1,8 @@
+# src/custom_stats/config.yaml
+
+custom_stats:
+
+  - name: "status_counts"
+    label: "Status Breakdown"
+    type: "count_by_object"
+    predicate: "http://w3id.org/sche/ma/status"

@@ -1,5 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/dev/nikkor_50mm/1> a <http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device> ;
-    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300266792> .
-

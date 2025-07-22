@@ -1,0 +1,10 @@
+@prefix ns1: <http://w3id.org/sche/ma/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/changes/4/aldrovandi/pip/foo/2> rdfs:seeAlso <https://w3id.org/changes/4/aldrovandi/pip/1> .
+
+<https://w3id.org/changes/4/aldrovandi/pip/1> a <http://example.org/Entity> ;
+    rdfs:label "Entity pip 1" ;
+    ns1:status "active" ;
+    rdfs:seeAlso <https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1> .
+

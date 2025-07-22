@@ -1,5 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/ttl/vetrina_2_alto_s_3/ob00/1> a ns1:E35_Title ;
-    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300417204> .
-

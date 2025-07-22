@@ -1,5 +1,3 @@
-__pycache__/
-venv/
-.build_cache.json
-.dev_cache.json
-.entity_cache.json
+.venv/
+.pytest_cache
+__pycache__

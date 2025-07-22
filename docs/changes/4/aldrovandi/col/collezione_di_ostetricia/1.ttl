@@ -1,5 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/col/collezione_di_ostetricia/1> a ns1:E24_Physical_Human-Made_Thing ;
-    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300025976> .
-

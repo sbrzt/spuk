@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+  
+    {% block content %}
+    
+    <section class="hero is-large is-success">
+        <div class="hero-body">
+            <p class="title">Entities</p>
+            <p class="subtitle">List of entities</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="grid is-col-min-24">
+            {% for entity in entities %}
+            <div class="card cell entity">
+                <header class="card-header">
+                    <p class="card-header-title">{{ entity.uri }}</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        Types: {{ entity.types }}
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="{{ entity.render_path }}.html" class="card-footer-item">Go to entity page</a>
+                </footer>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    
+{% endblock %}

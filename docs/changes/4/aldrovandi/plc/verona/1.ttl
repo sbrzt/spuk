@@ -1,5 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/plc/verona/1> a ns1:E53_Place ;
-    ns1:P74i_is_current_or_former_residence_of <https://w3id.org/changes/4/aldrovandi/acr/museo_di_storia_naturale_di_verona/1> .
-
