@@ -74,6 +74,14 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 * [ ] Implement search functionality
 * [ ] Improve entity listing layout
 * [ ] Enhance data visualizations:
+  * [ ] Add literal components (datatypes and languages)
+  * [ ] Add subject RDF node types
+  * [ ] Add object RDF node types
+  * [ ] Add combined node types
+  * [ ] Add IRI lengths
+  * [ ] Add literal lengths
+  * [ ] Add most referenced subjects?
+  * [ ] Add most referenced objects?
   * [ ] Show info without requiring hover
   * [ ] Add download option
   * [x] **Test**: Define personalized data stats via config file
