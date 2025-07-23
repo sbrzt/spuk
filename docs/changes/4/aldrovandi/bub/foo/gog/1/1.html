@@ -8,33 +8,56 @@ lang="en">
         <link rel="stylesheet" href="../../../../../../../css/style.css">
     </head>
     <body>
-        <div class="block">
-  <nav
-  class="navbar is-spaced has-shadow"
-  role="navigation"
-  aria-label="main navigation">
-    <div class="navbar-brand">
+        <nav
+class="navbar is-transparent is-spaced"
+role="navigation"
+aria-label="main navigation">
+  <div class="navbar-brand">
+    <span class="navbar-item">
+      <svg style="width: 100%; height: auto;" viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <!-- Stylized ghost body -->
+        <path d="M60 20
+                C40 20, 30 40, 30 60
+                C30 90, 40 100, 50 100
+                Q55 95, 60 100
+                Q65 95, 70 100
+                Q75 95, 80 100
+                Q85 95, 90 100
+                C100 100, 110 90, 110 60
+                C110 40, 100 20, 80 20
+                Z"
+              fill="#ffffff" stroke="#00D1B2" stroke-width="3" />
+        <!-- Eyes -->
+        <circle cx="55" cy="55" r="5" fill="#333" />
+        <circle cx="85" cy="55" r="5" fill="#333" />
+        <!-- Cute mouth -->
+        <path d="M60 75 Q70 85, 80 75" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- Text: SPUK -->
+        <text x="130" y="85" font-family="Arial, sans-serif" font-size="48" fill="#000">
+          SPUK
+        </text>
+      </svg>
+
+    </span>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-start content">
       <a class="navbar-item" href="../../../../../../../index.html">
-        <img src="../../../../../../../img/logo.jpeg"/>
-        <span class="is-large">SPUK</span>
+        Overview
       </a>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+      <a class="navbar-item" href="../../../../../../../entities.html">
+        Entities
       </a>
     </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="../../../../../../../entities.html">Entities</a>
-      </div>
-
-    </div>
-  </nav>
-</div>
+  </div>
+</nav>
         
 
   <section class="hero is-large is-primary">
@@ -228,7 +251,7 @@ lang="en">
 
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <script>
-    const graphData = {"nodes": [{"id": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "label": "1", "title": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "shape": "ellipse"}, {"id": "https://w3id.org/changes/4/aldrovandi/pip/01/1", "label": "1", "title": "https://w3id.org/changes/4/aldrovandi/pip/01/1", "shape": "ellipse"}, {"id": "http://example.org/Entity", "label": "Entity", "title": "http://example.org/Entity", "shape": "ellipse"}, {"id": "Entity bub gog 1", "label": "Entity bub gog 1", "title": "Entity bub gog 1", "shape": "box", "color": "#DDEEFF"}, {"id": "published", "label": "published", "title": "published", "shape": "box", "color": "#DDEEFF"}, {"id": "https://w3id.org/changes/4/aldrovandi/pip/1", "label": "1", "title": "https://w3id.org/changes/4/aldrovandi/pip/1", "shape": "ellipse"}, {"id": "https://w3id.org/changes/4/aldrovandi/pip/foo/2", "label": "2", "title": "https://w3id.org/changes/4/aldrovandi/pip/foo/2", "shape": "ellipse"}], "edges": [{"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "https://w3id.org/changes/4/aldrovandi/pip/01/1", "label": "seeAlso", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "http://example.org/Entity", "label": "type", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "Entity bub gog 1", "label": "label", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "published", "label": "status", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/pip/1", "to": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "label": "seeAlso", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "https://w3id.org/changes/4/aldrovandi/pip/foo/2", "label": "seeAlso", "arrows": "to"}]};
+    const graphData = {"nodes": [{"id": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "label": "1", "title": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "shape": "ellipse"}, {"id": "published", "label": "published", "title": "published", "shape": "box", "color": "#DDEEFF"}, {"id": "https://w3id.org/changes/4/aldrovandi/pip/01/1", "label": "1", "title": "https://w3id.org/changes/4/aldrovandi/pip/01/1", "shape": "ellipse"}, {"id": "Entity bub gog 1", "label": "Entity bub gog 1", "title": "Entity bub gog 1", "shape": "box", "color": "#DDEEFF"}, {"id": "https://w3id.org/changes/4/aldrovandi/pip/1", "label": "1", "title": "https://w3id.org/changes/4/aldrovandi/pip/1", "shape": "ellipse"}, {"id": "https://w3id.org/changes/4/aldrovandi/pip/foo/2", "label": "2", "title": "https://w3id.org/changes/4/aldrovandi/pip/foo/2", "shape": "ellipse"}, {"id": "http://example.org/Entity", "label": "Entity", "title": "http://example.org/Entity", "shape": "ellipse"}], "edges": [{"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "published", "label": "status", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "https://w3id.org/changes/4/aldrovandi/pip/01/1", "label": "seeAlso", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "Entity bub gog 1", "label": "label", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/pip/1", "to": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "label": "seeAlso", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "https://w3id.org/changes/4/aldrovandi/pip/foo/2", "label": "seeAlso", "arrows": "to"}, {"from": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", "to": "http://example.org/Entity", "label": "type", "arrows": "to"}]};
     const options = {"layout": {"improvedLayout": true}, "physics": {"enabled": true, "solver": "repulsion", "repulsion": {"nodeDistance": 200, "springLength": 200, "springConstant": 0.03, "damping": 0.09}, "stabilization": {"enabled": true, "iterations": 250, "fit": true}}, "nodes": {"shape": "dot", "size": 12, "font": {"size": 14}}, "edges": {"arrows": "to", "font": {"align": "middle", "size": 12}}};
     const container = document.getElementById('graph');
     new vis.Network(container, graphData, options);
@@ -239,10 +262,57 @@ lang="en">
   <div class="content has-text-centered">
     <div class="columns">
       <div class="column">
-        <strong>SPUK</strong> by <a href="https://sbrzt.netlify.app">Sebastian Barzaghi</a>.
+        <h4>
+          SPUK by <a href="https://sbrzt.netlify.app" target="_blank">Sebastian Barzaghi</a>
+        </h4>
+        <a href="https://orcid.org/my-orcid?orcid=0000-0002-0799-1527" class="button">
+          <span class="icon">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </span>
+          <span>ORCID</span>
+        </a>
+        <a href="https://it.linkedin.com/in/sebastian-barzaghi" class="button">
+          <span class="icon">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://mastodon.social/@se_ba" class="button">
+          <span class="icon">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </span>
+          <span>Mastodon</span>
+        </a>
       </div>
       <div class="column">
+        <h4>
+          Contribute on GitHub
+        </h4>
         <iframe src="https://ghbtns.com/github-btn.html?user=sbrzt&repo=spuk&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=sbrzt&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="30px"></iframe>
+      </div>
+      <div class="column">
+        <h4>
+          Share on social media
+        </h4>
+        <a href="https://it.linkedin.com/in/share" class="button">
+          <span class="icon">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://mastodon.social/share" class="button">
+          <span class="icon">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </span>
+          <span>Mastodon</span>
+        </a>
+        <a href="https://bsky.app/share" class="button">
+          <span class="icon">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </span>
+          <span>Bluesky</span>
+        </a>
       </div>
     </div>
     <p>

@@ -100,7 +100,7 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
   * [ ] Add dev server with file watching & caching
   * [ ] Enable auto-reload on changes
   * [ ] Add dev-specific config parameters
-* [ ] Redesign footer
+* [x] Redesign footer
 * [ ] Consider adding API support for advanced use cases
 
 ## Author
