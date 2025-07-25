@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 # --- Graph source configuration ---
-TEST_GRAPH_SOURCE = "tests/data/test_graph.ttl"
+TEST_GRAPH_SOURCE = "data/demo_graph.ttl"
 GRAPH_SOURCE = {
     "type": "file",
     "file_path": Path(TEST_GRAPH_SOURCE),
