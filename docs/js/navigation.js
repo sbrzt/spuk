@@ -1,44 +1,4 @@
-{% extends "base.html" %}
-  
-    {% block content %}
-    
-    <section class="hero is-large is-success">
-        <div class="hero-body">
-            <p class="title">Entities</p>
-            <p class="subtitle">List of entities</p>
-        </div>
-    </section>
-    
-    <section class="section">
-        <div id="entities-grid" class="grid is-col-min-24">
-            {% for entity in entities %}
-            <div class="card cell entity" data-entity-index="{{ loop.index0 }}">
-                <header class="card-header">
-                    <p class="card-header-title">{{ entity.uri }}</p>
-                </header>
-                <div class="card-content">
-                    <div class="content">
-                        Types: {{ entity.types }}
-                    </div>
-                </div>
-                <footer class="card-footer">
-                    <a href="{{ entity.render_path }}.html" class="card-footer-item">Go to entity page</a>
-                </footer>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-
-    <section class="section">
-        <nav class="pagination is-centered" role="navigation" aria-label="pagination" id="entity-pagination">
-            <a class="pagination-previous">Previous</a>
-            <ul class="pagination-list" id="pagination"></ul>
-            <a class="pagination-next">Next</a>
-        </nav>
-    </section>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const itemsPerPage = 15;
   const items = Array.from(document.querySelectorAll(".entity"));
   console.log(`🔍 Found ${items.length} .entity cards`);
@@ -128,7 +88,3 @@
     showPage(currentPage);
   }
 });
-
-    </script>
-    
-{% endblock %}

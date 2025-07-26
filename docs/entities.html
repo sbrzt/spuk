@@ -68,9 +68,9 @@ aria-label="main navigation">
     </section>
     
     <section class="section">
-        <div class="grid is-col-min-24">
+        <div id="entities-grid" class="grid is-col-min-24">
             
-            <div class="card cell entity">
+            <div class="card cell entity" data-entity-index="0">
                 <header class="card-header">
                     <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/01/1</p>
                 </header>
@@ -84,35 +84,7 @@ aria-label="main navigation">
                 </footer>
             </div>
             
-            <div class="card cell entity">
-                <header class="card-header">
-                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/foo/2</p>
-                </header>
-                <div class="card-content">
-                    <div class="content">
-                        Types: ['http://example.org/Entity']
-                    </div>
-                </div>
-                <footer class="card-footer">
-                    <a href="changes/4/aldrovandi/pip/foo/2/2.html" class="card-footer-item">Go to entity page</a>
-                </footer>
-            </div>
-            
-            <div class="card cell entity">
-                <header class="card-header">
-                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/1</p>
-                </header>
-                <div class="card-content">
-                    <div class="content">
-                        Types: ['http://example.org/Entity']
-                    </div>
-                </div>
-                <footer class="card-footer">
-                    <a href="changes/4/aldrovandi/pip/1/1.html" class="card-footer-item">Go to entity page</a>
-                </footer>
-            </div>
-            
-            <div class="card cell entity">
+            <div class="card cell entity" data-entity-index="1">
                 <header class="card-header">
                     <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1</p>
                 </header>
@@ -126,7 +98,7 @@ aria-label="main navigation">
                 </footer>
             </div>
             
-            <div class="card cell entity">
+            <div class="card cell entity" data-entity-index="2">
                 <header class="card-header">
                     <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/foo/1</p>
                 </header>
@@ -140,8 +112,138 @@ aria-label="main navigation">
                 </footer>
             </div>
             
+            <div class="card cell entity" data-entity-index="3">
+                <header class="card-header">
+                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/1</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        Types: ['http://example.org/Entity']
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="changes/4/aldrovandi/pip/1/1.html" class="card-footer-item">Go to entity page</a>
+                </footer>
+            </div>
+            
+            <div class="card cell entity" data-entity-index="4">
+                <header class="card-header">
+                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/foo/2</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        Types: ['http://example.org/Entity']
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="changes/4/aldrovandi/pip/foo/2/2.html" class="card-footer-item">Go to entity page</a>
+                </footer>
+            </div>
+            
         </div>
     </section>
+
+    <section class="section">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination" id="entity-pagination">
+            <a class="pagination-previous">Previous</a>
+            <ul class="pagination-list" id="pagination"></ul>
+            <a class="pagination-next">Next</a>
+        </nav>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  const itemsPerPage = 15;
+  const items = Array.from(document.querySelectorAll(".entity"));
+  console.log(`🔍 Found ${items.length} .entity cards`);
+  const totalPages = Math.ceil(items.length / itemsPerPage);
+  let currentPage = 1;
+
+  function showPage(page) {
+    items.forEach((item, index) => {
+      item.style.display = (
+        index >= (page - 1) * itemsPerPage && index < page * itemsPerPage
+      ) ? "" : "none";
+    });
+    renderPagination(page);
+  }
+
+  function renderPagination(current) {
+    const paginationList = document.getElementById("pagination");
+    paginationList.innerHTML = "";
+
+    const range = getPageRange(current, totalPages);
+
+    range.forEach(page => {
+      if (page === "...") {
+        const li = document.createElement("li");
+        li.innerHTML = `<span class="pagination-ellipsis">&hellip;</span>`;
+        paginationList.appendChild(li);
+      } else {
+        const li = document.createElement("li");
+        li.innerHTML = `<a class="pagination-link ${page === current ? "is-current" : ""}">${page}</a>`;
+        paginationList.appendChild(li);
+      }
+    });
+
+    // Handle previous/next buttons
+    document.querySelector(".pagination-previous").onclick = () => {
+      if (currentPage > 1) {
+        currentPage--;
+        showPage(currentPage);
+      }
+    };
+
+    document.querySelector(".pagination-next").onclick = () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        showPage(currentPage);
+      }
+    };
+
+    // Add event listeners
+    paginationList.querySelectorAll(".pagination-link").forEach(link => {
+      link.addEventListener("click", function () {
+        const page = parseInt(this.textContent);
+        currentPage = page;
+        showPage(currentPage);
+      });
+    });
+  }
+
+  function getPageRange(current, total) {
+    const delta = 2;
+    const range = [];
+    const rangeWithDots = [];
+    let l;
+
+    for (let i = 1; i <= total; i++) {
+      if (i === 1 || i === total || (i >= current - delta && i <= current + delta)) {
+        range.push(i);
+      }
+    }
+
+    for (let i of range) {
+      if (l) {
+        if (i - l === 2) {
+          rangeWithDots.push(l + 1);
+        } else if (i - l !== 1) {
+          rangeWithDots.push("...");
+        }
+      }
+      rangeWithDots.push(i);
+      l = i;
+    }
+
+    return rangeWithDots;
+  }
+
+  if (items.length > 0) {
+    showPage(currentPage);
+  }
+});
+
+    </script>
     
 
         <footer class="footer">
@@ -214,5 +316,6 @@ aria-label="main navigation">
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="js/charts.js"></script>
+        <script src="js/navigation.js"></script>
     </body>
 </html>

@@ -70,7 +70,8 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 
 ### 📂 Indexes & Listings
 
-* [ ] Implement pagination
+* [x] Implement pagination
+  * [ ] Clean entities.html once dev server works
 * [ ] Implement search functionality
 * [ ] Improve entity listing layout
 * [ ] Enhance data visualizations:
@@ -82,7 +83,6 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
   * [ ] Add literal lengths
   * [ ] Add most referenced subjects?
   * [ ] Add most referenced objects?
-  * [ ] Show info without requiring hover
   * [ ] Add download option
   * [x] **Test**: Define personalized data stats via config file
   * [ ] **Test**: Define personalized data charts via config file
