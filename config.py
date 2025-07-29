@@ -21,6 +21,18 @@ STATIC_DIR = "static"
 ENABLE_CUSTOM_STATS = False
 STATS_CONFIG = "src/custom_stats/config.yaml"
 
+# --- SPARQL queries configuration ---
+PREDEFINED_QUERIES = [
+    {
+        "name": "All classes",
+        "query": "SELECT DISTINCT ?class WHERE { ?s a ?class } LIMIT 100"
+    },
+    {
+        "name": "All properties",
+        "query": "SELECT DISTINCT ?property WHERE { ?s ?property ?o } LIMIT 100"
+    }
+]
+
 # --- Entity graph configuration ---
 GRAPH_VIS_OPTIONS = {
     "layout": {

@@ -62,61 +62,152 @@ aria-label="main navigation">
   </div>
 </nav>
         
-  
-  <section class="hero is-large is-info">
-    <div class="hero-body">
-      <p class="title">Overview</p>
-      <p class="subtitle">Dataset information and statistics</p>
-    </div>
-  </section>
+<section class="hero is-warning is-large">
+  <div class="hero-body">
+    <p class="title">SPARQL Query Interface</p>
+    <p class="subtitle">Interact with the RDF data</p>
+  </div>
+</section>
 
-  <section class="section">
-    <div class="grid">
-      <div class="box cell content is-large">
-        <p>Triples: 21</p>
-      </div>
-      <div class="box cell content is-large">
-        <p>Entities: 5</p>
-      </div>
-      <div class="box cell content is-large">
-        <p>Properties: 4</p>
-      </div>
-      <div class="box cell content is-large">
-        <p>Classes: 1</p> 
-      </div>
-      <div class="box cell content is-large">
-        <p>Models: 4</p>
-      </div>
+<section class="section">
+  <div class="container">
+
+    <div>
+      <p><strong>Data Source:</strong> <code id="data-source">data/demo_graph.ttl</code></p>
     </div>
-    
-    <div class="fixed-grid">
-      <div class="grid has-2-cols">
-        <div class="box cell content is-large">
-          <canvas id="topEntitiesChart" width="400" height="200"></canvas>
-        </div>
-        <div class="box cell content is-large">
-          <canvas id="topPropertiesChart" width="400" height="200"></canvas>
-        </div>
-        <div class="box cell content is-large">
-          <canvas id="topClassesChart" width="400" height="200"></canvas>
-        </div>
-        <div class="box cell content is-large">
-          <canvas id="topModelsChart" width="400" height="200"></canvas>
+
+    <!-- Query selector -->
+    <div class="field">
+      <label class="label">Predefined Queries</label>
+      <div class="control">
+        <div class="select">
+          <select id="query-selector">
+            <option value="">-- Select a predefined query --</option>
+            
+              <option value="SELECT DISTINCT ?class WHERE { ?s a ?class } LIMIT 100">All classes</option>
+            
+              <option value="SELECT DISTINCT ?property WHERE { ?s ?property ?o } LIMIT 100">All properties</option>
+            
+          </select>
         </div>
       </div>
     </div>
 
-    
-  </section>
+    <!-- Query textarea -->
+    <div class="field">
+      <label class="label">SPARQL Query</label>
+      <div class="control">
+        <textarea id="sparql-query" class="textarea" rows="10" placeholder="Write your query here..."></textarea>
+      </div>
+    </div>
 
-  <script>
-    window.topEntitiesData = [["https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", 5], ["https://w3id.org/changes/4/aldrovandi/pip/01/1", 4], ["https://w3id.org/changes/4/aldrovandi/pip/1", 4], ["https://w3id.org/changes/4/aldrovandi/pip/foo/2", 4], ["https://w3id.org/changes/4/aldrovandi/pip/foo/1", 4]];
-    window.topPropertiesData = [["http://www.w3.org/2000/01/rdf-schema#seeAlso", 6], ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type", 5], ["http://w3id.org/sche/ma/status", 5], ["http://www.w3.org/2000/01/rdf-schema#label", 5]];
-    window.topClassesData = [["http://example.org/Entity", 5]];
-    window.topModelsData = [["http://www.w3.org/2000/01/rdf-schema#", 11], ["http://example.org/", 5], ["http://www.w3.org/1999/02/22-rdf-syntax-ns#", 5], ["http://w3id.org/sche/ma/", 5]];
-  </script>
+    <!-- Run button -->
+    <div class="field">
+      <div class="control">
+        <button id="run-query" class="button is-warning">Run Query</button>
+      </div>
+    </div>
 
-  
+    <!-- Results -->
+    <div class="box">
+      <h4 class="title is-5">Results</h4>
+      <div id="query-results" class="table-container"></div>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://rdf.js.org/comunica-browser/versions/v4/engines/query-sparql/comunica-browser.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const querySelector = document.getElementById("query-selector");
+  const queryTextarea = document.getElementById("sparql-query");
+  const runButton = document.getElementById("run-query");
+  const resultsContainer = document.getElementById("query-results");
+  const dataSourceEl = document.getElementById("data-source");
+
+  querySelector.addEventListener("change", () => {
+    const selectedQuery = querySelector.value;
+    queryTextarea.value = selectedQuery;
+  });
+
+  runButton.addEventListener("click", async () => {
+    const query = queryTextarea.value.trim();
+    const dataSource = dataSourceEl.textContent.trim();
+
+    if (!query || !dataSource) {
+      alert("Please provide both query and data source.");
+      return;
+    }
+
+    resultsContainer.innerHTML = "Running query...";
+
+    try {
+      const engine = new Comunica.QueryEngine();
+      let source;
+
+      // Check if it's a local file (text/turtle) or remote endpoint
+      if (dataSource.startsWith("data/")) {
+        const response = await fetch(dataSource);
+        if (!response.ok) throw new Error("Could not load RDF file.");
+        const ttl = await response.text();
+        source = {
+          type: "string",
+          value: ttl,
+          mediaType: "text/turtle"
+        };
+      } else {
+        source = dataSource;
+      }
+
+      const result = await engine.query(query, {
+        sources: [source]
+      });
+
+      const bindingsStream = await result.bindings();
+      const bindings = await bindingsStream.toArray();
+      const variables = result.variables.map(v => v.value);
+      renderResults(bindings, variables);
+    } catch (err) {
+      console.error("SPARQL query failed:", err);
+      resultsContainer.innerHTML = `<div class="notification is-danger">Query failed. Check console for details.</div>`;
+    }
+  });
+
+  function renderResults(bindings, variables) {
+    if (!bindings.length) {
+      resultsContainer.innerHTML = "<p>No results found.</p>";
+      return;
+    }
+
+    const table = document.createElement("table");
+    table.classList.add("table", "is-fullwidth", "is-striped");
+
+    const thead = table.createTHead();
+    const headRow = thead.insertRow();
+    variables.forEach(varName => {
+      const th = document.createElement("th");
+      th.textContent = varName;
+      headRow.appendChild(th);
+    });
+
+    const tbody = table.createTBody();
+    bindings.forEach(binding => {
+      const row = tbody.insertRow();
+      variables.forEach(varName => {
+        const cell = row.insertCell();
+        const term = binding.get(`?${varName}`);
+        cell.textContent = term ? term.value : "";
+      });
+    });
+
+    resultsContainer.innerHTML = "";
+    resultsContainer.appendChild(table);
+  }
+});
+</script>
+
+
         <footer class="footer">
   <div class="content has-text-centered">
     <div class="columns">

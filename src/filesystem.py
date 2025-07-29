@@ -28,6 +28,12 @@ def write_index_html(output_dir: Path, renderer: HTMLRenderer, stats, custom_sta
     write_html_file(html_content, output_path)
 
 
+def write_query_html(output_dir: Path, renderer: HTMLRenderer) -> None:
+    html_content = renderer.render_query()
+    output_path = output_dir / "query.html"
+    write_html_file(html_content, output_path)
+
+
 def write_entities_html(entities: List[Entity], output_dir: Path, renderer: HTMLRenderer) -> None:
     html_content = renderer.render_entities(entities)
     output_path = output_dir / "entities.html"

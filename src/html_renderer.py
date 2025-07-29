@@ -9,8 +9,12 @@ from rdflib.graph import Graph
 from typing import List, Dict, Any
 from src.stats_collector import GraphStats
 from src.entity_model import Entity
-from config import GRAPH_VIS_OPTIONS
 from urllib.parse import urlparse
+from config import (
+    GRAPH_VIS_OPTIONS,
+    GRAPH_SOURCE,
+    PREDEFINED_QUERIES
+)
 
 
 class HTMLRenderer:
@@ -18,6 +22,7 @@ class HTMLRenderer:
     def __init__(self, templates_path: Path, site_root: Path):
         self.env = Environment(loader=FileSystemLoader(str(templates_path)))
         self.index_template = self.env.get_template("index.html")
+        self.query_template = self.env.get_template("query.html")
         self.entity_template = self.env.get_template("entity.html")
         self.entities_template = self.env.get_template("entities.html")
         self.site_root = site_root.resolve()
@@ -26,6 +31,13 @@ class HTMLRenderer:
         return self.index_template.render(
             stats=stats, 
             custom_stats=custom_stats or {},
+            base_url=""
+        )
+    
+    def render_query(self) -> str:
+        return self.query_template.render(
+            data_source=GRAPH_SOURCE["sparql_endpoint"] if GRAPH_SOURCE["type"] == "sparql" else GRAPH_SOURCE["file_path"],
+            queries=PREDEFINED_QUERIES,
             base_url=""
         )
 

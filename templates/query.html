@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero is-warning is-large">
+  <div class="hero-body">
+    <p class="title">SPARQL Query Interface</p>
+    <p class="subtitle">Interact with the RDF data</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div>
+      <p><strong>Data Source:</strong> <code id="data-source">{{ data_source }}</code></p>
+    </div>
+
+    <!-- Query selector -->
+    <div class="field">
+      <label class="label">Predefined Queries</label>
+      <div class="control">
+        <div class="select">
+          <select id="query-selector">
+            <option value="">-- Select a predefined query --</option>
+            {% for item in queries %}
+              <option value="{{ item.query | e }}">{{ item.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Query textarea -->
+    <div class="field">
+      <label class="label">SPARQL Query</label>
+      <div class="control">
+        <textarea id="sparql-query" class="textarea" rows="10" placeholder="Write your query here..."></textarea>
+      </div>
+    </div>
+
+    <!-- Run button -->
+    <div class="field">
+      <div class="control">
+        <button id="run-query" class="button is-warning">Run Query</button>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="box">
+      <h4 class="title is-5">Results</h4>
+      <div id="query-results" class="table-container"></div>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://rdf.js.org/comunica-browser/versions/v4/engines/query-sparql/comunica-browser.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const querySelector = document.getElementById("query-selector");
+  const queryTextarea = document.getElementById("sparql-query");
+  const runButton = document.getElementById("run-query");
+  const resultsContainer = document.getElementById("query-results");
+  const dataSourceEl = document.getElementById("data-source");
+
+  querySelector.addEventListener("change", () => {
+    const selectedQuery = querySelector.value;
+    queryTextarea.value = selectedQuery;
+  });
+
+  runButton.addEventListener("click", async () => {
+    const query = queryTextarea.value.trim();
+    const dataSource = dataSourceEl.textContent.trim();
+
+    if (!query || !dataSource) {
+      alert("Please provide both query and data source.");
+      return;
+    }
+
+    resultsContainer.innerHTML = "Running query...";
+
+    try {
+      const engine = new Comunica.QueryEngine();
+      let source;
+
+      // Check if it's a local file (text/turtle) or remote endpoint
+      if (dataSource.startsWith("data/")) {
+        const response = await fetch(dataSource);
+        if (!response.ok) throw new Error("Could not load RDF file.");
+        const ttl = await response.text();
+        source = {
+          type: "string",
+          value: ttl,
+          mediaType: "text/turtle"
+        };
+      } else {
+        source = dataSource;
+      }
+
+      const result = await engine.query(query, {
+        sources: [source]
+      });
+
+      const bindingsStream = await result.bindings();
+      const bindings = await bindingsStream.toArray();
+      const variables = result.variables.map(v => v.value);
+      renderResults(bindings, variables);
+    } catch (err) {
+      console.error("SPARQL query failed:", err);
+      resultsContainer.innerHTML = `<div class="notification is-danger">Query failed. Check console for details.</div>`;
+    }
+  });
+
+  function renderResults(bindings, variables) {
+    if (!bindings.length) {
+      resultsContainer.innerHTML = "<p>No results found.</p>";
+      return;
+    }
+
+    const table = document.createElement("table");
+    table.classList.add("table", "is-fullwidth", "is-striped");
+
+    const thead = table.createTHead();
+    const headRow = thead.insertRow();
+    variables.forEach(varName => {
+      const th = document.createElement("th");
+      th.textContent = varName;
+      headRow.appendChild(th);
+    });
+
+    const tbody = table.createTBody();
+    bindings.forEach(binding => {
+      const row = tbody.insertRow();
+      variables.forEach(varName => {
+        const cell = row.insertCell();
+        const term = binding.get(`?${varName}`);
+        cell.textContent = term ? term.value : "";
+      });
+    });
+
+    resultsContainer.innerHTML = "";
+    resultsContainer.appendChild(table);
+  }
+});
+</script>
+
+{% endblock %}

@@ -97,8 +97,8 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 
 ### 🔍 Query Interface
 
-* [ ] Create query page
-* [ ] Allow SPARQL query presets via config file
+* [x] Create query page
+* [x] Allow SPARQL query presets via config file
 
 ### ⚙️ General Improvements
 

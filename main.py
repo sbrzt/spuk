@@ -20,6 +20,7 @@ from src.filesystem import (
     write_entities_html,
     write_entity_html,
     write_entity_rdf,
+    write_query_html,
     copy_static
 )
 
@@ -50,6 +51,7 @@ def main():
     print("Rendering main pages...")
     write_index_html(OUTPUT_DIR, renderer, stats, custom_stats)
     write_entities_html(entities, OUTPUT_DIR, renderer)
+    write_query_html(OUTPUT_DIR, renderer)
 
     print("Copying static files...")
     copy_static(STATIC_DIR, OUTPUT_DIR)
