@@ -3,7 +3,7 @@
 {% block content %}
 <section class="hero is-warning is-large">
   <div class="hero-body">
-    <p class="title">SPARQL Query Interface</p>
+    <p class="title">Query</p>
     <p class="subtitle">Interact with the RDF data</p>
   </div>
 </section>
@@ -17,7 +17,7 @@
 
     <!-- Query selector -->
     <div class="field">
-      <label class="label">Predefined Queries</label>
+      <label class="label">Choose a query...</label>
       <div class="control">
         <div class="select">
           <select id="query-selector">
@@ -32,7 +32,7 @@
 
     <!-- Query textarea -->
     <div class="field">
-      <label class="label">SPARQL Query</label>
+      <label class="label">... Or write your own</label>
       <div class="control">
         <textarea id="sparql-query" class="textarea" rows="10" placeholder="Write your query here..."></textarea>
       </div>
@@ -41,7 +41,7 @@
     <!-- Run button -->
     <div class="field">
       <div class="control">
-        <button id="run-query" class="button is-warning">Run Query</button>
+        <button id="run-query" class="button is-warning">Run</button>
       </div>
     </div>
 
@@ -54,94 +54,194 @@
 </section>
 
 
-<script src="https://rdf.js.org/comunica-browser/versions/v4/engines/query-sparql/comunica-browser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/rdfstore@0.9.17/dist/rdfstore_min.min.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const querySelector = document.getElementById("query-selector");
-  const queryTextarea = document.getElementById("sparql-query");
-  const runButton = document.getElementById("run-query");
-  const resultsContainer = document.getElementById("query-results");
-  const dataSourceEl = document.getElementById("data-source");
+  (function() {
+    const dataSource = document.getElementById('data-source').textContent.trim();
+    const querySelector = document.getElementById('query-selector');
+    const queryTextarea = document.getElementById('sparql-query');
+    const runButton = document.getElementById('run-query');
+    const resultsContainer = document.getElementById('query-results');
 
-  querySelector.addEventListener("change", () => {
-    const selectedQuery = querySelector.value;
-    queryTextarea.value = selectedQuery;
-  });
+    let store = null;
+    let rdfDataLoaded = false;
+    const isEndpoint = !dataSource.match(/\.(ttl|rdf|nt|jsonld)$/i); // treat as endpoint if not file
 
-  runButton.addEventListener("click", async () => {
-    const query = queryTextarea.value.trim();
-    const dataSource = dataSourceEl.textContent.trim();
-
-    if (!query || !dataSource) {
-      alert("Please provide both query and data source.");
-      return;
+    // Initialize rdfstore or empty store for file queries
+    function initStore(callback) {
+      rdfstore.create(function(err, newStore) {
+        if (err) {
+          resultsContainer.innerHTML = `<p class="has-text-danger">Error creating RDF store: ${err}</p>`;
+          return;
+        }
+        store = newStore;
+        callback();
+      });
     }
 
-    resultsContainer.innerHTML = "Running query...";
+    // Load RDF data from file
+    function loadRdfFile() {
+      fetch(dataSource)
+        .then(res => {
+          if (!res.ok) throw new Error(`Failed to fetch RDF file: ${res.statusText}`);
+          return res.text();
+        })
+        .then(rdfText => {
+          store.load('text/turtle', rdfText, function(err) {
+            if (err) {
+              resultsContainer.innerHTML = `<p class="has-text-danger">Error loading RDF file: ${err}</p>`;
+            } else {
+              rdfDataLoaded = true;
+              // Don't show success message here; clear results on load
+              resultsContainer.innerHTML = '';
+            }
+          });
+        })
+        .catch(err => {
+          resultsContainer.innerHTML = `<p class="has-text-danger">Error fetching RDF file: ${err}</p>`;
+        });
+    }
 
-    try {
-      const engine = new Comunica.QueryEngine();
-      let source;
-
-      // Check if it's a local file (text/turtle) or remote endpoint
-      if (dataSource.startsWith("data/")) {
-        const response = await fetch(dataSource);
-        if (!response.ok) throw new Error("Could not load RDF file.");
-        const ttl = await response.text();
-        source = {
-          type: "string",
-          value: ttl,
-          mediaType: "text/turtle"
-        };
-      } else {
-        source = dataSource;
+    // Run SPARQL query on store or endpoint
+    function runQuery() {
+      const sparqlQuery = queryTextarea.value.trim();
+      if (!sparqlQuery) {
+        resultsContainer.innerHTML = `<p class="has-text-danger">Please enter a SPARQL query.</p>`;
+        return;
       }
 
-      const result = await engine.query(query, {
-        sources: [source]
+      resultsContainer.innerHTML = `<p>Running query...</p>`;
+
+      if (isEndpoint) {
+        // Query remote SPARQL endpoint
+        fetch(dataSource + '?query=' + encodeURIComponent(sparqlQuery), {
+          headers: { 'Accept': 'application/sparql-results+json' }
+        })
+        .then(res => {
+          if (!res.ok) throw new Error(`SPARQL endpoint error: ${res.statusText}`);
+          return res.json();
+        })
+        .then(json => {
+          displayResults(json);
+        })
+        .catch(err => {
+          resultsContainer.innerHTML = `<p class="has-text-danger">Error querying SPARQL endpoint: ${err}</p>`;
+        });
+      } else {
+        // Query local RDF store
+        if (!rdfDataLoaded) {
+          resultsContainer.innerHTML = `<p class="has-text-danger">RDF data not loaded yet.</p>`;
+          return;
+        }
+
+        store.execute(sparqlQuery, function(err, results) {
+          if (err) {
+            resultsContainer.innerHTML = `<p class="has-text-danger">Error executing query: ${err}</p>`;
+            return;
+          }
+          displayResults(results);
+        });
+      }
+    }
+
+    // Display SPARQL JSON results as an HTML table
+    function displayResults(results) {
+      if (!results) {
+        resultsContainer.innerHTML = `<p>No results.</p>`;
+        return;
+      }
+
+      // Check if results has 'head' and 'results' (endpoint JSON format)
+      if (results.head && results.results && results.results.bindings) {
+        const vars = results.head.vars;
+        const bindings = results.results.bindings;
+
+        if (bindings.length === 0) {
+          resultsContainer.innerHTML = `<p>No results found.</p>`;
+          return;
+        }
+
+        let table = '<table class="table is-fullwidth is-striped"><thead><tr>';
+        vars.forEach(v => { table += `<th>${v}</th>`; });
+        table += '</tr></thead><tbody>';
+
+        bindings.forEach(row => {
+          table += '<tr>';
+          vars.forEach(v => {
+            if (row[v]) {
+              table += `<td>${escapeHtml(row[v].value)}</td>`;
+            } else {
+              table += '<td></td>';
+            }
+          });
+          table += '</tr>';
+        });
+
+        table += '</tbody></table>';
+        resultsContainer.innerHTML = table;
+        return;
+      }
+
+      // Otherwise, assume results is array of bindings from rdfstore-js
+      if (Array.isArray(results)) {
+        if (results.length === 0) {
+          resultsContainer.innerHTML = `<p>No results found.</p>`;
+          return;
+        }
+        // keys of first object
+        const keys = Object.keys(results[0]);
+        let table = '<table class="table is-fullwidth is-striped"><thead><tr>';
+        keys.forEach(k => { table += `<th>${k}</th>`; });
+        table += '</tr></thead><tbody>';
+
+        results.forEach(row => {
+          table += '<tr>';
+          keys.forEach(k => {
+            let val = row[k];
+            if (val && val.value) val = val.value;
+            table += `<td>${escapeHtml(val || '')}</td>`;
+          });
+          table += '</tr>';
+        });
+
+        table += '</tbody></table>';
+        resultsContainer.innerHTML = table;
+        return;
+      }
+
+      // Fallback: show JSON stringified
+      resultsContainer.innerHTML = `<pre>${escapeHtml(JSON.stringify(results, null, 2))}</pre>`;
+    }
+
+    // Escape HTML helper to avoid injection issues
+    function escapeHtml(text) {
+      return text.replace(/[&<>"']/g, function(m) {
+        return ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;'
+        })[m];
       });
-
-      const bindingsStream = await result.bindings();
-      const bindings = await bindingsStream.toArray();
-      const variables = result.variables.map(v => v.value);
-      renderResults(bindings, variables);
-    } catch (err) {
-      console.error("SPARQL query failed:", err);
-      resultsContainer.innerHTML = `<div class="notification is-danger">Query failed. Check console for details.</div>`;
-    }
-  });
-
-  function renderResults(bindings, variables) {
-    if (!bindings.length) {
-      resultsContainer.innerHTML = "<p>No results found.</p>";
-      return;
     }
 
-    const table = document.createElement("table");
-    table.classList.add("table", "is-fullwidth", "is-striped");
-
-    const thead = table.createTHead();
-    const headRow = thead.insertRow();
-    variables.forEach(varName => {
-      const th = document.createElement("th");
-      th.textContent = varName;
-      headRow.appendChild(th);
+    // Predefined queries select changes textarea
+    querySelector.addEventListener('change', function() {
+      queryTextarea.value = this.value;
     });
 
-    const tbody = table.createTBody();
-    bindings.forEach(binding => {
-      const row = tbody.insertRow();
-      variables.forEach(varName => {
-        const cell = row.insertCell();
-        const term = binding.get(`?${varName}`);
-        cell.textContent = term ? term.value : "";
-      });
-    });
+    runButton.addEventListener('click', runQuery);
 
-    resultsContainer.innerHTML = "";
-    resultsContainer.appendChild(table);
-  }
-});
+    // Start
+    initStore(function() {
+      if (!isEndpoint) {
+        loadRdfFile();
+      }
+    });
+  })();
 </script>
+
+
 
 {% endblock %}
