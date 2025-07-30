@@ -1,0 +1,27 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/27c/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/27c/ob01/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/idf/27c/ob01/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "@value": "1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300312355"
+      }
+    ]
+  }
+]

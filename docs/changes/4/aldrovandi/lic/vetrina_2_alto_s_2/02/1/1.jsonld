@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/lic/vetrina_2_alto_s_2/02/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300435434"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_2_alto_s_2/02/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in": [
+      {
+        "@id": "https://creativecommons.org/licenses/by-nc/4.0/"
+      }
+    ]
+  }
+]

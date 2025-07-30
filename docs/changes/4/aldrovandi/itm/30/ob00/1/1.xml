@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.ics.forth.gr/isl/CRMdig/"
+   xmlns:ns2="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:ns3="http://iflastandards.info/ns/lrm/lrmoo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/30/00/1">
+    <ns1:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/30/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/30/ob08/1">
+    <ns2:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/30/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/30/ob00/1">
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
+    <ns2:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/30/00/1"/>
+    <ns2:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/30/ob02/1"/>
+    <ns2:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/30/ob01/1"/>
+    <ns2:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/30/ob00/1"/>
+    <ns2:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cygnus Olor (gmelin, 1789) Preparato Tassidermizzato Di Cigno Reale Taxidermized Mount Of A Mute Swan Preparatore Fabrizio Cancelli, 1981, Museo Di Storia Naturale Dellaccademia Dei Fisiocritici Di Siena</ns2:P3_has_note>
+    <ns2:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/2/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/30/ob00/1">
+    <ns3:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/30/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/2/1">
+    <ns2:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/30/ob00/1"/>
+  </rdf:Description>
+</rdf:RDF>

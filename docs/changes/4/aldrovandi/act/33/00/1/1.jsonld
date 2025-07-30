@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/33/00/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D2_Digitization_Process"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_dbc/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/federica_collina/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P32_used_general_technique": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300429747"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/33/00/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L11_had_output": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/33/00/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L1_digitized": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/33/ob00/1"
+      }
+    ]
+  }
+]

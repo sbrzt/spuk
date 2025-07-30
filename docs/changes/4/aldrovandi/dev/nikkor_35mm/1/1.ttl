@@ -1,0 +1,23 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/10/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/11/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/3/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/4/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/5/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/6/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/7/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/8/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/9/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> .
+
+<https://w3id.org/changes/4/aldrovandi/dev/nikkor_35mm/1> a <http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device> ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300266792> .
+

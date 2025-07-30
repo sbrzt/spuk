@@ -1,0 +1,34 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_3/00/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_3/01/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_3/02/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_3/03/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_3/04/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_5_basso/00/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_5_basso/01/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_5_basso/02/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_5_basso/03/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_5_basso/04/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/00/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/01/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/02/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/03/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/04/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/veronica_casadei/1> a ns1:E21_Person .
+

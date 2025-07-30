@@ -1,0 +1,31 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/12/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/33/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/40/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_3/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/b_basso/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/ptb/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_1_basso/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_s_1/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_s_1_t/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_s_2/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_2_basso/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_5_basso/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_1/00/1> ns1:P16_used_specific_object <https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> .
+
+<https://w3id.org/changes/4/aldrovandi/dev/artec_eva/1> a <http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device> ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300429747> .
+

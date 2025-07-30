@@ -1,0 +1,27 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/vetrina_7_alto_s_3/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P102_has_title": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/vetrina_7_alto_s_3/ob01/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/ttl/vetrina_7_alto_s_3/ob01/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E35_Title"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@language": "it",
+        "@value": "Dactylopterus Volitans (linnaeus, 1758)"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300417207"
+      }
+    ]
+  }
+]

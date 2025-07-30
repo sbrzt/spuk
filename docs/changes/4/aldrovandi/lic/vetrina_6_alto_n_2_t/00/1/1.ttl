@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/lic/vetrina_6_alto_n_2_t/00/1> a ns1:E73_Information_Object ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300435434> ;
+    ns1:P67_refers_to <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_6_alto_n_2_t/00/1> ;
+    ns1:P70i_is_documented_in <https://creativecommons.org/licenses/by-nc/4.0/> .
+

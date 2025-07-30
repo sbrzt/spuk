@@ -6,7 +6,7 @@ from pathlib import Path
 # --- Graph source configuration ---
 TEST_GRAPH_SOURCE = "data/demo_graph.ttl"
 GRAPH_SOURCE = {
-    "type": "file",
+    "type": "sparql",
     "file_path": Path(TEST_GRAPH_SOURCE),
     "file_format": "turtle",
     "sparql_endpoint": "https://chad-kg.duckdns.org/chadkg/sparql"

@@ -1,0 +1,17 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/m6/05/1> a ns2:D10_Software_Execution ;
+    ns1:P11_had_participant <https://w3id.org/changes/4/aldrovandi/acr/unibo_dbc/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/unibo_ficlit/1> ;
+    ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/arcangelo_massari/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/arianna_moretti/1>,
+        <https://w3id.org/changes/4/aldrovandi/acr/sebastian_barzaghi/1> ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300417260> ;
+    ns1:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/m6/05/1> ;
+    ns2:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/m6/04/1> ;
+    ns2:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/m6/05/1> ;
+    ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/chad-ap/1>,
+        <https://w3id.org/changes/4/aldrovandi/sfw/heritrace/1>,
+        <https://w3id.org/changes/4/aldrovandi/sfw/morph-kgc/1> .
+

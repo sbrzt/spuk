@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/20/02/1> ns2:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/20/02/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/20/03/1> ns2:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/20/02/1> .
+
+<https://w3id.org/changes/4/aldrovandi/itm/20/ob00/1> ns1:P130i_features_are_also_found_on <https://w3id.org/changes/4/aldrovandi/mdl/20/02/1> .
+
+<https://w3id.org/changes/4/aldrovandi/lic/20/02/1> ns1:P67_refers_to <https://w3id.org/changes/4/aldrovandi/mdl/20/02/1> .
+
+<https://w3id.org/changes/4/aldrovandi/mdl/20/02/1> a ns2:D9_Data_Object ;
+    ns1:P130_shows_features_of <https://bub.unibo.it/it/bub-digitale/il-codice-cospi/bub_ms4093_cospi?view=imageview&manifest=https%3a%2f%2fbub.unibo.it%2fiiif%2f2%2fmanifest%2fbub%2fmanoscritti%2fbub_ms4093_cospi.json&canvas=https%3a%2f%2fbub.unibo.it%2fiiif%2f2%2fcanvas%2fbub%40manoscritti%40bub_ms4093_cospi%4049ed0574103095c4af1add7e9513620fb22744eb-bub_ms4093_000001-recto_piatto_anteriore.jp2.json> .
+

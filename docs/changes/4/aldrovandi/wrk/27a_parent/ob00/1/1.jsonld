@@ -1,0 +1,18 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/27a_parent/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R10_has_member": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/wrk/27a/ob00/1"
+      }
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/27a_parent/ob00/1"
+      }
+    ]
+  }
+]

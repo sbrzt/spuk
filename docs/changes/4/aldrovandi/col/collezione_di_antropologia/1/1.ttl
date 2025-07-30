@@ -1,0 +1,19 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/100/ob08/1> ns1:P12_occurred_in_the_presence_of <https://w3id.org/changes/4/aldrovandi/col/collezione_di_antropologia/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/101/ob08/1> ns1:P12_occurred_in_the_presence_of <https://w3id.org/changes/4/aldrovandi/col/collezione_di_antropologia/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/102/ob08/1> ns1:P12_occurred_in_the_presence_of <https://w3id.org/changes/4/aldrovandi/col/collezione_di_antropologia/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/103/ob08/1> ns1:P12_occurred_in_the_presence_of <https://w3id.org/changes/4/aldrovandi/col/collezione_di_antropologia/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/104/ob08/1> ns1:P12_occurred_in_the_presence_of <https://w3id.org/changes/4/aldrovandi/col/collezione_di_antropologia/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/98/ob08/1> ns1:P12_occurred_in_the_presence_of <https://w3id.org/changes/4/aldrovandi/col/collezione_di_antropologia/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/99/ob08/1> ns1:P12_occurred_in_the_presence_of <https://w3id.org/changes/4/aldrovandi/col/collezione_di_antropologia/1> .
+
+<https://w3id.org/changes/4/aldrovandi/col/collezione_di_antropologia/1> a ns1:E24_Physical_Human-Made_Thing ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300025976> .
+

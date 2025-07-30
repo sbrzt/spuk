@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_basso/01/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D10_Software_Execution"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_dicam/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/anna_forte/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300054636"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_basso/01/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L10_had_input": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_basso/00/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L11_had_output": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_basso/01/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_16/1"
+      }
+    ]
+  }
+]

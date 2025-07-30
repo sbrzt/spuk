@@ -1,0 +1,38 @@
+@prefix ns1: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/100/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/114/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/115/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/116/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/14/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/19/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/2/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/30/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/41/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/79/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/83/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/93/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_2/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_3/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_1/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_3/02/1> ns1:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/sfw/substance_painter/1> a ns1:D14_Software ;
+    ns2:P2_has_type <http://vocab.getty.edu/page/aat/300426696> .
+

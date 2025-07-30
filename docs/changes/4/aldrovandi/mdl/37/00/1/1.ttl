@@ -1,0 +1,13 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.ics.forth.gr/isl/CRMdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/37/00/1> ns2:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/37/00/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/37/01/1> ns2:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/37/00/1> .
+
+<https://w3id.org/changes/4/aldrovandi/itm/37/ob00/1> ns1:P130i_features_are_also_found_on <https://w3id.org/changes/4/aldrovandi/mdl/37/00/1> .
+
+<https://w3id.org/changes/4/aldrovandi/lic/37/00/1> ns1:P67_refers_to <https://w3id.org/changes/4/aldrovandi/mdl/37/00/1> .
+
+<https://w3id.org/changes/4/aldrovandi/mdl/37/00/1> a ns2:D9_Data_Object .
+

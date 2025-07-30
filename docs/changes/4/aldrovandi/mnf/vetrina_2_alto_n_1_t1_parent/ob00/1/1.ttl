@@ -1,0 +1,7 @@
+@prefix ns1: <http://iflastandards.info/ns/lrm/lrmoo/> .
+
+<https://w3id.org/changes/4/aldrovandi/exp/vetrina_2_alto_n_1_t1_parent/ob00/1> ns1:R4i_is_embodied_in <https://w3id.org/changes/4/aldrovandi/mnf/vetrina_2_alto_n_1_t1_parent/ob00/1> .
+
+<https://w3id.org/changes/4/aldrovandi/mnf/vetrina_2_alto_n_1_t1_parent/ob00/1> a ns1:F3_Manifestation ;
+    ns1:R7i_is_exemplified_by <https://w3id.org/changes/4/aldrovandi/itm/vetrina_2_alto_n_1_t1_parent/ob00/1> .
+

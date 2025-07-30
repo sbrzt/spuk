@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/1/ob06/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/raffaelo_riario/1> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/raffaelo_riario/1> a ns1:E39_Actor ;
+    ns1:P70i_is_documented_in <http://viaf.org/viaf/25474452> .
+

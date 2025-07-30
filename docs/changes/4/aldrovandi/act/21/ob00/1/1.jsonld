@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/21/ob00/1",
+    "@type": [
+      "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/21/ob00/1"
+      }
+    ],
+    "http://iflastandards.info/ns/lrm/lrmoo/R19_created_a_realisation_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/wrk/21/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P32_used_general_technique": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300178684"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/21/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/21/ob07/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/21/ob06/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/21/ob05/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/21/ob04/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/21/ob03/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/21/ob02/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/21/ob01/1"
+      }
+    ]
+  }
+]

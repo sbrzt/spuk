@@ -1,0 +1,8 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/v2_1/ob00/1> ns1:P9_consists_of <https://w3id.org/changes/4/aldrovandi/act/v2_1/ob01/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/v2_1/ob01/1> a ns1:E7_Activity ;
+    ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/giovanni_domenico_tiepolo/1> ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300404387> .
+

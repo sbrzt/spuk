@@ -1,0 +1,6 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/30/ob05/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/cancelli/1> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/cancelli/1> a ns1:E39_Actor .
+

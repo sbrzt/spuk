@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:ns2="http://iflastandards.info/ns/lrm/lrmoo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/v2_10/ob00/1">
+    <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
+    <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/v2_10/ob02/1"/>
+    <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/v2_10/ob01/1"/>
+    <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/idf/v2_10/ob00/1"/>
+    <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jacopo Zucchi La Pesca Del Corallo (o Il Regno Di Anfitrite) Coral Fishing (or The Realm Of Amphitrite) 1580 Ca. Roma, Galleria Borghese Foto Scala, Firenze</ns1:P3_has_note>
+    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/1/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/1/1">
+    <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/v2_10/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/v2_10/ob08/1">
+    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/v2_10/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/v2_10/ob00/1">
+    <ns2:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/v2_10/ob00/1"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,5 @@
+<https://w3id.org/changes/4/aldrovandi/act/8/ob04/1> <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://w3id.org/changes/4/aldrovandi/acr/filippo_giunta/1> .
+<https://w3id.org/changes/4/aldrovandi/act/5/ob04/1> <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://w3id.org/changes/4/aldrovandi/acr/filippo_giunta/1> .
+<https://w3id.org/changes/4/aldrovandi/acr/filippo_giunta/1> <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in> <http://viaf.org/viaf/79080779> .
+<https://w3id.org/changes/4/aldrovandi/plc/firenze/1> <http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of> <https://w3id.org/changes/4/aldrovandi/acr/filippo_giunta/1> .
+<https://w3id.org/changes/4/aldrovandi/acr/filippo_giunta/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .

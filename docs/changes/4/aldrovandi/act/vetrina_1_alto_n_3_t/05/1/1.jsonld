@@ -1,0 +1,58 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_3_t/05/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D10_Software_Execution"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_dbc/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/unibo_ficlit/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sebastian_barzaghi/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/arianna_moretti/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/arcangelo_massari/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300417260"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_alto_n_3_t/05/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L10_had_input": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_n_3_t/04/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L11_had_output": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_n_3_t/05/1"
+      }
+    ],
+    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/morph-kgc/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/heritrace/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/chad-ap/1"
+      }
+    ]
+  }
+]

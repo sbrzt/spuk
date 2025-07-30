@@ -1,0 +1,6 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/16/02/1> a <http://www.ics.forth.gr/isl/CRMdig/D10_Software_Execution> ;
+    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300391447> ;
+    ns1:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/16/02/1> .
+

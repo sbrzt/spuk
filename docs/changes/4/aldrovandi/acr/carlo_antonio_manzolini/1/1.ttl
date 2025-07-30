@@ -1,0 +1,6 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/a_alto_centro/ob01/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/carlo_antonio_manzolini/1> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/carlo_antonio_manzolini/1> a ns1:E39_Actor .
+

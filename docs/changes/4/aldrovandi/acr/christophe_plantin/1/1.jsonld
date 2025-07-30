@@ -1,0 +1,29 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/11/ob04/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/christophe_plantin/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/christophe_plantin/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in": [
+      {
+        "@id": "http://viaf.org/viaf/120696841"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/anversa/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/christophe_plantin/1"
+      }
+    ]
+  }
+]
