@@ -1,8 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/wrk/9/ob00/1> ns1:P102_has_title <https://w3id.org/changes/4/aldrovandi/ttl/9/ob02/1> .
-
-<https://w3id.org/changes/4/aldrovandi/ttl/9/ob02/1> a ns1:E35_Title ;
-    ns1:P190_has_symbolic_content "On The New World"@en ;
-    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300417207> .
-

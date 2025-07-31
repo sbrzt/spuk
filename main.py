@@ -21,11 +21,15 @@ from src.filesystem import (
     write_entity_html,
     write_entity_rdf,
     write_query_html,
-    copy_static
+    copy_static,
+    clean_output_dir
 )
 
 
 def main():
+
+    print("Recreating output directory...")
+    clean_output_dir(OUTPUT_DIR)
     
     print("Loading RDF graph...")
     graph = load_graph(GRAPH_SOURCE)

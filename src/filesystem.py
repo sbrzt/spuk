@@ -11,6 +11,17 @@ from src.rdf_serializer import RDFSerializer
 from src.entity_model import Entity
 
 
+def clean_output_dir(output_dir: Path) -> None:
+    if output_dir.exists():
+        for item in output_dir.iterdir():
+            if item.is_file() or item.is_symlink():
+                item.unlink()
+            elif item.is_dir():
+                shutil.rmtree(item)
+    else:
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+
 def ensure_entity_folder_exists(uri: URIRef, output_dir: Path) -> Path:
     paths = get_entity_output_files(uri, output_dir)
     entity_dir = paths["dir"]

@@ -91,17 +91,37 @@ aria-label="main navigation">
     
     <div class="fixed-grid">
       <div class="grid has-2-cols">
-        <div class="box cell content is-large">
-          <canvas id="topEntitiesChart" width="400" height="200"></canvas>
+        <div class="card cell content">
+            <div class="card-content">
+                <canvas id="topEntitiesChart" width="400" height="200"></canvas>
+            </div>
+            <footer class="card-footer">
+                <a id="download-topEntitiesChart" class="card-footer-item" download="top-entities-chart.png">Download</a>
+            </footer>
         </div>
-        <div class="box cell content is-large">
-          <canvas id="topPropertiesChart" width="400" height="200"></canvas>
+        <div class="card cell content">
+            <div class="card-content">
+                <canvas id="topPropertiesChart" width="400" height="200"></canvas>
+            </div>
+            <footer class="card-footer">
+                <a id="download-topPropertiesChart" class="card-footer-item" download="top-properties-chart.png">Download</a>
+            </footer>
         </div>
-        <div class="box cell content is-large">
-          <canvas id="topClassesChart" width="400" height="200"></canvas>
+        <div class="card cell content">
+            <div class="card-content">
+                <canvas id="topClassesChart" width="400" height="200"></canvas>
+            </div>
+            <footer class="card-footer">
+                <a id="download-topClassesChart" class="card-footer-item" download="top-classes-chart.png">Download</a>
+            </footer>
         </div>
-        <div class="box cell content is-large">
-          <canvas id="topModelsChart" width="400" height="200"></canvas>
+        <div class="card cell content">
+            <div class="card-content">
+                <canvas id="topModelsChart" width="400" height="200"></canvas>
+            </div>
+            <footer class="card-footer">
+                <a id="download-topModelsChart" class="card-footer-item" download="top-models-chart.png">Download</a>
+            </footer>
         </div>
       </div>
     </div>
@@ -110,10 +130,10 @@ aria-label="main navigation">
   </section>
 
   <script>
-    window.topEntitiesData = [["https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", 5], ["https://w3id.org/changes/4/aldrovandi/pip/1", 4], ["https://w3id.org/changes/4/aldrovandi/pip/foo/1", 4], ["https://w3id.org/changes/4/aldrovandi/pip/01/1", 4], ["https://w3id.org/changes/4/aldrovandi/pip/foo/2", 4]];
-    window.topPropertiesData = [["http://www.w3.org/2000/01/rdf-schema#seeAlso", 6], ["http://w3id.org/sche/ma/status", 5], ["http://www.w3.org/2000/01/rdf-schema#label", 5], ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type", 5]];
+    window.topEntitiesData = [["https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1", 5], ["https://w3id.org/changes/4/aldrovandi/pip/01/1", 4], ["https://w3id.org/changes/4/aldrovandi/pip/foo/1", 4], ["https://w3id.org/changes/4/aldrovandi/pip/foo/2", 4], ["https://w3id.org/changes/4/aldrovandi/pip/1", 4]];
+    window.topPropertiesData = [["http://www.w3.org/2000/01/rdf-schema#seeAlso", 6], ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type", 5], ["http://w3id.org/sche/ma/status", 5], ["http://www.w3.org/2000/01/rdf-schema#label", 5]];
     window.topClassesData = [["http://example.org/Entity", 5]];
-    window.topModelsData = [["http://www.w3.org/2000/01/rdf-schema#", 11], ["http://w3id.org/sche/ma/", 5], ["http://example.org/", 5], ["http://www.w3.org/1999/02/22-rdf-syntax-ns#", 5]];
+    window.topModelsData = [["http://www.w3.org/2000/01/rdf-schema#", 11], ["http://example.org/", 5], ["http://www.w3.org/1999/02/22-rdf-syntax-ns#", 5], ["http://w3id.org/sche/ma/", 5]];
   </script>
 
   

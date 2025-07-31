@@ -54,9 +54,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 },
                 scales: {
-                x: { ticks: { autoSkip: false } }
+                    x: { ticks: { autoSkip: false } }
                 }
             }
         });
+
+        const downloadLink = document.getElementById(`download-${id}`);
+        if (downloadLink) {
+            downloadLink.addEventListener("click", function () {
+                const url = ctx.toDataURL("image/png");
+                downloadLink.href = url;
+            });
+        }
+        
     });
 });

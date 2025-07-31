@@ -1,9 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-<https://w3id.org/changes/4/aldrovandi/itm/m6/ob00/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/idf/m6/ob00/1> .
-
-<https://w3id.org/changes/4/aldrovandi/idf/m6/ob00/1> a ns1:E42_Identifier ;
-    ns1:P190_has_symbolic_content "m6"^^rdfs:Literal ;
-    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300312355> .
-

@@ -1,7 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/itm/vetrina_8_alto_s_3_t/ob00/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/idf/vetrina_8_alto_s_3_t/ob01/1> .
-
-<https://w3id.org/changes/4/aldrovandi/idf/vetrina_8_alto_s_3_t/ob01/1> a ns1:E42_Identifier ;
-    ns1:P2_has_type <http://vocab.getty.edu/page/aat/300312355> .
-

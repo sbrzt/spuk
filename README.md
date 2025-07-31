@@ -71,6 +71,7 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 ### 📂 Indexes & Listings
 
 * [x] Implement pagination
+  * [ ] Optimize pagination
   * [ ] Clean entities.html once dev server works
 * [ ] Implement search functionality
 * [ ] Improve entity listing layout
@@ -83,7 +84,7 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
   * [ ] Add literal lengths
   * [ ] Add most referenced subjects?
   * [ ] Add most referenced objects?
-  * [ ] Add download option
+  * [x] Add download option
   * [x] Add visible values without hover
   * [x] **Test**: Define personalized data stats via config file
   * [ ] **Test**: Define personalized data charts via config file
@@ -91,7 +92,8 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 
 ### 📚 Documentation
 
-* [ ] Add documentation site/pages
+* [ ] Add optional documentation pages
+  * [ ] Add markdown support
 * [ ] Improve internal documentation:
   * [ ] Add docstrings
   * [ ] Add README files
@@ -105,7 +107,7 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 
 * [x] Reengineer codebase structure
 * [x] Introduce centralized config file
-* [ ] Add delete /docs/ directory at generation
+* [x] Delete /docs/ directory at generation
 * [ ] Improve developer experience:
   * [X] Add dev server with file watching & caching
   * [ ] Enable auto-reload on changes

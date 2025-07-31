@@ -1,9 +1,0 @@
-@prefix ns1: <http://www.ics.forth.gr/isl/CRMdig/> .
-@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/act/vetrina_3_alto_s_1_t/01/1> a ns1:D10_Software_Execution ;
-    ns2:P2_has_type <http://vocab.getty.edu/page/aat/300054636> ;
-    ns2:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/vetrina_3_alto_s_1_t/01/1> ;
-    ns1:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_3_alto_s_1_t/00/1> ;
-    ns1:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_3_alto_s_1_t/01/1> .
-

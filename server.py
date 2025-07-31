@@ -19,14 +19,24 @@ class RebuildHandler(FileSystemEventHandler):
     def __init__(self, build_command):
         self.build_command = build_command
         self.last_run = 0
+        self._debounce_timer = None
 
-    def on_any_event(self, event):
+    def on_modified(self, event):
         if event.is_directory:
             return
+        if not event.src_path.endswith((".ttl", ".jsonld", ".nt", ".html", ".css", ".js", ".md", ".jinja")):
+            return
+
+        if self._debounce_timer:
+            self._debounce_timer.cancel()
+        self._debounce_timer = threading.Timer(0.5, self._rebuild, [event.src_path])
+        self._debounce_timer.start()
+    
+    def _rebuild(self, path):
         now = time.time()
         if now - self.last_run < 1:
             return
-        print(f"[watch] Detected change in {event.src_path}. Rebuilding...")
+        print(f"[watch] Detected change in {path}. Rebuilding...")
         subprocess.run(self.build_command, shell=True, cwd=ROOT_DIR)
         self.last_run = now
 

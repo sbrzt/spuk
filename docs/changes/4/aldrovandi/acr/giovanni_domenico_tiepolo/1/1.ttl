@@ -1,9 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-
-<https://w3id.org/changes/4/aldrovandi/act/v2_1/ob01/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/giovanni_domenico_tiepolo/1> .
-
-<https://w3id.org/changes/4/aldrovandi/act/v2_3/ob01/1> ns1:P14_carried_out_by <https://w3id.org/changes/4/aldrovandi/acr/giovanni_domenico_tiepolo/1> .
-
-<https://w3id.org/changes/4/aldrovandi/acr/giovanni_domenico_tiepolo/1> a ns1:E39_Actor ;
-    ns1:P70i_is_documented_in <http://vocab.getty.edu/page/ulan/500025154> .
-
