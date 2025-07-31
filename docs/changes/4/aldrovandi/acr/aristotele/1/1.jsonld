@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/3/ob01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/aristotele/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/acr/aristotele/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
@@ -15,6 +7,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in": [
       {
         "@id": "http://vocab.getty.edu/page/ulan/500259120"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/3/ob01/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/aristotele/1"
       }
     ]
   }

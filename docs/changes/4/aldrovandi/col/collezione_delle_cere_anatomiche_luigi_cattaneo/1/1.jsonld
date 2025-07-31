@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/91/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/93/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_delle_cere_anatomiche_luigi_cattaneo/1"
@@ -8,7 +8,15 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/90/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_delle_cere_anatomiche_luigi_cattaneo/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/91/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_delle_cere_anatomiche_luigi_cattaneo/1"
@@ -27,6 +35,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/90/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_delle_cere_anatomiche_luigi_cattaneo/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/92/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
       {
@@ -35,7 +51,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/93/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/94/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_delle_cere_anatomiche_luigi_cattaneo/1"
@@ -44,22 +60,6 @@
   },
   {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/107/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_delle_cere_anatomiche_luigi_cattaneo/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_delle_cere_anatomiche_luigi_cattaneo/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/94/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_delle_cere_anatomiche_luigi_cattaneo/1"

@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/8/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/exp/8/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/wrk/8/ob00/1",
     "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
       {
@@ -34,6 +26,14 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/cusco/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/8/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/8/ob00/1"
       }
     ]
   }

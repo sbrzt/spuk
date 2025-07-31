@@ -16,14 +16,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/b_alto_centro_3/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/b_alto_centro_3/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/itm/b_alto_centro_3/ob00/1",
     "@type": [
       "http://iflastandards.info/ns/lrm/lrmoo/F5_Item"
@@ -59,6 +51,14 @@
   {
     "@id": "https://w3id.org/changes/4/aldrovandi/plc/5/1",
     "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/b_alto_centro_3/ob00/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/b_alto_centro_3/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/itm/b_alto_centro_3/ob00/1"
       }

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns2: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix ns1: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://w3id.org/changes/4/aldrovandi/act/27d/ob00/1> ns2:R19_created_a_realisation_of <https://w3id.org/changes/4/aldrovandi/wrk/27d/ob00/1> .
+<https://w3id.org/changes/4/aldrovandi/act/27d/ob00/1> ns1:R19_created_a_realisation_of <https://w3id.org/changes/4/aldrovandi/wrk/27d/ob00/1> .
 
-<https://w3id.org/changes/4/aldrovandi/wrk/27d_parent/ob00/1> ns2:R10_has_member <https://w3id.org/changes/4/aldrovandi/wrk/27d/ob00/1> .
+<https://w3id.org/changes/4/aldrovandi/wrk/27d_parent/ob00/1> ns1:R10_has_member <https://w3id.org/changes/4/aldrovandi/wrk/27d/ob00/1> .
 
-<https://w3id.org/changes/4/aldrovandi/wrk/27d/ob00/1> a ns2:F1_Work ;
-    ns2:R3_is_realised_in <https://w3id.org/changes/4/aldrovandi/exp/27d/ob00/1> ;
-    ns1:P102_has_title <https://w3id.org/changes/4/aldrovandi/ttl/27d/ob00/1>,
+<https://w3id.org/changes/4/aldrovandi/wrk/27d/ob00/1> a ns1:F1_Work ;
+    ns1:R3_is_realised_in <https://w3id.org/changes/4/aldrovandi/exp/27d/ob00/1> ;
+    ns2:P102_has_title <https://w3id.org/changes/4/aldrovandi/ttl/27d/ob00/1>,
         <https://w3id.org/changes/4/aldrovandi/ttl/27d/ob01/1>,
         <https://w3id.org/changes/4/aldrovandi/ttl/27d/ob02/1> .
 

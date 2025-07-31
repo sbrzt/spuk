@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/lic/m6/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/m6/ob00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/exp/m6/ob00/1",
     "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in": [
       {
@@ -15,14 +23,6 @@
     "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/itm/m6/ob00/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/lic/m6/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/m6/ob00/1"
       }
     ]
   }

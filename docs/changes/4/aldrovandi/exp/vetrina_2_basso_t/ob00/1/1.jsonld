@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/vetrina_2_basso_t/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_2_basso_t/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_basso_t/ob00/1",
     "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
       {
@@ -28,6 +20,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/rinoceronte/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/vetrina_2_basso_t/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_2_basso_t/ob00/1"
       }
     ]
   }

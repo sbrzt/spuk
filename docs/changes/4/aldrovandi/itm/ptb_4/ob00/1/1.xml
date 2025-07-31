@@ -15,14 +15,14 @@
     <ns1:P46i_forms_part_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/ptb/ob00/1"/>
     <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/3/1"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/ptb_4/ob08/1">
+    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/ptb_4/ob00/1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/3/1">
     <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/ptb_4/ob00/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/ptb_4/ob00/1">
     <ns2:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/ptb_4/ob00/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/ptb_4/ob08/1">
-    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/ptb_4/ob00/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/ptb_4/00/1">
     <ns3:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/ptb_4/ob00/1"/>

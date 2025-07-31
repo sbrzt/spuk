@@ -1,69 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74a/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/03/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/02/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/105/03/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/105/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
@@ -72,189 +8,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/02/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/02/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/105/01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/02/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/02/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/02/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/04/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/03/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/03/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/03/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1",
-    "@type": [
-      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/04/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/03/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/03/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/105/04/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
@@ -278,7 +32,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/04/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/03/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
@@ -286,7 +40,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/105/04/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
@@ -294,7 +48,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/03/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/02/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
@@ -302,7 +56,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/04/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
@@ -310,7 +64,15 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/04/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/02/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/01/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
@@ -326,11 +88,249 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/02/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/105/03/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/01/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/04/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/04/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/01/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/105/01/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/02/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/01/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/01/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/03/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/04/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/01/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/03/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/04/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74a/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/03/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/03/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/02/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/01/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/04/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/03/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/92/02/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/02/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/02/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/03/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74d/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/rachele_manganelli/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
     ]
   }
 ]

@@ -8,6 +8,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_s_2/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R19_created_a_realisation_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/wrk/vetrina_5_alto_s_2/ob00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/wrk/vetrina_5_alto_s_2/ob00/1",
     "@type": [
       "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
@@ -26,14 +34,6 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/ttl/vetrina_5_alto_s_2/ob00/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_s_2/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R19_created_a_realisation_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/wrk/vetrina_5_alto_s_2/ob00/1"
       }
     ]
   }

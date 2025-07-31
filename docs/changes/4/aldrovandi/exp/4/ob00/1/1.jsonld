@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/4/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/exp/4/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/wrk/4/ob00/1",
     "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
       {
@@ -28,6 +20,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/botanica/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/4/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/4/ob00/1"
       }
     ]
   }

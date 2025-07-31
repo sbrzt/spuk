@@ -36,16 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
             data: {
                 labels: labels,
                 datasets: [{
-                label: "Occurrences",
-                data: values,
-                backgroundColor: "rgba(54, 162, 235, 0.7)"
+                    label: "Occurrences",
+                    data: values,
+                    backgroundColor: "rgba(54, 162, 235, 0.7)"
                 }]
             },
+            plugins: [ChartDataLabels],
             options: {
                 responsive: true,
                 plugins: {
-                legend: { display: false },
-                title: { display: true, text: title }
+                    legend: { display: false },
+                    title: { display: true, text: title },
+                    datalabels: {
+                        color: 'black',
+                        anchor: 'end',
+                        align: 'start',
+                    }
                 },
                 scales: {
                 x: { ticks: { autoSkip: false } }

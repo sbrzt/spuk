@@ -1,30 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/74c/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/fiore/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/ptb_1/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/fiore/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/74d/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/fiore/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/74a/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/76/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/fiore/1"
@@ -33,6 +9,14 @@
   },
   {
     "@id": "https://w3id.org/changes/4/aldrovandi/exp/74b/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/fiore/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/74c/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/fiore/1"
@@ -51,7 +35,23 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/76/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/74d/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/fiore/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/ptb_1/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/fiore/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/74a/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/fiore/1"

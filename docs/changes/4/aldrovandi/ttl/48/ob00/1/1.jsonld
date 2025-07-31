@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/48/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P102_has_title": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/48/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/ttl/48/ob00/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E35_Title"
@@ -21,6 +13,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
       {
         "@id": "http://vocab.getty.edu/page/aat/300417204"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/48/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P102_has_title": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/ttl/48/ob00/1"
       }
     ]
   }

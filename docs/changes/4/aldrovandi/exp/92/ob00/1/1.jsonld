@@ -8,6 +8,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/92/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/92/ob00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/exp/92/ob00/1",
     "@type": [
       "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
@@ -23,14 +31,6 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/vaccino/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/92/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/exp/92/ob00/1"
       }
     ]
   }

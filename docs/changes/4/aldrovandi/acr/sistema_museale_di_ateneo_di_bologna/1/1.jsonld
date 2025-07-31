@@ -1,22 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/113/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/39/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/13/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/98/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -32,7 +16,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/18/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/77/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -40,7 +24,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/12/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/2/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -48,7 +32,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/109/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/39/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -56,23 +40,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/14/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/93/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -96,7 +64,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/95/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/108/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -104,7 +72,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/98/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/107/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -112,7 +80,71 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/79/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/14/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/12/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/100/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/109/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/110/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/17/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/16/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/87/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -128,7 +160,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/85/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -136,7 +168,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/99/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/79/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -144,7 +176,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/16/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/111/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -152,15 +184,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/83/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/87/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/88/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -182,72 +206,8 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/108/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/2/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/77/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/19/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/17/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/90/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/111/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/101/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
       }
@@ -262,31 +222,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/88/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/110/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/15/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/85/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -302,7 +238,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/93/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -310,7 +246,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/107/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/101/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
@@ -318,7 +254,71 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/106/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/113/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/18/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/13/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/95/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/15/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/83/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/90/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/99/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"

@@ -3,15 +3,15 @@
    xmlns:ns1="http://www.cidoc-crm.org/cidoc-crm/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/13/00/1">
-    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/lente_24-70_f2_8_l/1"/>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/dev/lente_24-70_f2_8_l/1">
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device"/>
+    <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300266792"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/39/00/1">
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/lente_24-70_f2_8_l/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/dev/lente_24-70_f2_8_l/1">
-    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device"/>
-    <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300266792"/>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/13/00/1">
+    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/lente_24-70_f2_8_l/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/18/00/1">
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/lente_24-70_f2_8_l/1"/>

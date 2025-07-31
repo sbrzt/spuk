@@ -1,14 +1,14 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns2: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix ns1: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://w3id.org/changes/4/aldrovandi/act/77/03/1> ns2:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> .
+<https://w3id.org/changes/4/aldrovandi/act/77/03/1> ns1:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> .
 
-<https://w3id.org/changes/4/aldrovandi/act/77/04/1> ns2:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> .
+<https://w3id.org/changes/4/aldrovandi/act/77/04/1> ns1:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> .
 
-<https://w3id.org/changes/4/aldrovandi/itm/77/ob00/1> ns1:P130i_features_are_also_found_on <https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> .
+<https://w3id.org/changes/4/aldrovandi/itm/77/ob00/1> ns2:P130i_features_are_also_found_on <https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> .
 
-<https://w3id.org/changes/4/aldrovandi/lic/77/03/1> ns1:P67_refers_to <https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> .
+<https://w3id.org/changes/4/aldrovandi/lic/77/03/1> ns2:P67_refers_to <https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> .
 
-<https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> a ns2:D9_Data_Object ;
-    ns1:P130_shows_features_of <https://sketchfab.com/3d-models/mountain-lion-r-996-7fa93e512aad4344ab2d90484e454d56> .
+<https://w3id.org/changes/4/aldrovandi/mdl/77/03/1> a ns1:D9_Data_Object ;
+    ns2:P130_shows_features_of <https://sketchfab.com/3d-models/mountain-lion-r-996-7fa93e512aad4344ab2d90484e454d56> .
 

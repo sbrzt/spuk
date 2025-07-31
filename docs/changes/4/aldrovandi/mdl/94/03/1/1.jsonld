@@ -1,11 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/94/03/1",
-    "@type": [
-      "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/94/03/1",
     "http://www.ics.forth.gr/isl/CRMdig/L11_had_output": [
       {
@@ -19,6 +13,12 @@
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/mdl/94/03/1"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/94/03/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"
     ]
   },
   {

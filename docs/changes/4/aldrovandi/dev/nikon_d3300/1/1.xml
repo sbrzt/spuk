@@ -6,7 +6,7 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74b/00/1">
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74d/00/1">
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/37/00/1">
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74e/00/1">
@@ -15,20 +15,20 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/92/00/1">
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/37/00/1">
-    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1">
     <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device"/>
     <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/page/aat/300266792"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/103/00/1">
-    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/105/00/1">
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74a/00/1">
+    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/103/00/1">
+    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74d/00/1">
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/dev/nikon_d3300/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/106/00/1">

@@ -11,10 +11,10 @@
     <ns1:P102_has_title rdf:resource="https://w3id.org/changes/4/aldrovandi/ttl/m6/ob01/1"/>
     <ns1:P102_has_title rdf:resource="https://w3id.org/changes/4/aldrovandi/ttl/m6/ob00/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/wrk/m6_parent/ob00/1">
-    <ns2:R10_has_member rdf:resource="https://w3id.org/changes/4/aldrovandi/wrk/m6/ob00/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/m6/ob00/1">
     <ns2:R19_created_a_realisation_of rdf:resource="https://w3id.org/changes/4/aldrovandi/wrk/m6/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/wrk/m6_parent/ob00/1">
+    <ns2:R10_has_member rdf:resource="https://w3id.org/changes/4/aldrovandi/wrk/m6/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

@@ -14,6 +14,9 @@
     <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ara Macao (linnaeus, 1758) Ara Scarlatta Scarlet Macaw Bologna, Collezione Di Zoologia, Sistema Museale Di Ateneo</ns1:P3_has_note>
     <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/1/1"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/16/ob08/1">
+    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/16/ob00/1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/1/1">
     <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/16/ob00/1"/>
   </rdf:Description>
@@ -22,8 +25,5 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/16/00/1">
     <ns3:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/16/ob00/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/16/ob08/1">
-    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/16/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

@@ -10,13 +10,13 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_s_8/00/1">
     <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_8/01/1">
+    <ns1:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_s_8/00/1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/vetrina_1_alto_s_8/ob00/1">
     <ns2:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_s_8/00/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/vetrina_1_alto_s_8/00/1">
     <ns2:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_s_8/00/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_8/01/1">
-    <ns1:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_s_8/00/1"/>
   </rdf:Description>
 </rdf:RDF>

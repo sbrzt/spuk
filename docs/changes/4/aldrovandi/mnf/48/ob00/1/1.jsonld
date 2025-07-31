@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/48/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/48/ob00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/lic/48/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
       {
@@ -20,14 +28,6 @@
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
       {
         "@id": "http://vocab.getty.edu/page/aat/300041273"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/48/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/48/ob00/1"
       }
     ]
   }

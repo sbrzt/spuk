@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/02/1",
+    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/105/02/1",
     "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
       {
@@ -19,23 +27,15 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/104/02/1",
+    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/92/02/1",
-    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/02/1",
-    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/103/02/1",
     "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"
@@ -51,22 +51,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/02/1",
-    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/104/02/1",
-    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/74b/02/1",
     "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
       {
@@ -75,7 +59,23 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/37/02/1",
+    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/106/02/1",
+    "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74e/02/1",
     "http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"

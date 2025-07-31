@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/113/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/filippo_fantini/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/109/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
@@ -16,11 +8,9 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/111/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/filippo_fantini/1"
-      }
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/filippo_fantini/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
     ]
   },
   {
@@ -32,7 +22,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/108/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/113/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/filippo_fantini/1"
@@ -48,9 +38,19 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/acr/filippo_fantini/1",
-    "@type": [
-      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/111/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/filippo_fantini/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/108/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/filippo_fantini/1"
+      }
     ]
   }
 ]

@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/83/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_6_basso_1/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/balena/1"
@@ -8,7 +8,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_6_basso_1/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/b_basso/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/balena/1"
@@ -27,7 +27,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/b_basso/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/83/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/balena/1"

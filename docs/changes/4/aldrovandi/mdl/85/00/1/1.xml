@@ -7,9 +7,6 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/85/00/1">
     <ns1:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/85/00/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/85/01/1">
-    <ns2:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/85/00/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mdl/85/00/1">
     <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
   </rdf:Description>
@@ -18,5 +15,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/85/ob00/1">
     <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/85/00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/85/01/1">
+    <ns2:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/85/00/1"/>
   </rdf:Description>
 </rdf:RDF>

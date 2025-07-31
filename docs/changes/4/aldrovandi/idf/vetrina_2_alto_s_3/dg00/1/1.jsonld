@@ -1,16 +1,16 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_2_alto_s_3/dg00/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_2_alto_s_3/06/1",
     "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_2_alto_s_3/dg00/1"
       }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_2_alto_s_3/dg00/1",
-    "@type": [
-      "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
     ]
   }
 ]

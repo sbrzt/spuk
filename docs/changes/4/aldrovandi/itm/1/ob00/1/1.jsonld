@@ -1,5 +1,29 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/1/00/1",
+    "http://www.ics.forth.gr/isl/CRMdig/L1_digitized": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mnf/1/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/1/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1",
     "@type": [
       "http://iflastandards.info/ns/lrm/lrmoo/F5_Item"
@@ -33,32 +57,8 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/plc/1/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mnf/1/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/1/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/1/00/1",
-    "http://www.ics.forth.gr/isl/CRMdig/L1_digitized": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1"
       }

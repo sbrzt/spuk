@@ -20,10 +20,10 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/22/ob08/1">
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/22/ob00/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/2/1">
-    <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/22/ob00/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/22/ob00/1">
     <ns3:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/22/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/2/1">
+    <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/22/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

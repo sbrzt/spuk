@@ -10,10 +10,10 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/40/05/1">
     <ns2:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/40/05/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mdl/40/05/1">
-    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/40/06/1">
     <ns1:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/40/05/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mdl/40/05/1">
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
   </rdf:Description>
 </rdf:RDF>

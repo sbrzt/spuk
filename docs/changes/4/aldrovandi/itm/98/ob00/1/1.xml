@@ -5,12 +5,6 @@
    xmlns:ns3="http://www.ics.forth.gr/isl/CRMdig/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/6/1">
-    <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/98/ob00/1">
-    <ns2:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1">
     <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
     <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/98/00/1"/>
@@ -20,10 +14,16 @@
     <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ricostruzioni Plastiche Sul Vivente. Da Sinistra A Destra: Boscimano Ai-hum Maschio, Boscimano Kung Femmina, Boscimano Ai-hum Femmina Living Masks. From Left To Right: Ai-hum Male, Kung Female, Ai-hum Female Lidio Cipriani Sec. Xx  20th Century Bologna, Collezione Di Antropologia, Sistema Museale Di Ateneo</ns1:P3_has_note>
     <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/6/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/98/00/1">
-    <ns3:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1"/>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/6/1">
+    <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/98/ob08/1">
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/98/ob00/1">
+    <ns2:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/98/00/1">
+    <ns3:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

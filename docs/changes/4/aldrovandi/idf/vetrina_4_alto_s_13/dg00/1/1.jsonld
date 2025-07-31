@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_alto_s_13/06/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_alto_s_13/dg00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_alto_s_13/dg00/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
@@ -8,14 +16,6 @@
       {
         "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
         "@value": "<Https://aton.ispc.cnr.it/s/aldrovandi/20240109-5gorq66sj>"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_alto_s_13/06/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/idf/vetrina_4_alto_s_13/dg00/1"
       }
     ]
   }

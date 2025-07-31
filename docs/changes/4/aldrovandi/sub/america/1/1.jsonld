@@ -1,49 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1",
-    "@type": [
-      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
-    ],
-    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
-      {
-        "@id": "http://vocab.getty.edu/page/aat/300404126"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/7/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_5/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/8/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_8/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_4/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/9/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
@@ -59,7 +16,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_10/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/11/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
@@ -67,7 +24,18 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/9/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/page/aat/300404126"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_4/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
@@ -83,7 +51,15 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_7/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_1/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_5/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
@@ -99,7 +75,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_1/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/10/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
@@ -107,7 +83,23 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/10/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_10/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_8/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_7/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
@@ -123,7 +115,15 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/11/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/8/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/7/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/america/1"

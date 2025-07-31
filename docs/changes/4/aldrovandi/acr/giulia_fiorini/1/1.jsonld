@@ -8,37 +8,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1",
-    "@type": [
-      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_3/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_2/02/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_3/01/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_3/02/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
@@ -54,7 +24,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_2/01/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_2/02/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
@@ -62,7 +32,37 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_3/02/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_3/01/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_1/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_3/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_1/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_2/01/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/giulia_fiorini/1"

@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_s_2/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/b_basso/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -8,7 +8,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_n_11/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_basso/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -16,37 +16,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_s_1/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_basso/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_3_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1",
-    "@type": [
-      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_n_1_t/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_s_2_t/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -62,31 +32,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_s_1_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_n_3_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_basso_2_t1/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_n_10/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_s_2/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -95,54 +41,6 @@
   },
   {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_n_7/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_s_1_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_3_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_s_3_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_2/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_n_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_basso_t/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -166,79 +64,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_3/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_3_t2/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_s_2_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_n_8/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/40/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_1_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/b_basso/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_basso_2_t2/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_n_1/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_s_2_t/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_basso_2_t1/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -254,6 +80,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_n_3_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_basso_t/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
@@ -262,7 +96,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_s_1/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_basso_t/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -270,7 +104,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_basso/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_s_2_t/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -278,7 +112,39 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_2_t/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_3/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_n_1/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/40/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_s_1_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_n_8/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -294,7 +160,117 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_n_11/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_alto_s_1/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_3_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_1/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_2_basso/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_2_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_3_t2/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_n_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_n_1_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_n/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_3_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_s_1_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_s_3_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_2/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
@@ -310,7 +286,31 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/ptb_1/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_s_1/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_1_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_4_alto_n_10/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_basso_2_t2/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/valentina_girelli/1"

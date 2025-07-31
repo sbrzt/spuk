@@ -1,12 +1,9 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/sub/uova/1",
-    "@type": [
-      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
-    ],
-    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_3_alto_n_1/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
-        "@id": "http://vocab.getty.edu/page/aat/300404126"
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/uova/1"
       }
     ]
   },
@@ -19,10 +16,13 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_3_alto_n_1/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/sub/uova/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/uova/1"
+        "@id": "http://vocab.getty.edu/page/aat/300404126"
       }
     ]
   }

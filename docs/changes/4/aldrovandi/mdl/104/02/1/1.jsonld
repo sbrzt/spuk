@@ -8,9 +8,11 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/104/02/1",
-    "@type": [
-      "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/104/03/1",
+    "http://www.ics.forth.gr/isl/CRMdig/L10_had_input": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/104/02/1"
+      }
     ]
   },
   {
@@ -22,11 +24,9 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/104/03/1",
-    "http://www.ics.forth.gr/isl/CRMdig/L10_had_input": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/104/02/1"
-      }
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/104/02/1",
+    "@type": [
+      "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"
     ]
   }
 ]

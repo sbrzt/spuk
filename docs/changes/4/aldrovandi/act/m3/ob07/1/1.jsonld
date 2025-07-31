@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/m3/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/act/m3/ob07/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/m3/ob07/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
@@ -7,14 +15,6 @@
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
       {
         "@id": "http://vocab.getty.edu/page/aat/300404386"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/m3/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/act/m3/ob07/1"
       }
     ]
   }

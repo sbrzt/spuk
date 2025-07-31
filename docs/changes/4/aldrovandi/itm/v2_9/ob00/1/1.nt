@@ -1,9 +1,9 @@
-<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location> <https://w3id.org/changes/4/aldrovandi/plc/1/1> .
-<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> "Jan Caspar Philips Allegoria Dellamerica Allegory Of America 1766 Amsterdam, Rijksmuseum"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://w3id.org/changes/4/aldrovandi/idf/v2_9/ob02/1> .
-<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iflastandards.info/ns/lrm/lrmoo/F5_Item> .
-<https://w3id.org/changes/4/aldrovandi/plc/1/1> <http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of> <https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> .
-<https://w3id.org/changes/4/aldrovandi/mnf/v2_9/ob00/1> <http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by> <https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> .
-<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://w3id.org/changes/4/aldrovandi/idf/v2_9/ob00/1> .
 <https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://w3id.org/changes/4/aldrovandi/idf/v2_9/ob01/1> .
+<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> "Jan Caspar Philips Allegoria Dellamerica Allegory Of America 1766 Amsterdam, Rijksmuseum"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location> <https://w3id.org/changes/4/aldrovandi/plc/1/1> .
+<https://w3id.org/changes/4/aldrovandi/plc/1/1> <http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of> <https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> .
+<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iflastandards.info/ns/lrm/lrmoo/F5_Item> .
+<https://w3id.org/changes/4/aldrovandi/mnf/v2_9/ob00/1> <http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by> <https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> .
+<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://w3id.org/changes/4/aldrovandi/idf/v2_9/ob02/1> .
 <https://w3id.org/changes/4/aldrovandi/act/v2_9/ob08/1> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> <https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> .
+<https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://w3id.org/changes/4/aldrovandi/idf/v2_9/ob00/1> .

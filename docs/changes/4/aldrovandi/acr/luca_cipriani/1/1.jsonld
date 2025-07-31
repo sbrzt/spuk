@@ -1,6 +1,20 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/115/00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/luca_cipriani/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_1/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/luca_cipriani/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/114/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/luca_cipriani/1"
@@ -16,29 +30,15 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_1/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/luca_cipriani/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/acr/luca_cipriani/1",
-    "@type": [
-      "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/114/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/luca_cipriani/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/83/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/luca_cipriani/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/115/00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/luca_cipriani/1"

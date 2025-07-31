@@ -3,10 +3,10 @@
    xmlns:ns1="http://www.cidoc-crm.org/cidoc-crm/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_alto_s_14/ob00/1">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_14/ob00/1">
     <ns1:P4_has_time-span rdf:resource="https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_alto_s_14/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_alto_s_14/ob00/1">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
   </rdf:Description>
 </rdf:RDF>

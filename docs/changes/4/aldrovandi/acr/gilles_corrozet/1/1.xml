@@ -6,11 +6,11 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/63/ob04/1">
     <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/gilles_corrozet/1"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/parigi/1">
+    <ns1:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/gilles_corrozet/1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/acr/gilles_corrozet/1">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
     <ns1:P70i_is_documented_in rdf:resource="http://viaf.org/viaf/39386621"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/parigi/1">
-    <ns1:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/gilles_corrozet/1"/>
   </rdf:Description>
 </rdf:RDF>

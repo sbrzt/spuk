@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/pip/1",
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1",
     "@type": [
       "http://example.org/Entity"
@@ -28,6 +20,14 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/pip/01/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/pip/1",
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1"
       }
     ]
   }

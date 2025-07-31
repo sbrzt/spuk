@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:ns1="http://www.cidoc-crm.org/cidoc-crm/"
-   xmlns:ns2="http://www.ics.forth.gr/isl/CRMdig/"
-   xmlns:ns3="http://iflastandards.info/ns/lrm/lrmoo/"
+   xmlns:ns2="http://iflastandards.info/ns/lrm/lrmoo/"
+   xmlns:ns3="http://www.ics.forth.gr/isl/CRMdig/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/28/ob00/1">
@@ -14,6 +14,9 @@
     <ns1:P3_has_note rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Anatomia Del Pollo Anatomy Of A Chicken In Ulisse Aldrovandi, Ornithologiae Hoc Est De Avibus Historiae Libri Xii, Vol. 2 Bologna, Francesco De Franceschi Senese, 1603 Bub, A.iv.h.iii.8/2</ns1:P3_has_note>
     <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/2/1"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/28/ob00/1">
+    <ns2:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/28/ob00/1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/2/1">
     <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/28/ob00/1"/>
   </rdf:Description>
@@ -21,9 +24,6 @@
     <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/28/ob00/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/28/00/1">
-    <ns2:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/28/ob00/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/28/ob00/1">
-    <ns3:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/28/ob00/1"/>
+    <ns3:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/28/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

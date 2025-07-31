@@ -19,16 +19,16 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/74c/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/74c/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/exp/74c/ob00/1"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/74c/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/wrk/74c/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/exp/74c/ob00/1"
       }

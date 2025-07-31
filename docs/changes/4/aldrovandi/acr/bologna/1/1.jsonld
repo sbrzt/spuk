@@ -1,6 +1,14 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/43/ob08/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/75/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/22/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1"
@@ -16,22 +24,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/22/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/75/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
@@ -39,6 +31,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/43/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1"
       }
     ]
   }

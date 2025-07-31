@@ -16,14 +16,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_1/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/the_metropolitan_museum_of_art/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/acr/the_metropolitan_museum_of_art/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
@@ -31,6 +23,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/new_york/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_1/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/the_metropolitan_museum_of_art/1"
       }
     ]
   }

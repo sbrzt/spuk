@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/roma/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/galleria_borghese/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/acr/galleria_borghese/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
@@ -7,14 +15,6 @@
     "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/roma/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/plc/roma/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/galleria_borghese/1"
       }
     ]
   },

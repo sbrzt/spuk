@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/plc/londra/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/british_museum/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_4/ob08/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
       {
@@ -23,6 +15,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/londra/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/londra/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/british_museum/1"
       }
     ]
   }

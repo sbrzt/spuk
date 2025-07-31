@@ -4,9 +4,6 @@
    xmlns:ns2="http://www.cidoc-crm.org/cidoc-crm/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_6/ob00/1">
-    <ns1:R17_created rdf:resource="https://w3id.org/changes/4/aldrovandi/exp/vetrina_1_alto_s_6/ob00/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/wrk/vetrina_1_alto_s_6/ob00/1">
     <ns1:R3_is_realised_in rdf:resource="https://w3id.org/changes/4/aldrovandi/exp/vetrina_1_alto_s_6/ob00/1"/>
   </rdf:Description>
@@ -15,5 +12,8 @@
     <ns1:R4i_is_embodied_in rdf:resource="https://w3id.org/changes/4/aldrovandi/mnf/vetrina_1_alto_s_6/ob00/1"/>
     <ns2:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/trono/1"/>
     <ns2:P129_is_about rdf:resource="https://w3id.org/changes/4/aldrovandi/sub/serapide/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_6/ob00/1">
+    <ns1:R17_created rdf:resource="https://w3id.org/changes/4/aldrovandi/exp/vetrina_1_alto_s_6/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

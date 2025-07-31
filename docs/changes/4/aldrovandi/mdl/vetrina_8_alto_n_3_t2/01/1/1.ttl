@@ -1,11 +1,11 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns2: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix ns1: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_3_t2/01/1> ns2:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_alto_n_3_t2/01/1> .
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_3_t2/01/1> ns1:L11_had_output <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_alto_n_3_t2/01/1> .
 
-<https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_3_t2/02/1> ns2:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_alto_n_3_t2/01/1> .
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_3_t2/02/1> ns1:L10_had_input <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_alto_n_3_t2/01/1> .
 
-<https://w3id.org/changes/4/aldrovandi/lic/vetrina_8_alto_n_3_t2/01/1> ns1:P67_refers_to <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_alto_n_3_t2/01/1> .
+<https://w3id.org/changes/4/aldrovandi/lic/vetrina_8_alto_n_3_t2/01/1> ns2:P67_refers_to <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_alto_n_3_t2/01/1> .
 
-<https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_alto_n_3_t2/01/1> a ns2:D9_Data_Object .
+<https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_alto_n_3_t2/01/1> a ns1:D9_Data_Object .
 

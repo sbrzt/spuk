@@ -5,6 +5,9 @@
    xmlns:ns3="http://iflastandards.info/ns/lrm/lrmoo/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/1/1">
+    <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/7/ob00/1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/7/ob00/1">
     <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
     <ns1:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/7/00/1"/>
@@ -17,13 +20,10 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/7/00/1">
     <ns2:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/7/ob00/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/7/ob08/1">
-    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/7/ob00/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/7/ob00/1">
     <ns3:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/7/ob00/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/1/1">
-    <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/7/ob00/1"/>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/7/ob08/1">
+    <ns1:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/7/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

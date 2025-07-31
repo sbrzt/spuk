@@ -1,7 +1,7 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_s_3_t/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/mnf/vetrina_7_alto_s_3_t/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_7_alto_s_3_t/ob00/1"
       }
@@ -10,6 +10,14 @@
   {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_s_3_t/00/1",
     "http://www.ics.forth.gr/isl/CRMdig/L1_digitized": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_7_alto_s_3_t/ob00/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_s_3_t/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_7_alto_s_3_t/ob00/1"
       }
@@ -58,14 +66,6 @@
     "http://www.cidoc-crm.org/cidoc-crm/P62_depicts": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_7_alto_s_-_3/ob00/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mnf/vetrina_7_alto_s_3_t/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/vetrina_7_alto_s_3_t/ob00/1"
       }
     ]
   }

@@ -8,6 +8,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/108/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/108/ob00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/exp/108/ob00/1",
     "@type": [
       "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
@@ -20,14 +28,6 @@
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/squalo/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/108/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/exp/108/ob00/1"
       }
     ]
   }

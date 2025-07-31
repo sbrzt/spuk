@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_s_2_t/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/vetrina_5_alto_s_2_t/00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/tsp/vetrina_5_alto_s_2_t/00/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
@@ -22,6 +14,14 @@
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
         "@value": "2023-06-05T23:59:59+00:00"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_5_alto_s_2_t/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/vetrina_5_alto_s_2_t/00/1"
       }
     ]
   }

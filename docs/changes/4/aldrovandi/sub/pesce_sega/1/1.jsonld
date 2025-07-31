@@ -16,14 +16,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_8_basso_2_t2/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/pesce_sega/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/sub/pesce_sega/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
@@ -36,6 +28,14 @@
   },
   {
     "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_8_basso_2_t3/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/pesce_sega/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_8_basso_2_t2/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/pesce_sega/1"

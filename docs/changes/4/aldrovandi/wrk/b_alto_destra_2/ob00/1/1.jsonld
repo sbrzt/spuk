@@ -8,14 +8,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_2/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R19_created_a_realisation_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/wrk/b_alto_destra_2/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/wrk/b_alto_destra_2/ob00/1",
     "@type": [
       "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
@@ -34,6 +26,14 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/ttl/b_alto_destra_2/ob00/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/b_alto_destra_2/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R19_created_a_realisation_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/wrk/b_alto_destra_2/ob00/1"
       }
     ]
   }

@@ -8,16 +8,16 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_basso_2_t3/02/1",
-    "http://www.ics.forth.gr/isl/CRMdig/L10_had_input": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_basso_2_t3/01/1",
+    "http://www.ics.forth.gr/isl/CRMdig/L11_had_output": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_basso_2_t3/01/1"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_basso_2_t3/01/1",
-    "http://www.ics.forth.gr/isl/CRMdig/L11_had_output": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_basso_2_t3/02/1",
+    "http://www.ics.forth.gr/isl/CRMdig/L10_had_input": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_basso_2_t3/01/1"
       }

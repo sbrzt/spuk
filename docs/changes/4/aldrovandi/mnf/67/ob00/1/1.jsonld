@@ -1,21 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/lic/67/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/67/ob00/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/67/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/67/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/mnf/67/ob00/1",
     "@type": [
       "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
@@ -28,6 +12,22 @@
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
       {
         "@id": "http://vocab.getty.edu/page/aat/300041273"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/67/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/67/ob00/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/lic/67/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mnf/67/ob00/1"
       }
     ]
   }

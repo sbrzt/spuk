@@ -1,14 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_5_alto_s_2_t/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/botroidi/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_5_alto_s_1/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_5_alto_n_t/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/botroidi/1"
@@ -17,6 +9,22 @@
   },
   {
     "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_5_basso/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/botroidi/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_5_basso_t/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/botroidi/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_5_alto_s_2_t/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/botroidi/1"
@@ -40,15 +48,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_5_basso_t/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/botroidi/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_5_alto_n_t/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_5_alto_s_1/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/botroidi/1"

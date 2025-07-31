@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/m5/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/m5/ob00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/tsp/m5/ob00/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
@@ -14,14 +22,6 @@
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
         "@value": "1599-12-31T23:59:59+00:00"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/m5/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/m5/ob00/1"
       }
     ]
   }

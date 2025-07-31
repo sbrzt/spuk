@@ -7,11 +7,11 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_4_basso/05/1">
     <ns1:L11_had_output rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_basso/05/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_4_basso/06/1">
-    <ns1:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_basso/05/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/vetrina_4_basso/05/1">
     <ns2:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_basso/05/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_4_basso/06/1">
+    <ns1:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_basso/05/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_basso/05/1">
     <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>

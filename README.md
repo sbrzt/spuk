@@ -84,6 +84,7 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
   * [ ] Add most referenced subjects?
   * [ ] Add most referenced objects?
   * [ ] Add download option
+  * [x] Add visible values without hover
   * [x] **Test**: Define personalized data stats via config file
   * [ ] **Test**: Define personalized data charts via config file
 * [ ] Consider listing entity properties
@@ -104,8 +105,9 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 
 * [x] Reengineer codebase structure
 * [x] Introduce centralized config file
+* [ ] Add delete /docs/ directory at generation
 * [ ] Improve developer experience:
-  * [ ] Add dev server with file watching & caching
+  * [X] Add dev server with file watching & caching
   * [ ] Enable auto-reload on changes
   * [ ] Add dev-specific config parameters
 * [x] Redesign footer
