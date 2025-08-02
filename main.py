@@ -6,6 +6,7 @@ from config import (
     TEMPLATES_DIR, 
     STATIC_DIR,
     ENABLE_CUSTOM_STATS,
+    DOCUMENTATION_DIR
 )
 from tqdm import tqdm
 from src.graph_loader import load_graph
@@ -22,7 +23,8 @@ from src.filesystem import (
     write_entity_rdf,
     write_query_html,
     copy_static,
-    clean_output_dir
+    clean_output_dir,
+    write_documentation_html
 )
 
 
@@ -41,7 +43,21 @@ def main():
     if ENABLE_CUSTOM_STATS:
         custom_stats = load_custom_stats(graph)
 
-    renderer = HTMLRenderer(templates_path=TEMPLATES_DIR, site_root=OUTPUT_DIR)
+    docs_pages = []
+    if DOCUMENTATION_DIR.exists:
+        for md_file in DOCUMENTATION_DIR.glob("*.md"):
+            title = md_file.stem
+            html_filename = f"{title}.html"
+            docs_pages.append({
+                "title": title.replace("_", " ").capitalize(),
+                "href": html_filename
+            })
+
+    renderer = HTMLRenderer(
+        templates_path=TEMPLATES_DIR, 
+        site_root=OUTPUT_DIR,
+        docs_pages=docs_pages
+    )
     serializer = RDFSerializer()
     
     print("Rendering entity pages...")
@@ -56,6 +72,8 @@ def main():
     write_index_html(OUTPUT_DIR, renderer, stats, custom_stats)
     write_entities_html(entities, OUTPUT_DIR, renderer)
     write_query_html(OUTPUT_DIR, renderer)
+    
+    write_documentation_html(DOCUMENTATION_DIR, OUTPUT_DIR, renderer)
 
     print("Copying static files...")
     copy_static(STATIC_DIR, OUTPUT_DIR)

@@ -16,6 +16,7 @@ GRAPH_SOURCE = {
 OUTPUT_DIR = Path("docs/")
 TEMPLATES_DIR = "templates"
 STATIC_DIR = "static"
+DOCUMENTATION_DIR = Path("doc")
 
 # --- Custom stats configuration ---
 ENABLE_CUSTOM_STATS = False

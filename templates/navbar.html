@@ -38,7 +38,7 @@ aria-label="main navigation">
   </div>
 
   <div id="navbarMenu" class="navbar-menu">
-    <div class="navbar-start content">
+    <div class="navbar-start">
       <a class="navbar-item" href="{{ base_url }}index.html">
         Overview
       </a>
@@ -48,6 +48,22 @@ aria-label="main navigation">
       <a class="navbar-item" href="{{ base_url }}query.html">
         Query
       </a>
+    </div>
+    <div class="navbar-end">
+      {% if docs_pages %}
+        <div class="navbar-item has-dropdown is-hoverable button is-light">
+          <a class="navbar-link">
+            Documentation
+          </a>
+          <div class="navbar-dropdown">
+            {% for page in docs_pages %}
+              <a class="navbar-item" href="{{ base_url }}{{ page.href }}">
+                {{ page.title }}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
     </div>
   </div>
 </nav>

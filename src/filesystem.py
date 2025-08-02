@@ -71,6 +71,15 @@ def write_entity_rdf(entity_uri: URIRef, output_dir: Path, graph: Graph, seriali
     )
 
 
+def write_documentation_html(markdown_dir: Path, output_dir: Path, renderer: HTMLRenderer) -> None:
+    for md_file in markdown_dir.glob("*.md"):
+        title = md_file.stem
+        html_output_path = output_dir / f"{title}.html"
+        markdown_text = md_file.read_text(encoding="utf-8")
+        content = renderer.render_documentation_page(title=title, markdown_text=markdown_text)
+        write_html_file(content, html_output_path)
+
+
 def copy_static(src_dir, dst_dir):
     os.makedirs(dst_dir, exist_ok=True)
     for item in os.listdir(src_dir):

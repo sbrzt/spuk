@@ -2,6 +2,7 @@
 
 import os
 import json
+import markdown
 from jinja2 import Environment, FileSystemLoader
 from pathlib import Path, PurePosixPath
 from rdflib import URIRef, Literal
@@ -19,26 +20,29 @@ from config import (
 
 class HTMLRenderer:
     
-    def __init__(self, templates_path: Path, site_root: Path):
+    def __init__(self, templates_path: Path, site_root: Path, docs_pages: List[Dict[str, str]] = None):
         self.env = Environment(loader=FileSystemLoader(str(templates_path)))
         self.index_template = self.env.get_template("index.html")
         self.query_template = self.env.get_template("query.html")
         self.entity_template = self.env.get_template("entity.html")
         self.entities_template = self.env.get_template("entities.html")
         self.site_root = site_root.resolve()
+        self.docs_pages = docs_pages or []
 
     def render_index(self, stats: GraphStats, custom_stats=None) -> str:
         return self.index_template.render(
             stats=stats, 
             custom_stats=custom_stats or {},
-            base_url=""
+            base_url="",
+            docs_pages=self.docs_pages
         )
     
     def render_query(self) -> str:
         return self.query_template.render(
             data_source=GRAPH_SOURCE["sparql_endpoint"] if GRAPH_SOURCE["type"] == "sparql" else GRAPH_SOURCE["file_path"],
             queries=PREDEFINED_QUERIES,
-            base_url=""
+            base_url="",
+            docs_pages=self.docs_pages
         )
 
     def render_entity(self, entity: Entity) -> str:
@@ -65,6 +69,7 @@ class HTMLRenderer:
             ),
             path=entity.render_path,
             base_url=base_url,
+            docs_pages=self.docs_pages,
             graph_data=json.dumps(graph_data),
             graph_options=json.dumps(GRAPH_VIS_OPTIONS)
         )
@@ -72,7 +77,18 @@ class HTMLRenderer:
     def render_entities(self, entities: List[Entity]) -> str:
         return self.entities_template.render(
             entities=entities,
-            base_url=""
+            base_url="",
+            docs_pages=self.docs_pages
+        )
+
+    def render_documentation_page(self, title: str, markdown_text: str, base_url: str = "") -> str:
+        html_content = markdown.markdown(markdown_text, extensions=["fenced_code", "tables"])
+        template = self.env.get_template("documentation.html")
+        return template.render(
+            title=title, 
+            content=html_content, 
+            base_url=base_url,
+            docs_pages=self.docs_pages
         )
 
     

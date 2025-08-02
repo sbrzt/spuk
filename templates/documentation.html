@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+  
+    {% block content %}
+
+        <section class="hero is-large is-link">
+            <div class="hero-body">
+                <p class="title">{{ title }}</p>
+                <p class="subtitle">Read the documentation</p>
+            </div>
+        </section>
+
+        <section class="section">
+            {{ content | safe }}
+        </section>
+    
+    {% endblock %}
