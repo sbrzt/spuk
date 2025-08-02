@@ -92,7 +92,7 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 
 ### 📚 Documentation
 
-* [ ] Add optional documentation pages
+* [x] Add optional documentation pages
   * [ ] Add markdown support
 * [ ] Improve internal documentation:
   * [ ] Add docstrings
