@@ -85,7 +85,7 @@ class HTMLRenderer:
         html_content = markdown.markdown(markdown_text, extensions=["fenced_code", "tables"])
         template = self.env.get_template("documentation.html")
         return template.render(
-            title=title, 
+            title=title.capitalize(), 
             content=html_content, 
             base_url=base_url,
             docs_pages=self.docs_pages

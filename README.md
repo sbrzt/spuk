@@ -93,7 +93,7 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 ### 📚 Documentation
 
 * [x] Add optional documentation pages
-  * [ ] Add markdown support
+  * [x] Add markdown support
 * [ ] Improve internal documentation:
   * [ ] Add docstrings
   * [ ] Add README files
@@ -108,8 +108,10 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
 * [x] Reengineer codebase structure
 * [x] Introduce centralized config file
 * [x] Delete /docs/ directory at generation
+* [ ] Solve problem with /docs/data/ not regenerated after a change
 * [ ] Improve developer experience:
   * [X] Add dev server with file watching & caching
+  * [ ] Avoid full rebuild at each change
   * [ ] Enable auto-reload on changes
   * [ ] Add dev-specific config parameters
 * [x] Redesign footer

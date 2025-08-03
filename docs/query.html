@@ -146,7 +146,7 @@ aria-label="main navigation">
     const runButton = document.getElementById('run-query');
     const resultsContainer = document.getElementById('query-results');
 
-    let store = null;
+    let store = null; 
     let rdfDataLoaded = false;
     const isEndpoint = !dataSource.match(/\.(ttl|rdf|nt|jsonld)$/i); // treat as endpoint if not file
 
@@ -160,7 +160,7 @@ aria-label="main navigation">
         store = newStore;
         callback();
       });
-    }
+    } 
 
     // Load RDF data from file
     function loadRdfFile() {

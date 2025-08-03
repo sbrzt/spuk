@@ -10,7 +10,7 @@ import subprocess
 
 ROOT_DIR = os.path.abspath(".")
 DOCS_DIR = os.path.join(ROOT_DIR, "docs")
-WATCH_DIRS = ["data", "templates", "static", "src"]
+WATCH_DIRS = ["data", "templates", "static", "src", "doc"]
 WATCH_DIRS = [os.path.abspath(d) for d in WATCH_DIRS if os.path.exists(d)]
 PORT = 8000
 
