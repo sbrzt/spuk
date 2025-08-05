@@ -56,8 +56,6 @@ TODO
 
 TODO
 
-Here's a **cleaner, more structured rewrite** of your roadmap that improves clarity, consistency, and focus. The wording is more actionable, and the hierarchy is easier to scan.
-
 ---
 
 ## 🚧 Roadmap
@@ -74,7 +72,7 @@ Here's a **cleaner, more structured rewrite** of your roadmap that improves clar
   * [ ] Optimize pagination
   * [ ] Clean entities.html once dev server works
 * [ ] Implement search functionality
-* [ ] Improve entity listing layout
+* [x] Improve entity listing layout
 * [ ] Enhance data visualizations:
   * [ ] Add literal components (datatypes and languages)
   * [ ] Add subject RDF node types

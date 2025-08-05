@@ -95,39 +95,32 @@ aria-label="main navigation">
             
             <div class="card cell entity" data-entity-index="0">
                 <header class="card-header">
-                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/1</p>
-                </header>
-                <div class="card-content">
-                    <div class="content">
-                        Types: ['http://example.org/Entity']
-                    </div>
-                </div>
-                <footer class="card-footer">
-                    <a href="changes/4/aldrovandi/pip/1/1.html" class="card-footer-item">Go to entity page</a>
-                </footer>
-            </div>
-            
-            <div class="card cell entity" data-entity-index="1">
-                <header class="card-header">
-                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/01/1</p>
-                </header>
-                <div class="card-content">
-                    <div class="content">
-                        Types: ['http://example.org/Entity']
-                    </div>
-                </div>
-                <footer class="card-footer">
-                    <a href="changes/4/aldrovandi/pip/01/1/1.html" class="card-footer-item">Go to entity page</a>
-                </footer>
-            </div>
-            
-            <div class="card cell entity" data-entity-index="2">
-                <header class="card-header">
                     <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/foo/1</p>
                 </header>
                 <div class="card-content">
+                    <div class="tags">
+                      
+                        <span class="tag">http://example.org/Entity</span>
+                      
+                    </div>
                     <div class="content">
-                        Types: ['http://example.org/Entity']
+                      <p>Triple count: 5</p>
+                      <p>As subject: 4 </p>
+                      <p>As object: 1</p>
+                      <p>Related entity count: 2</p>
+                    </div>
+                    <div class="content">
+                      <pre>@prefix ns1: &lt;http://w3id.org/sche/ma/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/pip/01/1&gt; rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/pip/foo/1&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/pip/foo/1&gt; a &lt;http://example.org/Entity&gt; ;
+    rdfs:label &#34;Entity foo 1&#34; ;
+    ns1:status &#34;active&#34; ;
+    rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/pip/foo/2&gt; .
+
+</pre>
                     </div>
                 </div>
                 <footer class="card-footer">
@@ -135,31 +128,146 @@ aria-label="main navigation">
                 </footer>
             </div>
             
-            <div class="card cell entity" data-entity-index="3">
+            <div class="card cell entity" data-entity-index="1">
                 <header class="card-header">
-                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/foo/2</p>
+                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/1</p>
                 </header>
                 <div class="card-content">
+                    <div class="tags">
+                      
+                        <span class="tag">http://example.org/Entity</span>
+                      
+                    </div>
                     <div class="content">
-                        Types: ['http://example.org/Entity']
+                      <p>Triple count: 5</p>
+                      <p>As subject: 4 </p>
+                      <p>As object: 1</p>
+                      <p>Related entity count: 2</p>
+                    </div>
+                    <div class="content">
+                      <pre>@prefix ns1: &lt;http://w3id.org/sche/ma/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/pip/foo/2&gt; rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/pip/1&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/pip/1&gt; a &lt;http://example.org/Entity&gt; ;
+    rdfs:label &#34;Entity pip 1&#34; ;
+    ns1:status &#34;active&#34; ;
+    rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1&gt; .
+
+</pre>
                     </div>
                 </div>
                 <footer class="card-footer">
-                    <a href="changes/4/aldrovandi/pip/foo/2/2.html" class="card-footer-item">Go to entity page</a>
+                    <a href="changes/4/aldrovandi/pip/1/1.html" class="card-footer-item">Go to entity page</a>
+                </footer>
+            </div>
+            
+            <div class="card cell entity" data-entity-index="2">
+                <header class="card-header">
+                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/01/1</p>
+                </header>
+                <div class="card-content">
+                    <div class="tags">
+                      
+                        <span class="tag">http://example.org/Entity</span>
+                      
+                    </div>
+                    <div class="content">
+                      <p>Triple count: 5</p>
+                      <p>As subject: 4 </p>
+                      <p>As object: 1</p>
+                      <p>Related entity count: 2</p>
+                    </div>
+                    <div class="content">
+                      <pre>@prefix ns1: &lt;http://w3id.org/sche/ma/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1&gt; rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/pip/01/1&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/pip/01/1&gt; a &lt;http://example.org/Entity&gt; ;
+    rdfs:label &#34;Entity pip 01 1&#34; ;
+    ns1:status &#34;archived&#34; ;
+    rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/pip/foo/1&gt; .
+
+</pre>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="changes/4/aldrovandi/pip/01/1/1.html" class="card-footer-item">Go to entity page</a>
+                </footer>
+            </div>
+            
+            <div class="card cell entity" data-entity-index="3">
+                <header class="card-header">
+                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1</p>
+                </header>
+                <div class="card-content">
+                    <div class="tags">
+                      
+                        <span class="tag">http://example.org/Entity</span>
+                      
+                    </div>
+                    <div class="content">
+                      <p>Triple count: 6</p>
+                      <p>As subject: 5 </p>
+                      <p>As object: 1</p>
+                      <p>Related entity count: 3</p>
+                    </div>
+                    <div class="content">
+                      <pre>@prefix ns1: &lt;http://w3id.org/sche/ma/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/pip/1&gt; rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1&gt; a &lt;http://example.org/Entity&gt; ;
+    rdfs:label &#34;Entity bub gog 1&#34; ;
+    ns1:status &#34;published&#34; ;
+    rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/pip/01/1&gt;,
+        &lt;https://w3id.org/changes/4/aldrovandi/pip/foo/2&gt; .
+
+</pre>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="changes/4/aldrovandi/bub/foo/gog/1/1.html" class="card-footer-item">Go to entity page</a>
                 </footer>
             </div>
             
             <div class="card cell entity" data-entity-index="4">
                 <header class="card-header">
-                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1</p>
+                    <p class="card-header-title">https://w3id.org/changes/4/aldrovandi/pip/foo/2</p>
                 </header>
                 <div class="card-content">
+                    <div class="tags">
+                      
+                        <span class="tag">http://example.org/Entity</span>
+                      
+                    </div>
                     <div class="content">
-                        Types: ['http://example.org/Entity']
+                      <p>Triple count: 6</p>
+                      <p>As subject: 4 </p>
+                      <p>As object: 2</p>
+                      <p>Related entity count: 3</p>
+                    </div>
+                    <div class="content">
+                      <pre>@prefix ns1: &lt;http://w3id.org/sche/ma/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1&gt; rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/pip/foo/2&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/pip/foo/1&gt; rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/pip/foo/2&gt; .
+
+&lt;https://w3id.org/changes/4/aldrovandi/pip/foo/2&gt; a &lt;http://example.org/Entity&gt; ;
+    rdfs:label &#34;Entity foo 2&#34; ;
+    ns1:status &#34;inactive&#34; ;
+    rdfs:seeAlso &lt;https://w3id.org/changes/4/aldrovandi/pip/1&gt; .
+
+</pre>
                     </div>
                 </div>
                 <footer class="card-footer">
-                    <a href="changes/4/aldrovandi/bub/foo/gog/1/1.html" class="card-footer-item">Go to entity page</a>
+                    <a href="changes/4/aldrovandi/pip/foo/2/2.html" class="card-footer-item">Go to entity page</a>
                 </footer>
             </div>
             

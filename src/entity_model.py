@@ -26,6 +26,23 @@ class Entity:
         ]
 
     @property
+    def triple_count(self) -> int:
+        return len(self.subject_triples) + len(self.object_triples)
+
+    @property
+    def related_entity_count(self) -> int:
+        print(self.get_related_entities())
+        return len(self.get_related_entities())
+
+    @property
+    def subject_triple_count(self) -> int:
+        return len(self.subject_triples)
+
+    @property
+    def object_triple_count(self) -> int:
+        return len(self.object_triples)
+
+    @property
     def render_path(self) -> str:
         return get_entity_output_files(self.uri, Path()).get("html", Path("")).with_suffix("").as_posix()
 
@@ -37,9 +54,10 @@ class Entity:
 
     def get_related_entities(self) -> List[URIRef]:
         related = set()
-        for (_, _, o) in self.subject_triples:
-            if isinstance(o, URIRef):
-                related.add(o)
+        for (_, p, o) in self.subject_triples:
+            if p != URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"):
+                if isinstance(o, URIRef):
+                    related.add(o)
         for (s, _, _) in self.object_triples:
             if isinstance(s, URIRef):
                 related.add(s)
@@ -50,6 +68,9 @@ class Entity:
         for triple in self.subject_triples + self.object_triples:
             subgraph.add(triple)
         return subgraph
+
+    def to_turtle(self) -> str:
+        return self.get_entity_subgraph().serialize(format="turtle")
 
 
 def get_entities(graph: Graph) -> Generator[Entity, None, None]:

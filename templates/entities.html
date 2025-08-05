@@ -17,8 +17,19 @@
                     <p class="card-header-title">{{ entity.uri }}</p>
                 </header>
                 <div class="card-content">
+                    <div class="tags">
+                      {% for type in entity.types %}
+                        <span class="tag">{{ type }}</span>
+                      {% endfor %}
+                    </div>
                     <div class="content">
-                        Types: {{ entity.types }}
+                      <p>Triple count: {{ entity.triple_count }}</p>
+                      <p>As subject: {{ entity.subject_triple_count }} </p>
+                      <p>As object: {{ entity.object_triple_count }}</p>
+                      <p>Related entity count: {{ entity.related_entity_count }}</p>
+                    </div>
+                    <div class="content">
+                      <pre>{{ entity.to_turtle() | e }}</pre>
                     </div>
                 </div>
                 <footer class="card-footer">
