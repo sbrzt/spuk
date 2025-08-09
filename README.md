@@ -108,12 +108,13 @@ TODO
 * [x] Delete /docs/ directory at generation
 * [ ] Solve problem with /docs/data/ not regenerated after a change
 * [ ] Improve developer experience:
-  * [X] Add dev server with file watching & caching
+  * [x] Add dev server with file watching & caching
   * [ ] Avoid full rebuild at each change
   * [ ] Enable auto-reload on changes
   * [ ] Add dev-specific config parameters
 * [x] Redesign footer
 * [ ] Consider adding API support for advanced use cases
+* [ ] Add CITATION.cff
 
 ## Author
 

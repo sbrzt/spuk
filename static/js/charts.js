@@ -3,26 +3,30 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             id: "topEntitiesChart",
             data: window.topEntitiesData,
-            title: "Top Entities"
+            title: "Top Entities",
+            chartType: "bar"
         },
         {
             id: "topPropertiesChart",
             data: window.topPropertiesData,
-            title: "Top Properties"
+            title: "Top Properties",
+            chartType: "bar"
         },
         {
             id: "topClassesChart",
             data: window.topClassesData,
-            title: "Top Classes"
+            title: "Top Classes",
+            chartType: "bar"
         },
         {
             id: "topModelsChart",
             data: window.topModelsData,
-            title: "Top Models"
+            title: "Top Models",
+            chartType: "bar"
         }
     ];
 
-    chartsToRender.forEach(({ id, data, title }) => {
+    chartsToRender.forEach(({ id, data, title, chartType }) => {
         if (!data || data.length === 0) return;
 
         const ctx = document.getElementById(id);
@@ -32,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const values = data.map(item => item[1]);
 
         new Chart(ctx, {
-            type: "bar",
+            type: chartType,
             data: {
                 labels: labels,
                 datasets: [{

@@ -31,7 +31,6 @@ class Entity:
 
     @property
     def related_entity_count(self) -> int:
-        print(self.get_related_entities())
         return len(self.get_related_entities())
 
     @property

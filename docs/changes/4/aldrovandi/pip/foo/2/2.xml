@@ -10,10 +10,10 @@
     <ns1:status>inactive</ns1:status>
     <rdfs:seeAlso rdf:resource="https://w3id.org/changes/4/aldrovandi/pip/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/pip/foo/1">
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1">
     <rdfs:seeAlso rdf:resource="https://w3id.org/changes/4/aldrovandi/pip/foo/2"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1">
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/pip/foo/1">
     <rdfs:seeAlso rdf:resource="https://w3id.org/changes/4/aldrovandi/pip/foo/2"/>
   </rdf:Description>
 </rdf:RDF>
