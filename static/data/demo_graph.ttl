@@ -1,0 +1,37 @@
+# data/demo_graph.ttl
+
+@prefix ex: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sche: <http://w3id.org/sche/ma/> .
+
+<https://w3id.org/changes/4/aldrovandi/pip/foo/1>
+    a ex:Entity ;
+    rdfs:label "Entity foo 1" ;
+    sche:status "active" ;
+    rdfs:seeAlso <https://w3id.org/changes/4/aldrovandi/pip/foo/2> .
+
+<https://w3id.org/changes/4/aldrovandi/pip/foo/2>
+    a ex:Entity ;
+    rdfs:label "Entity foo 2" ;
+    sche:status "inactive" ;
+    rdfs:seeAlso <https://w3id.org/changes/4/aldrovandi/pip/1> .
+
+<https://w3id.org/changes/4/aldrovandi/pip/1>
+    a ex:Entity ;
+    rdfs:label "Entity pip 1" ;
+    sche:status "active" ;
+    rdfs:seeAlso <https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1> .
+
+<https://w3id.org/changes/4/aldrovandi/bub/foo/gog/1>
+    a ex:Entity ;
+    rdfs:label "Entity bub gog 1" ;
+    sche:status "published" ;
+    rdfs:seeAlso <https://w3id.org/changes/4/aldrovandi/pip/foo/2> ,
+        <https://w3id.org/changes/4/aldrovandi/pip/01/1> .
+
+<https://w3id.org/changes/4/aldrovandi/pip/01/1>
+    a ex:Entity ;
+    rdfs:label "Entity pip 01 1" ;
+    sche:status "archived" ;
+    rdfs:seeAlso <https://w3id.org/changes/4/aldrovandi/pip/foo/1> .

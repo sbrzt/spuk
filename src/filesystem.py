@@ -9,6 +9,7 @@ from src.path_resolver import get_entity_output_files
 from src.html_renderer import HTMLRenderer
 from src.rdf_serializer import RDFSerializer
 from src.entity_model import Entity
+from config import GRAPH_SOURCE
 
 
 def clean_output_dir(output_dir: Path) -> None:
@@ -83,7 +84,11 @@ def write_documentation_html(markdown_dir: Path, output_dir: Path, renderer: HTM
 def copy_static(src_dir, dst_dir):
     os.makedirs(dst_dir, exist_ok=True)
     for item in os.listdir(src_dir):
+        if item == "data" and GRAPH_SOURCE.get("type") != "file":
+            continue
         src_path = os.path.join(src_dir, item)
         dst_path = os.path.join(dst_dir, item)
         if os.path.isdir(src_path):
             shutil.copytree(src_path, dst_path, dirs_exist_ok=True)
+        else:
+            shutil.copy2(src_path, dst_path)

@@ -82,6 +82,7 @@ TODO
   * [ ] Add literal lengths
   * [ ] Add most referenced subjects?
   * [ ] Add most referenced objects?
+  * [x] Add chart type generalisation
   * [x] Add download option
   * [x] Add visible values without hover
   * [x] **Test**: Define personalized data stats via config file
@@ -106,7 +107,7 @@ TODO
 * [x] Reengineer codebase structure
 * [x] Introduce centralized config file
 * [x] Delete /docs/ directory at generation
-* [ ] Solve problem with /docs/data/ not regenerated after a change
+* [x] Solve problem with /docs/data/ not regenerated after a change
 * [ ] Improve developer experience:
   * [x] Add dev server with file watching & caching
   * [ ] Avoid full rebuild at each change

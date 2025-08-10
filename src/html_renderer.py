@@ -39,7 +39,7 @@ class HTMLRenderer:
     
     def render_query(self) -> str:
         return self.query_template.render(
-            data_source=GRAPH_SOURCE["sparql_endpoint"] if GRAPH_SOURCE["type"] == "sparql" else GRAPH_SOURCE["file_path"],
+            data_source=GRAPH_SOURCE["sparql_endpoint"] if GRAPH_SOURCE["type"] == "sparql" else Path(*GRAPH_SOURCE["file_path"].parts[1:]),
             queries=PREDEFINED_QUERIES,
             base_url="",
             docs_pages=self.docs_pages
