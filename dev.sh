@@ -1,5 +1,5 @@
 #!/bin/bash
-# dev.sh — Start dev server with symlink to data/
+# dev.sh
 
 set -e
 
