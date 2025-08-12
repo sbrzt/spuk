@@ -31,6 +31,7 @@ class HTMLRenderer:
 
     def render_index(self, stats: GraphStats, custom_stats=None) -> str:
         return self.index_template.render(
+            title="Index",
             stats=stats, 
             custom_stats=custom_stats or {},
             base_url="",
@@ -39,6 +40,7 @@ class HTMLRenderer:
     
     def render_query(self) -> str:
         return self.query_template.render(
+            title="Query Interface",
             data_source=GRAPH_SOURCE["sparql_endpoint"] if GRAPH_SOURCE["type"] == "sparql" else Path(*GRAPH_SOURCE["file_path"].parts[1:]),
             queries=PREDEFINED_QUERIES,
             base_url="",
@@ -51,6 +53,7 @@ class HTMLRenderer:
         base_url = self._compute_base_url(entity.render_path)
         graph_data = self._get_entity_graph_data(self, entity.get_entity_subgraph())
         return self.entity_template.render(
+            title=f"{entity.uri}",
             entity=entity,
             filename=self._compute_internal_value(entity.uri),
             property_object_pairs=self._format_entity_triples(
@@ -76,6 +79,7 @@ class HTMLRenderer:
 
     def render_entities(self, entities: List[Entity]) -> str:
         return self.entities_template.render(
+            title="Entities",
             entities=entities,
             base_url="",
             docs_pages=self.docs_pages
