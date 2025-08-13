@@ -1,4 +1,4 @@
-<img src="static/img/logo_no_text.svg" alt="logo" width="300" height="auto"/>
+<img src="static/img/logo.svg" alt="logo" width="100" height="auto"/>
 
 # SPUK (Static PUblisher of Knowledge)
 
