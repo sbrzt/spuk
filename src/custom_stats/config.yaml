@@ -6,3 +6,10 @@ custom_stats:
     label: "Status Breakdown"
     type: "count_by_object"
     predicate: "http://w3id.org/sche/ma/status"
+    chart:
+      type: "bar"
+      options:
+        responsive: true
+        plugins:
+          legend:
+            display: false

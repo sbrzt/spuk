@@ -22,6 +22,7 @@ def load_custom_stats(graph, config_path=STATS_CONFIG):
             result = func(graph, predicate)
             custom_stats[name] = {
                 "label": label,
-                "data": result
+                "data": result,
+                "chart": item.get("chart", None)
             }
     return custom_stats

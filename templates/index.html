@@ -66,14 +66,32 @@
     </div>
 
     {% if custom_stats %}
-      <h2>Custom Stats</h2>
       {% for name, stat in custom_stats.items() %}
-        <h3>{{ stat.label }}</h3>
-        <ul>
-          {% for key, value in stat.data.items() %}
-              <li>{{ key }}: {{ value }}</li>
-          {% endfor %}
-        </ul>
+        {% if stat.chart %}
+          <div class="card cell content">
+            <div class="card-content">
+                <canvas id="chart-{{ name }}" width="400" height="200"></canvas>
+            </div>
+            <footer class="card-footer">
+                <a class="card-footer-item" download="top-properties-chart.png">Download</a>
+            </footer>
+          </div>
+          <script>
+      const ctx_{{ name }} = document.getElementById('chart-{{ name }}').getContext('2d');
+      new Chart(ctx_{{ name }}, {
+        type: '{{ stat.chart.type }}',
+        data: {
+          labels: {{ stat.data.keys()|list|tojson }},
+          datasets: [{
+            label: '{{ stat.label }}',
+            data: {{ stat.data.values()|list|tojson }},
+            backgroundColor: "rgba(54, 162, 235, 0.7)"
+          }]
+        },
+        options: {{ stat.chart.options|default({})|tojson }}
+      });
+    </script>
+        {% endif %}
       {% endfor %}
     {% endif %}
   </section>
