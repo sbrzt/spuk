@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/tsp/111/ob00/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin": [
+      {
+        "@type": "http://id.loc.gov/datatypes/edtf/EDTF",
+        "@value": "Y-540000000-01-01"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end": [
+      {
+        "@type": "http://id.loc.gov/datatypes/edtf/EDTF",
+        "@value": "Y-540000000-12-31"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/111/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/111/ob00/1"
+      }
+    ]
+  }
+]

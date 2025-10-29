@@ -1,0 +1,9 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.cidoc-crm.org/extensions/crmdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/104/03/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/substance_3d_painter/1> .
+
+<https://w3id.org/changes/4/aldrovandi/sfw/substance_3d_painter/1> a ns2:D14_Software ;
+    ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/substance_3d_painter/1> ;
+    ns1:P2_has_type <http://vocab.getty.edu/aat/300426696> .
+

@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/pietro_martire_d'_anghiera/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/pietro_martire_d'_anghiera/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/pietro_martire_d'_anghiera/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Pietro Martire D' Anghiera (viaf:68967770)"
+      }
+    ]
+  }
+]

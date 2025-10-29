@@ -1,0 +1,26 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/sub/narciso/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/narciso/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/narciso/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@language": "en",
+        "@value": "Narcissus"
+      },
+      {
+        "@language": "it",
+        "@value": "Narciso"
+      }
+    ]
+  }
+]

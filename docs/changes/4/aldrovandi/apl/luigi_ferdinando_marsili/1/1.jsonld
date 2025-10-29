@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/luigi_ferdinando_marsili/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Luigi Ferdinando Marsili (viaf:27075563)"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/luigi_ferdinando_marsili/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/luigi_ferdinando_marsili/1"
+      }
+    ]
+  }
+]

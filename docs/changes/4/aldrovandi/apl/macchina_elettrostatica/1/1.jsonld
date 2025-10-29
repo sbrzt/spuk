@@ -1,0 +1,26 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/sub/macchina_elettrostatica/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/macchina_elettrostatica/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/macchina_elettrostatica/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@language": "en",
+        "@value": "Electrostatic Machine"
+      },
+      {
+        "@language": "it",
+        "@value": "Macchina Elettrostatica"
+      }
+    ]
+  }
+]

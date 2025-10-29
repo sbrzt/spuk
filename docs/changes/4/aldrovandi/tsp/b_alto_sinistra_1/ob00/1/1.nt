@@ -1,0 +1,2 @@
+<https://w3id.org/changes/4/aldrovandi/tsp/b_alto_sinistra_1/ob00/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> .
+<https://w3id.org/changes/4/aldrovandi/act/b_alto_sinistra_1/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://w3id.org/changes/4/aldrovandi/tsp/b_alto_sinistra_1/ob00/1> .

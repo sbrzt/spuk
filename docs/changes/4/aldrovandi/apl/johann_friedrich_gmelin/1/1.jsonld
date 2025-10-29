@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/johann_friedrich_gmelin/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/johann_friedrich_gmelin/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/johann_friedrich_gmelin/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Johann Friedrich Gmelin (viaf:3267149296234680670008)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/allegoria/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@language": "en",
+        "@value": "Allegory"
+      },
+      {
+        "@language": "it",
+        "@value": "Allegoria"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/sub/allegoria/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/allegoria/1"
+      }
+    ]
+  }
+]

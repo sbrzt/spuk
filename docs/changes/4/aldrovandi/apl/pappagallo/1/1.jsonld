@@ -1,0 +1,26 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/pappagallo/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@language": "en",
+        "@value": "Parrot"
+      },
+      {
+        "@language": "it",
+        "@value": "Pappagallo"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/sub/pappagallo/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/pappagallo/1"
+      }
+    ]
+  }
+]

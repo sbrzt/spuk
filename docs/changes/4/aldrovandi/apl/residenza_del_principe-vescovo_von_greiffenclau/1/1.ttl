@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/residenza_del_principe-vescovo_von_greiffenclau/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/residenza_del_principe-vescovo_von_greiffenclau/1> .
+
+<https://w3id.org/changes/4/aldrovandi/apl/residenza_del_principe-vescovo_von_greiffenclau/1> a ns1:E41_Appellation ;
+    ns1:P190_has_symbolic_content "Residenza Del Principe-vescovo Von Greiffenclau" .
+

@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/nicolaes_berchem/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Nicolaes Berchem (ulan:500010297)"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/nicolaes_berchem/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/nicolaes_berchem/1"
+      }
+    ]
+  }
+]

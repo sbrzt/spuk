@@ -1,0 +1,4 @@
+<https://w3id.org/changes/4/aldrovandi/tsp/113/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "Y-420000000-12-31"^^<http://id.loc.gov/datatypes/edtf/EDTF> .
+<https://w3id.org/changes/4/aldrovandi/tsp/113/ob00/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> .
+<https://w3id.org/changes/4/aldrovandi/act/113/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://w3id.org/changes/4/aldrovandi/tsp/113/ob00/1> .
+<https://w3id.org/changes/4/aldrovandi/tsp/113/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "Y-420000000-01-01"^^<http://id.loc.gov/datatypes/edtf/EDTF> .

@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/ferdinand_van_kessel/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/ferdinand_van_kessel/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/ferdinand_van_kessel/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Ferdinand Van Kessel (ulan:500030696)"
+      }
+    ]
+  }
+]

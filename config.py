@@ -4,12 +4,12 @@ from pathlib import Path
 
 
 # --- Graph source configuration ---
-TEST_GRAPH_SOURCE = "static/data/demo_graph.ttl"
+TEST_GRAPH_SOURCE = "static/data/merged_graph_output.ttl"
 GRAPH_SOURCE = {
-    "type": "file",
+    "type": "file",                                                     # sparql | file
     "file_path": Path(TEST_GRAPH_SOURCE),
     "file_format": "turtle",
-    "sparql_endpoint": "https://chad-kg.duckdns.org/chadkg/sparql"
+    "sparql_endpoint": "https://w3id.org/dharc/sparql/chad-kg"
 }
 
 # --- Output configuration ---
@@ -17,6 +17,9 @@ OUTPUT_DIR = Path("docs/")
 TEMPLATES_DIR = "templates"
 STATIC_DIR = "static"
 DOCUMENTATION_DIR = Path("doc")
+
+# --- Modelling configuration
+TYPE_PROPERTY = "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
 
 # --- Custom stats configuration ---
 ENABLE_CUSTOM_STATS = False
@@ -33,6 +36,9 @@ PREDEFINED_QUERIES = [
         "query": "SELECT DISTINCT ?property WHERE { ?s ?property ?o } LIMIT 100"
     }
 ]
+
+# --- Data visualization configuration
+N_OBJECTS = 5
 
 # --- Entity graph configuration ---
 GRAPH_VIS_OPTIONS = {

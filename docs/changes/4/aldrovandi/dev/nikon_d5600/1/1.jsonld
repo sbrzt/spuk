@@ -1,0 +1,58 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikon_d5600/1",
+    "@type": [
+      "http://www.cidoc-crm.org/extensions/crmdig/D8_Digital_Device"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/nikon_d5600/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300266792"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_1/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikon_d5600/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/115/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikon_d5600/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/114/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikon_d5600/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/83/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikon_d5600/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/116/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/nikon_d5600/1"
+      }
+    ]
+  }
+]

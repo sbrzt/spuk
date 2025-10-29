@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/johann_feyrabend/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/johann_feyrabend/1> .
+
+<https://w3id.org/changes/4/aldrovandi/apl/johann_feyrabend/1> a ns1:E41_Appellation ;
+    ns1:P190_has_symbolic_content "Johann Feyrabend (viaf:2399145857094322922033)" .
+

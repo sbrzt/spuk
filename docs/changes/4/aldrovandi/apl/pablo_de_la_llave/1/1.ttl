@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/pablo_de_la_llave/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/pablo_de_la_llave/1> .
+
+<https://w3id.org/changes/4/aldrovandi/apl/pablo_de_la_llave/1> a ns1:E41_Appellation ;
+    ns1:P190_has_symbolic_content "Pablo De La Llave (viaf:6044314)" .
+

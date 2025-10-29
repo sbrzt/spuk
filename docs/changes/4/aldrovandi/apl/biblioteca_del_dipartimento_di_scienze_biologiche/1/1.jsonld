@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/biblioteca_del_dipartimento_di_scienze_biologiche/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Biblioteca Del Dipartimento Di Scienze Biologiche"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/biblioteca_del_dipartimento_di_scienze_biologiche/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/biblioteca_del_dipartimento_di_scienze_biologiche/1"
+      }
+    ]
+  }
+]

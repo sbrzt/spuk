@@ -1,0 +1,16 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/tsp/95/00/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/95/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/tsp/95/00/1"
+      }
+    ]
+  }
+]

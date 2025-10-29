@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/jean-baptiste-pierre-antoine_de_monet_de_lamarck/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/jean-baptiste-pierre-antoine_de_monet_de_lamarck/1> .
+
+<https://w3id.org/changes/4/aldrovandi/apl/jean-baptiste-pierre-antoine_de_monet_de_lamarck/1> a ns1:E41_Appellation ;
+    ns1:P190_has_symbolic_content "Jean-baptiste-pierre-antoine De Monet De Lamarck (viaf:41849820)" .
+

@@ -1,0 +1,24 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/collezione_delle_cere_anatomiche_luigi_cattaneo/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Collezione Delle Cere Anatomiche \"luigi Cattaneo\""
+      },
+      {
+        "@value": "Collezione Delle Cere Anatomiche \"luigi Cattaneo”"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/col/collezione_delle_cere_anatomiche_luigi_cattaneo/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/collezione_delle_cere_anatomiche_luigi_cattaneo/1"
+      }
+    ]
+  }
+]

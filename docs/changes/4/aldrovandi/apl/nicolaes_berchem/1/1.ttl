@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/nicolaes_berchem/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/nicolaes_berchem/1> .
+
+<https://w3id.org/changes/4/aldrovandi/apl/nicolaes_berchem/1> a ns1:E41_Appellation ;
+    ns1:P190_has_symbolic_content "Nicolaes Berchem (ulan:500010297)" .
+

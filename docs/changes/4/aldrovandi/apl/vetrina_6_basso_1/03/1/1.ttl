@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/mdl/vetrina_6_basso_1/03/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/vetrina_6_basso_1/03/1> .
+
+<https://w3id.org/changes/4/aldrovandi/apl/vetrina_6_basso_1/03/1> a ns1:E41_Appellation ;
+    ns1:P190_has_symbolic_content "Modello Digitale 03 oggetto vetrina_6_basso_1" .
+

@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/apl/dipartimento_di_scienze_biomediche_e_neuromotorie_di_bologna/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Dipartimento Di Scienze Biomediche E Neuromotorie Di Bologna"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/dipartimento_di_scienze_biomediche_e_neuromotorie_di_bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/dipartimento_di_scienze_biomediche_e_neuromotorie_di_bologna/1"
+      }
+    ]
+  }
+]

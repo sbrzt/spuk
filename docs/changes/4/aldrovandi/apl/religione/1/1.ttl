@@ -1,0 +1,8 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/sub/religione/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/religione/1> .
+
+<https://w3id.org/changes/4/aldrovandi/apl/religione/1> a ns1:E41_Appellation ;
+    ns1:P190_has_symbolic_content "Religion"@en,
+        "Religione"@it .
+

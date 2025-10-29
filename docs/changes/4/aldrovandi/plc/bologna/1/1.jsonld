@@ -1,0 +1,1355 @@
+[
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/27a/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/archivio_di_stato_di_bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/fisica_e_informatica_di_bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/29/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/m7/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/biblioteca_del_dipartimento_di_scienze_biologiche/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/8/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/86/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/94/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/115/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/116/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/19/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/12/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/74b/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/orto_botanico_ed_erbario_di_bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/62/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/53/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/76/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/bub/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/m3/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/31/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/27e/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/7/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/102/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/42/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/104/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/24/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/28/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/a_alto_centro/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/m4/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/66/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/105/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/97/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/67/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/41/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/biblioteca_di_matematica/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/m5/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/83/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/27b/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/110/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/46/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/90/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/44/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/74d/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/95/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/22/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/6/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/14/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/91/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/79/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/114/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/45/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/m1/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/2/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/geologiche_e_ambientali/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/82/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/16/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/93/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/33/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/81/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/34/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/17/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/100/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/10/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/54/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_civico_archeologico_di_bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/18/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/40/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/74a/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/111/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/m8/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/20/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/38/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/99/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/92/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/15/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_di_palazzo_poggi/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/64/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/9/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/75/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/11/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/101/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/m6/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/113/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/26/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/89/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/112/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/74e/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/27c/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/m2/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/13/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/25/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/106/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/47/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/5/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/a_alto_sinistra_1/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/108/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/74c/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/dipartimento_di_scienze_biomediche_e_neuromotorie_di_bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/4/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/57/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/3/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/43/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/36/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/109/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/63/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/bologna/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/1/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/10/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/100/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/101/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/102/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/103/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/104/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/105/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/106/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/107/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/108/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/109/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/11/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/110/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/111/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/112/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/113/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/114/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/115/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/116/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/12/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/13/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/14/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/15/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/16/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/17/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/18/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/19/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/2/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/20/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/22/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/24/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/25/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/26/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/27a/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/27b/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/27c/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/27e/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/27f/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/28/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/29/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/3/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/31/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/32/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/33/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/34/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/36/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/37/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/38/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/4/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/40/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/41/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/42/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/43/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/44/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/45/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/46/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/47/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/48/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/5/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/52/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/53/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/54/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/57/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/6/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/62/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/63/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/64/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/66/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/67/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/7/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/74a/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/74b/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/74c/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/74d/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/74e/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/75/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/76/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/78/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/79/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/8/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/81/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/82/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/83/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/86/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/89/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/9/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/90/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/91/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/92/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/93/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/94/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/95/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/97/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/98/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/99/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/a_alto_centro/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/a_alto_sinistra_1/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/m1/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/m2/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/m3/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/m4/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/m5/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/m6/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/m7/ob00/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/m8/ob00/1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/archivio_di_stato_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/biblioteca_del_dipartimento_di_scienze_biologiche/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/biblioteca_di_matematica/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/bub/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/dipartimento_di_scienze_biomediche_e_neuromotorie_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/fisica_e_informatica_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/geologiche_e_ambientali/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_battista_ferroni/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_rossi_eredi/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giuseppe_longhi/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/lelio_dalla_volpe/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/marco_antonio_bernia/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_civico_archeologico_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_civico_medievale_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_di_palazzo_poggi/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/nicolo_tebaldini/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/orto_botanico_ed_erbario_di_bologna/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/32/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/103/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/37/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/107/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/48/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/78/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/27f/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_civico_medievale_di_bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/52/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  }
+]

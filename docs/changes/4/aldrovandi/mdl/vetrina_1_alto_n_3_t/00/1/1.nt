@@ -1,0 +1,6 @@
+<https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_n_3_t/00/1> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://w3id.org/changes/4/aldrovandi/apl/vetrina_1_alto_n_3_t/00/1> .
+<https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_n_3_t/00/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/extensions/crmdig/D9_Data_Object> .
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_3_t/00/1> <http://www.cidoc-crm.org/extensions/crmdig/L11_had_output> <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_n_3_t/00/1> .
+<https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_3_t/01/1> <http://www.cidoc-crm.org/extensions/crmdig/L10_had_input> <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_n_3_t/00/1> .
+<https://w3id.org/changes/4/aldrovandi/itm/vetrina_1_alto_n_3_t/ob00/1> <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_n_3_t/00/1> .
+<https://w3id.org/changes/4/aldrovandi/lic/vetrina_1_alto_n_3_t/00/1> <http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <https://w3id.org/changes/4/aldrovandi/mdl/vetrina_1_alto_n_3_t/00/1> .

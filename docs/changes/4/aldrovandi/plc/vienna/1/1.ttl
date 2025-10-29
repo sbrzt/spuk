@@ -1,0 +1,11 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/acr/kunsthistorisches_museum/1> ns1:P74_has_current_or_former_residence <https://w3id.org/changes/4/aldrovandi/plc/vienna/1> .
+
+<https://w3id.org/changes/4/aldrovandi/itm/v2_5/ob00/1> ns1:P53_has_former_or_current_location <https://w3id.org/changes/4/aldrovandi/plc/vienna/1> .
+
+<https://w3id.org/changes/4/aldrovandi/plc/vienna/1> a ns1:E53_Place ;
+    ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/vienna/1> ;
+    ns1:P53i_is_former_or_current_location_of <https://w3id.org/changes/4/aldrovandi/itm/v2_5/ob00/1> ;
+    ns1:P74i_is_current_or_former_residence_of <https://w3id.org/changes/4/aldrovandi/acr/kunsthistorisches_museum/1> .
+

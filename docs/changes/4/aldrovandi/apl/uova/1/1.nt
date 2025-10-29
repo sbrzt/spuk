@@ -1,0 +1,4 @@
+<https://w3id.org/changes/4/aldrovandi/sub/uova/1> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://w3id.org/changes/4/aldrovandi/apl/uova/1> .
+<https://w3id.org/changes/4/aldrovandi/apl/uova/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Uova"@it .
+<https://w3id.org/changes/4/aldrovandi/apl/uova/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Eggs"@en .
+<https://w3id.org/changes/4/aldrovandi/apl/uova/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .

@@ -1,0 +1,25 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.cidoc-crm.org/extensions/crmdig/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/103/02/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/104/02/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/105/02/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/106/02/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/37/02/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/74b/02/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/74d/02/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/74e/02/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> .
+
+<https://w3id.org/changes/4/aldrovandi/act/92/02/1> ns2:L23_used_software_or_firmware <https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> .
+
+<https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1> a ns2:D14_Software ;
+    ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/cloudcompare/1> ;
+    ns1:P2_has_type <http://vocab.getty.edu/aat/300426696> .
+

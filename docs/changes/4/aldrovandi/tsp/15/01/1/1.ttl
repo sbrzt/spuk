@@ -1,0 +1,6 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/act/15/01/1> ns1:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/15/01/1> .
+
+<https://w3id.org/changes/4/aldrovandi/tsp/15/01/1> a ns1:E52_Time-Span .
+

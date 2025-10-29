@@ -1,0 +1,6 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://w3id.org/changes/4/aldrovandi/dev/lente_24-70_f2_8_l/1> ns1:P1_is_identified_by <https://w3id.org/changes/4/aldrovandi/apl/lente_24-70_f2_8_l/1> .
+
+<https://w3id.org/changes/4/aldrovandi/apl/lente_24-70_f2_8_l/1> a ns1:E41_Appellation .
+
