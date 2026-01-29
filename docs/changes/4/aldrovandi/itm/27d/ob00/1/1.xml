@@ -8,9 +8,6 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mnf/27d/ob00/1">
     <ns1:R7i_is_exemplified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/2/1">
-    <ns2:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1">
     <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F5_Item"/>
     <ns2:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/27d/00/1"/>
@@ -22,13 +19,16 @@
     <ns2:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/2/1"/>
     <ns2:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/bologna/1"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/2/1">
+    <ns2:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/27d/ob08/1">
+    <ns2:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/bologna/1">
     <ns2:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/27d/00/1">
     <ns3:L1_digitized rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/27d/ob08/1">
-    <ns2:P16_used_specific_object rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/27d/ob00/1"/>
   </rdf:Description>
 </rdf:RDF>

@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/sfw/instant_meshes/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/apl/instant_meshes/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/apl/instant_meshes/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
@@ -15,6 +7,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
       {
         "@value": "Instant Meshes"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/sfw/instant_meshes/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/instant_meshes/1"
       }
     ]
   }

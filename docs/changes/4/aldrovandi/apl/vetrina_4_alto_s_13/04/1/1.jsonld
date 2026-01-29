@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_alto_s_13/04/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/vetrina_4_alto_s_13/04/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/apl/vetrina_4_alto_s_13/04/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
@@ -7,14 +15,6 @@
     "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
       {
         "@value": "Modello Digitale 04 oggetto vetrina_4_alto_s_13"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_4_alto_s_13/04/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/apl/vetrina_4_alto_s_13/04/1"
       }
     ]
   }

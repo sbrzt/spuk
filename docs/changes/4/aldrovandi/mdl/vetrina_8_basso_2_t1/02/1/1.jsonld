@@ -1,16 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_basso_2_t1/02/1",
-    "@type": [
-      "http://www.cidoc-crm.org/extensions/crmdig/D9_Data_Object"
-    ],
-    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/apl/vetrina_8_basso_2_t1/02/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_basso_2_t1/02/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L11_had_output": [
       {
@@ -31,6 +20,17 @@
     "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_basso_2_t1/02/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/vetrina_8_basso_2_t1/02/1",
+    "@type": [
+      "http://www.cidoc-crm.org/extensions/crmdig/D9_Data_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/vetrina_8_basso_2_t1/02/1"
       }
     ]
   }

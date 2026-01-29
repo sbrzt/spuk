@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/acr/francesca_fabbri/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/apl/francesca_fabbri/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/apl/francesca_fabbri/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
@@ -18,6 +10,14 @@
       },
       {
         "@value": "Francesca fabbri"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/francesca_fabbri/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/francesca_fabbri/1"
       }
     ]
   }

@@ -8,20 +8,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/20/06/1",
-    "@type": [
-      "http://www.cidoc-crm.org/extensions/crmdig/D9_Data_Object"
-    ],
-    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/apl/20/06/1"
-      },
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/idf/20/mdl/06/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/lic/20/06/1",
     "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
       {
@@ -34,6 +20,20 @@
     "http://www.cidoc-crm.org/extensions/crmdig/L11_had_output": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/mdl/20/06/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/20/06/1",
+    "@type": [
+      "http://www.cidoc-crm.org/extensions/crmdig/D9_Data_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/20/06/1"
+      },
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/idf/20/mdl/06/1"
       }
     ]
   }

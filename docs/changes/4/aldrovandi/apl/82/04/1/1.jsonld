@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/82/04/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/apl/82/04/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/apl/82/04/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
@@ -15,6 +7,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
       {
         "@value": "Modello Digitale 04 oggetto 82"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/82/04/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/82/04/1"
       }
     ]
   }

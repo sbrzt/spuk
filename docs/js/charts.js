@@ -63,6 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
+        ctx.style.backgroundColor = 'rgba(255,255,255)';
+        
+
         const downloadLink = document.getElementById(`download-${id}`);
         if (downloadLink) {
             downloadLink.addEventListener("click", function () {

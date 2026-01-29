@@ -8,6 +8,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_8/ob00/1",
+    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_8/ob00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_8/ob00/1",
     "@type": [
       "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
@@ -32,14 +40,6 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/unicorno/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/v2_8/ob00/1",
-    "http://iflastandards.info/ns/lrm/lrmoo/R17_created": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_8/ob00/1"
       }
     ]
   }

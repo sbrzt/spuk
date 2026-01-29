@@ -8,13 +8,10 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/64/00/1",
-    "@type": [
-      "http://www.cidoc-crm.org/extensions/crmdig/D9_Data_Object"
-    ],
-    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/64/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/apl/64/00/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/64/00/1"
       }
     ]
   },
@@ -35,10 +32,13 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/64/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/mdl/64/00/1",
+    "@type": [
+      "http://www.cidoc-crm.org/extensions/crmdig/D9_Data_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
       {
-        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/64/00/1"
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl/64/00/1"
       }
     ]
   }

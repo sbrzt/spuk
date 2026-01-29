@@ -1,21 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/113/ob07/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_capellini/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/112/ob07/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_capellini/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_capellini/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
@@ -31,6 +15,22 @@
       },
       {
         "@id": "http://viaf.org/viaf/69232941"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/112/ob07/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_capellini/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/113/ob07/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/giovanni_capellini/1"
       }
     ]
   }

@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_di_storia_naturale_di_verona/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/verona/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/plc/verona/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
@@ -31,6 +23,14 @@
   {
     "@id": "https://w3id.org/changes/4/aldrovandi/itm/35/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/verona/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/museo_di_storia_naturale_di_verona/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/verona/1"
       }

@@ -21,16 +21,16 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/v2_7/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/reggia_di_caserta/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/caserta/1"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/acr/reggia_di_caserta/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/v2_7/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/caserta/1"
       }

@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:ns1="http://www.cidoc-crm.org/cidoc-crm/"
-   xmlns:ns2="http://www.cidoc-crm.org/extensions/crmdig/"
+   xmlns:ns1="http://www.cidoc-crm.org/extensions/crmdig/"
+   xmlns:ns2="http://www.cidoc-crm.org/cidoc-crm/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"/>
-    <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/apl/cloudcompare/1"/>
-    <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300426696"/>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74e/02/1">
+    <ns1:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/105/02/1">
-    <ns2:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/106/02/1">
-    <ns2:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74d/02/1">
-    <ns2:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
+    <ns1:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/37/02/1">
-    <ns2:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/104/02/1">
-    <ns2:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74e/02/1">
-    <ns2:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74b/02/1">
-    <ns2:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/103/02/1">
-    <ns2:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
+    <ns1:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/92/02/1">
-    <ns2:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
+    <ns1:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"/>
+    <ns2:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/apl/cloudcompare/1"/>
+    <ns2:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300426696"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/104/02/1">
+    <ns1:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74d/02/1">
+    <ns1:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/106/02/1">
+    <ns1:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/103/02/1">
+    <ns1:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/74b/02/1">
+    <ns1:L23_used_software_or_firmware rdf:resource="https://w3id.org/changes/4/aldrovandi/sfw/cloudcompare/1"/>
   </rdf:Description>
 </rdf:RDF>

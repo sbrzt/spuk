@@ -1,5 +1,45 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_3_alto_s_1_t/01/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_13/02/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_n_2_t/01/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_1/01/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_2_t/01/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_2/03/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
@@ -8,7 +48,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_3_alto_s_1_t/02/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_2_t/02/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
@@ -24,23 +64,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_13/01/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_2/01/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_1/01/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_n_1_t/02/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
@@ -72,7 +96,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_n_1_t/01/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_2/02/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
@@ -88,62 +112,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_2_t/01/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_2_t/02/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_3_alto_s_1_t/01/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_14/01/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_2/02/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_13/02/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_1/02/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_1/02/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
@@ -152,7 +120,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_1/01/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_3_alto_s_1_t/02/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
@@ -168,39 +136,23 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_n_2_t/02/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_n_2_t/01/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_2_t/01/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_n_1_t/02/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_2/02/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_1/02/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_14/01/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
@@ -216,7 +168,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_2_t/02/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_1/01/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
@@ -224,7 +176,55 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_1/01/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_2_t/01/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_2/01/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_n_2_t/02/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/a_alto_sinistra_1/01/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_n_2_t/02/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_alto_n_1_t/01/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_13/01/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/artec_studio_19/1"

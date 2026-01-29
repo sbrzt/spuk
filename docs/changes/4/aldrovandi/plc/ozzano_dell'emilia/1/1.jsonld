@@ -1,7 +1,47 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/87/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/39/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/88/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/85/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/84/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/77/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
       }
@@ -44,47 +84,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/39/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/77/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/85/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/84/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/88/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/87/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"

@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_3/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sub/europa/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/sub/europa/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
@@ -24,6 +16,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/1/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sub/europa/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/exp/7/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/1/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/v2_3/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/europa/1"

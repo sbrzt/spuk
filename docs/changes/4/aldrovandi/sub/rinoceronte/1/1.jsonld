@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_2_basso_t/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_2_basso/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/rinoceronte/1"
@@ -8,7 +8,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_2_basso/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/exp/vetrina_2_basso_t/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P129_is_about": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sub/rinoceronte/1"

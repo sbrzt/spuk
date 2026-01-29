@@ -1,4 +1,4 @@
+<https://w3id.org/changes/4/aldrovandi/apl/delfino/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Delfino"@it .
 <https://w3id.org/changes/4/aldrovandi/apl/delfino/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
 <https://w3id.org/changes/4/aldrovandi/apl/delfino/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Dolphin"@en .
 <https://w3id.org/changes/4/aldrovandi/sub/delfino/1> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://w3id.org/changes/4/aldrovandi/apl/delfino/1> .
-<https://w3id.org/changes/4/aldrovandi/apl/delfino/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Delfino"@it .

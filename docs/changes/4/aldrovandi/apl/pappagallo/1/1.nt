@@ -1,4 +1,4 @@
-<https://w3id.org/changes/4/aldrovandi/apl/pappagallo/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Parrot"@en .
-<https://w3id.org/changes/4/aldrovandi/apl/pappagallo/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Pappagallo"@it .
-<https://w3id.org/changes/4/aldrovandi/apl/pappagallo/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
 <https://w3id.org/changes/4/aldrovandi/sub/pappagallo/1> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://w3id.org/changes/4/aldrovandi/apl/pappagallo/1> .
+<https://w3id.org/changes/4/aldrovandi/apl/pappagallo/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Parrot"@en .
+<https://w3id.org/changes/4/aldrovandi/apl/pappagallo/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
+<https://w3id.org/changes/4/aldrovandi/apl/pappagallo/1> <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Pappagallo"@it .

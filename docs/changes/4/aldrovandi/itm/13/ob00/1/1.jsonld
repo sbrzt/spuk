@@ -8,22 +8,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/13/00/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L1_digitized": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/13/ob00/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/plc/1/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/13/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1",
     "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
       {
@@ -77,6 +61,22 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/1/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/13/ob00/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/13/00/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L1_digitized": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/13/ob00/1"
       }
     ]
   }

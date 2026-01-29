@@ -1,15 +1,7 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/24/ob03/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/24/ob04/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/acr/girolamo_porro/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/plc/venezia/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/girolamo_porro/1"
       }
@@ -32,8 +24,16 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/24/ob04/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/24/ob03/1",
     "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/acr/girolamo_porro/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/venezia/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/girolamo_porro/1"
       }

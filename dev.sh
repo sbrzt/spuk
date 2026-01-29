@@ -13,8 +13,8 @@ if lsof -iTCP:8000 -sTCP:LISTEN -t >/dev/null; then
 fi
 
 
-echo "[dev.sh] Running initial build..."
-uv run main.py
+#echo "[dev.sh] Running initial build..."
+#uv run main.py
 
 echo "[▶] Starting dev server..."
 uv run server.py

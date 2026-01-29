@@ -7,7 +7,13 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/apl/stefano_sorrentino/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/m7/00/1">
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/m2/00/1">
+    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/stefano_sorrentino/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/m5/00/1">
+    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/stefano_sorrentino/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/45/00/1">
     <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/stefano_sorrentino/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/m3/00/1">
@@ -16,13 +22,7 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/vetrina_7_alto_n_1/00/1">
     <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/stefano_sorrentino/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/m2/00/1">
-    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/stefano_sorrentino/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/m5/00/1">
-    <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/stefano_sorrentino/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/45/00/1">
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/m7/00/1">
     <ns1:P14_carried_out_by rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/stefano_sorrentino/1"/>
   </rdf:Description>
 </rdf:RDF>

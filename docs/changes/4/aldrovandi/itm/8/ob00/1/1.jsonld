@@ -1,21 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/plc/1/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/8/ob00/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/8/ob08/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/8/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1",
     "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
       {
@@ -65,6 +49,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/plc/1/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/8/ob00/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/mnf/8/ob00/1",
     "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by": [
       {
@@ -75,6 +67,14 @@
   {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/8/00/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L1_digitized": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/8/ob00/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/8/ob08/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/itm/8/ob00/1"
       }

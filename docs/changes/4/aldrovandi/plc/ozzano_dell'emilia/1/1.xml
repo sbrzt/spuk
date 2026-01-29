@@ -3,21 +3,6 @@
    xmlns:ns1="http://www.cidoc-crm.org/cidoc-crm/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1">
-    <ns1:P74_has_current_or_former_residence rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/39/ob00/1">
-    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/87/ob00/1">
-    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/77/ob00/1">
-    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/85/ob00/1">
-    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/apl/ozzano_dell'emilia/1"/>
@@ -29,10 +14,25 @@
     <ns1:P53i_is_former_or_current_location_of rdf:resource="https://w3id.org/changes/4/aldrovandi/itm/88/ob00/1"/>
     <ns1:P74i_is_current_or_former_residence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/84/ob00/1">
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/77/ob00/1">
+    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/39/ob00/1">
+    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/acr/sistema_museale_di_ateneo_di_bologna/1">
+    <ns1:P74_has_current_or_former_residence rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/87/ob00/1">
     <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/88/ob00/1">
+    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/85/ob00/1">
+    <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/84/ob00/1">
     <ns1:P53_has_former_or_current_location rdf:resource="https://w3id.org/changes/4/aldrovandi/plc/ozzano_dell'emilia/1"/>
   </rdf:Description>
 </rdf:RDF>

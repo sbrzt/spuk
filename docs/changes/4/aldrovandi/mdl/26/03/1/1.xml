@@ -7,12 +7,12 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/26/04/1">
     <ns1:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/26/03/1"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/26/03/1">
+    <ns2:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/26/03/1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/mdl/26/03/1">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D9_Data_Object"/>
     <ns2:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/apl/26/03/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/26/03/1">
-    <ns2:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/26/03/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/26/03/1">
     <ns1:L11_had_output rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/26/03/1"/>

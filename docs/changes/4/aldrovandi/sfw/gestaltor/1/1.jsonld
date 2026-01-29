@@ -1,22 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/114/04/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/93/04/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/83/04/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_1/04/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
@@ -32,14 +16,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_2/04/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/116/04/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
@@ -48,7 +24,79 @@
     ]
   },
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/114/04/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_n_2/04/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/30/04/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_3/04/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/93/04/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/115/04/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/41/04/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/83/04/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_2/04/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/100/04/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
@@ -68,54 +116,6 @@
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
       {
         "@id": "http://vocab.getty.edu/aat/300426696"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/100/04/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_3/04/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/41/04/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_1/04/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_8_alto_s_2/04/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/115/04/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/sfw/gestaltor/1"
       }
     ]
   }

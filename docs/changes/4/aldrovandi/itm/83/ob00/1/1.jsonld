@@ -24,14 +24,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/83/00/1",
-    "http://www.cidoc-crm.org/extensions/crmdig/L1_digitized": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/itm/83/ob00/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/mnf/83/ob00/1",
     "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by": [
       {
@@ -77,6 +69,14 @@
       },
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/bologna/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/83/00/1",
+    "http://www.cidoc-crm.org/extensions/crmdig/L1_digitized": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/itm/83/ob00/1"
       }
     ]
   }

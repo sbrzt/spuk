@@ -1,14 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/v2_8/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/amsterdam/1"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/v2_6/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/amsterdam/1"
@@ -46,7 +38,15 @@
     ]
   },
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/v2_6/ob00/1",
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/v2_9/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/amsterdam/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/v2_8/ob00/1",
     "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/plc/amsterdam/1"

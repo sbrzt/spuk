@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/itm/21/ob00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bergamo/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/acr/accademia_carrara/1",
     "http://www.cidoc-crm.org/cidoc-crm/P74_has_current_or_former_residence": [
       {
@@ -33,6 +25,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P74i_is_current_or_former_residence_of": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/acr/accademia_carrara/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/itm/21/ob00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/plc/bergamo/1"
       }
     ]
   }

@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/lic/vetrina_2_basso/02/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/apl-lic/vetrina_2_basso/02/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/apl-lic/vetrina_2_basso/02/1",
     "@type": [
       "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
@@ -8,14 +16,6 @@
       {
         "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
         "@value": "by-nc 4.0"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/lic/vetrina_2_basso/02/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/apl-lic/vetrina_2_basso/02/1"
       }
     ]
   }

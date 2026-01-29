@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_2/00/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/dev/artec_leo/1"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/changes/4/aldrovandi/dev/artec_leo/1",
     "@type": [
       "http://www.cidoc-crm.org/extensions/crmdig/D8_Digital_Device"
@@ -12,14 +20,6 @@
     "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
       {
         "@id": "http://vocab.getty.edu/aat/300429747"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/changes/4/aldrovandi/act/vetrina_6_basso_2/00/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/dev/artec_leo/1"
       }
     ]
   }

@@ -14,10 +14,10 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/8/ob00/1">
     <ns2:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/8/00/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/8/00/1">
-    <ns2:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/8/00/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/8/01/1">
     <ns1:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/8/00/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/8/00/1">
+    <ns2:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/8/00/1"/>
   </rdf:Description>
 </rdf:RDF>

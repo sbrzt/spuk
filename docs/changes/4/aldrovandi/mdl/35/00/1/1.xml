@@ -7,8 +7,8 @@
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/35/00/1">
     <ns1:L11_had_output rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/35/00/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/35/ob00/1">
-    <ns2:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/35/00/1"/>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/35/00/1">
+    <ns2:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/35/00/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/35/01/1">
     <ns1:L10_had_input rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/35/00/1"/>
@@ -17,7 +17,7 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D9_Data_Object"/>
     <ns2:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/apl/35/00/1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/lic/35/00/1">
-    <ns2:P67_refers_to rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/35/00/1"/>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/itm/35/ob00/1">
+    <ns2:P130i_features_are_also_found_on rdf:resource="https://w3id.org/changes/4/aldrovandi/mdl/35/00/1"/>
   </rdf:Description>
 </rdf:RDF>

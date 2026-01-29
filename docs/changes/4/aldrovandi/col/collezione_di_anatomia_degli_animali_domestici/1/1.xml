@@ -8,16 +8,16 @@
     <ns1:P1_is_identified_by rdf:resource="https://w3id.org/changes/4/aldrovandi/apl/collezione_di_anatomia_degli_animali_domestici/1"/>
     <ns1:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300025976"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/77/ob08/1">
-    <ns1:P12_occurred_in_the_presence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/col/collezione_di_anatomia_degli_animali_domestici/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/84/ob08/1">
-    <ns1:P12_occurred_in_the_presence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/col/collezione_di_anatomia_degli_animali_domestici/1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/88/ob08/1">
     <ns1:P12_occurred_in_the_presence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/col/collezione_di_anatomia_degli_animali_domestici/1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/87/ob08/1">
+    <ns1:P12_occurred_in_the_presence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/col/collezione_di_anatomia_degli_animali_domestici/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/77/ob08/1">
+    <ns1:P12_occurred_in_the_presence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/col/collezione_di_anatomia_degli_animali_domestici/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/changes/4/aldrovandi/act/84/ob08/1">
     <ns1:P12_occurred_in_the_presence_of rdf:resource="https://w3id.org/changes/4/aldrovandi/col/collezione_di_anatomia_degli_animali_domestici/1"/>
   </rdf:Description>
 </rdf:RDF>

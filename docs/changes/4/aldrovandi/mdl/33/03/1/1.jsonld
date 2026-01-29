@@ -1,13 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/changes/4/aldrovandi/lic/33/03/1",
-    "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
-      {
-        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/33/03/1"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/changes/4/aldrovandi/act/33/03/1",
     "http://www.cidoc-crm.org/extensions/crmdig/L11_had_output": [
       {
@@ -23,6 +15,14 @@
     "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
       {
         "@id": "https://w3id.org/changes/4/aldrovandi/apl/33/03/1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/changes/4/aldrovandi/lic/33/03/1",
+    "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
+      {
+        "@id": "https://w3id.org/changes/4/aldrovandi/mdl/33/03/1"
       }
     ]
   },
