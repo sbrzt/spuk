@@ -2,25 +2,35 @@
 
 import os
 from livereload import Server, shell
+from src.builder import SiteBuilder
 
 
 ROOT_DIR = os.path.abspath(".")
 DOCS_DIR = os.path.join(ROOT_DIR, "docs")
+DEV_ENTITY_LIMIT = 50
+
 BUILD_COMMAND = "python main.py"
 WATCH_DIRS = ["data", "templates", "static", "src", "doc"]
 
 
 def main():
+    builder = SiteBuilder()
+    builder.load_data()
+    builder.build_static()
+    builder.build_content(limit=DEV_ENTITY_LIMIT)
     server = Server()
-    run_build = shell(BUILD_COMMAND, cwd=ROOT_DIR)
-    for folder_name in WATCH_DIRS:
-        folder_path = os.path.join(ROOT_DIR, folder_name)
-        if os.path.exists(folder_path):
-            glob_path = os.path.join(folder_path, "**/*")
-            server.watch(glob_path, run_build)
-        else:
-            print(f"[warning] Folder '{folder_name}' not found, skipping.")
-    print(f"[livereload] Serving files from: {DOCS_DIR}")
+
+    def on_static_change():
+        builder.build_static()
+    
+    def on_code_change():
+        builder.renderer.env.cache = {}
+        builder.build_content(limit=DEV_ENTITY_LIMIT)
+   
+    server.watch(os.path.join(ROOT_DIR, "static/"), on_static_change)
+    server.watch(os.path.join(ROOT_DIR, "templates/"), on_code_change)
+    #server.watch(os.path.join(ROOT_DIR, "src/"), on_code_change)
+    print(f"Serving files from: {DOCS_DIR}")
     server.serve(
         root=DOCS_DIR, 
         port=8000, 
