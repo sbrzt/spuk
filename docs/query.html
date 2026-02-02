@@ -183,35 +183,59 @@ z"/>
 
 <section class="section">
   <div class="container">
+    <div class="box">
 
-    <div>
-      <p><strong>Data Source:</strong> <code id="data-source">data/merged_graph_output.ttl</code></p>
-    </div>
+      <div class="field">
+      <fieldset disabled>
+        <div class="field is-horizontal">
+          <div class="field-label is-medium">
+            <label class="label">Data source</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input id="data-source" class="input" type="text" placeholder="data/merged_graph_output.ttl">
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      </div>
 
-    <!-- Query selector -->
-    <div class="field">
-      <label class="label">Choose a query...</label>
-      <div class="control">
-        <div class="select">
-          <select id="query-selector">
-            <option value="">-- Select a predefined query --</option>
-            
-              <option value="SELECT DISTINCT ?class WHERE { ?s a ?class } LIMIT 100">All classes</option>
-            
-              <option value="SELECT DISTINCT ?property WHERE { ?s ?property ?o } LIMIT 100">All properties</option>
-            
-          </select>
+      <div class="field is-horizontal">
+        <div class="field-label is-medium">
+          <label class="label">Choose a query...</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <div class="select">
+                <select id="query-selector">
+                  <option value="">-- Select a predefined query --</option>
+                  
+                    <option value="SELECT DISTINCT ?class WHERE { ?s a ?class } LIMIT 100">All classes</option>
+                  
+                    <option value="SELECT DISTINCT ?property WHERE { ?s ?property ?o } LIMIT 100">All properties</option>
+                  
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Query textarea -->
-    <div class="field">
-      <label class="label">... Or write your own</label>
-      <div class="control">
-        <textarea id="sparql-query" class="textarea" rows="10" placeholder="Write your query here..."></textarea>
+      <div class="field is-horizontal">
+        <div class="field-label is-medium">
+          <label class="label">... Or write your own</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <textarea id="sparql-query" class="textarea" rows="10" placeholder="Write your query here..."></textarea>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
     <!-- Run button -->
     <div class="field">
@@ -219,12 +243,14 @@ z"/>
         <button id="run-query" class="button is-warning">Run</button>
       </div>
     </div>
+  </div>
 
     <!-- Results -->
     <div class="box">
       <h4 class="title is-5">Results</h4>
       <div id="query-results" class="table-container"></div>
     </div>
+
   </div>
 </section>
 
