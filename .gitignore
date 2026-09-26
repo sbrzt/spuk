@@ -1,3 +1,5 @@
 .venv/
 .pytest_cache
 __pycache__
+# generated site output (built in CI)
+docs/

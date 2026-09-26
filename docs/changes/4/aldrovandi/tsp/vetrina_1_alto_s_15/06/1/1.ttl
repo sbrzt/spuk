@@ -1,9 +1,0 @@
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://w3id.org/changes/4/aldrovandi/act/vetrina_1_alto_s_15/06/1> ns1:P4_has_time-span <https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_alto_s_15/06/1> .
-
-<https://w3id.org/changes/4/aldrovandi/tsp/vetrina_1_alto_s_15/06/1> a ns1:E52_Time-Span ;
-    ns1:P82a_begin_of_the_begin "2023-11-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:P82b_end_of_the_end "2023-11-22T23:59:59+00:00"^^xsd:dateTime .
-
