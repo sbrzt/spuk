@@ -6,73 +6,82 @@
 
 ## Description
 
-SPUK is a Static Site Generator (SSG) designed for RDF Knowledge Graphs. It transforms RDF data into a browsable, static HTML website.
+SPUK is a Static Site Generator (SSG) designed for RDF Knowledge Graphs. It transforms RDF data into a browsable, static HTML website: entity pages, indexes with pagination and search, data visualizations, a SPARQL query interface, and optional Markdown documentation pages.
 
 ## Live Demo
 
 https://sbrzt.github.io/spuk/
 
+## Requirements
+
+* Python >= 3.11
+* [uv](https://docs.astral.sh/uv/) for dependency management
+
 ## Installation
 
-1. Create a virtual environment to manage the project's dependencies:
+1. Clone repo and enter it:
 
     ```bash
-    TODO
+    git clone https://github.com/sbrzt/spuk.git
+    cd spuk
     ```
 
-2. Activate the virtual environment:
+2. Install dependencies (uv creates and manages the virtual environment automatically):
 
-    * On Windows:
-    
-        ```
-        .\.venv\Scripts\activate
-        ```
-
-    * On macOS and Linux:
-
-        ```
-        source .venv/bin/activate
-        ```
-
-3. Install the required dependencies:
-
+    ```bash
+    uv sync
     ```
-    TODO
-    ```
+
+## Configuration
+
+All generation options live in `config.toml`:
+
+* `[graph_source]`: RDF input, either a local `file_path` (turtle, etc.) or a `sparql_endpoint`.
+* `[output]`: output/templates/static/documentation directory paths.
+* `[modelling]`: RDF property used to type entities.
+* `[custom_stats]`: enable and point to a custom stats config (`src/custom_stats/config.yaml`).
+* `[data_viz]`: chart parameters (e.g. `n_objects`).
+* `[theme.colors]`: site palette (`primary`, `link`, `info`, `success`, `warning`, `danger`, `chart`), each a `#rrggbb` hex string.
+* `[theme.hero.*]`: per-page hero: solid color from `theme.colors`, or an image path inside `static/`.
+* `[[predefined_queries]]`: SPARQL presets shown on the query page.
+* `[graph_vis_options.*]`: layout/physics options for the entity graph visualization.
 
 ## Usage
 
-SPUK generates static HTML pages from an RDF Knowledge Graph (KG), allowing users to explore the data through a web browser.
+### Full build
 
-### Start the site
+Generates the complete static site into the output directory (`build` by default):
 
-TODO
+```bash
+uv run main.py
+```
 
-### Examples
+### Development server
 
-TODO
+Starts a dev server with file watching, auto-reload and a limited entity count for fast rebuilds:
+
+```bash
+./dev.sh
+```
+
+This runs `uv run server.py`, which watches `static/`, `templates/`, `src/` and `documentation/`, rebuilding only what changed, and serves the site with live reload.
 
 ## Testing
 
-TODO
+Run the test suite with:
+
+```bash
+uv run pytest
+```
+
+Tests live under `tests/` and cover the RDF loader, entity model, filesystem helpers, path resolver, stats collector and custom stats.
 
 ---
 
-## 🚧 Roadmap
+## Roadmap
 
-### 🧠 Entity Pages
+### Indexes & Listings
 
-* [x] Integrate graph visualization
-* [x] Show directed property relationships
-* [x] Display subject–property triples
-
-### 📂 Indexes & Listings
-
-* [x] Implement pagination
-  * [x] Optimize pagination
-  * [x] Clean entities.html once dev server works
-* [x] Implement search functionality
-* [x] Improve entity listing layout
 * [ ] Enhance data visualizations:
   * [ ] Add literal components (datatypes and languages)
   * [ ] Add subject RDF node types
@@ -82,38 +91,17 @@ TODO
   * [ ] Add literal lengths
   * [ ] Add most referenced subjects?
   * [ ] Add most referenced objects?
-  * [x] Add chart type generalisation
-  * [x] Add download option
-  * [x] Add visible values without hover
-  * [x] **Test**: Define personalized data stats via config file
-  * [ ] **Test**: Define personalized data charts via config file
+  * [ ] Define personalized data charts via config file
 * [ ] Consider listing entity properties
 
-### 📚 Documentation
+### Documentation
 
-* [x] Add optional documentation pages
-  * [x] Add markdown support
 * [ ] Improve internal documentation:
   * [ ] Add docstrings
   * [ ] Add README files
 
-### 🔍 Query Interface
+### General Improvements
 
-* [x] Create query page
-* [x] Allow SPARQL query presets via config file
-
-### ⚙️ General Improvements
-
-* [x] Reengineer codebase structure
-* [x] Introduce centralized config file
-* [x] Delete /docs/ directory at generation
-* [x] Solve problem with /docs/data/ not regenerated after a change
-* [x] Improve developer experience:
-  * [x] Add dev server with file watching & caching
-  * [x] Avoid full rebuild at each change
-  * [x] Enable auto-reload on changes
-  * [ ] Add dev-specific config parameters
-* [x] Redesign footer
 * [ ] Consider adding API support for advanced use cases
 * [ ] Add CITATION.cff
 
