@@ -69,9 +69,9 @@ TODO
 ### 📂 Indexes & Listings
 
 * [x] Implement pagination
-  * [ ] Optimize pagination
-  * [ ] Clean entities.html once dev server works
-* [ ] Implement search functionality
+  * [x] Optimize pagination
+  * [x] Clean entities.html once dev server works
+* [x] Implement search functionality
 * [x] Improve entity listing layout
 * [ ] Enhance data visualizations:
   * [ ] Add literal components (datatypes and languages)
@@ -108,10 +108,10 @@ TODO
 * [x] Introduce centralized config file
 * [x] Delete /docs/ directory at generation
 * [x] Solve problem with /docs/data/ not regenerated after a change
-* [ ] Improve developer experience:
+* [x] Improve developer experience:
   * [x] Add dev server with file watching & caching
-  * [ ] Avoid full rebuild at each change
-  * [ ] Enable auto-reload on changes
+  * [x] Avoid full rebuild at each change
+  * [x] Enable auto-reload on changes
   * [ ] Add dev-specific config parameters
 * [x] Redesign footer
 * [ ] Consider adding API support for advanced use cases

@@ -5,8 +5,39 @@ lang="en">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title }}</title>
-        <link rel="stylesheet" href="{{ base_url }}css/style.css">
+        <link rel="stylesheet" href="{{ base_url }}css/style.css?v={{ asset_version }}">
         <link rel="icon" type="image/x-icon" href="{{ base_url }}img/logo.svg">
+        <style>
+            :root {
+                --site-text-color: #333;
+                {% for name in ["primary", "link", "info", "success", "warning", "danger"] %}
+                --bulma-{{ name }}-h: {{ theme_hsl[name].h }};
+                --bulma-{{ name }}-s: {{ theme_hsl[name].s }};
+                --bulma-{{ name }}-l: {{ theme_hsl[name].l }};
+                {% endfor %}
+            }
+
+            /* Bulma derives its own <a> text color (including for nav,
+               pagination, and card-footer links) through an internal chain
+               separate from the -h/-s/-l variables above, so it doesn't
+               reliably follow them. Force it directly on every plain link;
+               .button/.tag are excluded since those carry their own
+               semantic is-* color (e.g. a warning button) and already
+               recolor correctly from the variables. Navbar and pagination
+               links are also excluded: they read as regular text, not
+               colored links. !important is needed because some of Bulma's
+               own link selectors outrank this one. */
+            a:not(.button, .tag, .navbar-item, .navbar-link, .pagination-link, .pagination-previous, .pagination-next) {
+                color: {{ theme.colors.link }} !important;
+            }
+
+            .navbar a,
+            .pagination-link,
+            .pagination-previous,
+            .pagination-next {
+                color: var(--site-text-color) !important;
+            }
+        </style>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     </head>
@@ -16,7 +47,7 @@ lang="en">
         {% endblock %}
         {% include "footer.html" %}
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script>window.THEME_CHART_COLOR = {{ theme.colors.chart | tojson }};</script>
         <script src="{{ base_url }}js/charts.js"></script>
-        <script src="{{ base_url }}js/navigation.js"></script>
     </body>
 </html>

@@ -1,13 +1,9 @@
 {% extends "base.html" %}
-  
+{% from "_hero.html" import render_hero %}
+
   {% block content %}
-  
-  <section class="hero is-large is-info">
-    <div class="hero-body">
-      <p class="title">Overview</p>
-      <p class="subtitle">Dataset information and statistics</p>
-    </div>
-  </section>
+
+  {{ render_hero("Overview", "Dataset information and statistics", "index", base_url) }}
 
   <section class="section">
     <div class="grid">

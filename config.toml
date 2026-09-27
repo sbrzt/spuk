@@ -1,0 +1,102 @@
+# config.toml
+# Site generator configuration. Loaded by config.py at import time.
+
+[graph_source]
+type = "file"                                                     # sparql | file
+file_path = "static/data/merged_graph_output.ttl"
+file_format = "turtle"
+sparql_endpoint = "https://w3id.org/dharc/sparql/chad-kg"
+
+[output]
+output_dir = "build"
+templates_dir = "templates"
+static_dir = "static"
+documentation_dir = "documentation"
+
+[modelling]
+type_property = "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+
+[custom_stats]
+enabled = false
+config_path = "src/custom_stats/config.yaml"
+
+[data_viz]
+n_objects = 5
+
+# --- Theme configuration ---
+# Colors must be a "#rrggbb" hex string: they're converted to the h/s/l
+# custom properties Bulma's color system is built from (chart is the
+# exception, passed straight to Chart.js, so any valid CSS color works there).
+[theme.colors]
+primary = "#3bd3e7"
+link = "#00b4cc"
+info = "#3bd3e7"
+success = "#3bd3e7"
+warning = "#3bd3e7"
+danger = "#f14668"
+chart = "#3bd3e7"
+
+# Each hero section is either a solid color drawn from [theme.colors] above
+# (type = "color", value = one of primary/link/info/success/warning/danger),
+# or an image (type = "image", value = a path inside static/, e.g. "img/hero.jpg").
+# Image heroes always get a dark overlay and white text so the title stays
+# readable regardless of the picture.
+[theme.hero.index]
+type = "color"
+value = "warning"
+
+[theme.hero.entities]
+type = "color"
+value = "warning"
+
+[theme.hero.query]
+type = "color"
+value = "warning"
+
+[theme.hero.entity]
+type = "color"
+value = "warning"
+
+[theme.hero.documentation]
+type = "color"
+value = "warning"
+
+[[predefined_queries]]
+name = "All classes"
+query = "SELECT DISTINCT ?class WHERE { ?s a ?class } LIMIT 100"
+
+[[predefined_queries]]
+name = "All properties"
+query = "SELECT DISTINCT ?property WHERE { ?s ?property ?o } LIMIT 100"
+
+[graph_vis_options.layout]
+improvedLayout = true
+
+[graph_vis_options.physics]
+enabled = true
+solver = "repulsion"
+
+[graph_vis_options.physics.repulsion]
+nodeDistance = 200
+springLength = 200
+springConstant = 0.03
+damping = 0.09
+
+[graph_vis_options.physics.stabilization]
+enabled = true
+iterations = 250
+fit = true
+
+[graph_vis_options.nodes]
+shape = "dot"
+size = 12
+
+[graph_vis_options.nodes.font]
+size = 14
+
+[graph_vis_options.edges]
+arrows = "to"
+
+[graph_vis_options.edges.font]
+align = "middle"
+size = 12

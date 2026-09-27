@@ -1,13 +1,9 @@
 {% extends "base.html" %}
+{% from "_hero.html" import render_hero %}
 
 {% block content %}
 
-  <section class="hero is-large is-primary">
-    <div class="hero-body">
-      <p class="title">{{ entity.uri }}</p>
-      <p class="subtitle">Entity information and formats</p>
-    </div>
-  </section>
+  {{ render_hero(entity.uri, "Entity information and formats", "entity", base_url) }}
 
   <section class="section">
     <a class="button block" href="{{ base_url }}entities.html">
@@ -20,7 +16,7 @@
     <div class="fixed-grid">
       <div class="grid has-2-cols">
         <div class="cell">
-          <h2 class="title is-2">Entity info</h2>
+          <h2 class="title is-2">Entity information</h2>
           <div class="block">
             <ion-icon name="cube-outline"></ion-icon>
             <strong>Is a:</strong>
@@ -31,49 +27,65 @@
               {% endfor %}
           </div>
 
-          <table class="table is-hoverable">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th>Object</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for pair in property_object_pairs %}
-              <tr>
-                <td>
-                  <a href="{{ pair.property_uri }}" target="_blank">
-                    {{ pair.property_label }}
-                    <ion-icon name="open-outline"></ion-icon>
-                  </a>
-                </td>
-                <td>
-                  {% if pair.is_literal %}
-                    {{ pair.value }}
-                  {% else %}
-                    {% if pair.is_internal %}
-                      <a href="{{ pair.internal_href }}.html">
-                        {{ pair.value }}
-                        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                      </a>
-                    {% else %}
-                      <a href="{{ pair.value }}.html" target="_blank">
-                        {{ pair.value }}
+          {% if property_object_pairs %}
+          <div class="card cell content">
+            <div class="card-content">
+          <h3 class="title is-3">Is subject of</h3>
+              <table class="table is-hoverable">
+                <thead>
+                  <tr>
+                    <th>Subject</th>
+                    <th>Property</th>
+                    <th>Object</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for pair in property_object_pairs %}
+                  <tr>
+                    <td>
+                      This
+                    </td>
+                    <td>
+                      <a href="{{ pair.property_uri }}" target="_blank">
+                        {{ pair.property_label }}
                         <ion-icon name="open-outline"></ion-icon>
                       </a>
-                    {% endif %}
-                  {% endif %}
-                </td>
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
+                    </td>
+                    <td>
+                      {% if pair.is_literal %}
+                        {{ pair.value }}
+                      {% else %}
+                        {% if pair.is_internal %}
+                          <a href="{{ pair.internal_href }}.html">
+                            {{ pair.value }}
+                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                          </a>
+                        {% else %}
+                          <a href="{{ pair.value }}.html" target="_blank">
+                            {{ pair.value }}
+                            <ion-icon name="open-outline"></ion-icon>
+                          </a>
+                        {% endif %}
+                      {% endif %}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {% endif %}
 
+          {% if subject_property_pairs %}
+          <div class="card cell content">
+            <div class="card-content">
+          <h3 class="title is-3">Is object of</h3>
           <table class="table is-hoverable">
             <thead>
               <tr>
                 <th>Subject</th>
                 <th>Property</th>
+                <th>Object</th>
               </tr>
             </thead>
             <tbody>
@@ -98,12 +110,20 @@
                     <ion-icon name="open-outline"></ion-icon>
                   </a>
                 </td>
+                <td>
+                  This
+                </td>
               </tr>
               {% endfor %}
             </tbody>
           </table>
+          </div>
+          </div>
+          {% endif %}
 
-          <h2 class="title is-2">Data formats</h2>
+          <div class="card cell content">
+            <div class="card-content">
+          <h3 class="title is-3">Data formats</h3>
           <div class="field is-grouped is-grouped-multiline block">
             <div class="control">
               <a class="tags has-addons is-hoverable" href="{{ base_path }}{{filename}}.ttl">
@@ -147,19 +167,22 @@
             </div>
           </div>
         </div>
-
-        <div class="cell">
-          <div id="graph" style="height: 500px;"></div>
+        </div>
         </div>
 
+        <div class="card cell content graph-cell">
+          <div class="card-content">
+            <div id="graph"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <script>
-    const graphData = {{ graph_data | safe }};
-    const options = {{ graph_options | safe }};
+    const graphData = {{ graph_data | tojson }};
+    const options = {{ graph_options | tojson }};
     const container = document.getElementById('graph');
     new vis.Network(container, graphData, options);
   </script>

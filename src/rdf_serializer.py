@@ -23,9 +23,11 @@ class RDFSerializer:
         self,
         entity_uri: URIRef,
         graph: Graph,
-        output_paths: dict[str, Path]
+        output_paths: dict[str, Path],
+        subgraph: Graph = None
         ) -> None:
-        subgraph = self.extract_entity_graph(entity_uri, graph)
+        if subgraph is None:
+            subgraph = self.extract_entity_graph(entity_uri, graph)
         formats = {
             "ttl": "turtle",
             "xml": "xml",

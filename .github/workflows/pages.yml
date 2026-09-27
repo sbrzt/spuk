@@ -16,7 +16,7 @@ jobs:
       - run: uv run main.py
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/
+          path: build/
   deploy:
     needs: build
     runs-on: ubuntu-latest

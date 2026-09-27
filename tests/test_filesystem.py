@@ -1,7 +1,7 @@
 # tests/test_filesystem.py
 
 import pytest
-from config import TEMPLATES_DIR, OUTPUT_DIR
+from src.settings import TEMPLATES_DIR, OUTPUT_DIR
 from pathlib import Path
 from rdflib import URIRef, Graph
 from src.filesystem import (

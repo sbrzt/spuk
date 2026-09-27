@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 datasets: [{
                     label: "Occurrences",
                     data: values,
-                    backgroundColor: "rgba(54, 162, 235, 0.7)"
+                    backgroundColor: window.THEME_CHART_COLOR || "rgba(54, 162, 235, 0.7)"
                 }]
             },
             plugins: [ChartDataLabels],

@@ -10,9 +10,60 @@ h2:not([class]) {
 
 body {
     font-family: 'Atkinson Hyperlegible';
-    color: #333;
+    color: var(--site-text-color, #333);
 }
 
 .grid .cell:last-child{
     margin-bottom: var(--bulma-block-spacing);
+}
+
+/* Image hero sections: a fixed dark overlay plus forced white, shadowed
+   text keeps the title readable no matter what the configured image looks
+   like, since we can't know its brightness or contrast ahead of time. */
+.hero.has-hero-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero.has-hero-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero.has-hero-image .hero-body {
+    position: relative;
+    z-index: 1;
+}
+
+.hero.has-hero-image .title,
+.hero.has-hero-image .subtitle {
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Entity graph card: sticks in the viewport and holds the graph with no
+   extra space, instead of stretching to match the taller table column. */
+.graph-cell {
+    align-self: start;
+    position: sticky;
+    top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.graph-cell.grid .cell:last-child,
+.grid .cell.graph-cell:last-child {
+    margin-bottom: 0;
+}
+
+.graph-cell .card-content {
+    padding: 0;
+    line-height: 0;
+}
+
+.graph-cell #graph {
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }

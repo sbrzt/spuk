@@ -1,145 +1,110 @@
 {% extends "base.html" %}
-  
-    {% block content %}
-    
-    <section class="hero is-large is-success">
-        <div class="hero-body">
-            <p class="title">Entities</p>
-            <p class="subtitle">List of entities</p>
+{% from "_hero.html" import render_hero %}
+
+{% block content %}
+{{ render_hero("Entities", "List of entities", "entities", base_url) }}
+
+<section class="section">
+    <div class="field">
+        <div class="control">
+            <input id="entity-filter" class="input" type="search" placeholder="Filter by URI or type" autocomplete="off">
         </div>
-    </section>
-    
-    <section class="section">
-        <div id="entities-grid" class="grid is-col-min-24">
-            {% for entity in entities %}
-            <div class="card cell entity" data-entity-index="{{ loop.index0 }}">
-                <header class="card-header">
-                    <p class="card-header-title">{{ entity.uri }}</p>
-                </header>
-                <div class="card-content">
-                    <div class="tags">
-                      {% for type in entity.types %}
-                        <span class="tag">{{ type }}</span>
-                      {% endfor %}
-                    </div>
-                    <div class="content">
-                      <p>Triple count: {{ entity.triple_count }}</p>
-                      <p>As subject: {{ entity.subject_triple_count }} </p>
-                      <p>As object: {{ entity.object_triple_count }}</p>
-                      <p>Related entity count: {{ entity.related_entity_count }}</p>
-                    </div>
-                    <div class="content">
-                      <pre>{{ entity.to_turtle() | e }}</pre>
-                    </div>
-                </div>
-                <footer class="card-footer">
-                    <a href="{{ entity.render_path }}.html" class="card-footer-item">Go to entity page</a>
-                </footer>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
+        <p class="help" id="entity-count"></p>
+    </div>
+    <div id="entities-grid" class="grid is-col-min-24"></div>
+</section>
 
-    <section class="section">
-        <nav class="pagination is-centered" role="navigation" aria-label="pagination" id="entity-pagination">
-            <a class="pagination-previous">Previous</a>
-            <ul class="pagination-list" id="pagination"></ul>
-            <a class="pagination-next">Next</a>
-        </nav>
-    </section>
+<section class="section">
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <a class="pagination-previous" id="entity-prev">Previous</a>
+        <a class="pagination-next" id="entity-next">Next</a>
+        <ul class="pagination-list" id="pagination"></ul>
+    </nav>
+</section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-  const itemsPerPage = 15;
-  const items = Array.from(document.querySelectorAll(".entity"));
-  console.log(`🔍 Found ${items.length} .entity cards`);
-  const totalPages = Math.ceil(items.length / itemsPerPage);
-  let currentPage = 1;
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const PAGE_SIZE = 15;
+  const grid = document.getElementById("entities-grid");
+  const list = document.getElementById("pagination");
+  const filterInput = document.getElementById("entity-filter");
+  const counter = document.getElementById("entity-count");
+  const prev = document.getElementById("entity-prev");
+  const next = document.getElementById("entity-next");
 
-  function showPage(page) {
-    items.forEach((item, index) => {
-      item.style.display = (
-        index >= (page - 1) * itemsPerPage && index < page * itemsPerPage
-      ) ? "" : "none";
-    });
-    renderPagination(page);
+  const { types, rows } = await (await fetch("{{ base_url }}entities.json")).json();
+  const haystack = rows.map(r => (r[0] + " " + r[2].map(i => types[i]).join(" ")).toLowerCase());
+  let visible = rows.map((_, i) => i);
+  let page = 1;
+
+  const el = (tag, cls, text) => {
+    const node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  };
+
+  function card([uri, href, typeIdx, asSubject, asObject]) {
+    const c = el("div", "card cell entity");
+    c.appendChild(el("header", "card-header")).appendChild(el("p", "card-header-title", uri));
+    const body = c.appendChild(el("div", "card-content"));
+    const tags = body.appendChild(el("div", "tags"));
+    typeIdx.forEach(i => tags.appendChild(el("span", "tag", types[i])));
+    const info = body.appendChild(el("div", "content"));
+    info.appendChild(el("p", "", `Triple count: ${asSubject + asObject}`));
+    info.appendChild(el("p", "", `As subject: ${asSubject}`));
+    info.appendChild(el("p", "", `As object: ${asObject}`));
+    const link = el("a", "card-footer-item", "Go to entity page");
+    link.href = href;
+    c.appendChild(el("footer", "card-footer")).appendChild(link);
+    return c;
   }
 
-  function renderPagination(current) {
-    const paginationList = document.getElementById("pagination");
-    paginationList.innerHTML = "";
-
-    const range = getPageRange(current, totalPages);
-
-    range.forEach(page => {
-      if (page === "...") {
-        const li = document.createElement("li");
-        li.innerHTML = `<span class="pagination-ellipsis">&hellip;</span>`;
-        paginationList.appendChild(li);
-      } else {
-        const li = document.createElement("li");
-        li.innerHTML = `<a class="pagination-link ${page === current ? "is-current" : ""}">${page}</a>`;
-        paginationList.appendChild(li);
-      }
-    });
-
-    // Handle previous/next buttons
-    document.querySelector(".pagination-previous").onclick = () => {
-      if (currentPage > 1) {
-        currentPage--;
-        showPage(currentPage);
-      }
-    };
-
-    document.querySelector(".pagination-next").onclick = () => {
-      if (currentPage < totalPages) {
-        currentPage++;
-        showPage(currentPage);
-      }
-    };
-
-    // Add event listeners
-    paginationList.querySelectorAll(".pagination-link").forEach(link => {
-      link.addEventListener("click", function () {
-        const page = parseInt(this.textContent);
-        currentPage = page;
-        showPage(currentPage);
-      });
-    });
-  }
-
-  function getPageRange(current, total) {
-    const delta = 2;
-    const range = [];
-    const rangeWithDots = [];
-    let l;
-
+  function pageRange(current, total) {
+    const out = [];
+    let last = 0;
     for (let i = 1; i <= total; i++) {
-      if (i === 1 || i === total || (i >= current - delta && i <= current + delta)) {
-        range.push(i);
+      if (i === 1 || i === total || Math.abs(i - current) <= 2) {
+        if (i - last > 1) out.push("…");
+        out.push(i);
+        last = i;
       }
     }
+    return out;
+  }
 
-    for (let i of range) {
-      if (l) {
-        if (i - l === 2) {
-          rangeWithDots.push(l + 1);
-        } else if (i - l !== 1) {
-          rangeWithDots.push("...");
-        }
+  function render() {
+    const total = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+    page = Math.min(page, total);
+    const start = (page - 1) * PAGE_SIZE;
+    grid.replaceChildren(...visible.slice(start, start + PAGE_SIZE).map(i => card(rows[i])));
+    counter.textContent = `${visible.length} of ${rows.length} entities`;
+    list.replaceChildren(...pageRange(page, total).map(p => {
+      const li = el("li");
+      if (p === "…") {
+        li.appendChild(el("span", "pagination-ellipsis", p));
+      } else {
+        const a = el("a", "pagination-link" + (p === page ? " is-current" : ""), p);
+        a.dataset.page = p;
+        li.appendChild(a);
       }
-      rangeWithDots.push(i);
-      l = i;
-    }
-
-    return rangeWithDots;
+      return li;
+    }));
+    prev.toggleAttribute("disabled", page === 1);
+    next.toggleAttribute("disabled", page === total);
   }
 
-  if (items.length > 0) {
-    showPage(currentPage);
-  }
+  const go = p => { page = Math.max(1, p); render(); };
+  list.addEventListener("click", e => { if (e.target.dataset.page) go(+e.target.dataset.page); });
+  prev.addEventListener("click", () => go(page - 1));
+  next.addEventListener("click", () => go(page + 1));
+  filterInput.addEventListener("input", () => {
+    const q = filterInput.value.trim().toLowerCase();
+    visible = [];
+    haystack.forEach((h, i) => { if (!q || h.includes(q)) visible.push(i); });
+    go(1);
+  });
+  render();
 });
-
-    </script>
-    
+</script>
 {% endblock %}

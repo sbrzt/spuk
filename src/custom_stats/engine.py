@@ -1,6 +1,6 @@
 # src/custom_stats/engine.py
 
-from config import STATS_CONFIG
+from src.settings import STATS_CONFIG
 import yaml
 from rdflib import URIRef
 from .registry import STAT_TYPES

@@ -1,12 +1,8 @@
 {% extends "base.html" %}
+{% from "_hero.html" import render_hero %}
 
 {% block content %}
-<section class="hero is-warning is-large">
-  <div class="hero-body">
-    <p class="title">Query</p>
-    <p class="subtitle">Interact with the RDF data</p>
-  </div>
-</section>
+{{ render_hero("Query", "Interact with the RDF data", "query", base_url) }}
 
 <section class="section">
   <div class="container">
@@ -21,7 +17,7 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input id="data-source" class="input" type="text" placeholder="{{ data_source }}">
+                <input id="data-source" class="input" type="text" value="{{ data_source }}" data-is-endpoint="{{ (data_source_is_endpoint | default(false)) | tojson }}">
               </div>
             </div>
           </div>
@@ -83,15 +79,16 @@
 <script src="https://cdn.jsdelivr.net/npm/rdfstore@0.9.17/dist/rdfstore_min.min.js"></script>
 <script>
   (function() {
-    const dataSource = document.getElementById('data-source').textContent.trim();
+    const dataSourceInput = document.getElementById('data-source');
+    const dataSource = dataSourceInput.value.trim();
+    const isEndpoint = dataSourceInput.dataset.isEndpoint === "true";
     const querySelector = document.getElementById('query-selector');
     const queryTextarea = document.getElementById('sparql-query');
     const runButton = document.getElementById('run-query');
     const resultsContainer = document.getElementById('query-results');
 
-    let store = null; 
+    let store = null;
     let rdfDataLoaded = false;
-    const isEndpoint = !dataSource.match(/\.(ttl|rdf|nt|jsonld)$/i); // treat as endpoint if not file
 
     // Initialize rdfstore or empty store for file queries
     function initStore(callback) {

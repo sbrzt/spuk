@@ -1,0 +1,13 @@
+{% macro render_hero(title, subtitle, hero_key, base_url) %}
+{% set config = theme.hero[hero_key] %}
+{% if config.type == "image" %}
+<section class="hero is-large has-hero-image" style="background-image: url('{{ base_url }}{{ config.value }}');">
+{% else %}
+<section class="hero is-large is-{{ config.value }}">
+{% endif %}
+    <div class="hero-body">
+        <p class="title">{{ title }}</p>
+        <p class="subtitle">{{ subtitle }}</p>
+    </div>
+</section>
+{% endmacro %}

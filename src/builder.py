@@ -1,6 +1,8 @@
 # src/builder.py
 
-from config import (
+import multiprocessing
+import shutil
+from src.settings import (
     GRAPH_SOURCE,
     OUTPUT_DIR,
     TEMPLATES_DIR,
@@ -8,6 +10,8 @@ from config import (
     ENABLE_CUSTOM_STATS,
     DOCUMENTATION_DIR
 )
+from rdflib import URIRef
+from src.path_resolver import get_entity_output_files
 from src.graph_loader import load_graph
 from src.entity_model import get_entities
 from src.html_renderer import HTMLRenderer
@@ -17,9 +21,28 @@ from src.custom_stats.engine import load_custom_stats
 from src.filesystem import (
     ensure_entity_folder_exists, write_index_html, write_entities_html,
     write_entity_html, write_entity_rdf, write_query_html,
-    copy_static, clean_output_dir, write_documentation_html
+    copy_static, clean_output_dir, write_documentation_html,
+    list_doc_files, doc_title, entity_output_files_exist
 )
+from src.manifest import hash_templates, hash_entity, load_manifest, save_manifest
 from tqdm import tqdm
+
+
+_worker_builder = None
+
+
+def _write_entity(index):
+    builder = _worker_builder
+    entity = builder.entities[index]
+    new_hash = hash_entity(entity, builder.template_hash)
+    uri = str(entity.uri)
+    unchanged = (
+        builder.old_manifest.get(uri) == new_hash
+        and entity_output_files_exist(entity.uri, OUTPUT_DIR)
+    )
+    if not unchanged:
+        builder._write_entity(entity)
+    return uri, new_hash
 
 
 class SiteBuilder:
@@ -30,23 +53,61 @@ class SiteBuilder:
         self.renderer = None
         self.serializer = None
         self.entities = []
-    
+        self.template_hash = ""
+        self.old_manifest = {}
+
     def load_data(self):
+        print("Loading graph...")
         self.graph = load_graph(GRAPH_SOURCE)
+        print("Computing stats...")
         self.stats = collect_graph_stats(self.graph)
         if ENABLE_CUSTOM_STATS:
             self.custom_stats = load_custom_stats(self.graph)
+        print("Indexing entities...")
         self.entities = list(get_entities(self.graph))
-        docs_pages = []
-        if DOCUMENTATION_DIR.exists():
-            for md_file in DOCUMENTATION_DIR.glob("*.md"):
-                docs_pages.append({
-                    "title": md_file.stem.replace("_", " ").capitalize(),
-                    "href": f"{md_file.stem}.html"
-                })
+        self._check_path_collisions()
+        docs_pages = [
+            {"title": doc_title(md_file), "href": f"{md_file.stem}.html"}
+            for md_file in list_doc_files(DOCUMENTATION_DIR)
+        ]
         self.renderer = HTMLRenderer(TEMPLATES_DIR, OUTPUT_DIR, docs_pages)
         self.serializer = RDFSerializer()
         print(f"Data loaded: {len(self.graph)} triples, {len(self.entities)} entities.")
+
+    def _check_path_collisions(self):
+        seen = {}
+        for entity in self.entities:
+            path = get_entity_output_files(entity.uri, OUTPUT_DIR)["dir"]
+            if path in seen:
+                raise ValueError(f"Output path collision: {seen[path]} and {entity.uri} both map to {path}")
+            seen[path] = entity.uri
+
+    def _write_entity(self, entity):
+        ensure_entity_folder_exists(entity.uri, OUTPUT_DIR)
+        write_entity_html(entity, OUTPUT_DIR, self.renderer)
+        write_entity_rdf(entity.uri, OUTPUT_DIR, self.graph, self.serializer, entity.get_entity_subgraph())
+
+    def _write_entities_parallel(self):
+        global _worker_builder
+        _worker_builder = self
+        self.template_hash = hash_templates(TEMPLATES_DIR)
+        self.old_manifest = load_manifest(OUTPUT_DIR)
+        new_manifest = {}
+        skipped = 0
+        context = multiprocessing.get_context("fork")
+        with context.Pool() as pool:
+            results = pool.imap_unordered(_write_entity, range(len(self.entities)), chunksize=200)
+            for uri, new_hash in tqdm(results, total=len(self.entities), desc="Entities", unit="entity"):
+                new_manifest[uri] = new_hash
+                if self.old_manifest.get(uri) == new_hash:
+                    skipped += 1
+        orphaned = set(self.old_manifest) - set(new_manifest)
+        for uri in orphaned:
+            entity_dir = get_entity_output_files(URIRef(uri), OUTPUT_DIR)["dir"]
+            if entity_dir.exists():
+                shutil.rmtree(entity_dir)
+        save_manifest(OUTPUT_DIR, new_manifest)
+        print(f"Entities: {len(new_manifest) - skipped} rendered, {skipped} unchanged, {len(orphaned)} removed.")
 
     def build_static(self):
         print("Updating static files...")
@@ -54,17 +115,17 @@ class SiteBuilder:
 
     def build_content(self, limit=None):
         print("Rendering content...")
-        if not limit:
+        if not OUTPUT_DIR.exists():
             clean_output_dir(OUTPUT_DIR)
         write_index_html(OUTPUT_DIR, self.renderer, self.stats, self.custom_stats)
         write_query_html(OUTPUT_DIR, self.renderer)
         write_documentation_html(DOCUMENTATION_DIR, OUTPUT_DIR, self.renderer)
         target_entities = self.entities[:limit] if limit else self.entities
-        for entity in target_entities:
-            ensure_entity_folder_exists(entity.uri, OUTPUT_DIR)
-            write_entity_html(entity, OUTPUT_DIR, self.renderer)
-            if not limit:
-                write_entity_rdf(entity.uri, OUTPUT_DIR, self.graph, self.serializer)
+        if limit:
+            for entity in tqdm(target_entities, desc="Entities", unit="entity"):
+                self._write_entity(entity)
+        else:
+            self._write_entities_parallel()
         if limit:
             write_entities_html(target_entities, OUTPUT_DIR, self.renderer)
         else:
