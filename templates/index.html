@@ -7,96 +7,32 @@
 
   <section class="section">
     <div class="grid">
-      <div class="box cell content is-large">
-        <p>Triples: {{ stats.total_triples }}</p>
+      {% for card in cards %}
+      <div class="box cell">
+        <p class="title is-2 mb-1">{{ "{:,}".format(card.value) }}</p>
+        <p class="is-size-6 has-text-grey-dark">{{ card.label }}</p>
       </div>
-      <div class="box cell content is-large">
-        <p>Entities: {{ stats.unique_entities|length }}</p>
-      </div>
-      <div class="box cell content is-large">
-        <p>Properties: {{ stats.unique_properties|length }}</p>
-      </div>
-      <div class="box cell content is-large">
-        <p>Classes: {{ stats.unique_classes|length }}</p> 
-      </div>
-      <div class="box cell content is-large">
-        <p>Models: {{ stats.unique_models|length }}</p>
-      </div>
-    </div>
-    
-    <div class="fixed-grid">
-      <div class="grid has-2-cols">
-        <div class="card cell content">
-            <div class="card-content">
-                <canvas id="topEntitiesChart" width="400" height="200" style="background-color: rgb(255, 255, 255);"></canvas>
-            </div>
-            <footer class="card-footer">
-                <a id="download-topEntitiesChart" class="card-footer-item" download="top-entities-chart.png">Download</a>
-            </footer>
-        </div>
-        <div class="card cell content">
-            <div class="card-content">
-                <canvas id="topPropertiesChart" width="400" height="200" style="background-color: rgb(255, 255, 255);"></canvas>
-            </div>
-            <footer class="card-footer">
-                <a id="download-topPropertiesChart" class="card-footer-item" download="top-properties-chart.png">Download</a>
-            </footer>
-        </div>
-        <div class="card cell content">
-            <div class="card-content">
-                <canvas id="topClassesChart" width="400" height="200" style="background-color: rgb(255, 255, 255);"></canvas>
-            </div>
-            <footer class="card-footer">
-                <a id="download-topClassesChart" class="card-footer-item" download="top-classes-chart.png">Download</a>
-            </footer>
-        </div>
-        <div class="card cell content">
-            <div class="card-content">
-                <canvas id="topModelsChart" width="400" height="200" style="background-color: rgb(255, 255, 255);"></canvas>
-            </div>
-            <footer class="card-footer">
-                <a id="download-topModelsChart" class="card-footer-item" download="top-models-chart.png">Download</a>
-            </footer>
-        </div>
-      </div>
+      {% endfor %}
     </div>
 
-    {% if custom_stats %}
-      {% for name, stat in custom_stats.items() %}
-        {% if stat.chart %}
-          <div class="card cell content">
+    <div class="fixed-grid has-1-cols has-2-cols-desktop">
+      <div class="grid">
+        {% for chart in charts %}
+        <div class="card cell content">
             <div class="card-content">
-                <canvas id="chart-{{ name }}" width="400" height="200" style="background-color: rgb(255, 255, 255);"></canvas>
+                <canvas id="chart-{{ loop.index0 }}" role="img" width="400" height="200" style="background-color: rgb(255, 255, 255);"></canvas>
             </div>
             <footer class="card-footer">
-                <a class="card-footer-item" download="top-properties-chart.png">Download</a>
+                <a id="download-chart-{{ loop.index0 }}" href="#" aria-label="Download {{ chart.title }} chart as PNG" class="card-footer-item" download="{{ chart.title | lower | replace(' ', '-') }}.png">Download</a>
             </footer>
-          </div>
-          <script>
-      const ctx_{{ name }} = document.getElementById('chart-{{ name }}').getContext('2d');
-      new Chart(ctx_{{ name }}, {
-        type: '{{ stat.chart.type }}',
-        data: {
-          labels: {{ stat.data.keys()|list|tojson }},
-          datasets: [{
-            label: '{{ stat.label }}',
-            data: {{ stat.data.values()|list|tojson }},
-            backgroundColor: "rgba(54, 162, 235, 0.7)"
-          }]
-        },
-        options: {{ stat.chart.options|default({})|tojson }}
-      });
-    </script>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
   </section>
 
   <script>
-    window.topEntitiesData = {{ stats.top_entities | tojson }};
-    window.topPropertiesData = {{ stats.top_properties | tojson }};
-    window.topClassesData = {{ stats.top_classes | tojson }};
-    window.topModelsData = {{ stats.top_models | tojson }};
+    window.INDEX_CHARTS = {{ charts | tojson }};
   </script>
 
   {% endblock %}

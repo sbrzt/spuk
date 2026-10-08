@@ -7,17 +7,17 @@
 <section class="section">
     <div class="field">
         <div class="control">
-            <input id="entity-filter" class="input" type="search" placeholder="Filter by URI or type" autocomplete="off">
+            <input id="entity-filter" class="input" type="search" aria-label="Filter entities by name, URI or type" placeholder="Filter by name, URI or type" autocomplete="off">
         </div>
-        <p class="help" id="entity-count"></p>
+        <p class="help" id="entity-count" aria-live="polite"></p>
     </div>
     <div id="entities-grid" class="grid is-col-min-24"></div>
 </section>
 
 <section class="section">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <a class="pagination-previous" id="entity-prev">Previous</a>
-        <a class="pagination-next" id="entity-next">Next</a>
+        <button type="button" class="pagination-previous" id="entity-prev">Previous</button>
+        <button type="button" class="pagination-next" id="entity-next">Next</button>
         <ul class="pagination-list" id="pagination"></ul>
     </nav>
 </section>
@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const prev = document.getElementById("entity-prev");
   const next = document.getElementById("entity-next");
 
-  const { types, rows } = await (await fetch("{{ base_url }}entities.json")).json();
-  const haystack = rows.map(r => (r[0] + " " + r[2].map(i => types[i]).join(" ")).toLowerCase());
+  const { types, labels, rows } = await (await fetch("{{ base_url }}entities.json", { cache: "no-cache" })).json();
+  const haystack = rows.map(r => [r[0], r[6] || "", ...r[2].map(i => types[i] + " " + labels[i])].join(" ").toLowerCase());
   let visible = rows.map((_, i) => i);
   let page = 1;
 
@@ -44,19 +44,30 @@ document.addEventListener("DOMContentLoaded", async () => {
     return node;
   };
 
-  function card([uri, href, typeIdx, asSubject, asObject]) {
+  function stat(value, label) {
+    const item = el("div", "level-item has-text-centered");
+    const box = item.appendChild(el("div"));
+    box.appendChild(el("p", "title is-4 mb-1", value.toLocaleString("en")));
+    box.appendChild(el("p", "is-size-7 has-text-grey-dark", label));
+    return item;
+  }
+
+  function card([uri, href, typeIdx, asSubject, asObject, related, label]) {
     const c = el("div", "card cell entity");
-    c.appendChild(el("header", "card-header")).appendChild(el("p", "card-header-title", uri));
-    const body = c.appendChild(el("div", "card-content"));
-    const tags = body.appendChild(el("div", "tags"));
-    typeIdx.forEach(i => tags.appendChild(el("span", "tag", types[i])));
-    const info = body.appendChild(el("div", "content"));
-    info.appendChild(el("p", "", `Triple count: ${asSubject + asObject}`));
-    info.appendChild(el("p", "", `As subject: ${asSubject}`));
-    info.appendChild(el("p", "", `As object: ${asObject}`));
-    const link = el("a", "card-footer-item", "Go to entity page");
+    const link = el("a", "", label || uri);
     link.href = href;
-    c.appendChild(el("footer", "card-footer")).appendChild(link);
+    c.appendChild(el("header", "card-header")).appendChild(el("h2", "card-header-title")).appendChild(link);
+    const body = c.appendChild(el("div", "card-content"));
+    if (label) body.appendChild(el("p", "is-size-7 has-text-grey-dark mb-3", uri));
+    const tags = body.appendChild(el("div", "tags"));
+    typeIdx.forEach(i => { tags.appendChild(el("span", "tag", labels[i])).title = types[i]; });
+    const stats = body.appendChild(el("div", "level is-mobile"));
+    stats.append(
+      stat(asSubject + asObject, "Triples"),
+      stat(asSubject, "As subject"),
+      stat(asObject, "As object"),
+      stat(related, "Linked entities")
+    );
     return c;
   }
 
@@ -84,7 +95,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (p === "…") {
         li.appendChild(el("span", "pagination-ellipsis", p));
       } else {
-        const a = el("a", "pagination-link" + (p === page ? " is-current" : ""), p);
+        const a = el("button", "pagination-link" + (p === page ? " is-current" : ""), p);
+        a.type = "button";
+        a.setAttribute("aria-label", `Page ${p}`);
+        if (p === page) a.setAttribute("aria-current", "page");
         a.dataset.page = p;
         li.appendChild(a);
       }

@@ -12,7 +12,7 @@
       <fieldset disabled>
         <div class="field is-horizontal">
           <div class="field-label is-medium">
-            <label class="label">Data source</label>
+            <label class="label" for="data-source">Data source</label>
           </div>
           <div class="field-body">
             <div class="field">
@@ -27,7 +27,7 @@
 
       <div class="field is-horizontal">
         <div class="field-label is-medium">
-          <label class="label">Choose a query...</label>
+          <label class="label" for="query-selector">Choose a query...</label>
         </div>
         <div class="field-body">
           <div class="field">
@@ -47,7 +47,7 @@
 
       <div class="field is-horizontal">
         <div class="field-label is-medium">
-          <label class="label">... Or write your own</label>
+          <label class="label" for="sparql-query">... Or write your own</label>
         </div>
         <div class="field-body">
           <div class="field">
@@ -68,8 +68,8 @@
 
     <!-- Results -->
     <div class="box">
-      <h4 class="title is-5">Results</h4>
-      <div id="query-results" class="table-container"></div>
+      <h2 class="title is-5">Results</h2>
+      <div id="query-results" class="table-container" aria-live="polite"></div>
     </div>
 
   </div>

@@ -7,7 +7,7 @@ from src.builder import SiteBuilder
 
 ROOT_DIR = os.path.abspath(".")
 BUILD_DIR = os.path.join(ROOT_DIR, "build")
-DEV_ENTITY_LIMIT = 50
+DEV_ENTITY_LIMIT = 500
 
 BUILD_COMMAND = "python main.py"
 WATCH_DIRS = ["data", "templates", "static", "src", "documentation"]

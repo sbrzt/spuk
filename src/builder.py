@@ -7,8 +7,9 @@ from src.settings import (
     OUTPUT_DIR,
     TEMPLATES_DIR,
     STATIC_DIR,
-    ENABLE_CUSTOM_STATS,
-    DOCUMENTATION_DIR
+    DOCUMENTATION_DIR,
+    INDEX_CARDS,
+    INDEX_CHARTS
 )
 from rdflib import URIRef
 from src.path_resolver import get_entity_output_files
@@ -16,8 +17,7 @@ from src.graph_loader import load_graph
 from src.entity_model import get_entities
 from src.html_renderer import HTMLRenderer
 from src.rdf_serializer import RDFSerializer
-from src.stats_collector import collect_graph_stats
-from src.custom_stats.engine import load_custom_stats
+from src.stats_collector import collect_graph_stats, build_index_cards, build_index_charts
 from src.filesystem import (
     ensure_entity_folder_exists, write_index_html, write_entities_html,
     write_entity_html, write_entity_rdf, write_query_html,
@@ -49,7 +49,8 @@ class SiteBuilder:
     def __init__(self):
         self.graph = None
         self.stats = None
-        self.custom_stats = {}
+        self.index_cards = []
+        self.index_charts = []
         self.renderer = None
         self.serializer = None
         self.entities = []
@@ -61,8 +62,8 @@ class SiteBuilder:
         self.graph = load_graph(GRAPH_SOURCE)
         print("Computing stats...")
         self.stats = collect_graph_stats(self.graph)
-        if ENABLE_CUSTOM_STATS:
-            self.custom_stats = load_custom_stats(self.graph)
+        self.index_cards = build_index_cards(self.stats, INDEX_CARDS)
+        self.index_charts = build_index_charts(self.graph, self.stats, INDEX_CHARTS)
         print("Indexing entities...")
         self.entities = list(get_entities(self.graph))
         self._check_path_collisions()
@@ -117,7 +118,7 @@ class SiteBuilder:
         print("Rendering content...")
         if not OUTPUT_DIR.exists():
             clean_output_dir(OUTPUT_DIR)
-        write_index_html(OUTPUT_DIR, self.renderer, self.stats, self.custom_stats)
+        write_index_html(OUTPUT_DIR, self.renderer, self.index_cards, self.index_charts)
         write_query_html(OUTPUT_DIR, self.renderer)
         write_documentation_html(DOCUMENTATION_DIR, OUTPUT_DIR, self.renderer)
         target_entities = self.entities[:limit] if limit else self.entities

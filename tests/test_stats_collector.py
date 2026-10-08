@@ -1,7 +1,8 @@
 # tests/test_stats_collector.py
 
 from rdflib import Graph, URIRef, RDF
-from src.stats_collector import collect_graph_stats, extract_namespace
+import pytest
+from src.stats_collector import collect_graph_stats, build_index_cards, build_index_charts
 
 
 def test_collect_graph_stats():
@@ -51,14 +52,26 @@ def test_collect_graph_stats():
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "http://w3id.org/sche/ma/",
     }
-    assert stats.unique_models == expected_models
+    assert stats.unique_vocabularies == expected_models
     prop_freqs = dict(stats.top_properties)
-    assert prop_freqs[RDF.type] == 5
-    for p in graph.predicates():
-        assert prop_freqs.get(p, 0) >= 1
-    class_freqs = dict(stats.top_classes)
-    for cls in stats.unique_classes:
-        assert class_freqs[cls] == 5
-    top_model_keys = [ns for ns, _ in stats.top_models]
-    for model in expected_models:
-        assert model in top_model_keys
+    assert prop_freqs == {"rdfs:label": 5, "sche:status": 5}
+    assert dict(stats.top_classes) == {"ex:Entity": 5}
+    assert {ns for ns, _ in stats.top_vocabularies} == {"ex:", "rdfs:", "rdf:", "sche:"}
+    assert all(uri.startswith("https://") for uri, _ in stats.top_entities)
+
+    cards = build_index_cards(stats, ["triples", "classes"])
+    assert cards == [{"label": "Triples", "value": 15}, {"label": "Classes", "value": 1}]
+    with pytest.raises(ValueError):
+        build_index_cards(stats, ["nope"])
+
+    charts = build_index_charts(graph, stats, [
+        {"stat": "top_classes", "title": "Classes"},
+        {"stat": "count_by_object", "predicate": "http://w3id.org/sche/ma/status", "type": "line"},
+        {"stat": "count_by_object", "predicate": "http://example.org/unused"},
+    ])
+    assert charts[0] == {"title": "Classes", "type": "bar", "data": [("ex:Entity", 5)]}
+    assert charts[1]["type"] == "line"
+    assert dict(charts[1]["data"]) == {"active": 2, "inactive": 1, "published": 1, "archived": 1}
+    assert len(charts) == 2  # chart with no data is dropped
+    with pytest.raises(ValueError):
+        build_index_charts(graph, stats, [{"stat": "nope"}])

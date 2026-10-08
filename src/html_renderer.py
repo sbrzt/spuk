@@ -10,7 +10,6 @@ from pathlib import Path, PurePosixPath
 from rdflib import URIRef, Literal, RDF
 from rdflib.graph import Graph
 from typing import List, Dict, Any
-from src.stats_collector import GraphStats
 from src.entity_model import Entity
 from urllib.parse import urlparse
 from src.settings import (
@@ -40,11 +39,6 @@ class HTMLRenderer:
 
     @staticmethod
     def _hex_to_hsl(hex_color: str) -> Dict[str, str]:
-        """Convert a "#rrggbb" color to the h/s/l triplet Bulma 1.x's color
-        system is actually built from. Bulma derives every shade of a color
-        (hover, light/dark backgrounds, invert text, ...) from three custom
-        properties, `--bulma-{name}-h/-s/-l` — overriding the shorthand
-        `--bulma-{name}` variable alone has no effect, since nothing reads it."""
         hex_color = hex_color.lstrip("#")
         r, g, b = (int(hex_color[i:i + 2], 16) / 255 for i in (0, 2, 4))
         h, l, s = colorsys.rgb_to_hls(r, g, b)
@@ -52,18 +46,16 @@ class HTMLRenderer:
 
     @staticmethod
     def _compute_asset_version() -> str:
-        """Short hash of the stylesheet, appended to its URL so a rebuild
-        always busts the browser cache instead of serving a stale copy."""
-        style_path = STATIC_DIR / "css" / "style.css"
-        if not style_path.exists():
-            return "0"
-        return hashlib.sha1(style_path.read_bytes()).hexdigest()[:10]
+        digest = hashlib.sha1()
+        for path in sorted([*STATIC_DIR.glob("css/*"), *STATIC_DIR.glob("js/*")]):
+            digest.update(path.read_bytes())
+        return digest.hexdigest()[:10]
 
-    def render_index(self, stats: GraphStats, custom_stats=None) -> str:
+    def render_index(self, cards, charts) -> str:
         return self.env.get_template("index.html").render(
             title="Index",
-            stats=stats, 
-            custom_stats=custom_stats or {},
+            cards=cards,
+            charts=charts,
             base_url="",
             docs_pages=self.docs_pages
         )

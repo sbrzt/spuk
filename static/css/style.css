@@ -13,6 +13,51 @@ body {
     color: var(--site-text-color, #333);
 }
 
+/* Keyboard users: hidden until focused, then jumps past the navbar. */
+.skip-link {
+    position: absolute;
+    left: -999rem;
+}
+
+.skip-link:focus {
+    left: 0.5rem;
+    top: 0.5rem;
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+}
+
+/* Long URIs (hero titles, table cells, card headers) wrap instead of
+   pushing the page wider than a small screen. */
+main {
+    overflow-wrap: anywhere;
+}
+
+.cell {
+    min-width: 0;
+}
+
+/* Bulma's auto grid uses a hard minimum column width (36rem for
+   is-col-min-24), wider than a phone: cap it at the container width. */
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--bulma-grid-column-min)), 1fr));
+}
+
+/* The documentation dropdown is styled as a .button, whose fixed height
+   and nowrap clip the dropdown items once the menu collapses on touch. */
+@media (max-width: 1023px) {
+    .navbar-item.has-dropdown.button {
+        display: block;
+        height: auto;
+        white-space: normal;
+        text-align: left;
+        border: 0;
+        background: none;
+        padding: 0;
+    }
+}
+
 .grid .cell:last-child{
     margin-bottom: var(--bulma-block-spacing);
 }
@@ -66,4 +111,8 @@ body {
 .graph-cell #graph {
     width: 100%;
     aspect-ratio: 1 / 1;
+}
+/* Pagination controls are <button>s (keyboard reachable): keep the site font. */
+button {
+    font-family: inherit;
 }

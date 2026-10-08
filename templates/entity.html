@@ -8,17 +8,17 @@
   <section class="section">
     <a class="button block" href="{{ base_url }}entities.html">
       <span class="icon">
-        <ion-icon name="arrow-back-outline"></ion-icon>
+        <ion-icon aria-hidden="true" name="arrow-back-outline"></ion-icon>
       </span>
       <span>Back to index</span>
     </a>
 
-    <div class="fixed-grid">
-      <div class="grid has-2-cols">
+    <div class="fixed-grid has-1-cols has-2-cols-desktop">
+      <div class="grid">
         <div class="cell">
           <h2 class="title is-2">Entity information</h2>
           <div class="block">
-            <ion-icon name="cube-outline"></ion-icon>
+            <ion-icon aria-hidden="true" name="cube-outline"></ion-icon>
             <strong>Is a:</strong>
               {% for type in entity.types %}
               <a href="{{ type }}" target="_blank">
@@ -31,7 +31,7 @@
           <div class="card cell content">
             <div class="card-content">
           <h3 class="title is-3">Is subject of</h3>
-              <table class="table is-hoverable">
+              <table class="table is-hoverable is-fullwidth">
                 <thead>
                   <tr>
                     <th>Subject</th>
@@ -48,7 +48,7 @@
                     <td>
                       <a href="{{ pair.property_uri }}" target="_blank">
                         {{ pair.property_label }}
-                        <ion-icon name="open-outline"></ion-icon>
+                        <ion-icon aria-hidden="true" name="open-outline"></ion-icon>
                       </a>
                     </td>
                     <td>
@@ -58,12 +58,12 @@
                         {% if pair.is_internal %}
                           <a href="{{ pair.internal_href }}.html">
                             {{ pair.value }}
-                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                            <ion-icon aria-hidden="true" name="arrow-forward-circle-outline"></ion-icon>
                           </a>
                         {% else %}
-                          <a href="{{ pair.value }}.html" target="_blank">
+                          <a href="{{ pair.value }}" target="_blank" rel="noopener">
                             {{ pair.value }}
-                            <ion-icon name="open-outline"></ion-icon>
+                            <ion-icon aria-hidden="true" name="open-outline"></ion-icon>
                           </a>
                         {% endif %}
                       {% endif %}
@@ -80,7 +80,7 @@
           <div class="card cell content">
             <div class="card-content">
           <h3 class="title is-3">Is object of</h3>
-          <table class="table is-hoverable">
+          <table class="table is-hoverable is-fullwidth">
             <thead>
               <tr>
                 <th>Subject</th>
@@ -95,19 +95,19 @@
                   {% if pair.is_internal %}
                     <a href="{{ pair.internal_href }}.html">
                       {{ pair.value }}
-                      <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                      <ion-icon aria-hidden="true" name="arrow-forward-circle-outline"></ion-icon>
                     </a>
                   {% else %}
-                    <a href="{{ pair.value }}.html" target="_blank">
+                    <a href="{{ pair.value }}" target="_blank" rel="noopener">
                       {{ pair.value }}
-                      <ion-icon name="open-outline"></ion-icon>
+                      <ion-icon aria-hidden="true" name="open-outline"></ion-icon>
                     </a>
                   {% endif %}
                 </td>
                 <td>
                   <a href="{{ pair.property_uri }}" target="_blank">
                     {{ pair.property_label }}
-                    <ion-icon name="open-outline"></ion-icon>
+                    <ion-icon aria-hidden="true" name="open-outline"></ion-icon>
                   </a>
                 </td>
                 <td>
@@ -170,10 +170,8 @@
         </div>
         </div>
 
-        <div class="card cell content graph-cell">
-          <div class="card-content">
-            <div id="graph"></div>
-          </div>
+        <div class="cell content graph-cell">
+          <div id="graph" role="img" aria-label="Network graph of this entity and its directly connected entities. The same relations are listed in the tables."></div>
         </div>
       </div>
     </div>

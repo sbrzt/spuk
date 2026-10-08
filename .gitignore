@@ -1,5 +1,5 @@
 .venv/
 .pytest_cache
+.claude
 __pycache__
-# generated site output (built in CI)
 build/

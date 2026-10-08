@@ -1,34 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const chartsToRender = [
-        {
-            id: "topEntitiesChart",
-            data: window.topEntitiesData,
-            title: "Top Entities",
-            chartType: "bar"
-        },
-        {
-            id: "topPropertiesChart",
-            data: window.topPropertiesData,
-            title: "Top Properties",
-            chartType: "bar"
-        },
-        {
-            id: "topClassesChart",
-            data: window.topClassesData,
-            title: "Top Classes",
-            chartType: "bar"
-        },
-        {
-            id: "topModelsChart",
-            data: window.topModelsData,
-            title: "Top Models",
-            chartType: "bar"
-        }
-    ];
-
-    chartsToRender.forEach(({ id, data, title, chartType }) => {
-        if (!data || data.length === 0) return;
-
+    // One entry per [[index.charts]] block in config.toml, in page order.
+    (window.INDEX_CHARTS || []).forEach(({ title, type, data }, index) => {
+        const id = `chart-${index}`;
         const ctx = document.getElementById(id);
         if (!ctx) return;
 
@@ -36,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const values = data.map(item => item[1]);
 
         new Chart(ctx, {
-            type: chartType,
+            type: type,
             data: {
                 labels: labels,
                 datasets: [{
@@ -58,16 +31,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 },
                 scales: {
-                    x: { ticks: { autoSkip: false } }
+                    x: { ticks: { autoSkip: false }, grid: { display: false } },
+                    y: { display: false }
                 }
             }
         });
 
         ctx.style.backgroundColor = 'rgba(255,255,255)';
-        
+        // Text alternative: a canvas is opaque to screen readers.
+        ctx.setAttribute("aria-label", `${title}: ` + data.map(([label, value]) => `${label} ${value}`).join(", "));
+
 
         const downloadLink = document.getElementById(`download-${id}`);
         if (downloadLink) {
+            // href is set on click, before the browser follows the link.
             downloadLink.addEventListener("click", function () {
                 const url = ctx.toDataURL("image/png");
                 downloadLink.href = url;

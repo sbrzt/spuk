@@ -4,7 +4,7 @@ role="navigation"
 aria-label="main navigation">
   <div class="navbar-brand"> 
     <span class="navbar-item">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <svg aria-hidden="true" focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100%" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
 <path fill="#000000" opacity="1.000000" stroke="none" 
 	d="
@@ -118,12 +118,12 @@ M456.511932,490.316101
 z"/>
       </svg>
     </span>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+    <button type="button" class="navbar-burger" aria-label="menu" aria-expanded="false" aria-controls="navbarMenu">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
-    </a>
+    </button>
   </div>
 
   <div id="navbarMenu" class="navbar-menu">
@@ -141,7 +141,7 @@ z"/>
     <div class="navbar-end">
       {% if docs_pages %}
         <div class="navbar-item has-dropdown is-hoverable button is-light">
-          <a class="navbar-link">
+          <a class="navbar-link" tabindex="0" role="button" aria-haspopup="true">
             Documentation
           </a>
           <div class="navbar-dropdown">

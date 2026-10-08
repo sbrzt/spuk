@@ -2,7 +2,7 @@
 
 import pytest
 from rdflib import Graph, URIRef, Namespace, Literal
-from src.entity_model import Entity
+from src.entity_model import Entity, follow_path
 
 EX = Namespace("http://example.org/")
 
@@ -50,3 +50,10 @@ def test_subgraph_extraction(sample_graph):
     assert len(subg) == 4
     assert (URIRef("https://w3id.org/changes/4/aldrovandi/pip/foo/1"), EX.type, EX.Type) in subg
     assert (URIRef("https://w3id.org/changes/4/aldrovandi/pip/foo/2"), EX.relatedTo, URIRef("https://w3id.org/changes/4/aldrovandi/pip/foo/1")) in subg
+
+def test_follow_path(sample_graph):
+    one = URIRef("https://w3id.org/changes/4/aldrovandi/pip/foo/1")
+    assert follow_path(sample_graph, one, [str(EX.label)]) == "Entity One"
+    assert follow_path(sample_graph, one, [str(EX.relatedTo), str(EX.label)]) == "Entity Two"
+    assert follow_path(sample_graph, one, [str(EX.missing)]) is None
+    assert follow_path(sample_graph, one, []) is None

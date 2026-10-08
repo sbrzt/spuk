@@ -15,10 +15,44 @@ documentation_dir = "documentation"
 
 [modelling]
 type_property = "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+# Properties to follow, in order, from an entity to the literal used as its
+# display name on the entities page. Entities with no such literal (or an
+# empty list here) show their URI instead. For a direct label use e.g.
+# ["http://www.w3.org/2000/01/rdf-schema#label"].
+label_path = [
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content",
+]
 
-[custom_stats]
-enabled = false
-config_path = "src/custom_stats/config.yaml"
+# --- Overview page ---
+# cards: the number boxes, in order. Available: triples, entities,
+# properties, classes, vocabularies.
+[index]
+cards = ["triples", "entities", "properties", "classes", "vocabularies"]
+
+# charts: one [[index.charts]] block per chart, in order. `stat` is one of
+# top_entities, top_properties, top_classes, top_vocabularies, or count_by_object
+# (counts the values of `predicate`). `type` is "bar" (default) or "line".
+[[index.charts]]
+stat = "top_entities"
+title = "Top Entities"
+
+[[index.charts]]
+stat = "top_properties"
+title = "Top Properties"
+
+[[index.charts]]
+stat = "top_classes"
+title = "Top Classes"
+
+[[index.charts]]
+stat = "top_vocabularies"
+title = "Top Vocabularies"
+
+# [[index.charts]]
+# stat = "count_by_object"
+# predicate = "http://w3id.org/sche/ma/status"
+# title = "Status Breakdown"
 
 [data_viz]
 n_objects = 5
@@ -29,7 +63,7 @@ n_objects = 5
 # exception, passed straight to Chart.js, so any valid CSS color works there).
 [theme.colors]
 primary = "#3bd3e7"
-link = "#00b4cc"
+link = "#2B6FD0"
 info = "#3bd3e7"
 success = "#3bd3e7"
 warning = "#3bd3e7"

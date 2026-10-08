@@ -1,12 +1,24 @@
 # src/entity_model.py
 
-from rdflib import Graph, URIRef
+from rdflib import Graph, URIRef, Literal
 from collections import defaultdict
 from functools import cached_property
 from rdflib import RDF
-from typing import List, Tuple, Generator, Set
+from typing import List, Optional, Tuple, Generator, Set
 from pathlib import Path
 from src.path_resolver import get_entity_output_files
+from src.settings import LABEL_PATH
+
+
+def follow_path(graph: Graph, start: URIRef, path: List[str]) -> Optional[str]:
+    """Follow a chain of properties from `start` and return the literal at
+    its end, or None. With several candidates the smallest is returned, so
+    rebuilds are stable."""
+    nodes = [start]
+    for prop in path:
+        nodes = [o for node in nodes for o in graph.objects(node, URIRef(prop))]
+    literals = sorted(str(node) for node in nodes if isinstance(node, Literal))
+    return literals[0] if path and literals else None
 
 
 class Entity:
@@ -30,6 +42,10 @@ class Entity:
     @cached_property
     def types(self) -> List[str]:
         return [str(o) for (_, p, o) in self.subject_triples if p == RDF.type]
+
+    @cached_property
+    def label(self) -> Optional[str]:
+        return follow_path(self.graph, self.uri, LABEL_PATH)
 
     @property
     def triple_count(self) -> int:

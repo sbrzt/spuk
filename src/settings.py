@@ -29,10 +29,11 @@ DOCUMENTATION_DIR = Path(_output["documentation_dir"])
 
 # --- Modelling configuration ---
 TYPE_PROPERTY = _cfg["modelling"]["type_property"]
+LABEL_PATH = _cfg["modelling"].get("label_path", [])
 
-# --- Custom stats configuration ---
-ENABLE_CUSTOM_STATS = _cfg["custom_stats"]["enabled"]
-STATS_CONFIG = _cfg["custom_stats"]["config_path"]
+# --- Overview page configuration ---
+INDEX_CARDS = _cfg["index"]["cards"]
+INDEX_CHARTS = _cfg["index"]["charts"]
 
 # --- SPARQL queries configuration ---
 PREDEFINED_QUERIES = _cfg["predefined_queries"]

@@ -27,7 +27,7 @@ lang="en">
                links are also excluded: they read as regular text, not
                colored links. !important is needed because some of Bulma's
                own link selectors outrank this one. */
-            a:not(.button, .tag, .navbar-item, .navbar-link, .pagination-link, .pagination-previous, .pagination-next) {
+            a:not(.button, .tag, .skip-link, .navbar-item, .navbar-link, .pagination-link, .pagination-previous, .pagination-next) {
                 color: {{ theme.colors.link }} !important;
             }
 
@@ -42,12 +42,25 @@ lang="en">
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     </head>
     <body>
+        <a class="skip-link" href="#main">Skip to content</a>
         {% include "navbar.html" %}
+        <main id="main">
         {% block content %}
         {% endblock %}
+        </main>
         {% include "footer.html" %}
+        <script>
+            // Bulma ships no JS: the burger needs its own toggle.
+            document.querySelectorAll(".navbar-burger").forEach(burger => {
+                burger.addEventListener("click", () => {
+                    const open = burger.classList.toggle("is-active");
+                    document.getElementById(burger.getAttribute("aria-controls")).classList.toggle("is-active", open);
+                    burger.setAttribute("aria-expanded", open);
+                });
+            });
+        </script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script>window.THEME_CHART_COLOR = {{ theme.colors.chart | tojson }};</script>
-        <script src="{{ base_url }}js/charts.js"></script>
+        <script src="{{ base_url }}js/charts.js?v={{ asset_version }}"></script>
     </body>
 </html>

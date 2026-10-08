@@ -8,6 +8,7 @@ from rdflib import URIRef, Graph
 from typing import List
 from src.path_resolver import get_entity_output_files
 from src.html_renderer import HTMLRenderer
+from src.stats_collector import make_shortener
 from src.rdf_serializer import RDFSerializer
 from src.entity_model import Entity
 from src.settings import GRAPH_SOURCE
@@ -40,8 +41,8 @@ def write_html_file(content: str, output_path: Path) -> None:
     output_path.write_text(content, encoding="utf-8")
 
 
-def write_index_html(output_dir: Path, renderer: HTMLRenderer, stats, custom_stats=None) -> None:
-    html_content = renderer.render_index(stats, custom_stats)
+def write_index_html(output_dir: Path, renderer: HTMLRenderer, cards, charts) -> None:
+    html_content = renderer.render_index(cards, charts)
     output_path = output_dir / "index.html"
     write_html_file(html_content, output_path)
 
@@ -64,8 +65,11 @@ def write_entities_html(entities: List[Entity], output_dir: Path, renderer: HTML
             type_idx,
             entity.subject_triple_count,
             entity.object_triple_count,
+            entity.related_entity_count,
+            entity.label,
         ])
-    index = {"types": list(type_ids), "rows": rows}
+    shorten = make_shortener(entities[0].graph) if entities else str
+    index = {"types": list(type_ids), "labels": [shorten(t) for t in type_ids], "rows": rows}
     (output_dir / "entities.json").write_text(
         json.dumps(index, separators=(",", ":"), ensure_ascii=False), encoding="utf-8"
     )

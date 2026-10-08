@@ -38,8 +38,8 @@ All generation options live in `config.toml`:
 
 * `[graph_source]`: RDF input, either a local `file_path` (turtle, etc.) or a `sparql_endpoint`.
 * `[output]`: output/templates/static/documentation directory paths.
-* `[modelling]`: RDF property used to type entities.
-* `[custom_stats]`: enable and point to a custom stats config (`src/custom_stats/config.yaml`).
+* `[modelling]`: RDF property used to type entities (`type_property`) and the property path to an entity's display name (`label_path`).
+* `[index]`: overview page content. `cards` lists the number boxes; each `[[index.charts]]` block adds a chart (`stat`, `title`, optional `type`, and `predicate` for `count_by_object`).
 * `[data_viz]`: chart parameters (e.g. `n_objects`).
 * `[theme.colors]`: site palette (`primary`, `link`, `info`, `success`, `warning`, `danger`, `chart`), each a `#rrggbb` hex string.
 * `[theme.hero.*]`: per-page hero: solid color from `theme.colors`, or an image path inside `static/`.
@@ -74,7 +74,7 @@ Run the test suite with:
 uv run pytest
 ```
 
-Tests live under `tests/` and cover the RDF loader, entity model, filesystem helpers, path resolver, stats collector and custom stats.
+Tests live under `tests/` and cover the RDF loader, entity model, filesystem helpers, path resolver, and stats collector.
 
 ---
 
