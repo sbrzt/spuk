@@ -6,7 +6,7 @@
 
 ## Description
 
-SPUK is a Static Site Generator (SSG) designed for RDF Knowledge Graphs. It transforms RDF data into a browsable, static HTML website: entity pages, indexes with pagination and search, data visualizations, a SPARQL query interface, and optional Markdown documentation pages.
+SPUK is a Static Site Generator (SSG) designed for RDF Knowledge Graphs. It transforms RDF data into a browsable, static HTML website.
 
 ## Live Demo
 

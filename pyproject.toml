@@ -1,7 +1,7 @@
 [project]
 name = "static-site-generator"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "SPUK is a Static Site Generator (SSG) designed for RDF Knowledge Graphs. It transforms RDF data into a browsable, static HTML website."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
