@@ -116,3 +116,9 @@ main {
 button {
     font-family: inherit;
 }
+
+/* "This" in the entity tables: hover reveals the entity URI. */
+abbr[title] {
+    text-decoration: underline dashed;
+    cursor: help;
+}

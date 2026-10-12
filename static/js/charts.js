@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 responsive: true,
                 plugins: {
                     legend: { display: false },
-                    title: { display: true, text: title },
+                    title: { display: true, text: title.split("\n") },
                     datalabels: {
                         color: 'black',
                         anchor: 'end',
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ctx.style.backgroundColor = 'rgba(255,255,255)';
         // Text alternative: a canvas is opaque to screen readers.
-        ctx.setAttribute("aria-label", `${title}: ` + data.map(([label, value]) => `${label} ${value}`).join(", "));
+        ctx.setAttribute("aria-label", `${title.replace("\n", " ")}: ` + data.map(([label, value]) => `${label} ${value}`).join(", "));
 
 
         const downloadLink = document.getElementById(`download-${id}`);

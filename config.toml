@@ -33,21 +33,23 @@ cards = ["triples", "entities", "properties", "classes", "vocabularies"]
 # charts: one [[index.charts]] block per chart, in order. `stat` is one of
 # top_entities, top_properties, top_classes, top_vocabularies, or count_by_object
 # (counts the values of `predicate`). `type` is "bar" (default) or "line".
+# In `title`, "{top}" is replaced by the chart's highest-ranked item and
+# "\n" starts a new line.
 [[index.charts]]
 stat = "top_entities"
-title = "Top Entities"
+title = "The most described entity is\n{top}"
 
 [[index.charts]]
 stat = "top_properties"
-title = "Top Properties"
+title = "The most frequent property is {top}"
 
 [[index.charts]]
 stat = "top_classes"
-title = "Top Classes"
+title = "The most populated class is {top}"
 
 [[index.charts]]
 stat = "top_vocabularies"
-title = "Top Vocabularies"
+title = "The most used vocabulary is {top}"
 
 # [[index.charts]]
 # stat = "count_by_object"

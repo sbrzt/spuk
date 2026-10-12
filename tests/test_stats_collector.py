@@ -65,11 +65,11 @@ def test_collect_graph_stats():
         build_index_cards(stats, ["nope"])
 
     charts = build_index_charts(graph, stats, [
-        {"stat": "top_classes", "title": "Classes"},
+        {"stat": "top_classes", "title": "Top class: {top}"},
         {"stat": "count_by_object", "predicate": "http://w3id.org/sche/ma/status", "type": "line"},
         {"stat": "count_by_object", "predicate": "http://example.org/unused"},
     ])
-    assert charts[0] == {"title": "Classes", "type": "bar", "data": [("ex:Entity", 5)]}
+    assert charts[0] == {"stat": "top_classes", "title": "Top class: ex:Entity", "type": "bar", "data": [("ex:Entity", 5)]}
     assert charts[1]["type"] == "line"
     assert dict(charts[1]["data"]) == {"active": 2, "inactive": 1, "published": 1, "archived": 1}
     assert len(charts) == 2  # chart with no data is dropped

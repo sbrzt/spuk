@@ -119,7 +119,8 @@ def build_index_cards(stats: GraphStats, names: List[str]) -> List[Dict]:
 
 def build_index_charts(graph: Graph, stats: GraphStats, configs: List[Dict]) -> List[Dict]:
     """Resolve the [[index.charts]] blocks to chart data. Charts with no
-    data are dropped rather than rendered as empty cards."""
+    data are dropped rather than rendered as empty cards. "{top}" in a
+    title is replaced by the label of the chart's highest-ranked item."""
     charts = []
     for config in configs:
         stat = config["stat"]
@@ -130,5 +131,6 @@ def build_index_charts(graph: Graph, stats: GraphStats, configs: List[Dict]) -> 
         else:
             raise ValueError(f"Unknown chart stat '{stat}'; available: {[*TOP_STATS, 'count_by_object']}")
         if data:
-            charts.append({"title": config.get("title", stat), "type": config.get("type", "bar"), "data": data})
+            title = config.get("title", stat).replace("{top}", data[0][0])
+            charts.append({"stat": stat, "title": title, "type": config.get("type", "bar"), "data": data})
     return charts

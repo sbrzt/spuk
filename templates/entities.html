@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   };
 
   function stat(value, label) {
-    const item = el("div", "level-item has-text-centered");
+    const item = el("div", "card-footer-item has-text-centered");
     const box = item.appendChild(el("div"));
     box.appendChild(el("p", "title is-4 mb-1", value.toLocaleString("en")));
     box.appendChild(el("p", "is-size-7 has-text-grey-dark", label));
@@ -53,15 +53,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   function card([uri, href, typeIdx, asSubject, asObject, related, label]) {
-    const c = el("div", "card cell entity");
+    const c = el("div", "card cell entity is-flex is-flex-direction-column");
     const link = el("a", "", label || uri);
     link.href = href;
     c.appendChild(el("header", "card-header")).appendChild(el("h2", "card-header-title")).appendChild(link);
-    const body = c.appendChild(el("div", "card-content"));
+    const body = c.appendChild(el("div", "card-content is-flex-grow-1"));
     if (label) body.appendChild(el("p", "is-size-7 has-text-grey-dark mb-3", uri));
     const tags = body.appendChild(el("div", "tags"));
     typeIdx.forEach(i => { tags.appendChild(el("span", "tag", labels[i])).title = types[i]; });
-    const stats = body.appendChild(el("div", "level is-mobile"));
+    const stats = c.appendChild(el("footer", "card-footer"));
     stats.append(
       stat(asSubject + asObject, "Triples"),
       stat(asSubject, "As subject"),

@@ -23,7 +23,7 @@
                 <canvas id="chart-{{ loop.index0 }}" role="img" width="400" height="200" style="background-color: rgb(255, 255, 255);"></canvas>
             </div>
             <footer class="card-footer">
-                <a id="download-chart-{{ loop.index0 }}" href="#" aria-label="Download {{ chart.title }} chart as PNG" class="card-footer-item" download="{{ chart.title | lower | replace(' ', '-') }}.png">Download</a>
+                <a id="download-chart-{{ loop.index0 }}" href="#" aria-label="Download {{ chart.title }} chart as PNG" class="card-footer-item" download="{{ chart.stat | replace('_', '-') }}.png">Download</a>
             </footer>
         </div>
         {% endfor %}

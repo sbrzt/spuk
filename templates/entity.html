@@ -43,7 +43,7 @@
                   {% for pair in property_object_pairs %}
                   <tr>
                     <td>
-                      This
+                      <abbr title="{{ entity.uri }}">This</abbr>
                     </td>
                     <td>
                       <a href="{{ pair.property_uri }}" target="_blank">
@@ -111,7 +111,7 @@
                   </a>
                 </td>
                 <td>
-                  This
+                  <abbr title="{{ entity.uri }}">This</abbr>
                 </td>
               </tr>
               {% endfor %}
