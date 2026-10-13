@@ -87,3 +87,12 @@ def test_make_shortener_prefixed_and_unprefixed():
     assert shorten("http://vocab.getty.edu/aat/300386427") == "aat:300386427"
     assert shorten("http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware") == "crmdig:L23_used_software_or_firmware"
     assert shorten("http://nowhere.example/item/1") == "http://nowhere.example/item/1"
+
+
+def test_format_label():
+    import pytest
+    from src.stats_collector import format_label
+    assert format_label("crm:", {}) == "crm:"
+    assert format_label("crm:", {"label_strip": ":", "label_case": "upper"}) == "CRM"
+    with pytest.raises(ValueError):
+        format_label("crm:", {"label_case": "shout"})

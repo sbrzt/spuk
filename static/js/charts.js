@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // One entry per [[index.charts]] block in config.toml, in page order.
     (window.INDEX_CHARTS || []).forEach(({ title, type, data }, index) => {
         const id = `chart-${index}`;
         const ctx = document.getElementById(id);
@@ -38,13 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         ctx.style.backgroundColor = 'rgba(255,255,255)';
-        // Text alternative: a canvas is opaque to screen readers.
         ctx.setAttribute("aria-label", `${title.replace("\n", " ")}: ` + data.map(([label, value]) => `${label} ${value}`).join(", "));
 
 
         const downloadLink = document.getElementById(`download-${id}`);
         if (downloadLink) {
-            // href is set on click, before the browser follows the link.
             downloadLink.addEventListener("click", function () {
                 const url = ctx.toDataURL("image/png");
                 downloadLink.href = url;

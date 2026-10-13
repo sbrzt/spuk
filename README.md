@@ -26,7 +26,7 @@ https://sbrzt.github.io/spuk/
     cd spuk
     ```
 
-2. Install dependencies (uv creates and manages the virtual environment automatically):
+2. Install dependencies via `uv sync`:
 
     ```bash
     uv sync
@@ -39,7 +39,7 @@ All generation options live in `config.toml`:
 * `[graph_source]`: RDF input, either a local `file_path` (turtle, etc.) or a `sparql_endpoint`.
 * `[output]`: output/templates/static/documentation directory paths.
 * `[modelling]`: RDF property used to type entities (`type_property`) and the property path to an entity's display name (`label_path`).
-* `[index]`: overview page content. `cards` lists the number boxes; each `[[index.charts]]` block adds a chart (`stat`, `title`, optional `type`, and `predicate` for `count_by_object`). In `title`, `{top}` is replaced by the chart's highest-ranked item.
+* `[index]`: overview page content. `cards` lists the number boxes; each `[[index.charts]]` block adds a chart (`stat`, `title`, optional `type`, `label_strip`, `label_case`, and `predicate` for `count_by_object`). In `title`, `{top}` is replaced by the chart's highest-ranked item.
 * `[data_viz]`: chart parameters (e.g. `n_objects`).
 * `[theme.colors]`: site palette (`primary`, `link`, `info`, `success`, `warning`, `danger`, `chart`), each a `#rrggbb` hex string.
 * `[theme.hero.*]`: per-page hero: solid color from `theme.colors`, or an image path inside `static/`.

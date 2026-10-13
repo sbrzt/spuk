@@ -11,9 +11,6 @@ from src.settings import LABEL_PATH
 
 
 def follow_path(graph: Graph, start: URIRef, path: List[str]) -> Optional[str]:
-    """Follow a chain of properties from `start` and return the literal at
-    its end, or None. With several candidates the smallest is returned, so
-    rebuilds are stable."""
     nodes = [start]
     for prop in path:
         nodes = [o for node in nodes for o in graph.objects(node, URIRef(prop))]

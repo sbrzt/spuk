@@ -37,8 +37,6 @@ def extract_namespace(uri: URIRef) -> str:
 
 
 def make_shortener(graph: Graph):
-    """Return a function labelling a URI "prefix:term" (or "prefix:" for a
-    bare namespace) when the graph binds a prefix, the full URI otherwise."""
     prefixes = {str(ns): prefix for prefix, ns in graph.namespaces()}
 
     def shorten(uri) -> str:
@@ -55,7 +53,6 @@ def make_shortener(graph: Graph):
 
 
 def shorten_top(graph: Graph, counter: Counter) -> List[tuple]:
-    """Top N entries of a counter, with shortened labels."""
     shorten = make_shortener(graph)
     return [(shorten(uri), count) for uri, count in counter.most_common(N_OBJECTS)]
 
@@ -110,17 +107,26 @@ TOP_STATS = ("top_entities", "top_properties", "top_classes", "top_vocabularies"
 
 
 def build_index_cards(stats: GraphStats, names: List[str]) -> List[Dict]:
-    """Resolve the card names configured in [index] to label/value pairs."""
     unknown = [name for name in names if name not in CARDS]
     if unknown:
         raise ValueError(f"Unknown index card(s) {unknown}; available: {sorted(CARDS)}")
     return [{"label": CARDS[name][0], "value": CARDS[name][1](stats)} for name in names]
 
 
+LABEL_CASES = {"upper": str.upper, "lower": str.lower}
+
+
+def format_label(label: str, config: Dict) -> str:
+    label = label.rstrip(config.get("label_strip", ""))
+    case = config.get("label_case")
+    if case is None:
+        return label
+    if case not in LABEL_CASES:
+        raise ValueError(f"Unknown label_case '{case}'; available: {sorted(LABEL_CASES)}")
+    return LABEL_CASES[case](label)
+
+
 def build_index_charts(graph: Graph, stats: GraphStats, configs: List[Dict]) -> List[Dict]:
-    """Resolve the [[index.charts]] blocks to chart data. Charts with no
-    data are dropped rather than rendered as empty cards. "{top}" in a
-    title is replaced by the label of the chart's highest-ranked item."""
     charts = []
     for config in configs:
         stat = config["stat"]
@@ -131,6 +137,7 @@ def build_index_charts(graph: Graph, stats: GraphStats, configs: List[Dict]) -> 
         else:
             raise ValueError(f"Unknown chart stat '{stat}'; available: {[*TOP_STATS, 'count_by_object']}")
         if data:
+            data = [(format_label(label, config), count) for label, count in data]
             title = config.get("title", stat).replace("{top}", data[0][0])
             charts.append({"stat": stat, "title": title, "type": config.get("type", "bar"), "data": data})
     return charts

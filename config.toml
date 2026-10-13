@@ -34,22 +34,26 @@ cards = ["triples", "entities", "properties", "classes", "vocabularies"]
 # top_entities, top_properties, top_classes, top_vocabularies, or count_by_object
 # (counts the values of `predicate`). `type` is "bar" (default) or "line".
 # In `title`, "{top}" is replaced by the chart's highest-ranked item and
-# "\n" starts a new line.
+# "\n" starts a new line. Optional, for any chart: `label_strip` removes those
+# trailing characters from each label (":" turns "crm:" into "crm") and
+# `label_case` is "upper" or "lower".
 [[index.charts]]
 stat = "top_entities"
-title = "The most described entity is\n{top}"
+title = "The most frequent entity is\n{top}"
 
 [[index.charts]]
 stat = "top_properties"
-title = "The most frequent property is {top}"
+title = "The most frequent property is \n{top}"
 
 [[index.charts]]
 stat = "top_classes"
-title = "The most populated class is {top}"
+title = "The most frequent class is \n{top}"
 
 [[index.charts]]
 stat = "top_vocabularies"
-title = "The most used vocabulary is {top}"
+title = "The most used vocabulary is \n{top}"
+label_strip = ":"
+label_case = "upper"
 
 # [[index.charts]]
 # stat = "count_by_object"
@@ -99,11 +103,24 @@ value = "warning"
 
 [[predefined_queries]]
 name = "All classes"
-query = "SELECT DISTINCT ?class WHERE { ?s a ?class } LIMIT 100"
+query = """
+SELECT DISTINCT ?class (COUNT(?class) AS ?n)
+WHERE { 
+    ?s a ?class 
+}
+GROUP BY ?class
+LIMIT 100
+"""
 
 [[predefined_queries]]
 name = "All properties"
-query = "SELECT DISTINCT ?property WHERE { ?s ?property ?o } LIMIT 100"
+query = """
+SELECT DISTINCT ?property 
+WHERE { 
+    ?s ?property ?o 
+} 
+LIMIT 100
+"""
 
 [graph_vis_options.layout]
 improvedLayout = true
