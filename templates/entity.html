@@ -20,9 +20,9 @@
           <div class="block">
             <ion-icon aria-hidden="true" name="cube-outline"></ion-icon>
             <strong>Is a:</strong>
-              {% for type in entity.types %}
+              {% for type, type_label in types %}
               <a href="{{ type }}" target="_blank">
-                {{ type }}
+                {{ type_label }}
               </a>
               {% endfor %}
           </div>
@@ -57,12 +57,12 @@
                       {% else %}
                         {% if pair.is_internal %}
                           <a href="{{ pair.internal_href }}.html">
-                            {{ pair.value }}
+                            {{ pair.value_label }}
                             <ion-icon aria-hidden="true" name="arrow-forward-circle-outline"></ion-icon>
                           </a>
                         {% else %}
                           <a href="{{ pair.value }}" target="_blank" rel="noopener">
-                            {{ pair.value }}
+                            {{ pair.value_label }}
                             <ion-icon aria-hidden="true" name="open-outline"></ion-icon>
                           </a>
                         {% endif %}
@@ -94,12 +94,12 @@
                 <td>
                   {% if pair.is_internal %}
                     <a href="{{ pair.internal_href }}.html">
-                      {{ pair.value }}
+                      {{ pair.value_label }}
                       <ion-icon aria-hidden="true" name="arrow-forward-circle-outline"></ion-icon>
                     </a>
                   {% else %}
                     <a href="{{ pair.value }}" target="_blank" rel="noopener">
-                      {{ pair.value }}
+                      {{ pair.value_label }}
                       <ion-icon aria-hidden="true" name="open-outline"></ion-icon>
                     </a>
                   {% endif %}

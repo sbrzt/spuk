@@ -75,3 +75,15 @@ def test_collect_graph_stats():
     assert len(charts) == 2  # chart with no data is dropped
     with pytest.raises(ValueError):
         build_index_charts(graph, stats, [{"stat": "nope"}])
+
+
+def test_make_shortener_prefixed_and_unprefixed():
+    from rdflib import Graph
+    from src.stats_collector import make_shortener
+    g = Graph()
+    g.bind("aat", "http://vocab.getty.edu/aat/")
+    g.bind("crmdig", "http://www.ics.forth.gr/isl/CRMdig/")
+    shorten = make_shortener(g)
+    assert shorten("http://vocab.getty.edu/aat/300386427") == "aat:300386427"
+    assert shorten("http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware") == "crmdig:L23_used_software_or_firmware"
+    assert shorten("http://nowhere.example/item/1") == "http://nowhere.example/item/1"

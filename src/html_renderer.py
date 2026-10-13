@@ -11,6 +11,7 @@ from rdflib import URIRef, Literal, RDF
 from rdflib.graph import Graph
 from typing import List, Dict, Any
 from src.entity_model import Entity
+from src.stats_collector import make_shortener
 from urllib.parse import urlparse
 from src.settings import (
     GRAPH_VIS_OPTIONS,
@@ -79,22 +80,26 @@ class HTMLRenderer:
         related_uris = set(entity.get_related_entities())
         current_path = self.site_root / entity.render_path
         base_url = self._compute_base_url(entity.render_path)
-        graph_data = self._get_entity_graph_data(entity.get_entity_subgraph())
+        shorten = make_shortener(entity.graph)
+        graph_data = self._get_entity_graph_data(entity.get_entity_subgraph(), shorten)
         return self.env.get_template("entity.html").render(
             title=f"{entity.uri}",
             entity=entity,
+            types=[(t, shorten(t)) for t in entity.types],
             filename=self._compute_internal_value(entity.uri),
             property_object_pairs=self._format_entity_triples(
                 pairs=entity.get_predicates_objects(),
                 related_uris=related_uris,
                 direction="out",
-                current_path=current_path
+                current_path=current_path,
+                shorten=shorten
             ),
             subject_property_pairs=self._format_entity_triples(
                 pairs=entity.get_subjects_predicates(),
                 related_uris=related_uris,
                 direction="in",
-                current_path=current_path
+                current_path=current_path,
+                shorten=shorten
             ),
             path=entity.render_path,
             base_url=base_url,
@@ -121,7 +126,7 @@ class HTMLRenderer:
         )
 
     
-    def _get_entity_graph_data(self, graph: Graph) -> Dict[str, Any]:
+    def _get_entity_graph_data(self, graph: Graph, shorten) -> Dict[str, Any]:
         nodes = {}
         edges = []
         for s, p, o in graph:
@@ -130,7 +135,7 @@ class HTMLRenderer:
                 if isinstance(node, URIRef) and node_id not in nodes:
                     nodes[node_id] = {
                         "id": node_id,
-                        "label": self._compute_internal_value(node_id),
+                        "label": shorten(node_id),
                         "title": node_id,
                         "shape": "ellipse"
                     }
@@ -145,7 +150,7 @@ class HTMLRenderer:
             edges.append({
                 "from": str(s),
                 "to": str(o),
-                "label": self._compute_internal_value(p),
+                "label": shorten(p),
                 "arrows": "to"
             })
         return {
@@ -154,7 +159,7 @@ class HTMLRenderer:
         }
 
 
-    def _format_entity_triples(self, pairs, related_uris, direction="out", current_path=""):
+    def _format_entity_triples(self, pairs, related_uris, direction="out", current_path="", shorten=str):
         formatted = []
         current_dir = current_path.parent
         for a, b in pairs:
@@ -173,8 +178,9 @@ class HTMLRenderer:
                     target_file_path = os.path.relpath(target_file_path, start=current_dir)
             formatted.append({
                 "property_uri": str(a if direction == "out" else b),
-                "property_label": self._compute_internal_value(str(a if direction == "out" else b)),
+                "property_label": shorten(a if direction == "out" else b),
                 "value": uri_str,
+                "value_label": shorten(uri) if is_uri else uri_str,
                 "is_literal": not is_uri,
                 "is_internal": is_internal,
                 "internal_href": target_file_path,
